@@ -14,13 +14,16 @@
         "firebase": "5.0.4",
         "formsy-react": "1.1.4",
         "google-map-react": "1.0.4",
+        "husky": "^0.14.3",
         "jss-extend": "6.2.0",
         "keycode": "2.2.0",
+        "lint-staged": "^7.2.0",
         "lodash": "4.17.10",
         "mobile-detect": "1.4.2",
         "moment": "2.22.2",
         "path-to-regexp": "2.2.1",
         "perfect-scrollbar": "1.4.0",
+        "prettier": "^1.13.5",
         "prismjs": "1.15.0",
         "qs": "6.5.2",
         "raw-loader": "0.5.1",
@@ -46,7 +49,14 @@
         "typeface-roboto": "0.0.54",
         "velocity-react": "1.4.1"
     },
+    "lint-staged": {
+        "src/**/*.{js,jsx,json,css}": [
+            "prettier --single-quote --write",
+            "git add"
+        ]
+    },
     "scripts": {
+        "precommit": "lint-staged",
         "start": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts start",
         "build": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts build",
         "build-css-helpers": "./node_modules/.bin/tailwind build ./src/styles/fuse-helpers.tailwind.css -c ./tailwind.js -o ./src/styles/fuse-helpers.css && postcss --use autoprefixer -o ./src/styles/fuse-helpers.css ./src/styles/fuse-helpers.css",
