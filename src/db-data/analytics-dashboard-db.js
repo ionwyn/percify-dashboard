@@ -661,6 +661,65 @@ const analyticsDashboardAppDB = {
           conversion: 4
         }
       ]
+    },
+    widget10: {
+      labels: [
+        'Thinking',
+        'Here Comes The Sun - Remastered',
+        'Animal Spirits',
+        'Blimp',
+        '(They Long To Be) Close To You'
+      ],
+      datasets: [
+        {
+          label: 'count',
+          data: [21, 16, 8, 7, 6]
+        }
+      ],
+      options: {
+        spanGaps: true,
+        legend: {
+          display: false
+        },
+        maintainAspectRatio: true,
+        tooltips: {
+          position: 'nearest',
+          mode: 'index',
+          intersect: false
+        },
+        layout: {
+          padding: {
+            left: 24,
+            right: 32
+          }
+        },
+        elements: {
+          point: {
+            radius: 4,
+            borderWidth: 2,
+            hoverRadius: 4,
+            hoverBorderWidth: 2
+          }
+        },
+        scales: {
+          xAxes: [
+            {
+              ticks: {
+                min: 0,
+                max: 25
+              }
+            }
+          ],
+          yAxes: [
+            {
+              stacked: true,
+              ticks: {
+                fontSize: 16
+              }
+            }
+          ]
+        }
+      }
     }
   }
 };

@@ -11,10 +11,8 @@ import Widget2 from './widgets/Widget2';
 import Widget3 from './widgets/Widget3';
 import Widget4 from './widgets/Widget4';
 import Widget5 from './widgets/Widget5';
-import Widget6 from './widgets/Widget6';
 import Widget7 from './widgets/Widget7';
-import Widget8 from './widgets/Widget8';
-import Widget9 from './widgets/Widget9';
+import Widget10 from './widgets/Widget10';
 import { FuseAnimate } from '@fuse';
 
 const styles = theme => ({
@@ -127,6 +125,10 @@ class AnalyticsDashboardApp extends Component {
 
               <div className="widget w-full p-16 pb-32">
                 <Widget5 data={widgets.widget5} />
+              </div>
+
+              <div className="widget w-full p-16 pb-32">
+                <Widget10 data={widgets.widget10} />
               </div>
             </div>
 
