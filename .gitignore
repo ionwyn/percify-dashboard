@@ -73,3 +73,5 @@ typings/
 # Serverless directories
 .serverless
 
+# package-lock json since we use yarn on GitLab Auto DevOps
+package-lock.json
