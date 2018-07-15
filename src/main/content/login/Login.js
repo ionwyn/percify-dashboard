@@ -23,11 +23,6 @@ const styles = theme => ({
   }
 });
 
-let scopes = 'user-read-private user-read-email';
-let my_client_id = 'd104e370c7a1420aba8892389177ccb0';
-
-const spotifyRedirect = 'https://google.com';
-
 class Login extends Component {
   onSubmit = model => {
     this.props.submitLogin(model);
@@ -114,7 +109,7 @@ class Login extends Component {
               <Button
                 className="px-4"
                 component="a"
-                href={spotifyRedirect}
+                href="www.google.com"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth={true}
