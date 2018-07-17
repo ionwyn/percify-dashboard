@@ -88,7 +88,7 @@ class Login extends Component {
               color="inherit"
               className="font-light"
             >
-              Welcome to Intersect!
+              Intersect
             </Typography>
           </FuseAnimate>
 
@@ -98,7 +98,7 @@ class Login extends Component {
               color="inherit"
               className="max-w-512 mt-16"
             >
-              Know more about how you listen.
+              Your music, your data, you.
             </Typography>
           </FuseAnimate>
         </div>
@@ -106,18 +106,22 @@ class Login extends Component {
         <FuseAnimate animation={{ translateX: [0, '100%'] }}>
           <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
             <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
+              <img
+                src="assets/images/logos/spotify_logo_with_text.svg"
+                alt="Spotify Logo Image"
+              />
               <Button
                 className="px-4"
                 component="a"
                 href="https://emruscdog5.execute-api.ca-central-1.amazonaws.com/latest"
-                target="_blank"
+                target="_self"
                 rel="noreferrer noopener"
                 fullWidth={true}
                 variant="flat"
               >
                 <img
                   src="assets/images/logos/spotifylogin.svg"
-                  alt="spotifyLogin"
+                  alt="Login with Spotify Button"
                 />
               </Button>
             </CardContent>
