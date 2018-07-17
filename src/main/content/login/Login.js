@@ -109,7 +109,7 @@ class Login extends Component {
               <Button
                 className="px-4"
                 component="a"
-                href="www.google.com"
+                href="https://emruscdog5.execute-api.ca-central-1.amazonaws.com/latest"
                 target="_blank"
                 rel="noreferrer noopener"
                 fullWidth={true}
