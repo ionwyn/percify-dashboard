@@ -108,7 +108,7 @@ class Login extends Component {
             <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
               <img
                 src="assets/images/logos/spotify_logo_with_text.svg"
-                alt="Spotify Logo Image"
+                alt="Spotify Logo"
               />
               <Button
                 className="px-4"
