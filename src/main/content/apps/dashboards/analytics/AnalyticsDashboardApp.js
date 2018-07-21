@@ -85,17 +85,19 @@ class AnalyticsDashboardApp extends Component {
 
   componentDidMount() {
     this.props.getWidgets();
-    console.log(this.props);
+
     const values = queryString.parse(
       this.props.location.pathname.split('/').pop()
     );
-    console.log(values);
-    console.log(values.access_token);
-    console.log(values.refresh_token);
+    const accessToken = values.access_token;
+    const refreshToken = values.refresh_token;
+
+    this.props.setTokens({ accessToken, refreshToken });
+    this.props.getMyInfo();
   }
 
   render() {
-    const { widgets, classes } = this.props;
+    const { widgets, classes, accessToken, refreshToken, user } = this.props;
     if (!widgets) {
       return 'Loading..';
     }
@@ -163,7 +165,9 @@ class AnalyticsDashboardApp extends Component {
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
-      getWidgets: Actions.getWidgets
+      getWidgets: Actions.getWidgets,
+      getMyInfo: Actions.getMyInfo,
+      setTokens: Actions.setTokens
     },
     dispatch
   );
@@ -171,7 +175,8 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({ analyticsDashboardApp }) {
   return {
-    widgets: analyticsDashboardApp.widgets.data
+    widgets: analyticsDashboardApp.widgets.data,
+    spotilogin: analyticsDashboardApp.spotilogin
   };
 }
 
@@ -183,36 +188,3 @@ export default withStyles(styles, { withTheme: true })(
     )(AnalyticsDashboardApp)
   )
 );
-
-// <div className="mb-32 w-full sm:w-1/2 md:w-full">
-
-//     <FuseAnimate delay={600}>
-//         <div className="px-16 pb-8 text-18 font-300">
-//             How are your sales?
-//         </div>
-//     </FuseAnimate>
-
-//     <div className="widget w-full p-16">
-//         <Widget8 data={widgets.widget8}/>
-//     </div>
-// </div>
-
-// <div className="mb-32 w-full sm:w-1/2 md:w-full">
-//     <FuseAnimate delay={600}>
-//         <Typography className="px-16 pb-8 text-18 font-300 lg:pt-0">
-//             What are your top campaigns?
-//         </Typography>
-//     </FuseAnimate>
-//     <div className="widget w-full p-16">
-//         <Widget9 data={widgets.widget9}/>
-//     </div>
-// </div>
-//                             <FuseAnimate delay={600}>
-//     <Typography className="px-16 pb-8 text-18 font-300">
-//         Where are your users?
-//     </Typography>
-// </FuseAnimate>
-
-// <div className="widget w-full p-16 pb-32">
-//     <Widget6 data={widgets.widget6}/>
-// </div>
