@@ -14,6 +14,7 @@ import Widget5 from './widgets/Widget5';
 import Widget7 from './widgets/Widget7';
 import Widget10 from './widgets/Widget10';
 import { FuseAnimate } from '@fuse';
+import queryString from 'query-string';
 
 const styles = theme => ({
   root: {}
@@ -84,6 +85,13 @@ class AnalyticsDashboardApp extends Component {
 
   componentDidMount() {
     this.props.getWidgets();
+    console.log(this.props);
+    const values = queryString.parse(
+      this.props.location.pathname.split('/').pop()
+    );
+    console.log(values);
+    console.log(values.access_token);
+    console.log(values.refresh_token);
   }
 
   render() {
