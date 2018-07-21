@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import widgets from './widgets.reducer';
+import spotilogin from './login.reducer';
 
 const analyticsDashboardAppReducers = combineReducers({
-  widgets
+  widgets,
+  spotilogin
 });
 
 export default analyticsDashboardAppReducers;
