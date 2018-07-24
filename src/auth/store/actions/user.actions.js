@@ -24,6 +24,52 @@ export function setUserData(user, doNotUpdate) {
   };
 }
 
+export function setSpotifyUserData(user, doNotUpdate) {
+  return dispatch => {
+    !doNotUpdate && updateUserData(user);
+
+    const spotiUser = _.merge({}, user, {
+      settings: {
+        layout: {
+          style: 'layout1',
+          config: {
+            scroll: 'content',
+            navbar: {
+              display: true,
+              folded: true,
+              position: 'left'
+            },
+            toolbar: {
+              display: true,
+              style: 'fixed',
+              position: 'below'
+            },
+            footer: {
+              display: true,
+              style: 'fixed',
+              position: 'below'
+            },
+            mode: 'fullwidth'
+          }
+        },
+        customScrollbars: true,
+        theme: {
+          main: 'defaultDark',
+          navbar: 'defaultDark',
+          toolbar: 'defaultDark',
+          footer: 'defaultDark'
+        }
+      }
+    });
+
+    // dispatch(setDefaultSettings(spotiUser.settings));
+    dispatch({
+      type: SET_USER_DATA,
+      payload: user
+    });
+  };
+}
+
 export function updateUserSettings(settings) {
   return (dispatch, getState) => {
     const oldUser = getState().auth.user;
