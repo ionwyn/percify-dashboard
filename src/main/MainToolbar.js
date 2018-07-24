@@ -49,6 +49,13 @@ class MainToolbar extends Component {
     const { classes, toggleQuickPanel, user, logout } = this.props;
     const { userMenu } = this.state;
 
+    // A quick check that our getMyInfo is still processing
+    while (!user.country) {
+      return 'Loading..';
+    }
+
+    console.log(user);
+
     return (
       <div className={classNames(classes.root, 'flex flex-row')}>
         <div className="flex flex-1 px-24">
@@ -58,11 +65,11 @@ class MainToolbar extends Component {
         <div className="flex">
           <FuseAnimate delay={300}>
             <Button className="h-64" onClick={this.userMenuClick}>
-              {user.data.photoURL ? (
+              {user.images[0].url ? (
                 <Avatar
                   className=""
                   alt="user photo"
-                  src={user.data.photoURL}
+                  src={user.images[0].url}
                 />
               ) : (
                 <Avatar className="">{user.data.displayName[0]}</Avatar>
@@ -73,13 +80,13 @@ class MainToolbar extends Component {
                   component="span"
                   className="normal-case font-500 flex"
                 >
-                  {user.data.displayName}
+                  {user.display_name}
                 </Typography>
                 <Typography
                   className="text-11 capitalize"
                   color="textSecondary"
                 >
-                  {user.role}
+                  {user.product}
                 </Typography>
               </div>
 
@@ -105,7 +112,7 @@ class MainToolbar extends Component {
               paper: 'py-8'
             }}
           >
-            {user.role === 'guest' ? (
+            {user.role !== 'guest' ? (
               <React.Fragment>
                 <MenuItem component={Link} to="/login">
                   <ListItemIcon>
@@ -131,16 +138,6 @@ class MainToolbar extends Component {
                     <Icon>account_circle</Icon>
                   </ListItemIcon>
                   <ListItemText className="pl-0" primary="My Profile" />
-                </MenuItem>
-                <MenuItem
-                  component={Link}
-                  to="/apps/mail"
-                  onClick={this.userMenuClose}
-                >
-                  <ListItemIcon>
-                    <Icon>mail</Icon>
-                  </ListItemIcon>
-                  <ListItemText className="pl-0" primary="Inbox" />
                 </MenuItem>
                 <MenuItem
                   onClick={() => {
