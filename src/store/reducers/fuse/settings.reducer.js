@@ -27,7 +27,6 @@ const settings = function(state = initialState, action) {
       };
     }
     case Actions.SET_DEFAULT_SETTINGS: {
-      console.log(state);
       return {
         ...state,
         defaults: _.merge({}, state.defaults, action.value),

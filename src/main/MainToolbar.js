@@ -54,8 +54,6 @@ class MainToolbar extends Component {
       return 'Loading..';
     }
 
-    console.log(user);
-
     return (
       <div className={classNames(classes.root, 'flex flex-row')}>
         <div className="flex flex-1 px-24">
