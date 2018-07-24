@@ -86,18 +86,21 @@ class AnalyticsDashboardApp extends Component {
   componentDidMount() {
     this.props.getWidgets();
 
+    // Get JSON Object from URL Querystring
     const values = queryString.parse(
       this.props.location.pathname.split('/').pop()
     );
     const accessToken = values.access_token;
     const refreshToken = values.refresh_token;
 
+    // Set tokens and get user info by calling dispatching corresponding Actions
     this.props.setTokens({ accessToken, refreshToken });
     this.props.getMyInfo();
   }
 
   render() {
-    const { widgets, classes, accessToken, refreshToken, user } = this.props;
+    const { widgets, classes, user } = this.props;
+
     if (!widgets) {
       return 'Loading..';
     }
@@ -176,7 +179,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps({ analyticsDashboardApp }) {
   return {
     widgets: analyticsDashboardApp.widgets.data,
-    spotilogin: analyticsDashboardApp.spotilogin
+    user: analyticsDashboardApp.spotilogin
   };
 }
 
