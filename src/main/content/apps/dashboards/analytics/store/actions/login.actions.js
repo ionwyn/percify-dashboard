@@ -1,4 +1,5 @@
 import Spotify from 'spotify-web-api-js';
+import { setSpotifyUserData } from 'auth/store/actions/user.actions';
 
 const spotifyApi = new Spotify();
 
@@ -7,6 +8,7 @@ export const SPOTIFY_TOKENS = 'SPOTIFY_TOKENS';
 export const SPOTIFY_ME_BEGIN = 'SPOTIFY_ME_BEGIN';
 export const SPOTIFY_ME_SUCCESS = 'SPOTIFY_ME_SUCCESS';
 export const SPOTIFY_ME_FAILURE = 'SPOTIFY_ME_FAILURE';
+export const SPOTIFY_LOGIN_SUCCESS = 'SPOTIFY_LOGIN_SUCCESS';
 
 /** set the app's access and refresh tokens */
 export function setTokens({ accessToken, refreshToken }) {
@@ -23,6 +25,13 @@ export function getMyInfo() {
     spotifyApi
       .getMe()
       .then(data => {
+        // Tell our parent components that user is now logged in
+        dispatch(setSpotifyUserData(data));
+
+        // Store the userData in local storage.
+        localStorage.setItem('userData', JSON.stringify(data));
+
+        // Send data to some component as props
         dispatch({ type: SPOTIFY_ME_SUCCESS, data: data });
       })
       .catch(e => {
