@@ -109,6 +109,10 @@ export function logoutUser() {
 
     dispatch(setDefaultSettings(FuseDefaultSettings));
 
+    // Clear session and local storage
+    sessionStorage.clear();
+    localStorage.clear();
+
     dispatch({
       type: USER_LOGGED_OUT
     });
