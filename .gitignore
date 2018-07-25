@@ -75,3 +75,6 @@ typings/
 
 # package-lock json since we use yarn on GitLab Auto DevOps
 package-lock.json
+
+# build artifacts
+build/
