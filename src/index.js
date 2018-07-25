@@ -22,6 +22,7 @@ import QuickPanel from 'main/quickPanel/QuickPanel';
 import FirebaseAuth from 'firebase-db/FirebaseAuth';
 import store from 'store';
 import SettingsPanel from 'main/SettingsPanel';
+import { setSpotifyUserData } from 'auth/store/actions/user.actions';
 
 const jss = create({
   ...jssPreset(),
@@ -30,6 +31,12 @@ const jss = create({
 
 jss.options.insertionPoint = document.getElementById('jss-insertion-point');
 const generateClassName = createGenerateClassName();
+
+const spotiUser = JSON.parse(sessionStorage.getItem('userData'));
+
+if (spotiUser) {
+  store.dispatch(setSpotifyUserData(spotiUser));
+}
 
 ReactDOM.render(
   <JssProvider jss={jss} generateClassName={generateClassName}>

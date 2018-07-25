@@ -29,7 +29,7 @@ export function getMyInfo() {
         dispatch(setSpotifyUserData(data));
 
         // Store the userData in local storage.
-        localStorage.setItem('userData', JSON.stringify(data));
+        sessionStorage.setItem('userData', JSON.stringify(data));
 
         // Send data to some component as props
         dispatch({ type: SPOTIFY_ME_SUCCESS, data: data });
