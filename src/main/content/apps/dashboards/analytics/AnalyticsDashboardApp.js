@@ -14,7 +14,7 @@ import Widget5 from './widgets/Widget5';
 import Widget7 from './widgets/Widget7';
 import Widget10 from './widgets/Widget10';
 import { FuseAnimate } from '@fuse';
-import queryString from 'query-string';
+import qs from 'qs';
 
 const styles = theme => ({
   root: {}
@@ -87,11 +87,8 @@ class AnalyticsDashboardApp extends Component {
     this.props.getWidgets();
 
     // Get JSON Object from URL Querystring
-    const values = queryString.parse(
-      this.props.location.pathname.split('/').pop()
-    );
-    const accessToken = values.access_token;
-    const refreshToken = values.refresh_token;
+    const tokens = qs.parse(this.props.location.pathname.split('/').pop());
+    const { access_token: accessToken, refresh_token: refreshToken } = tokens;
 
     // Set tokens and get user info by calling dispatching corresponding Actions
     this.props.setTokens({ accessToken, refreshToken });
@@ -99,7 +96,7 @@ class AnalyticsDashboardApp extends Component {
   }
 
   render() {
-    const { widgets, classes, user } = this.props;
+    const { widgets, classes } = this.props;
 
     if (!widgets) {
       return 'Loading..';

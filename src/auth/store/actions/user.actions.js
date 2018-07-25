@@ -27,14 +27,10 @@ export function setUserData(user, doNotUpdate) {
 export function setSpotifyUserData(user, doNotUpdate) {
   return dispatch => {
     !doNotUpdate && updateUserData(user);
-    console.log(FuseDefaultSettings);
-    console.log(typeof FuseDefaultSettings);
 
     const spotiUser = _.merge({}, user, {
       settings: { ...FuseDefaultSettings }
     });
-
-    console.log(spotiUser);
 
     dispatch(setDefaultSettings(spotiUser.settings));
     dispatch({
