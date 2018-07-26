@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { FusePageSimple, FuseAnimate } from '@fuse';
 import { Avatar, Button, Tab, Tabs, Typography } from '@material-ui/core';
 import TimelineTab from 'main/content/pages/profile/tabs/TimelineTab';
@@ -42,8 +44,10 @@ class ProfilePage extends Component {
   };
 
   render() {
-    const { classes } = this.props;
+    const { classes, user } = this.props;
     const { value } = this.state;
+
+    console.log(user);
 
     return (
       <FusePageSimple
@@ -56,10 +60,7 @@ class ProfilePage extends Component {
           <div className="p-24 flex flex-1 flex-col items-center justify-center md:flex-row md:items-end">
             <div className="flex flex-1 flex-col items-center justify-center md:flex-row md:items-center md:justify-start">
               <FuseAnimate animation="transition.expandIn" delay={300}>
-                <Avatar
-                  className="w-96 h-96"
-                  src="assets/images/avatars/katherine.jpg"
-                />
+                <Avatar className="w-96 h-96" src={user.images[0].url} />
               </FuseAnimate>
               <FuseAnimate animation="transition.slideLeftIn" delay={300}>
                 <Typography
@@ -67,7 +68,7 @@ class ProfilePage extends Component {
                   variant="display1"
                   color="inherit"
                 >
-                  Katherine Wilson
+                  {user.display_name}
                 </Typography>
               </FuseAnimate>
             </div>
@@ -122,6 +123,12 @@ class ProfilePage extends Component {
               }}
               label="Photos & Videos"
             />
+            <Tab
+              classes={{
+                root: classes.tabRoot
+              }}
+              label="Playlist"
+            />
           </Tabs>
         }
         content={
@@ -136,4 +143,12 @@ class ProfilePage extends Component {
   }
 }
 
-export default withStyles(styles, { withTheme: true })(ProfilePage);
+function mapStateToProps(state) {
+  return {
+    user: state.auth.user
+  };
+}
+
+export default withStyles(styles, { withTheme: true })(
+  withRouter(connect(mapStateToProps)(ProfilePage))
+);
