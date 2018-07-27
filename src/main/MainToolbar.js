@@ -49,11 +49,6 @@ class MainToolbar extends Component {
     const { classes, toggleQuickPanel, user, logout } = this.props;
     const { userMenu } = this.state;
 
-    // A quick check that our getMyInfo is still processing
-    while (!user.country) {
-      return 'Loading..';
-    }
-
     return (
       <div className={classNames(classes.root, 'flex flex-row')}>
         <div className="flex flex-1 px-24">

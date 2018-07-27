@@ -47,8 +47,6 @@ class ProfilePage extends Component {
     const { classes, user } = this.props;
     const { value } = this.state;
 
-    console.log(user);
-
     return (
       <FusePageSimple
         classes={{
