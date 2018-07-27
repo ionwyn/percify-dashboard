@@ -7,7 +7,14 @@ const initialState = {
     photoURL: 'assets/images/avatars/profile.jpg',
     email: 'johndoe@withinpixels.com',
     shortcuts: ['calendar', 'mail', 'contacts', 'analytics-dashboard']
-  }
+  },
+  images: [
+    {
+      height: null,
+      url: 'assets/images/avatars/profile.jpg',
+      width: null
+    }
+  ]
 };
 
 const user = function(state = initialState, action) {
