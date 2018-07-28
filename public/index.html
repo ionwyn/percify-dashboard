@@ -226,6 +226,21 @@
             <!-- / FUSE Splash Screen -->
         </div>
         <!--
+            The first script tag loads the playback SDK into the browser window.
+            The second script assigns a window cariable, called Spotify,
+            to the global Spotify variable, inside the window.onSpotifyWebPlaybackSDKReady method.
+            
+            This is possible because React runs its own copy of the web page's HTML content (for performance reasons).
+            In layman explanation, React wouldn't know the global Spotify variable.  This is why we add it to the 
+            window object as this is accessible by React.
+        -->
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        <script>
+            window.onSpotifyWebPlaybackSDKReady = () => {
+                window.Spotify = Spotify;
+            }
+        </script>
+        <!--
           This HTML file is a template.
           If you open it directly in the browser, you will see an empty page.
 
