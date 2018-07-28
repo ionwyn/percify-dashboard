@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles/index';
-import { Card, CardContent, Grow, Typography } from '@material-ui/core';
+import { Card, CardContent, Grow } from '@material-ui/core';
 import classNames from 'classnames';
 
 const styles = theme => ({
@@ -20,10 +20,8 @@ class PlaybackPage extends Component {
     super(props);
     // set the initial state
     this.state = {
-      token:
-        'BQAL31CXjYUbzj9rx2B9jzGVvuVNH7q4-Id7rVktLHK2_3X3iDWt-s5vs26TWKKA0JIFry9NDlxu2A3-cJg_vGSUxR2jYfsWi2TfL15pOjz9oe8fIQuRCeUg8LZGI8Meu6zhPJYIYFwnriFCQ-IrlS3HZyJpULZh9o7wJQ',
+      token: '',
       deviceId: '',
-      loggedIn: true,
       error: '',
       trackName: 'Track Name',
       artistName: 'Artist Name',
@@ -34,15 +32,6 @@ class PlaybackPage extends Component {
     };
     // this will later be set by setInterval
     this.playerCheckInterval = null;
-  }
-
-  // when we click the "go" button
-  handleLogin() {
-    if (this.state.token !== '') {
-      // change the loggedIn variable, then start checking for the window.Spotify variable
-      this.setState({ loggedIn: true });
-      this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
-    }
   }
 
   // when we receive a new update from the player
@@ -71,7 +60,8 @@ class PlaybackPage extends Component {
     } else {
       // state was null, user might have swapped to another device
       this.setState({
-        error: 'Looks like you might have swapped to another device?'
+        error:
+          'Playback has stopped because you have switched to another device'
       });
     }
   }
@@ -81,13 +71,7 @@ class PlaybackPage extends Component {
     this.player.on('initialization_error', e => {
       console.error(e);
     });
-    // problem authenticating the user.
-    // either the token was invalid in the first place,
-    // or it expired (it lasts one hour)
-    this.player.on('authentication_error', e => {
-      console.error(e);
-      this.setState({ loggedIn: false });
-    });
+
     // currently only premium accounts can use the API
     this.player.on('account_error', e => {
       console.error(e);
@@ -167,7 +151,6 @@ class PlaybackPage extends Component {
     const { classes } = this.props;
     const {
       token,
-      loggedIn,
       trackName,
       artistName,
       albumName,
