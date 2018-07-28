@@ -7,22 +7,22 @@ const analyticsDashboardAppDB = {
       datasets: {
         '2015': [
           {
-            label: 'Sales',
-            data: [1.9, 3, 3.4, 2.2, 2.9, 3.9, 2.5, 3.8, 4.1, 3.8, 3.2, 2.9],
+            label: 'Tracks',
+            data: [0.2, 1, 1.4, 0.2, 0.9, 1.9, 0.5, 1.8, 2.1, 1.8, 1.2, 0.9],
             fill: 'start'
           }
         ],
         '2016': [
           {
-            label: 'Sales',
-            data: [2.2, 2.9, 3.9, 2.5, 3.8, 3.2, 2.9, 1.9, 3, 3.4, 4.1, 3.8],
+            label: 'Tracks',
+            data: [0.2, 0.9, 1.9, 0.5, 1.8, 1.2, 0.9, 0.2, 1, 1.4, 2.1, 1.8],
             fill: 'start'
           }
         ],
         '2017': [
           {
-            label: 'Sales',
-            data: [3.9, 2.5, 3.8, 4.1, 1.9, 3, 3.8, 3.2, 2.9, 3.4, 2.2, 2.9],
+            label: 'Tracks',
+            data: [1.9, 0.5, 1.8, 2.1, 0.1, 1, 1.8, 1.2, 0.9, 1.4, 0.2, 0.9],
             fill: 'start'
           }
         ]
@@ -82,8 +82,8 @@ const analyticsDashboardAppDB = {
             {
               display: false,
               ticks: {
-                min: 1.5,
-                max: 5,
+                min: 0,
+                max: 3,
                 stepSize: 0.5
               }
             }
@@ -160,24 +160,8 @@ const analyticsDashboardAppDB = {
       chartType: 'line',
       datasets: [
         {
-          label: 'Impression',
-          data: [
-            67000,
-            54000,
-            82000,
-            57000,
-            72000,
-            57000,
-            87000,
-            72000,
-            89000,
-            98700,
-            112000,
-            136000,
-            110000,
-            149000,
-            98000
-          ],
+          label: 'Genres',
+          data: [7, 4, 2, 7, 2, 7, 7, 2, 9, 8, 12, 6, 10, 9, 8],
           fill: false
         }
       ],
@@ -249,8 +233,8 @@ const analyticsDashboardAppDB = {
       chartType: 'bar',
       datasets: [
         {
-          label: 'Visits',
-          data: [432, 428, 327, 363, 456, 267, 231]
+          label: 'Artists',
+          data: [42, 28, 27, 63, 56, 67, 31]
         }
       ],
       labels: [
@@ -286,8 +270,8 @@ const analyticsDashboardAppDB = {
             {
               display: false,
               ticks: {
-                min: 150,
-                max: 500
+                min: 10,
+                max: 70
               }
             }
           ]
@@ -299,14 +283,14 @@ const analyticsDashboardAppDB = {
       datasets: {
         yesterday: [
           {
-            label: 'Visitors',
+            label: 'Tracks',
             data: [19, 3, 34, 22, 29, 39, 25, 38, 41, 38, 32, 29],
             fill: 'start'
           }
         ],
         today: [
           {
-            label: 'Visitors',
+            label: 'Tracks',
             data: [41, 38, 32, 29, 19, 39, 25, 38, 3, 34, 22, 29],
             fill: 'start'
           }
