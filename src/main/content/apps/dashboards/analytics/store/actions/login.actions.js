@@ -14,6 +14,10 @@ export const SPOTIFY_LOGIN_SUCCESS = 'SPOTIFY_LOGIN_SUCCESS';
 export function setTokens({ accessToken, refreshToken }) {
   if (accessToken) {
     spotifyApi.setAccessToken(accessToken);
+    sessionStorage.setItem(
+      'userToken',
+      JSON.stringify({ access_token: accessToken, refresh_token: refreshToken })
+    );
   }
   return { type: SPOTIFY_TOKENS, accessToken, refreshToken };
 }
