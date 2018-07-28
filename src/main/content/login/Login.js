@@ -60,6 +60,9 @@ class Login extends Component {
 
   render() {
     const { classes } = this.props;
+    const loginTo = process.env.login_to
+      ? process.env.login_to
+      : 'https://emruscdog5.execute-api.ca-central-1.amazonaws.com/latest';
 
     return (
       <div
@@ -113,7 +116,7 @@ class Login extends Component {
               <Button
                 className="px-4"
                 component="a"
-                href="https://spotilogin.herokuapp.com/"
+                href={loginTo}
                 target="_self"
                 rel="noreferrer noopener"
                 fullWidth={true}
