@@ -87,7 +87,6 @@ class PlaybackPage extends Component {
     // Ready
     this.player.on('ready', async data => {
       let { device_id } = data;
-      console.log('Let the music play on!');
       // set the deviceId variable, then let's try
       // to swap music playback to *our* player!
       await this.setState({ deviceId: device_id });

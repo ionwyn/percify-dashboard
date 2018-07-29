@@ -20,7 +20,6 @@ const initialState = {
 };
 
 const userTopMetrics = function(state = initialState, action) {
-  console.log('asdasdas');
   switch (action.type) {
     case Actions.SGET_TOKENS: {
       const { accessToken } = action;
@@ -28,7 +27,6 @@ const userTopMetrics = function(state = initialState, action) {
     }
 
     case Actions.SGET_TRACKS: {
-      console.log('im SGET_TRACKS reducers');
       return Object.assign({}, state, {
         tracks: Object.assign({}, state, action.data)
       });

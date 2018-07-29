@@ -21,12 +21,9 @@ export function getTopTracks() {
     spotifyApi
       .getMyTopTracks()
       .then(data => {
-        console.log(data);
-        console.log('folks');
         dispatch({ type: SGET_TRACKS, data: data });
       })
       .catch(e => {
-        console.log('error');
         dispatch({ type: SGET_FAILURE, error: e });
       });
   };

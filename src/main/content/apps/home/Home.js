@@ -69,9 +69,6 @@ class Home extends Component {
     const { classes } = this.props;
     const { value } = this.state;
 
-    console.log('im here brooooo');
-    console.log(this.props);
-
     return (
       <FusePageCarded
         classes={{
