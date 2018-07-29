@@ -25,7 +25,7 @@ const fuseSettingsConfig = {
   theme: {
     main: 'default',
     navbar: 'mainThemeDark',
-    toolbar: 'mainThemeLight',
+    toolbar: 'mainThemeDark',
     footer: 'mainThemeDark'
   }
 };

@@ -1,5 +1,12 @@
 export const fuseNavigationConfig = [
   {
+    id: 'home',
+    title: 'Home',
+    type: 'item',
+    icon: 'home',
+    url: '/home'
+  },
+  {
     id: 'applications',
     title: 'Applications',
     type: 'group',
@@ -18,6 +25,13 @@ export const fuseNavigationConfig = [
             url: '/apps/dashboards/analytics'
           }
         ]
+      },
+      {
+        id: 'playbackPage',
+        title: 'Playback',
+        type: 'item',
+        icon: 'view_quilt',
+        url: '/pages/playback'
       }
     ]
   }
