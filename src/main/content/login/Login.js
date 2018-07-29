@@ -62,7 +62,7 @@ class Login extends Component {
     const { classes } = this.props;
     const loginTo = process.env.login_to
       ? process.env.login_to
-      : 'https://emruscdog5.execute-api.ca-central-1.amazonaws.com/latest';
+      : 'https://spotilogin.herokuapp.com/';
 
     return (
       <div
