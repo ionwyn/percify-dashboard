@@ -66,8 +66,9 @@ class Home extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, topTracks } = this.props;
     const { value } = this.state;
+    console.log(topTracks.tracks === undefined);
 
     return (
       <FusePageCarded
@@ -133,7 +134,9 @@ class Home extends Component {
             {value === 0 && (
               <div>
                 <h3 className="mb-16">Your favourite tracks</h3>
-                <SingleLineGridList />
+                {topTracks.tracks !== undefined ? (
+                  <SingleLineGridList userTop={topTracks.tracks} />
+                ) : null}
               </div>
             )}
             {value === 1 && (
@@ -200,7 +203,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps({ userTop }) {
   return {
     // user: state.spotilogin,
-    topTracks: userTop.userTop
+    topTracks: userTop.userTopMetrics
   };
 }
 
