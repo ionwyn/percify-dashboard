@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles/index';
+import { withRouter } from 'react-router-dom';
+import * as Actions from './store/actions';
+import { bindActionCreators } from 'redux';
 import { Card, CardContent, Grow } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
@@ -40,13 +42,12 @@ class PlaybackPage extends Component {
     // set the initial state
     this.state = {
       token:
-        'BQD17CDRCAn9hCwhjkZSEkl40qLgCfKRLpD5M2xS1i0o9OiMrm3zNY5fC77e0OxhmHHA6oP3P9x5ZCyfBaRwcZeeoHgK8qkBdDw-K-MfMl0MiSjahTsgALbYwnzmhHi27e4kgwZkFLtWFSSjZEXXf3n2zeVnX1DaeJEHrA',
+        'BQCeHVn5VHNDsvpJDAKyWZt-sE7ZAtAlc9_bLPLyoJA4GQFndIjzIgZntj6EEGe-Ln06A1LFqYXrt8Kt1UCw-dXjXNjkkk4B_8-FnIAOtVtx-N30XWin06mgcbO3QIPf1hKmW4_pezlsZAJ9M8zLGoJ70GIpHLOjQyR7AZ5puErXkhQJ',
       deviceId: '',
       loggedIn: false,
       error: '',
       trackName: 'Track Name',
       artistName: 'Artist Name',
-      albumName: 'Album Name',
       playing: false,
       position: 0,
       duration: 1
@@ -75,7 +76,6 @@ class PlaybackPage extends Component {
       } = state.track_window;
       console.log(currentTrack);
       const trackName = currentTrack.name;
-      const albumName = currentTrack.album.name;
       const artistName = currentTrack.artists
         .map(artist => artist.name)
         .join(', ');
@@ -86,7 +86,6 @@ class PlaybackPage extends Component {
         position,
         duration,
         trackName,
-        albumName,
         artistName,
         playing,
         trackImg
@@ -144,6 +143,9 @@ class PlaybackPage extends Component {
           cb(token);
         }
       });
+
+      console.log('THIS IS PLAYER');
+      console.log(this.player);
       // set up the player's event handlers
       this.createEventHandlers();
 
@@ -184,15 +186,7 @@ class PlaybackPage extends Component {
 
   render() {
     const { classes, theme } = this.props;
-    const {
-      token,
-      trackName,
-      artistName,
-      albumName,
-      error,
-      playing,
-      trackImg
-    } = this.state;
+    const { trackName, artistName, trackImg } = this.state;
 
     console.log('huehuehue');
     console.log(trackImg);
@@ -250,6 +244,10 @@ class PlaybackPage extends Component {
       </div>
     );
   }
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({}, dispatch);
 }
 
 function mapStateToProps(state) {
