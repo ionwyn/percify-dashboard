@@ -40,7 +40,7 @@ class PlaybackPage extends Component {
     // set the initial state
     this.state = {
       token:
-        'BQDIzLu0LhuRVLx8_YACaZgyZFITJ0ctydQKT1f4YX30MNnYc_urtTK6xadpv_dQ8Mz5-acce4QSbBbtubBAcKaEVl6JSAc3ObE8pAmyVRyPp-jwSBPpz407I115QAGXiZ0Nd4h4NDKrFSrO5NbbsD9zzgT7V9MkOKZQqQ',
+        'BQD17CDRCAn9hCwhjkZSEkl40qLgCfKRLpD5M2xS1i0o9OiMrm3zNY5fC77e0OxhmHHA6oP3P9x5ZCyfBaRwcZeeoHgK8qkBdDw-K-MfMl0MiSjahTsgALbYwnzmhHi27e4kgwZkFLtWFSSjZEXXf3n2zeVnX1DaeJEHrA',
       deviceId: '',
       loggedIn: false,
       error: '',
