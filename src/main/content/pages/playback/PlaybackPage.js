@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles/index';
 import { Card, CardContent, Grow } from '@material-ui/core';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import IconButton from '@material-ui/core/IconButton';
+import Typography from '@material-ui/core/Typography';
+import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import SkipNextIcon from '@material-ui/icons/SkipNext';
 
 const styles = theme => ({
   root: {
@@ -10,8 +18,19 @@ const styles = theme => ({
     backgroundSize: 'cover'
   },
   card: {
-    width: '100%',
-    maxWidth: 384
+    display: 'block',
+    width: '30vw',
+    transitionDuration: '0.3s',
+    height: '45vw'
+  },
+  controls: {
+    display: 'flex',
+    alignItems: 'center',
+    paddingLeft: theme.spacing.unit,
+    paddingBottom: theme.spacing.unit
+  },
+  content: {
+    flex: '1 0 auto'
   }
 });
 
@@ -20,8 +39,10 @@ class PlaybackPage extends Component {
     super(props);
     // set the initial state
     this.state = {
-      token: '',
+      token:
+        'BQDIzLu0LhuRVLx8_YACaZgyZFITJ0ctydQKT1f4YX30MNnYc_urtTK6xadpv_dQ8Mz5-acce4QSbBbtubBAcKaEVl6JSAc3ObE8pAmyVRyPp-jwSBPpz407I115QAGXiZ0Nd4h4NDKrFSrO5NbbsD9zzgT7V9MkOKZQqQ',
       deviceId: '',
+      loggedIn: false,
       error: '',
       trackName: 'Track Name',
       artistName: 'Artist Name',
@@ -32,6 +53,15 @@ class PlaybackPage extends Component {
     };
     // this will later be set by setInterval
     this.playerCheckInterval = null;
+    this.handleLogin();
+  }
+  handleLogin() {
+    console.log('trying');
+    if (this.state.token !== '') {
+      // change the loggedIn variable, then start checking for the window.Spotify variable
+      this.setState({ loggedIn: true });
+      this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
+    }
   }
 
   // when we receive a new update from the player
@@ -43,19 +73,23 @@ class PlaybackPage extends Component {
         position,
         duration
       } = state.track_window;
+      console.log(currentTrack);
       const trackName = currentTrack.name;
       const albumName = currentTrack.album.name;
       const artistName = currentTrack.artists
         .map(artist => artist.name)
         .join(', ');
       const playing = !state.paused;
+      const trackImg = currentTrack.album.images[0].url || null;
+      console.log(trackImg);
       this.setState({
         position,
         duration,
         trackName,
         albumName,
         artistName,
-        playing
+        playing,
+        trackImg
       });
     } else {
       // state was null, user might have swapped to another device
@@ -96,6 +130,8 @@ class PlaybackPage extends Component {
 
   checkForPlayer() {
     const { token } = this.state;
+
+    console.log(token);
 
     // if the Spotify SDK has loaded
     if (window.Spotify !== null) {
@@ -147,15 +183,19 @@ class PlaybackPage extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, theme } = this.props;
     const {
       token,
       trackName,
       artistName,
       albumName,
       error,
-      playing
+      playing,
+      trackImg
     } = this.state;
+
+    console.log('huehuehue');
+    console.log(trackImg);
 
     return (
       <div
@@ -168,23 +208,40 @@ class PlaybackPage extends Component {
           <Grow in={true}>
             <Card className={classes.card}>
               <CardContent className="flex flex-col items-center justify-center text-center p-48">
-                <img
-                  className="w-128 m-32"
-                  src="assets/images/logos/fuse.svg"
-                  alt="logo"
-                />
-
-                <div>
-                  <p>Artist: {artistName}</p>
-                  <p>Track: {trackName}</p>
-                  <p>Album: {albumName}</p>
-                  <p>
-                    <button onClick={() => this.onPrevClick()}>Previous</button>
-                    <button onClick={() => this.onPlayClick()}>
-                      {playing ? 'Pause' : 'Play'}
-                    </button>
-                    <button onClick={() => this.onNextClick()}>Next</button>
-                  </p>
+                <img src={trackImg} alt="logo" />
+                <CardContent className={classes.content}>
+                  <Typography variant="headline">{trackName}</Typography>
+                  <Typography variant="subheading" color="textSecondary">
+                    {artistName}
+                  </Typography>
+                </CardContent>
+                <div className={classes.controls}>
+                  <IconButton
+                    aria-label="Previous"
+                    onClick={() => this.onPrevClick()}
+                  >
+                    {theme.direction === 'rtl' ? (
+                      <SkipNextIcon />
+                    ) : (
+                      <SkipPreviousIcon />
+                    )}
+                  </IconButton>
+                  <IconButton
+                    aria-label="Play/pause"
+                    onClick={() => this.onPlayClick()}
+                  >
+                    <PlayArrowIcon className={classes.playIcon} />
+                  </IconButton>
+                  <IconButton
+                    aria-label="Next"
+                    onClick={() => this.onNextClick()}
+                  >
+                    {theme.direction === 'rtl' ? (
+                      <SkipPreviousIcon />
+                    ) : (
+                      <SkipNextIcon />
+                    )}
+                  </IconButton>
                 </div>
               </CardContent>
             </Card>
@@ -195,4 +252,13 @@ class PlaybackPage extends Component {
   }
 }
 
-export default withStyles(styles, { withTheme: true })(PlaybackPage);
+function mapStateToProps(state) {
+  return {
+    classes: PropTypes.object.isRequired,
+    theme: PropTypes.object.isRequired
+  };
+}
+
+export default withStyles(styles, { withTheme: true })(
+  withRouter(connect(mapStateToProps)(PlaybackPage))
+);
