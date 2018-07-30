@@ -39,10 +39,10 @@ const styles = theme => ({
 class PlaybackPage extends Component {
   constructor(props) {
     super(props);
+    const aToken = JSON.parse(sessionStorage.getItem('userToken')).access_token;
     // set the initial state
     this.state = {
-      token:
-        'BQBNR2gSO-dnSHVGUKAHaoqPJfmuBiYvJxJYLvZIgYUQJKH-mxIygqOc3yOH_-mRsNQlTCpw8qKmnt8TZL7PkxrXnf20In3CHtHXLOEsIYM6mqh0u_m2jB9rdHraXb7QgGygL_JLvTHPeYm8uiljyULh8CHNXyhz0WEf26z0N72I9Bb3',
+      token: aToken,
       deviceId: '',
       loggedIn: false,
       error: '',
