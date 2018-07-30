@@ -56,19 +56,17 @@ class Home extends Component {
     this.setState({ value });
   };
 
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.props.getToken();
     this.props.getTopTracks();
+    this.props.getTopArtists();
   }
 
   render() {
-    const { classes, topTracks } = this.props;
+    const { classes, topTracks, topArtists } = this.props;
     const { value } = this.state;
-    console.log(topTracks.tracks === undefined);
+
+    console.log(topArtists);
 
     return (
       <FusePageCarded
@@ -194,6 +192,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       getTopTracks: Actions.getTopTracks,
+      getTopArtists: Actions.getTopArtist,
       getToken: Actions.getToken
     },
     dispatch
@@ -202,7 +201,6 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({ userTop }) {
   return {
-    // user: state.spotilogin,
     topTracks: userTop.userTopMetrics
   };
 }

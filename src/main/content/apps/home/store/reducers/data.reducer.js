@@ -32,6 +32,12 @@ const userTopMetrics = function(state = initialState, action) {
       });
     }
 
+    case Actions.SGET_ARTISTS: {
+      return Object.assign({}, state, {
+        artists: Object.assign({}, state, action.data)
+      });
+    }
+
     default: {
       return state;
     }

@@ -28,3 +28,16 @@ export function getTopTracks() {
       });
   };
 }
+
+export function getTopArtist() {
+  return dispatch => {
+    spotifyApi
+      .getMyTopArtists()
+      .then(data => {
+        dispatch({ type: SGET_ARTISTS, data: data });
+      })
+      .catch(e => {
+        dispatch({ type: SGET_FAILURE, error: e });
+      });
+  };
+}
