@@ -48,16 +48,17 @@ const styles = theme => ({
  * ];
  */
 function SingleLineGridList(props) {
-  const { classes } = props;
+  const { classes, userTop } = props;
+  console.log(userTop);
 
   return (
     <div className={classes.root}>
       <GridList cellHeight="auto" className={classes.gridList} cols={2.5}>
-        {tileData.map(tile => (
-          <GridListTile key={tile.img}>
-            <img src={tile.img} alt={tile.title} />
+        {userTop.items.map(tile => (
+          <GridListTile key={tile.album.images[0]}>
+            <img src={tile.album.images[0].url} alt={tile.name} />
             <GridListTileBar
-              title={tile.title}
+              title={tile.name}
               classes={{
                 root: classes.titleBar,
                 title: classes.title
