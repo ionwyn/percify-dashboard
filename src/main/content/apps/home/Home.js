@@ -10,6 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import MenuList from '@material-ui/core/MenuList';
 import MenuItem from '@material-ui/core/MenuItem';
 import SingleLineGridList from 'main/content/components/grid-list/SingleLineGridList';
+import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 
 const styles = theme => ({
   layoutRoot: {},
