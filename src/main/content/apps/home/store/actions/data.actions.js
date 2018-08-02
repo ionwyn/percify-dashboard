@@ -16,12 +16,17 @@ export function getToken() {
   return { type: SGET_TOKENS, accessToken };
 }
 
-export function getTopTracks() {
+export function getTopTracks(timeRange = 'medium_term') {
   return dispatch => {
     spotifyApi
-      .getMyTopTracks()
+      .getMyTopTracks({ time_range: timeRange })
       .then(data => {
-        dispatch({ type: SGET_TRACKS, data: data });
+        let dataItems = data.items.map(function(tile) {
+          let o = Object.assign({}, tile);
+          o.img = tile.album.images[0].url;
+          return o;
+        });
+        dispatch({ type: SGET_TRACKS, data: dataItems });
       })
       .catch(e => {
         dispatch({ type: SGET_FAILURE, error: e });
@@ -29,12 +34,17 @@ export function getTopTracks() {
   };
 }
 
-export function getTopArtist() {
+export function getTopArtist(timeRange = 'medium_term') {
   return dispatch => {
     spotifyApi
-      .getMyTopArtists()
+      .getMyTopArtists({ time_range: timeRange })
       .then(data => {
-        dispatch({ type: SGET_ARTISTS, data: data });
+        let dataItems = data.items.map(function(tile) {
+          let o = Object.assign([], tile);
+          o.img = tile.images[0].url;
+          return o;
+        });
+        dispatch({ type: SGET_ARTISTS, data: dataItems });
       })
       .catch(e => {
         dispatch({ type: SGET_FAILURE, error: e });

@@ -63,10 +63,8 @@ class Home extends Component {
   }
 
   render() {
-    const { classes, topTracks, topArtists } = this.props;
+    const { classes, topTracks } = this.props;
     const { value } = this.state;
-
-    console.log(topArtists);
 
     return (
       <FusePageCarded
@@ -140,6 +138,9 @@ class Home extends Component {
             {value === 1 && (
               <div>
                 <h3 className="mb-16">Your favourite artists</h3>
+                {topTracks.artists !== undefined ? (
+                  <SingleLineGridList userTop={topTracks.artists} />
+                ) : null}
               </div>
             )}
             {value === 2 && (
@@ -162,18 +163,43 @@ class Home extends Component {
         rightSidebarContent={
           <div className={classes.listWrapper}>
             <MenuList className="whitespace-no-wrap">
-              <MenuItem button className={classes.menuItem} key={`all-time`}>
+              <MenuItem
+                button
+                className={classes.menuItem}
+                key={`all-time`}
+                onClick={() => {
+                  this.props.getTopTracks('long_term');
+                  this.props.getTopArtists('long_term');
+                }}
+              >
                 <ListItemText primary={'All time'} disableTypography={true} />
               </MenuItem>
 
-              <MenuItem button className={classes.menuItem} key={`six-months`}>
+              <MenuItem
+                button
+                className={classes.menuItem}
+                key={`six-months`}
+                onClick={() => {
+                  this.props.getTopTracks('medium_term');
+                  this.props.getTopArtists('medium_term');
+                }}
+              >
                 <ListItemText
                   primary={'Past six months'}
                   disableTypography={true}
+                  selected={true}
                 />
               </MenuItem>
 
-              <MenuItem button className={classes.menuItem} key={`one-month`}>
+              <MenuItem
+                button
+                className={classes.menuItem}
+                key={`one-month`}
+                onClick={() => {
+                  this.props.getTopTracks('short_term');
+                  this.props.getTopArtists('short_term');
+                }}
+              >
                 <ListItemText primary={'Past month'} disableTypography={true} />
               </MenuItem>
             </MenuList>

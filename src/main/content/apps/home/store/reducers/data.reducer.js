@@ -28,13 +28,13 @@ const userTopMetrics = function(state = initialState, action) {
 
     case Actions.SGET_TRACKS: {
       return Object.assign({}, state, {
-        tracks: Object.assign({}, state, action.data)
+        tracks: Object.assign([], state, action.data)
       });
     }
 
     case Actions.SGET_ARTISTS: {
       return Object.assign({}, state, {
-        artists: Object.assign({}, state, action.data)
+        artists: Object.assign([], state, action.data)
       });
     }
 
