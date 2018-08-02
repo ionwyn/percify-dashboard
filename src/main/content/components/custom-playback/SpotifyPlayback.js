@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles/index';
-import { withRouter } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
-import { Card, CardContent, Grow } from '@material-ui/core';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
+import { CardContent } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
@@ -39,6 +34,7 @@ class SpotifyPlayback extends Component {
   constructor(props) {
     super(props);
     const aToken = JSON.parse(sessionStorage.getItem('userToken')).access_token;
+
     // set the initial state
     this.state = {
       token: aToken,
@@ -51,12 +47,15 @@ class SpotifyPlayback extends Component {
       position: 0,
       duration: 1
     };
+
     // this will later be set by setInterval
     this.playerCheckInterval = null;
+  }
+
+  componentDidMount() {
     this.handleLogin();
   }
   handleLogin() {
-    console.log('trying');
     if (this.state.token !== '') {
       // change the loggedIn variable, then start checking for the window.Spotify variable
       this.setState({ loggedIn: true });
@@ -73,14 +72,14 @@ class SpotifyPlayback extends Component {
         position,
         duration
       } = state.track_window;
-      console.log(currentTrack);
+
       const trackName = currentTrack.name;
       const artistName = currentTrack.artists
         .map(artist => artist.name)
         .join(', ');
       const playing = !state.paused;
       const trackImg = currentTrack.album.images[0].url || null;
-      console.log(trackImg);
+
       this.setState({
         position,
         duration,
@@ -129,12 +128,11 @@ class SpotifyPlayback extends Component {
   checkForPlayer() {
     const { token } = this.state;
 
-    console.log(token);
-
     // if the Spotify SDK has loaded
     if (window.Spotify !== null) {
       // cancel the interval
       clearInterval(this.playerCheckInterval);
+
       // create a new player
       this.player = new window.Spotify.Player({
         name: 'Intersect Spotify Player',
@@ -143,8 +141,6 @@ class SpotifyPlayback extends Component {
         }
       });
 
-      console.log('THIS IS PLAYER');
-      console.log(this.player);
       // set up the player's event handlers
       this.createEventHandlers();
 
@@ -223,17 +219,4 @@ class SpotifyPlayback extends Component {
   }
 }
 
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators({}, dispatch);
-}
-
-function mapStateToProps(state) {
-  return {
-    classes: PropTypes.object.isRequired,
-    theme: PropTypes.object.isRequired
-  };
-}
-
-export default withStyles(styles, { withTheme: true })(
-  withRouter(connect(mapStateToProps)(SpotifyPlayback))
-);
+export default withStyles(styles, { withTheme: true })(SpotifyPlayback);
