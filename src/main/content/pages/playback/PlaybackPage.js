@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import { Card, Grow } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import SpotifyPlayback from 'main/content/components/custom-playback/SpotifyPlayback';
+import SpotifyPlayback from 'main/content/components/spotify-playback/SpotifyPlayback';
 
 const styles = theme => ({
   root: {
@@ -41,7 +41,7 @@ class PlaybackPage extends Component {
           'flex flex-col flex-auto flex-no-shrink items-center justify-center p-32'
         )}
       >
-        <div className="flex flex-col items-center justify-center w-full">
+        <div className="flex flex-row items-center justify-center w-full">
           <Grow in={true}>
             <Card className={classes.card}>
               <SpotifyPlayback />

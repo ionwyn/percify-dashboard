@@ -161,6 +161,10 @@
   dependencies:
     recompose "^0.26.0 || ^0.27.0"
 
+"@material-ui/lab@^1.0.0-alpha.8":
+  version "1.0.0-alpha.8"
+  resolved "https://registry.yarnpkg.com/@material-ui/lab/-/lab-1.0.0-alpha.8.tgz#4dec1584bb902f6cfd473b9272bf49a0ec8e4f98"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"
