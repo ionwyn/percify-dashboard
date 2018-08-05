@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles/index';
 import { withRouter } from 'react-router-dom';
 import { Card, Grow } from '@material-ui/core';
+import Typography from '@material-ui/core/Typography';
+import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SpotifyPlayback from 'main/content/components/spotify-playback/SpotifyPlayback';
@@ -11,7 +13,8 @@ const styles = theme => ({
   root: {
     background:
       "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    width: 300
   },
   card: {
     display: 'block',
@@ -29,11 +32,45 @@ const styles = theme => ({
     flex: '1 0 auto'
   }
 });
+// <div className="flex flex-row items-center justify-center w-full">
+//   <Grow in={true}>
+//     <Card className={classes.card}>
+//       <SpotifyPlayback />
+//     </Card>
+//   </Grow>
+// </div>
 
 class PlaybackPage extends Component {
+  state = {
+    value: 50,
+    acousticness: 50,
+    danceability: 50,
+    energy: 50,
+    instrumentalness: 50,
+    liveness: 50,
+    speechiness: 50,
+    valence: 50
+  };
+
+  handleChange = (event, value, metrics) => {
+    this.setState({ [metrics]: value });
+  };
+
   render() {
     const { classes } = this.props;
 
+    const metrics = [
+      'acousticness',
+      'danceability',
+      'energy',
+      'instrumentalness',
+      'liveness',
+      'speechiness',
+      'valence'
+    ];
+
+    // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
+    // Either write a constructor that binds your function to 'this', or use arrow function () =>
     return (
       <div
         className={classNames(
@@ -41,13 +78,19 @@ class PlaybackPage extends Component {
           'flex flex-col flex-auto flex-no-shrink items-center justify-center p-32'
         )}
       >
-        <div className="flex flex-row items-center justify-center w-full">
-          <Grow in={true}>
-            <Card className={classes.card}>
-              <SpotifyPlayback />
-            </Card>
-          </Grow>
-        </div>
+        {metrics.map(metrics => (
+          <div key={metrics} className={classes.root}>
+            <Typography id="label">{metrics}</Typography>
+            <Slider
+              id="puta"
+              value={this.state[metrics]}
+              aria-labelledby="label"
+              onChange={(event, value) =>
+                this.handleChange(event, value, metrics)
+              }
+            />
+          </div>
+        ))}
       </div>
     );
   }
