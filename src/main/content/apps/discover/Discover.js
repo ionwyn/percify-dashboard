@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles/index';
+import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import * as Actions from './store/actions';
+import { bindActionCreators } from 'redux';
 import { Card, Grow } from '@material-ui/core';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import tileData from './tileData';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
@@ -29,6 +34,13 @@ const styles = theme => ({
   },
   content: {
     flex: '1 0 auto'
+  },
+  gridList: {
+    width: 500,
+    height: 450
+  },
+  subheader: {
+    width: '100%'
   }
 });
 // <div className="flex flex-row items-center justify-center w-full">
@@ -55,8 +67,21 @@ class Discover extends Component {
     this.setState({ [metrics]: value });
   };
 
+  componentDidMount() {
+    this.props.getToken();
+    this.props.getRecommendation({
+      seed_artists: '4NHQUGzhtTLFvgF5SZesLK',
+      seed_genres: 'classical,country',
+      seed_tracks: '0c6xIDDpzE81m2q797ordA'
+    });
+    console.log(this.props);
+  }
+
   render() {
     const { classes } = this.props;
+
+    console.log(this.props);
+    console.log(this.state);
 
     const metrics = [
       'acousticness',
@@ -90,12 +115,31 @@ class Discover extends Component {
             />
           </div>
         ))}
+        <div className={classes.root}>
+          <GridList cellHeight={160} className={classes.gridList} cols={3}>
+            {tileData.map(tile => (
+              <GridListTile key={tile.img} cols={tile.cols || 1}>
+                <img src={tile.img} alt={tile.title} />
+              </GridListTile>
+            ))}
+          </GridList>
+        </div>
       </div>
     );
   }
 }
 
-function mapStateToProps(state) {
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(
+    {
+      getRecommendation: Actions.getRecommendation,
+      getToken: Actions.getToken
+    },
+    dispatch
+  );
+}
+
+function mapStateToProps() {
   return {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired
@@ -103,5 +147,10 @@ function mapStateToProps(state) {
 }
 
 export default withStyles(styles, { withTheme: true })(
-  withRouter(connect(mapStateToProps)(Discover))
+  withRouter(
+    connect(
+      mapStateToProps,
+      mapDispatchToProps
+    )(Discover)
+  )
 );

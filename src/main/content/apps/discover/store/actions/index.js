@@ -1,1 +1,1 @@
-export * from './data.actions';
+export * from './discover.actions';

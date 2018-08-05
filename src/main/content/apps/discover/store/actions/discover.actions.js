@@ -14,10 +14,24 @@ export function getToken() {
   return { type: SGET_TOKENS, accessToken };
 }
 
-export function getRecommendation() {
+export function getRecommendation(seedObject) {
   return dispatch => {
-    spotifyApi.getRecommendations({ insert_objet }).then(data => {
-      console.log(data);
-    });
+    spotifyApi
+      .getRecommendations(seedObject)
+      .then(data => {
+        // console.log(data);
+        let dataItems = data.tracks.map(function(tile) {
+          // console.log(tile);
+          let o = Object.assign({}, tile);
+          o.img = tile.album.images[0].url;
+          return o;
+        });
+        console.log('sharmoota');
+        dispatch({ type: SGET_RECOMMEND, data: dataItems });
+      })
+      .catch(e => {
+        dispatch({ type: SGET_FAILURE, error: e });
+        console.log('bitch');
+      });
   };
 }
