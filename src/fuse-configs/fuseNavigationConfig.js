@@ -32,6 +32,13 @@ export const fuseNavigationConfig = [
         type: 'item',
         icon: 'view_quilt',
         url: '/pages/playback'
+      },
+      {
+        id: 'Discover',
+        title: 'Discover',
+        type: 'item',
+        icon: 'search',
+        url: '/apps/discover'
       }
     ]
   }

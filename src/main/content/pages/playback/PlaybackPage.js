@@ -32,13 +32,6 @@ const styles = theme => ({
     flex: '1 0 auto'
   }
 });
-// <div className="flex flex-row items-center justify-center w-full">
-//   <Grow in={true}>
-//     <Card className={classes.card}>
-//       <SpotifyPlayback />
-//     </Card>
-//   </Grow>
-// </div>
 
 class PlaybackPage extends Component {
   state = {
@@ -78,19 +71,13 @@ class PlaybackPage extends Component {
           'flex flex-col flex-auto flex-no-shrink items-center justify-center p-32'
         )}
       >
-        {metrics.map(metrics => (
-          <div key={metrics} className={classes.root}>
-            <Typography id="label">{metrics}</Typography>
-            <Slider
-              id="puta"
-              value={this.state[metrics]}
-              aria-labelledby="label"
-              onChange={(event, value) =>
-                this.handleChange(event, value, metrics)
-              }
-            />
-          </div>
-        ))}
+        <div className="flex flex-row items-center justify-center w-full">
+          <Grow in={true}>
+            <Card className={classes.card}>
+              <SpotifyPlayback />
+            </Card>
+          </Grow>
+        </div>
       </div>
     );
   }
