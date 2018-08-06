@@ -16,9 +16,6 @@ import SingleLineItemList from 'main/content/components/item-list/SingleLineItem
 
 const styles = theme => ({
   root: {
-    background:
-      "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
-    backgroundSize: 'cover',
     width: 300
   },
   card: {
@@ -54,27 +51,29 @@ const styles = theme => ({
 
 class Discover extends Component {
   state = {
-    value: 50,
-    acousticness: 50,
-    danceability: 50,
-    energy: 50,
-    instrumentalness: 50,
-    liveness: 50,
-    speechiness: 50,
-    valence: 50
+    value: 0.5,
+    acousticness: 0.5,
+    danceability: 0.5,
+    energy: 0.5,
+    instrumentalness: 0.5,
+    liveness: 0.5,
+    speechiness: 0.5,
+    valence: 0.5
   };
 
   handleChange = (event, value, metrics) => {
     this.setState({ [metrics]: value });
   };
 
+  getNewRecommendation = (event, value, metrics) => {
+    this.props.getRecommendation({
+      seed_genres: 'jazz',
+      [metrics]: value
+    });
+  };
+
   componentDidMount() {
     this.props.getToken();
-    this.props.getRecommendation({
-      seed_artists: '4NHQUGzhtTLFvgF5SZesLK',
-      seed_genres: 'classical,country',
-      seed_tracks: '0c6xIDDpzE81m2q797ordA'
-    });
     console.log(this.props);
   }
 
@@ -110,8 +109,12 @@ class Discover extends Component {
               id="puta"
               value={this.state[metrics]}
               aria-labelledby="label"
+              max={1}
               onChange={(event, value) =>
                 this.handleChange(event, value, metrics)
+              }
+              onDragEnd={(event, value) =>
+                this.getNewRecommendation(event, value, metrics)
               }
             />
           </div>
