@@ -12,6 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 
 const styles = theme => ({
   root: {
@@ -78,9 +79,9 @@ class Discover extends Component {
   }
 
   render() {
-    const { classes } = this.props;
+    const { classes, recommendations } = this.props;
 
-    console.log(this.props);
+    console.log(recommendations);
     console.log(this.state);
 
     const metrics = [
@@ -116,13 +117,11 @@ class Discover extends Component {
           </div>
         ))}
         <div className={classes.root}>
-          <GridList cellHeight={160} className={classes.gridList} cols={3}>
-            {tileData.map(tile => (
-              <GridListTile key={tile.img} cols={tile.cols || 1}>
-                <img src={tile.img} alt={tile.title} />
-              </GridListTile>
-            ))}
-          </GridList>
+          <Card>
+            {recommendations.state !== undefined ? (
+              <SingleLineItemList userTop={recommendations.state} />
+            ) : null}
+          </Card>
         </div>
       </div>
     );
@@ -139,10 +138,11 @@ function mapDispatchToProps(dispatch) {
   );
 }
 
-function mapStateToProps() {
+function mapStateToProps({ userRecommend }) {
   return {
     classes: PropTypes.object.isRequired,
-    theme: PropTypes.object.isRequired
+    theme: PropTypes.object.isRequired,
+    recommendations: userRecommend.userRecommendations
   };
 }
 
