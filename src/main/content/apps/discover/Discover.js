@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as Actions from './store/actions';
 import { bindActionCreators } from 'redux';
-import { Card, Grow } from '@material-ui/core';
+import { Card, Grow, CardContent, Button } from '@material-ui/core';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import tileData from './tileData';
@@ -16,13 +16,13 @@ import SingleLineItemList from 'main/content/components/item-list/SingleLineItem
 
 const styles = theme => ({
   root: {
-    width: 300
+    background:
+      "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
+    backgroundSize: 'cover'
   },
   card: {
-    display: 'block',
-    width: '30vw',
-    transitionDuration: '0.3s',
-    height: '45vw'
+    width: '100%',
+    maxWidth: 400
   },
   controls: {
     display: 'flex',
@@ -93,13 +93,17 @@ class Discover extends Component {
       'valence'
     ];
 
+    const loginTo = process.env.login_to
+      ? process.env.login_to
+      : 'https://spotilogin.herokuapp.com/';
+
     // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
     // Either write a constructor that binds your function to 'this', or use arrow function () =>
     return (
       <div
         className={classNames(
           classes.root,
-          'flex flex-col flex-auto flex-no-shrink items-center justify-center p-32'
+          'flex flex-col flex-1 flex-no-shrink p-24 md:flex-row md:p-0'
         )}
       >
         {metrics.map(metrics => (
@@ -119,13 +123,35 @@ class Discover extends Component {
             />
           </div>
         ))}
-        <div className={classes.root}>
-          <Card>
+        <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
+          <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
+            <img
+              src="assets/images/logos/spotify_logo_with_text.svg"
+              alt="Spotify Logo"
+            />
+            <Button
+              className="px-4"
+              component="a"
+              href={loginTo}
+              target="_self"
+              rel="noreferrer noopener"
+              fullWidth={true}
+              variant="flat"
+            >
+              <img
+                src="assets/images/logos/spotifylogin.svg"
+                alt="Login with Spotify Button"
+              />
+            </Button>
+          </CardContent>
+        </Card>
+        <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
+          <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
             {recommendations.state !== undefined ? (
               <SingleLineItemList userTop={recommendations.state} />
             ) : null}
-          </Card>
-        </div>
+          </CardContent>
+        </Card>
       </div>
     );
   }
