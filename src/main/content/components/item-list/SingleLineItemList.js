@@ -54,6 +54,7 @@ function SingleLineGridList(props) {
           <ListItem key={tile.uri}>
             <img src={tile.img} alt={tile.name} />
             <ListItemText primary={tile.name} />
+            <ListItemText primary={tile.artists[0].name} />
           </ListItem>
         ))}
       </List>
