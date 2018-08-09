@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as Actions from './store/actions';
 import { bindActionCreators } from 'redux';
-import { Card, Grow, CardContent, Button } from '@material-ui/core';
+import { Card, Grow, CardContent, Button, MenuItem } from '@material-ui/core';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import tileData from './tileData';
@@ -13,6 +13,13 @@ import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
+import {
+  TextFieldFormsy,
+  CheckboxFormsy,
+  RadioGroupFormsy,
+  SelectFormsy
+} from '@fuse';
+import Formsy from 'formsy-react';
 
 const styles = theme => ({
   root: {
@@ -39,6 +46,13 @@ const styles = theme => ({
   },
   subheader: {
     width: '100%'
+  },
+  paper: {
+    height: 140,
+    width: 100
+  },
+  control: {
+    padding: theme.spacing.unit * 2
   }
 });
 // <div className="flex flex-row items-center justify-center w-full">
@@ -58,7 +72,8 @@ class Discover extends Component {
     instrumentalness: 0.5,
     liveness: 0.5,
     speechiness: 0.5,
-    valence: 0.5
+    valence: 0.5,
+    spacing: '0'
   };
 
   handleChange = (event, value, metrics) => {
@@ -103,52 +118,89 @@ class Discover extends Component {
       <div
         className={classNames(
           classes.root,
-          'flex flex-col flex-1 flex-no-shrink p-24 md:flex-row md:p-0'
+          'flex flex-col flex-1 flex-no-shrink p-24 md:flex-row md:p-0 mb-4'
         )}
       >
-        {metrics.map(metrics => (
-          <div key={metrics} className={classes.root}>
-            <Typography id="label">{metrics}</Typography>
-            <Slider
-              id="puta"
-              value={this.state[metrics]}
-              aria-labelledby="label"
-              max={1}
-              onChange={(event, value) =>
-                this.handleChange(event, value, metrics)
-              }
-              onDragEnd={(event, value) =>
-                this.getNewRecommendation(event, value, metrics)
-              }
-            />
-          </div>
-        ))}
-        <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
+        <Card
+          className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+        >
+          {metrics.map(metrics => (
+            <div
+              key={metrics}
+              className={classNames(classes.root, 'm-16 p-16')}
+            >
+              <Typography
+                id="label"
+                className="font-sans text-lg text-grey-darkest text-center"
+              >
+                {metrics}
+              </Typography>
+              <Slider
+                id="puta"
+                value={this.state[metrics]}
+                aria-labelledby="label"
+                max={1}
+                onChange={(event, value) =>
+                  this.handleChange(event, value, metrics)
+                }
+                onDragEnd={(event, value) =>
+                  this.getNewRecommendation(event, value, metrics)
+                }
+              />
+            </div>
+          ))}
+        </Card>
+
+        <Card
+          className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+        >
           <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
             <img
               src="assets/images/logos/spotify_logo_with_text.svg"
               alt="Spotify Logo"
             />
-            <Button
-              className="px-4"
-              component="a"
-              href={loginTo}
-              target="_self"
-              rel="noreferrer noopener"
-              fullWidth={true}
-              variant="flat"
+            Adjust the sliders on the left to start finding new tracks. You can
+            also tune your discovery to show tracks that are related to an
+            artist, genre, or track below!
+            <Formsy
+              onValidSubmit={this.onSubmit}
+              onValid={this.enableButton}
+              onInvalid={this.disableButton}
+              ref={form => (this.form = form)}
+              className="flex flex-col justify-center"
             >
-              <img
-                src="assets/images/logos/spotifylogin.svg"
-                alt="Login with Spotify Button"
+              <SelectFormsy
+                className="my-24"
+                name="related"
+                label="Type"
+                value="none"
+              >
+                <MenuItem value="none">
+                  <em>None</em>
+                </MenuItem>
+                <MenuItem value="genre">Genre</MenuItem>
+                <MenuItem value="artist">Artist</MenuItem>
+                <MenuItem value="track">Track</MenuItem>
+              </SelectFormsy>
+              <TextFieldFormsy
+                className="mb-24"
+                type="text"
+                name="name"
+                label="Name"
               />
-            </Button>
+            </Formsy>
           </CardContent>
         </Card>
-        <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
+
+        <Card
+          className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+        >
           <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
             {recommendations.state !== undefined ? (
-              <SingleLineItemList userTop={recommendations.state} />
+              <SingleLineItemList
+                userTop={recommendations.state}
+                className="p-16 mb-16"
+              />
             ) : null}
           </CardContent>
         </Card>
