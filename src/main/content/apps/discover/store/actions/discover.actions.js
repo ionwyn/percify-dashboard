@@ -23,7 +23,7 @@ export function getRecommendation(seedObject) {
         let dataItems = data.tracks.map(function(tile) {
           // console.log(tile);
           let o = Object.assign({}, tile);
-          o.img = tile.album.images[0].url;
+          o.img = tile.album.images[2].url;
           return o;
         });
         console.log('sharmoota');
