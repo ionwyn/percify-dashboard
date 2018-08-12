@@ -20,6 +20,9 @@ import {
   SelectFormsy
 } from '@fuse';
 import Formsy from 'formsy-react';
+import Autosuggest from 'react-autosuggest';
+import TextField from '@material-ui/core/TextField';
+import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
   root: {
@@ -55,26 +58,63 @@ const styles = theme => ({
     padding: theme.spacing.unit * 2
   }
 });
-// <div className="flex flex-row items-center justify-center w-full">
-//   <Grow in={true}>
-//     <Card className={classes.card}>
-//       <SpotifyPlayback />
-//     </Card>
-//   </Grow>
-// </div>
+// Imagine you have a list of languages that you'd like to autosuggest.
+const languages = [
+  {
+    name: 'C',
+    year: 1972
+  },
+  {
+    name: 'Elm',
+    year: 2012
+  }
+];
+
+// This function returns the suggestions, given the current input value.
+function getSuggestions(value) {
+  const inputValue = value.trim().toLowerCase();
+  const inputLength = inputValue.length;
+
+  return inputLength === 0
+    ? []
+    : languages.filter(
+        lang => lang.name.toLowerCase().slice(0, inputLength) === inputValue
+      );
+}
+
+// How each suggested item will be rendered
+function renderSuggestion(suggestion) {
+  return <span>{suggestion.name}</span>;
+}
+
+// What should be the input value (for the textbox), when a suggested item is selected
+function getSuggestionValue(suggestion) {
+  return suggestion.name;
+}
+
+const renderInputComponent = inputProps => (
+  <div>
+    <TextField id="my-custom-input" {...inputProps} />{' '}
+  </div>
+);
 
 class Discover extends Component {
-  state = {
-    value: 0.5,
-    acousticness: 0.5,
-    danceability: 0.5,
-    energy: 0.5,
-    instrumentalness: 0.5,
-    liveness: 0.5,
-    speechiness: 0.5,
-    valence: 0.5,
-    spacing: '0'
-  };
+  constructor() {
+    super();
+    this.state = {
+      value: '',
+      suggestions: [],
+      value: '',
+      acousticness: 0.5,
+      danceability: 0.5,
+      energy: 0.5,
+      instrumentalness: 0.5,
+      liveness: 0.5,
+      speechiness: 0.5,
+      valence: 0.5,
+      spacing: '0'
+    };
+  }
 
   handleChange = (event, value, metrics) => {
     this.setState({ [metrics]: value });
@@ -92,11 +132,35 @@ class Discover extends Component {
     console.log(this.props);
   }
 
+  onChange = (event, { newValue }) => this.setState({ value: newValue });
+
+  // Grab new suggestions and load them into the state
+  onSuggestionsFetchRequested = ({ value }) =>
+    this.setState({ suggestions: getSuggestions(value) });
+
+  // Clear all suggestions
+  onSuggestionsClearRequested = () => this.setState({ suggestions: [] });
+
+  renderSuggestionsContainer = ({ containerProps, children, query }) => {
+    return (
+      <Paper {...containerProps} square>
+        {children}
+      </Paper>
+    );
+  };
+
   render() {
     const { classes, recommendations } = this.props;
 
     console.log(recommendations);
     console.log(this.state);
+
+    const { value, suggestions } = this.state;
+    const inputProps = {
+      placeholder: 'Type something',
+      onChange: this.onChange,
+      value
+    };
 
     const metrics = [
       'acousticness',
@@ -187,6 +251,16 @@ class Discover extends Component {
                 type="text"
                 name="name"
                 label="Name"
+              />
+              <Autosuggest
+                suggestions={suggestions}
+                onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
+                onSuggestionsClearRequested={this.onSuggestionsClearRequested}
+                getSuggestionValue={getSuggestionValue}
+                renderSuggestion={renderSuggestion}
+                renderInputComponent={renderInputComponent}
+                inputProps={inputProps}
+                renderSuggestionsContainer={this.renderSuggestionsContainer}
               />
             </Formsy>
           </CardContent>
