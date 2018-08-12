@@ -30,7 +30,7 @@
         "qs": "6.5.2",
         "raw-loader": "0.5.1",
         "react": "16.4.1",
-        "react-autosuggest": "9.3.4",
+        "react-autosuggest": "^9.3.4",
         "react-big-calendar": "0.19.1",
         "react-chartjs-2": "2.7.2",
         "react-dnd": "2.6.0",
