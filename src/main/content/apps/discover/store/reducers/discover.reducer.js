@@ -32,6 +32,12 @@ const userRecommendations = function(state = initialState, action) {
       });
     }
 
+    case Actions.SGET_SUGGESTIONS_SUCCESS: {
+      return Object.assign({}, state, {
+        state: Object.assign([], state, action.data)
+      });
+    }
+
     // currently no failure state :(
     case Actions.SGET_FAILURE: {
       return state;
