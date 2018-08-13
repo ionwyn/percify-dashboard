@@ -169,10 +169,6 @@ class Discover extends Component {
       'valence'
     ];
 
-    const loginTo = process.env.login_to
-      ? process.env.login_to
-      : 'https://spotilogin.herokuapp.com/';
-
     // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
     // Either write a constructor that binds your function to 'this', or use arrow function () =>
     return (
