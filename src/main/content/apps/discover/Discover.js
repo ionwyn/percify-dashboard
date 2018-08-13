@@ -94,7 +94,7 @@ function getSuggestionValue(suggestion) {
 
 const renderInputComponent = inputProps => (
   <div>
-    <TextField id="my-custom-input" {...inputProps} />{' '}
+    <TextField {...inputProps} />
   </div>
 );
 
@@ -112,7 +112,8 @@ class Discover extends Component {
       liveness: 0.5,
       speechiness: 0.5,
       valence: 0.5,
-      spacing: '0'
+      spacing: '0',
+      seed_type: ''
     };
   }
 
@@ -129,35 +130,31 @@ class Discover extends Component {
 
   componentDidMount() {
     this.props.getToken();
-    console.log(this.props);
   }
 
-  onChange = (event, { newValue }) => this.setState({ value: newValue });
+  onChange = (event, { newValue }) => {
+    this.setState({ value: newValue });
+    this.props.getSuggestion(newValue, ['artist']);
+  };
 
   // Grab new suggestions and load them into the state
   onSuggestionsFetchRequested = ({ value }) =>
-    this.setState({ suggestions: getSuggestions(value) });
+    this.setState({ suggestions: this.props.recommendations.bitch });
 
   // Clear all suggestions
   onSuggestionsClearRequested = () => this.setState({ suggestions: [] });
 
   renderSuggestionsContainer = ({ containerProps, children, query }) => {
-    return (
-      <Paper {...containerProps} square>
-        {children}
-      </Paper>
-    );
+    return <Paper {...containerProps}>{children}</Paper>;
   };
 
   render() {
     const { classes, recommendations } = this.props;
-
     console.log(recommendations);
-    console.log(this.state);
 
     const { value, suggestions } = this.state;
     const inputProps = {
-      placeholder: 'Type something',
+      placeholder: 'Input artist',
       onChange: this.onChange,
       value
     };
@@ -287,7 +284,8 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       getRecommendation: Actions.getRecommendation,
-      getToken: Actions.getToken
+      getToken: Actions.getToken,
+      getSuggestion: Actions.getSuggestions
     },
     dispatch
   );

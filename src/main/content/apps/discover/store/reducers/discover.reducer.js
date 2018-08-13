@@ -16,7 +16,8 @@ const initialState = {
     product: null,
     type: null,
     uri: null
-  }
+  },
+  bitch: []
 };
 
 const userRecommendations = function(state = initialState, action) {
@@ -33,8 +34,9 @@ const userRecommendations = function(state = initialState, action) {
     }
 
     case Actions.SGET_SUGGESTIONS_SUCCESS: {
+      console.log(action.data);
       return Object.assign({}, state, {
-        state: Object.assign([], state, action.data)
+        bitch: action.data
       });
     }
 

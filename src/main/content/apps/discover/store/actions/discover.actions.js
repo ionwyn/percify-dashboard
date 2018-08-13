@@ -1,4 +1,5 @@
 import Spotify from 'spotify-web-api-js';
+import _ from 'lodash';
 
 const spotifyApi = new Spotify();
 
@@ -38,21 +39,22 @@ export function getRecommendation(seedObject) {
   };
 }
 
-export function getSuggestions(value) {
+export function getSuggestions(value, search_type) {
   const inputValue = value.trim().toLowerCase();
   const inputLength = inputValue.length;
 
-  return dispatch => {
+  return async dispatch => {
     spotifyApi
-      .search(inputValue + '*')
+      .search(inputValue + '*', search_type, { limit: 5 })
       .then(data => {
-        const dataItems = data;
-        console.log(dataItems);
+        let dataItems = _.map(data.artists.items, object => {
+          return _.pick(object, ['name']);
+        });
         dispatch({ type: SGET_SUGGESTIONS_SUCCESS, data: dataItems });
       })
       .catch(e => {
+        console.log('bitch slap');
         dispatch({ type: SGET_SUGGESTIONS_FAILURE });
-        console.log('oiaosdiasdnk');
       });
   };
 }
