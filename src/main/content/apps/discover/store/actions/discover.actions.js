@@ -23,7 +23,7 @@ export function getRecommendation(seedObject) {
       .getRecommendations(seedObject)
       .then(data => {
         // console.log(data);
-        let dataItems = data.tracks.map(function(tile) {
+        let dataItems = data.tracks.map(tile => {
           // console.log(tile);
           let o = Object.assign({}, tile);
           o.img = tile.album.images[2].url;
