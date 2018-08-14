@@ -36,7 +36,7 @@ export function getMyInfo() {
         sessionStorage.setItem('userData', JSON.stringify(data));
 
         // Send data to some component as props
-        dispatch({ type: SPOTIFY_ME_SUCCESS, data: data });
+        dispatch({ type: SPOTIFY_ME_SUCCESS, data });
       })
       .catch(e => {
         dispatch({ type: SPOTIFY_ME_FAILURE, error: e });

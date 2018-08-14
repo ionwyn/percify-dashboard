@@ -75,7 +75,7 @@ class SpotifyPlayback extends Component {
 
       const trackName = currentTrack.name;
       const artistName = currentTrack.artists
-        .map(artist => artist.name)
+        .map(({ name }) => name)
         .join(', ');
       const playing = !state.paused;
       const trackImg = currentTrack.album.images[0].url || null;

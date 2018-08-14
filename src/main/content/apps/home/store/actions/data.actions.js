@@ -20,8 +20,8 @@ export function getTopTracks(timeRange = 'medium_term') {
   return dispatch => {
     spotifyApi
       .getMyTopTracks({ time_range: timeRange })
-      .then(data => {
-        let dataItems = data.items.map(function(tile) {
+      .then(({ items }) => {
+        let dataItems = items.map(tile => {
           let o = Object.assign({}, tile);
           o.img = tile.album.images[0].url;
           return o;
@@ -38,8 +38,8 @@ export function getTopArtist(timeRange = 'medium_term') {
   return dispatch => {
     spotifyApi
       .getMyTopArtists({ time_range: timeRange })
-      .then(data => {
-        let dataItems = data.items.map(function(tile) {
+      .then(({ items }) => {
+        let dataItems = items.map(tile => {
           let o = Object.assign([], tile);
           o.img = tile.images[0].url;
           return o;
