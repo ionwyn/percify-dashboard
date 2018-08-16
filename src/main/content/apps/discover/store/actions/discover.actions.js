@@ -41,7 +41,6 @@ export function getRecommendation(seedObject) {
 
 export function getSuggestions(value, search_type) {
   const inputValue = value.trim().toLowerCase();
-  const inputLength = inputValue.length;
 
   return async dispatch => {
     spotifyApi

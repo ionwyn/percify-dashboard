@@ -4,21 +4,14 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as Actions from './store/actions';
 import { bindActionCreators } from 'redux';
-import { Card, Grow, CardContent, Button, MenuItem } from '@material-ui/core';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
+import { Card, CardContent, MenuItem } from '@material-ui/core';
 import tileData from './tileData';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
-import {
-  TextFieldFormsy,
-  CheckboxFormsy,
-  RadioGroupFormsy,
-  SelectFormsy
-} from '@fuse';
+import { TextFieldFormsy, SelectFormsy } from '@fuse';
 import Formsy from 'formsy-react';
 import Autosuggest from 'react-autosuggest';
 import TextField from '@material-ui/core/TextField';
@@ -58,29 +51,6 @@ const styles = theme => ({
     padding: theme.spacing.unit * 2
   }
 });
-// Imagine you have a list of languages that you'd like to autosuggest.
-const languages = [
-  {
-    name: 'C',
-    year: 1972
-  },
-  {
-    name: 'Elm',
-    year: 2012
-  }
-];
-
-// This function returns the suggestions, given the current input value.
-function getSuggestions(value) {
-  const inputValue = value.trim().toLowerCase();
-  const inputLength = inputValue.length;
-
-  return inputLength === 0
-    ? []
-    : languages.filter(
-        lang => lang.name.toLowerCase().slice(0, inputLength) === inputValue
-      );
-}
 
 // How each suggested item will be rendered
 function renderSuggestion(suggestion) {

@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { withStyles } from '@material-ui/core/styles/index';
 import { withRouter } from 'react-router-dom';
 import { Card, Grow } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
-import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SpotifyPlayback from 'main/content/components/spotify-playback/SpotifyPlayback';
@@ -45,22 +43,8 @@ class PlaybackPage extends Component {
     valence: 50
   };
 
-  handleChange = (event, value, metrics) => {
-    this.setState({ [metrics]: value });
-  };
-
   render() {
     const { classes } = this.props;
-
-    const metrics = [
-      'acousticness',
-      'danceability',
-      'energy',
-      'instrumentalness',
-      'liveness',
-      'speechiness',
-      'valence'
-    ];
 
     // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
     // Either write a constructor that binds your function to 'this', or use arrow function () =>
