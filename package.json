@@ -13,6 +13,7 @@
         "chart.js": "2.7.2",
         "dataframe-js": "^1.3.2",
         "downshift": "2.0.0",
+        "eslint": "^5.3.0",
         "firebase": "5.0.4",
         "formsy-react": "1.1.4",
         "google-map-react": "1.0.4",

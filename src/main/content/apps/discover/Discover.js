@@ -62,15 +62,14 @@ function getSuggestionValue(suggestion) {
   return suggestion.name;
 }
 
-const renderInputComponent = inputProps => (
-  <div>
-    <TextField {...inputProps} />
-  </div>
-);
+function renderInputComponent(inputProps) {
+  return <TextField {...inputProps} />;
+}
 
 class Discover extends Component {
   constructor() {
     super();
+    renderInputComponent;
     this.state = {
       value: '',
       suggestions: [],
@@ -83,12 +82,19 @@ class Discover extends Component {
       speechiness: 0.5,
       valence: 0.5,
       spacing: '0',
-      seed_type: ''
+      seed_type: '',
+      blah: ''
     };
   }
 
   handleChange = (event, value, metrics) => {
     this.setState({ [metrics]: value });
+  };
+
+  handleTypeChange = event => {
+    console.log('bruh...');
+    console.log(event);
+    // do shit with event
   };
 
   getNewRecommendation = (event, value, metrics) => {
@@ -201,6 +207,7 @@ class Discover extends Component {
                 name="related"
                 label="Type"
                 value="none"
+                onChange={this.handleTypeChange}
               >
                 <MenuItem value="none">
                   <em>None</em>
