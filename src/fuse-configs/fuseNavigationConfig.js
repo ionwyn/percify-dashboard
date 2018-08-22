@@ -39,6 +39,13 @@ export const fuseNavigationConfig = [
         type: 'item',
         icon: 'search',
         url: '/apps/discover'
+      },
+      {
+        id: 'file-manager',
+        title: 'File Manager',
+        type: 'item',
+        icon: 'folder',
+        url: '/apps/file-manager'
       }
     ]
   }
