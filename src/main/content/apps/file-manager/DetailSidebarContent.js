@@ -73,12 +73,12 @@ class DetailSidebarContent extends Component {
           <table className={classes.table}>
             <tbody>
               <tr className="type">
-                <th>Type</th>
+                <th>Artist</th>
                 <td>{selected.type}</td>
               </tr>
 
               <tr className="size">
-                <th>Size</th>
+                <th>BPM</th>
                 <td>{selected.size === '' ? '-' : selected.size}</td>
               </tr>
 
@@ -88,17 +88,17 @@ class DetailSidebarContent extends Component {
               </tr>
 
               <tr className="owner">
-                <th>Owner</th>
+                <th>Genre</th>
                 <td>{selected.owner}</td>
               </tr>
 
               <tr className="modified">
-                <th>Modified</th>
+                <th>Key</th>
                 <td>{selected.modified}</td>
               </tr>
 
               <tr className="opened">
-                <th>Opened</th>
+                <th>Played</th>
                 <td>{selected.opened}</td>
               </tr>
 

@@ -50,13 +50,13 @@ class FileList extends Component {
           <TableHead>
             <TableRow>
               <TableCell className="max-w-64 w-64 p-0 text-center"> </TableCell>
-              <TableCell>Name</TableCell>
-              <TableCell className="hidden sm:table-cell">Type</TableCell>
-              <TableCell className="hidden sm:table-cell">Owner</TableCell>
+              <TableCell>Track</TableCell>
+              <TableCell className="hidden sm:table-cell">Artist</TableCell>
+              <TableCell className="hidden sm:table-cell">Genre</TableCell>
               <TableCell className="text-center hidden sm:table-cell">
-                Size
+                BPM
               </TableCell>
-              <TableCell className="hidden sm:table-cell">Modified</TableCell>
+              <TableCell className="hidden sm:table-cell">Key</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -70,7 +70,9 @@ class FileList extends Component {
                   className="cursor-pointer"
                 >
                   <TableCell className="max-w-64 w-64 p-0 text-center">
-                    <Icon className={classNames(classes.typeIcon, n.type)} />
+                    <Icon className={classNames(classes.typeIcon, n.type)}>
+                      play_circle_outline
+                    </Icon>
                   </TableCell>
                   <TableCell>{n.name}</TableCell>
                   <TableCell className="hidden sm:table-cell">

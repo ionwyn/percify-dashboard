@@ -42,7 +42,7 @@ export const fuseNavigationConfig = [
       },
       {
         id: 'file-manager',
-        title: 'File Manager',
+        title: 'My Music',
         type: 'item',
         icon: 'folder',
         url: '/apps/file-manager'

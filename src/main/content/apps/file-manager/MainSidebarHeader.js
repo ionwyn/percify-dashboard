@@ -15,9 +15,9 @@ class MainSidebarHeader extends Component {
       <div
         className={classNames(classes.root, 'flex items-center h-full p-12')}
       >
-        <Icon>folder</Icon>
+        <Icon>library_music</Icon>
         <Typography variant="title" className="ml-12">
-          File Manager
+          My Music
         </Typography>
       </div>
     );

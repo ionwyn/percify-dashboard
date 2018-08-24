@@ -5,7 +5,6 @@ import { withRouter } from 'react-router-dom';
 import * as Actions from './store/actions';
 import { bindActionCreators } from 'redux';
 import { Card, CardContent, MenuItem } from '@material-ui/core';
-import tileData from './tileData';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
@@ -69,11 +68,9 @@ function renderInputComponent(inputProps) {
 class Discover extends Component {
   constructor() {
     super();
-    renderInputComponent;
     this.state = {
       value: '',
       suggestions: [],
-      value: '',
       acousticness: 0.5,
       danceability: 0.5,
       energy: 0.5,

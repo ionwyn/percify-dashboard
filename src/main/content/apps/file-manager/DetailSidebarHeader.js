@@ -30,12 +30,12 @@ class DetailSidebarHeader extends Component {
         <div className="toolbar flex align-center justify-end">
           <FuseAnimate animation="transition.expandIn" delay={200}>
             <IconButton>
-              <Icon>delete</Icon>
+              <Icon>playlist_add</Icon>
             </IconButton>
           </FuseAnimate>
           <FuseAnimate animation="transition.expandIn" delay={200}>
             <IconButton>
-              <Icon>file_download</Icon>
+              <Icon>share</Icon>
             </IconButton>
           </FuseAnimate>
           <IconButton>

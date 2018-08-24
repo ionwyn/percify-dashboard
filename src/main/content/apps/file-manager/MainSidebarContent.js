@@ -20,27 +20,21 @@ class MainSidebarContent extends Component {
       <List component="nav" className={classes.root}>
         <ListItem button>
           <ListItemIcon>
-            <Icon>folder</Icon>
+            <Icon>access_time</Icon>
           </ListItemIcon>
-          <ListItemText primary="My Music" />
+          <ListItemText primary="Listening History" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <Icon>star</Icon>
           </ListItemIcon>
-          <ListItemText primary="Starred" />
+          <ListItemText primary="Liked" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
             <Icon>folder_shared</Icon>
           </ListItemIcon>
-          <ListItemText primary="Sharred with me" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <Icon>access_time</Icon>
-          </ListItemIcon>
-          <ListItemText primary="Recent" />
+          <ListItemText primary="Shared with me" />
         </ListItem>
         <ListItem button>
           <ListItemIcon>
