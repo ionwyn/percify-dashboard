@@ -1,6 +1,6 @@
 const fuseSettingsConfig = {
   layout: {
-    style: 'layout1',
+    style: 'layout2',
     config: {
       scroll: 'content',
       navbar: {
@@ -23,7 +23,7 @@ const fuseSettingsConfig = {
   },
   customScrollbars: true,
   theme: {
-    main: 'default',
+    main: 'slate',
     navbar: 'mainThemeDark',
     toolbar: 'mainThemeDark',
     footer: 'mainThemeDark'

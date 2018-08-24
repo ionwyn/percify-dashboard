@@ -26,7 +26,7 @@ function MainNavbarHeader({ classes }) {
           alt="logo"
         />
         <Typography className="text-20 ml-8 font-light logo-text">
-          MUSES
+          INTERSECT
         </Typography>
       </div>
     </div>
