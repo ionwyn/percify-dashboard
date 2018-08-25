@@ -23,6 +23,7 @@ const styles = theme => ({
     height: 64
   },
   menuItem: {
+    textDecoration: 'none!important',
     '&:focus': {
       backgroundColor: theme.palette.primary.main,
       '& $primary, & $icon': {
@@ -75,9 +76,6 @@ class Home extends Component {
         header={
           <div className="flex flex-col flex-1">
             <div className="flex items-center py-24">
-              <div className="flex-1">
-                <h4>Header</h4>
-              </div>
               <Hidden lgUp>
                 <IconButton
                   onClick={ev => this.pageLayout.toggleRightSidebar()}
@@ -155,11 +153,7 @@ class Home extends Component {
             )}
           </div>
         }
-        rightSidebarHeader={
-          <div className="p-24">
-            <h4>Sidebar Header</h4>
-          </div>
-        }
+        rightSidebarHeader={<div className="p-24" />}
         rightSidebarContent={
           <div className={classes.listWrapper}>
             <MenuList className="whitespace-no-wrap">
