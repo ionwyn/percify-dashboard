@@ -7,46 +7,31 @@ export const fuseNavigationConfig = [
     url: '/home'
   },
   {
-    id: 'applications',
-    title: 'Applications',
-    type: 'group',
-    icon: 'apps',
-    children: [
-      {
-        id: 'dashboards',
-        title: 'Dashboards',
-        type: 'collapse',
-        icon: 'dashboard',
-        children: [
-          {
-            id: 'analytics-dashboard',
-            title: 'Analytics',
-            type: 'item',
-            url: '/apps/dashboards/analytics'
-          }
-        ]
-      },
-      {
-        id: 'playbackPage',
-        title: 'Playback',
-        type: 'item',
-        icon: 'view_quilt',
-        url: '/pages/playback'
-      },
-      {
-        id: 'Discover',
-        title: 'Discover',
-        type: 'item',
-        icon: 'search',
-        url: '/apps/discover'
-      },
-      {
-        id: 'file-manager',
-        title: 'My Music',
-        type: 'item',
-        icon: 'folder',
-        url: '/apps/file-manager'
-      }
-    ]
+    id: 'analytics-dashboard',
+    title: 'Analytics',
+    icon: 'assessment',
+    type: 'item',
+    url: '/apps/dashboards/analytics'
+  },
+  {
+    id: 'playbackPage',
+    title: 'Playback',
+    type: 'item',
+    icon: 'graphic_eq',
+    url: '/pages/playback'
+  },
+  {
+    id: 'Discover',
+    title: 'Discover',
+    type: 'item',
+    icon: 'search',
+    url: '/apps/discover'
+  },
+  {
+    id: 'file-manager',
+    title: 'My Music',
+    type: 'item',
+    icon: 'folder',
+    url: '/apps/file-manager'
   }
 ];
