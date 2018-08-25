@@ -1,6 +1,6 @@
 import axios from 'axios/index';
 
-export const GET_FILES = '[FILE MANAGER APP] GET FILES';
+export const GET_TRACKS = '[FILE MANAGER APP] GET FILES';
 
 export function getFiles() {
   const request = axios.get('/api/file-manager-app/files');
@@ -8,7 +8,7 @@ export function getFiles() {
   return dispatch =>
     request.then(response =>
       dispatch({
-        type: GET_FILES,
+        type: GET_TRACKS,
         payload: response.data
       })
     );

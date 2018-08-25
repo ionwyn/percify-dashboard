@@ -3,7 +3,7 @@ import _ from 'lodash';
 
 const filesReducer = function(state = {}, action) {
   switch (action.type) {
-    case Actions.GET_FILES:
+    case Actions.GET_TRACKS:
       return _.keyBy(action.payload, 'id');
     default:
       return state;

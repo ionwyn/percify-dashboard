@@ -70,22 +70,22 @@ class FileList extends Component {
                   className="cursor-pointer"
                 >
                   <TableCell className="max-w-64 w-64 p-0 text-center">
-                    <Icon className={classNames(classes.typeIcon, n.type)}>
+                    <Icon className={classNames(classes.typeIcon, n.artist)}>
                       play_circle_outline
                     </Icon>
                   </TableCell>
-                  <TableCell>{n.name}</TableCell>
+                  <TableCell>{n.track}</TableCell>
                   <TableCell className="hidden sm:table-cell">
-                    {n.type}
+                    {n.artist}
                   </TableCell>
                   <TableCell className="hidden sm:table-cell">
-                    {n.owner}
+                    {n.genre}
                   </TableCell>
                   <TableCell className="text-center hidden sm:table-cell">
                     {n.size === '' ? '-' : n.size}
                   </TableCell>
                   <TableCell className="hidden sm:table-cell">
-                    {n.modified}
+                    {n.key}
                   </TableCell>
                   <Hidden lgUp>
                     <TableCell>
