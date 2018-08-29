@@ -74,12 +74,12 @@ class DetailSidebarContent extends Component {
             <tbody>
               <tr className="type">
                 <th>Artist</th>
-                <td>{selected.type}</td>
+                <td>{selected.artist}</td>
               </tr>
 
               <tr className="size">
                 <th>BPM</th>
-                <td>{selected.size === '' ? '-' : selected.size}</td>
+                <td>{selected.bpm === '' ? '-' : selected.bpm}</td>
               </tr>
 
               <tr className="location">
@@ -89,22 +89,17 @@ class DetailSidebarContent extends Component {
 
               <tr className="owner">
                 <th>Genre</th>
-                <td>{selected.owner}</td>
+                <td>{selected.genre}</td>
               </tr>
 
               <tr className="modified">
                 <th>Key</th>
-                <td>{selected.modified}</td>
+                <td>{selected.key}</td>
               </tr>
 
               <tr className="opened">
                 <th>Played</th>
                 <td>{selected.opened}</td>
-              </tr>
-
-              <tr className="created">
-                <th>Created</th>
-                <td>{selected.created}</td>
               </tr>
             </tbody>
           </table>
