@@ -51,7 +51,7 @@ class DetailSidebarHeader extends Component {
           </FuseAnimate>
           <FuseAnimate delay={300}>
             <Typography variant="caption" className="">
-              <span>Edited</span>
+              <span>Playlist</span>
               <span>: {selected.modified}</span>
             </Typography>
           </FuseAnimate>

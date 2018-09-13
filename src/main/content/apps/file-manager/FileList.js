@@ -82,7 +82,7 @@ class FileList extends Component {
                     {n.genre}
                   </TableCell>
                   <TableCell className="text-center hidden sm:table-cell">
-                    {n.size === '' ? '-' : n.size}
+                    {n.bpm === '' ? '-' : n.bpm}
                   </TableCell>
                   <TableCell className="hidden sm:table-cell">
                     {n.key}
