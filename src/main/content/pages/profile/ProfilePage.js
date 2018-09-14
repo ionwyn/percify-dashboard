@@ -46,6 +46,7 @@ class ProfilePage extends Component {
   render() {
     const { classes, user } = this.props;
     const { value } = this.state;
+    console.log(user);
 
     return (
       <FusePageSimple
@@ -58,7 +59,10 @@ class ProfilePage extends Component {
           <div className="p-24 flex flex-1 flex-col items-center justify-center md:flex-row md:items-end">
             <div className="flex flex-1 flex-col items-center justify-center md:flex-row md:items-center md:justify-start">
               <FuseAnimate animation="transition.expandIn" delay={300}>
-                <Avatar className="w-96 h-96" src={user.images[0].url} />
+                <Avatar
+                  className="w-96 h-96"
+                  src={user.images[0] ? user.images[0].url : user.images[0]}
+                />
               </FuseAnimate>
               <FuseAnimate animation="transition.slideLeftIn" delay={300}>
                 <Typography
@@ -66,7 +70,7 @@ class ProfilePage extends Component {
                   variant="display1"
                   color="inherit"
                 >
-                  {user.display_name}
+                  {user.display_name ? user.display_name : user.id}
                 </Typography>
               </FuseAnimate>
             </div>
