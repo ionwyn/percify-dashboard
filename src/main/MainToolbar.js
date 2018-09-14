@@ -52,13 +52,13 @@ class MainToolbar extends Component {
     return (
       <div className={classNames(classes.root, 'flex flex-row')}>
         <div className="flex flex-1 px-24">
-          <Typography>a Music Analytics Application</Typography>
+          <Typography />
         </div>
 
         <div className="flex">
           <FuseAnimate delay={300}>
             <Button className="h-64" onClick={this.userMenuClick}>
-              {user.images[0].url ? (
+              {user.images[0] ? (
                 <Avatar
                   className=""
                   alt="user photo"
