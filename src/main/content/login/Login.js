@@ -101,7 +101,10 @@ class Login extends Component {
               color="inherit"
               className="max-w-512 mt-16"
             >
-              Your music, your data, you.
+              An independent project to facilitate analysis and discovery for
+              popular music platforms. The project is built with React with
+              Redux and Apollo for state management. Current progress is
+              integration with AWS Lambda, API Gateway, and Firebase.""
             </Typography>
           </FuseAnimate>
         </div>
