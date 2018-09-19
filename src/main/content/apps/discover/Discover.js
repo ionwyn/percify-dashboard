@@ -159,10 +159,7 @@ class Discover extends Component {
               key={metrics}
               className={classNames(classes.root, 'm-16 p-16')}
             >
-              <Typography
-                id="label"
-                className="font-sans text-lg text-grey-darkest text-center"
-              >
+              <Typography id="label" className="p-16 pb-8 text-18 font-300">
                 {metrics}
               </Typography>
               <Slider
