@@ -23,7 +23,7 @@ const fuseSettingsConfig = {
   },
   customScrollbars: true,
   theme: {
-    main: 'defaultDark',
+    main: 'slate',
     navbar: 'mainThemeDark',
     toolbar: 'mainThemeDark',
     footer: 'mainThemeDark'
