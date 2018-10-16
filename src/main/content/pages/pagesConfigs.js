@@ -23,6 +23,7 @@ import { ModernSearchPageConfig } from 'main/content/pages/search/modern/ModernS
 import { FaqPageConfig } from 'main/content/pages/faq/FaqPageConfig';
 import { KnowledgeBasePageConfig } from 'main/content/pages/knowledge-base/KnowledgeBaseConfig';
 import { PlaybackPageConfig } from 'main/content/pages/playback/PlaybackPageConfig';
+import { PantherPageConfig } from 'main/content/pages/panther-audio/PantherPageConfig';
 
 export const pagesConfigs = [
   LoginPageConfig,
@@ -49,5 +50,6 @@ export const pagesConfigs = [
   ModernSearchPageConfig,
   FaqPageConfig,
   KnowledgeBasePageConfig,
-  PlaybackPageConfig
+  PlaybackPageConfig,
+  PantherPageConfig
 ];
