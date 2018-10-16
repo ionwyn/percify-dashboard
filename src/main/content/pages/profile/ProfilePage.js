@@ -104,13 +104,13 @@ class ProfilePage extends Component {
               classes={{
                 root: classes.tabRoot
               }}
-              label="Photos & Videos"
+              label="My Photos & Videos"
             />
             <Tab
               classes={{
                 root: classes.tabRoot
               }}
-              label="Playlist"
+              label="My Playlist"
             />
           </Tabs>
         }
