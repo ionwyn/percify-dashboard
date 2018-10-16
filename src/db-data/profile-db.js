@@ -83,10 +83,11 @@ const profileDB = {
           name: 'Garry Newman',
           avatar: 'assets/images/avatars/garry.jpg'
         },
-        message: '(Vanilla - Swept Away) all the way!',
+        message: 'I just heard your new track!  Good stuff!',
         time: '32 minutes ago',
         type: 'post',
         like: 5,
+        url: 'https://soundcloud.com/ionwyn/turtle-shell',
         share: 21,
         media: {
           type: 'image',
@@ -101,7 +102,7 @@ const profileDB = {
             },
             time: 'June 10,  2018',
             message:
-              'That’s a wonderful place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat.'
+              'Haha I remember you made this while you were studying for finals!'
           }
         ]
       },
@@ -113,8 +114,9 @@ const profileDB = {
         },
         message: 'Hey, man! Check this, it’s pretty awesome!',
         time: 'June 12,  2018',
-        type: 'article',
+        type: 'something',
         like: 98,
+        url: 'https://www.youtube.com/watch?v=CpgxR_P5zs0',
         share: 6,
         article: {
           title: 'The Fallout 4 Pip-Boy Edition Is Back In Stock Now',
@@ -134,8 +136,7 @@ const profileDB = {
               avatar: 'assets/images/avatars/alice.jpg'
             },
             time: 'June 10,  2018',
-            message:
-              'That’s a wonderful place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat.'
+            message: 'Great song!'
           }
         ]
       },
@@ -146,10 +147,11 @@ const profileDB = {
           avatar: 'assets/images/avatars/carl.jpg'
         },
         message:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat. Aenean lorem ex, ultrices sit amet ligula sed...',
+          'One of the best performances by Snarky Puppy!  That Cory solo!',
         time: 'June 10,  2018',
         type: 'something',
         like: 4,
+        url: 'https://www.youtube.com/watch?v=lh0suC6pehc',
         share: 1
       }
     ]

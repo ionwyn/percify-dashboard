@@ -23,6 +23,7 @@ import {
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 import { FuseAnimateGroup } from '@fuse';
+import ReactPlayer from 'react-player';
 
 const styles = theme => ({
   root: {}
@@ -136,28 +137,30 @@ class TimelineTab extends Component {
                       </Typography>
                     )}
 
-                    {post.media && <img src={post.media.preview} alt="post" />}
+                    <ReactPlayer url={post.url} playing={false} />
 
                     {post.article && (
-                      <div className="border-1">
-                        <img
-                          className="w-full border-b-1"
-                          src={post.article.media.preview}
-                          alt="article"
-                        />
-                        <div className="p-16">
-                          <Typography variant="subheading">
-                            {post.article.title}
-                          </Typography>
-                          <Typography variant="caption">
-                            {post.article.subtitle}
-                          </Typography>
-                          <Typography className="mt-16">
-                            {post.article.excerpt}
-                          </Typography>
+                        <div className="border-1">
+                          <img
+                            className="w-full border-b-1"
+                            src={post.article.media.preview}
+                            alt="article"
+                          />
+                          <div className="p-16">
+                            <Typography variant="subheading">
+                              {post.article.title}
+                            </Typography>
+                            <Typography variant="caption">
+                              {post.article.subtitle}
+                            </Typography>
+                            <Typography className="mt-16">
+                              {post.article.excerpt}
+                            </Typography>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                        // remove && 0 to make sure this component is rendered
+                      ) &&
+                      0}
                   </CardContent>
 
                   <CardActions className="" disableActionSpacing>
