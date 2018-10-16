@@ -19,7 +19,7 @@ const profileDB = {
           avatar: 'assets/images/avatars/andrew.jpg'
         },
         message: 'sent you a message.',
-        time: 'June 10,2015'
+        time: 'June 10, 2018'
       },
       {
         id: '3',
@@ -27,8 +27,8 @@ const profileDB = {
           name: 'Garry Newman',
           avatar: 'assets/images/avatars/garry.jpg'
         },
-        message: 'shared a public post with your group.',
-        time: 'June 9,2015'
+        message: 'shared an artist with your group.',
+        time: 'June 9, 2018'
       },
       {
         id: '4',
@@ -36,8 +36,8 @@ const profileDB = {
           name: 'Carl Henderson',
           avatar: 'assets/images/avatars/carl.jpg'
         },
-        message: 'wants to play Fallout Shelter with you.',
-        time: 'June 8,2015'
+        message: 'invited you to a jam session.',
+        time: 'June 8, 2018'
       },
       {
         id: '5',
@@ -46,7 +46,7 @@ const profileDB = {
           avatar: 'assets/images/avatars/jane.jpg'
         },
         message: 'started following you.',
-        time: 'June 7,2015'
+        time: 'June 7, 2018'
       },
       {
         id: '6',
@@ -55,7 +55,7 @@ const profileDB = {
           avatar: 'assets/images/avatars/james.jpg'
         },
         message: 'sent you a message.',
-        time: 'June 6,2015'
+        time: 'June 6, 2018'
       },
       {
         id: '7',
@@ -63,8 +63,8 @@ const profileDB = {
           name: 'Judith Burton',
           avatar: 'assets/images/avatars/joyce.jpg'
         },
-        message: 'shared a photo with you.',
-        time: 'June 5,2015'
+        message: 'shared a track with you.',
+        time: 'June 5, 2018'
       },
       {
         id: '8',
@@ -72,8 +72,8 @@ const profileDB = {
           name: 'Vincent Munoz',
           avatar: 'assets/images/avatars/vincent.jpg'
         },
-        message: 'shared a photo with you.',
-        time: 'June 4,2015'
+        message: 'shared an album with you.',
+        time: 'June 4, 2018'
       }
     ],
     posts: [
@@ -83,8 +83,7 @@ const profileDB = {
           name: 'Garry Newman',
           avatar: 'assets/images/avatars/garry.jpg'
         },
-        message:
-          'Remember the place we were talking about the other night? Found it!',
+        message: '(Vanilla - Swept Away) all the way!',
         time: '32 minutes ago',
         type: 'post',
         like: 5,
@@ -100,7 +99,7 @@ const profileDB = {
               name: 'Alice Freeman',
               avatar: 'assets/images/avatars/alice.jpg'
             },
-            time: 'June 10, 2015',
+            time: 'June 10,  2018',
             message:
               'That’s a wonderful place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat.'
           }
@@ -113,7 +112,7 @@ const profileDB = {
           avatar: 'assets/images/avatars/andrew.jpg'
         },
         message: 'Hey, man! Check this, it’s pretty awesome!',
-        time: 'June 12, 2015',
+        time: 'June 12,  2018',
         type: 'article',
         like: 98,
         share: 6,
@@ -134,7 +133,7 @@ const profileDB = {
               name: 'Alice Freeman',
               avatar: 'assets/images/avatars/alice.jpg'
             },
-            time: 'June 10, 2015',
+            time: 'June 10,  2018',
             message:
               'That’s a wonderful place. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat.'
           }
@@ -148,7 +147,7 @@ const profileDB = {
         },
         message:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et eleifend ligula. Fusce posuere in sapien ac facilisis. Etiam sit amet justo non felis ornare feugiat. Aenean lorem ex, ultrices sit amet ligula sed...',
-        time: 'June 10, 2015',
+        time: 'June 10,  2018',
         type: 'something',
         like: 4,
         share: 1
@@ -158,7 +157,7 @@ const profileDB = {
   photosVideos: [
     {
       id: '1',
-      name: 'June 2015',
+      name: 'June  2018',
       info: '5 Photos',
       media: [
         {
@@ -190,7 +189,7 @@ const profileDB = {
     },
     {
       id: '2',
-      name: 'May 2015',
+      name: 'May  2018',
       info: '7 Photos, 3 Videos',
       media: [
         {
@@ -222,7 +221,7 @@ const profileDB = {
     },
     {
       id: '3',
-      name: 'April 2015',
+      name: 'April  2018',
       info: '5 Photos',
       media: [
         {

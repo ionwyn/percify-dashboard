@@ -57,7 +57,7 @@ class TimelineTab extends Component {
                 <Input
                   className="p-16 w-full"
                   classes={{ root: 'text-14' }}
-                  placeholder="Write something.."
+                  placeholder="Share your moment!  Writing a status or posting image/video will also share a preview of a currently playing track!"
                   multiline
                   rows="6"
                   margin="none"

@@ -74,25 +74,6 @@ class ProfilePage extends Component {
                 </Typography>
               </FuseAnimate>
             </div>
-
-            <div className="flex items-center justify-end">
-              <Button
-                className="mr-8 normal-case"
-                variant="raised"
-                color="secondary"
-                aria-label="Follow"
-              >
-                Follow
-              </Button>
-              <Button
-                className="normal-case"
-                variant="raised"
-                color="primary"
-                aria-label="Send Message"
-              >
-                Send Message
-              </Button>
-            </div>
           </div>
         }
         contentToolbar={
