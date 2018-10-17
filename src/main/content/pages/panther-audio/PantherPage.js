@@ -19,14 +19,14 @@ class PantherPage extends Component {
   iframe = () => {
     return {
       __html:
-        '<iframe src="http://panther.audio/" width="100%" height=1000></iframe>'
+        '<iframe src="http://panther.audio/" width="100%" height=1000 style="position:relative; top:-49px;"></iframe>'
     };
   };
 
   render() {
     const { classes } = this.props;
     return (
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <div dangerouslySetInnerHTML={this.iframe()} />
       </div>
     );

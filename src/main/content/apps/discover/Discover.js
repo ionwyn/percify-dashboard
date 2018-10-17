@@ -18,13 +18,13 @@ import Paper from '@material-ui/core/Paper';
 
 const styles = theme => ({
   root: {
-    background:
-      "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
+    backgroundColor: '#000000',
     backgroundSize: 'cover'
   },
   card: {
     width: '100%',
-    maxWidth: 400
+    maxWidth: 400,
+    backgroundColor: '#000000'
   },
   controls: {
     display: 'flex',
@@ -150,9 +150,11 @@ class Discover extends Component {
           classes.root,
           'flex flex-col flex-1 flex-no-shrink p-24 md:flex-row md:p-0 mb-4'
         )}
+        /*style={{height: '100', overflow: 'hidden'}}*/
       >
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+          style={{ backgroundColor: '#272c30' }}
         >
           {metrics.map(metrics => (
             <div
@@ -180,12 +182,18 @@ class Discover extends Component {
 
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+          style={{ backgroundColor: '#22272a' }}
         >
           <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
-            <img
-              src="assets/images/logos/spotify_logo_with_text.svg"
-              alt="Spotify Logo"
-            />
+            <Typography
+              style={{
+                fontSize: '80px',
+                fontFamily: 'brandon-grotesque, sans-serif',
+                fontWeight: '700'
+              }}
+            >
+              Wolf
+            </Typography>
             Adjust the sliders on the left to start finding new tracks. You can
             also tune your discovery to show tracks that are related to an
             artist, genre, or track below!
@@ -232,6 +240,7 @@ class Discover extends Component {
 
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
+          style={{ backgroundColor: '#272c30' }}
         >
           <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
             {recommendations.state !== undefined ? (
