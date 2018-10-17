@@ -23,9 +23,23 @@ export const fuseNavigationConfig = [
   {
     id: 'Discover',
     title: 'Discover',
-    type: 'item',
+    type: 'group',
     icon: 'search',
-    url: '/apps/discover'
+    url: '/apps/discover',
+    children: [
+      {
+        id: 'pantherDiscover',
+        title: 'Panther Discover',
+        type: 'item',
+        url: '/pages/panther-audio'
+      },
+      {
+        id: 'wolfDiscover',
+        title: 'Wolf Discover',
+        type: 'item',
+        url: '/apps/discover'
+      }
+    ]
   },
   {
     id: 'file-manager',
