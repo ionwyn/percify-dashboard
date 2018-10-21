@@ -180,22 +180,7 @@ const options = [
   { value: 'work-out', label: 'work-out' },
   { value: 'world-music', label: 'world-music' }
 ];
-/*
-acoustic
-afrobeat
-alt-rock
-ambient
-anime
-black-metal
-bluegrass
-bluegrass
-bossanova
-brazil
-breakbeat
-british
-cantopop
-chica
-*/
+
 const customStyles = {
   option: (base, state) => ({
     ...base,
@@ -265,6 +250,7 @@ class Discover extends Component {
   };
 
   getNewRecommendation = (event, value, metrics) => {
+    console.log(value);
     this.props.getRecommendation({
       seed_genres: 'jazz',
       [metrics]: value
