@@ -1,17 +1,14 @@
-# base image
-FROM node:latest
+# Development (nonproduction) Dockerfile
+FROM node:8.9-alpine
 
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+# Create a work directory and copy over our dependency manifest files.
+RUN mkdir /app
+WORKDIR /app
+COPY /src /app/src
+COPY ["package.json", "package-lock.json*", , "yarn.lock", "./"]
 
-# Install app dependencies
-COPY package.json /usr/src/app/
-RUN yarn install
+# RUN npm install --silent && mv node_modules ../
+RUN yarn build
 
-# Bundle app source
-COPY . /usr/src/app
-
+# Expose PORT 3000 on our virtual machine so we can run our server
 EXPOSE 3000
-
-CMD [ "yarn", "start" ]
