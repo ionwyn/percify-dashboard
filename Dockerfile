@@ -1,4 +1,4 @@
-# Development (nonproduction) Dockerfiles
+# Development (nonproduction) Dockerfile
 FROM node:8.9-alpine
 
 # Create a work directory and copy over our dependency manifest files.
