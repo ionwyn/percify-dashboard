@@ -60,9 +60,10 @@ class Login extends Component {
 
   render() {
     const { classes } = this.props;
-    const loginTo = process.env.login_to
-      ? process.env.login_to
-      : 'https://spotilogin.herokuapp.com/';
+    const loginTo =
+      process.env.NODE_ENV !== 'production'
+        ? 'https://spotilogin.herokuapp.com/?env=development'
+        : 'https://spotilogin.herokuapp.com/?env=production';
 
     return (
       <div
@@ -104,7 +105,9 @@ class Login extends Component {
               An independent project to facilitate analysis and discovery for
               popular music platforms. The project is built with React with
               Redux and Apollo for state management. Current progress is
-              integration with AWS Lambda, API Gateway, and Firebase.""
+              integration with AWS Lambda, API Gateway, and Firebase. For the
+              best experience please use a Firefox browser, while I continue to
+              build a better experience for other browsers.
             </Typography>
           </FuseAnimate>
         </div>

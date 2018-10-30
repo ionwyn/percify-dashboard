@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles/index';
-import { Card, CardContent, Grow, Typography } from '@material-ui/core';
-import classNames from 'classnames';
 
 const styles = theme => ({
   root: {
@@ -24,7 +22,6 @@ class PantherPage extends Component {
   };
 
   render() {
-    const { classes } = this.props;
     return (
       <div style={{ overflow: 'hidden' }}>
         <div dangerouslySetInnerHTML={this.iframe()} />

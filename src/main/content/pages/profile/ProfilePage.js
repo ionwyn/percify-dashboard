@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { FusePageSimple, FuseAnimate } from '@fuse';
-import { Avatar, Button, Tab, Tabs, Typography } from '@material-ui/core';
+import { Avatar, Tab, Tabs, Typography } from '@material-ui/core';
 import TimelineTab from 'main/content/pages/profile/tabs/TimelineTab';
 import PhotosVideosTab from 'main/content/pages/profile/tabs/PhotosVideosTab';
 import AboutTab from 'main/content/pages/profile/tabs/AboutTab';

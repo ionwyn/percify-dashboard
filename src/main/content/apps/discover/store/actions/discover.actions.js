@@ -29,12 +29,11 @@ export function getRecommendation(seedObject) {
           o.img = tile.album.images[2].url;
           return o;
         });
-        console.log('sharmoota');
         dispatch({ type: SGET_RECOMMEND, data: dataItems });
       })
       .catch(e => {
         dispatch({ type: SGET_FAILURE, error: e });
-        console.log('bitch');
+        console.log('bitch slapped');
       });
   };
 }

@@ -5,7 +5,13 @@ FROM node:8.9-alpine
 RUN mkdir /app
 WORKDIR /app
 COPY /src /app/src
-COPY ["package.json", "package-lock.json*", "yarn.lock", "./"]
+
+ADD yarn.lock /yarn.lock
+ADD package.json /package.json
+
+ENV NODE_PATH=/node_modules
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
 # RUN npm install --silent && mv node_modules ../
 RUN yarn build

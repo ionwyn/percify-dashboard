@@ -12,7 +12,6 @@ import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 import { TextFieldFormsy, SelectFormsy } from '@fuse';
 import Formsy from 'formsy-react';
-import Autosuggest from 'react-autosuggest';
 import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import Select from 'react-select';
@@ -235,7 +234,8 @@ class Discover extends Component {
       valence: 0.5,
       spacing: '0',
       seed_type: '',
-      blah: ''
+      blah: '',
+      selectedGenre: null
     };
   }
 
@@ -244,16 +244,20 @@ class Discover extends Component {
   };
 
   handleTypeChange = event => {
-    console.log('bruh...');
-    console.log(event);
     // do shit with event
   };
 
   getNewRecommendation = (event, value, metrics) => {
-    console.log(value);
+    console.log(this.state.energy);
     this.props.getRecommendation({
       seed_genres: 'jazz',
-      [metrics]: value
+      acousticness: this.state.acousticness,
+      danceability: this.state.danceability,
+      energy: this.state.energy,
+      instrumentalness: this.state.instrumentalness,
+      liveness: this.state.liveness,
+      speechiness: this.state.speechiness,
+      valence: this.state.valence
     });
   };
 
@@ -279,7 +283,6 @@ class Discover extends Component {
 
   render() {
     const { classes, recommendations } = this.props;
-    console.log(recommendations);
 
     const { value, suggestions } = this.state;
     const inputProps = {
@@ -328,9 +331,10 @@ class Discover extends Component {
                 onChange={(event, value) =>
                   this.handleChange(event, value, metrics)
                 }
-                onDragEnd={(event, value) =>
-                  this.getNewRecommendation(event, value, metrics)
-                }
+                onDragEnd={(event, value) => {
+                  console.log(this.value);
+                  this.getNewRecommendation(event, value, metrics);
+                }}
               />
             </div>
           ))}
@@ -350,47 +354,8 @@ class Discover extends Component {
             >
               Wolf
             </Typography>
-            Adjust the sliders on the left to start finding new tracks. You can
-            also tune your discovery to show tracks that are related to an
-            artist, genre, or track below!
-            <Formsy
-              onValidSubmit={this.onSubmit}
-              onValid={this.enableButton}
-              onInvalid={this.disableButton}
-              ref={form => (this.form = form)}
-              className="flex flex-col justify-center"
-            >
-              <SelectFormsy
-                className="my-24"
-                name="related"
-                label="Type"
-                value="none"
-                onChange={this.handleTypeChange}
-              >
-                <MenuItem value="none">
-                  <em>None</em>
-                </MenuItem>
-                <MenuItem value="genre">Genre</MenuItem>
-                <MenuItem value="artist">Artist</MenuItem>
-                <MenuItem value="track">Track</MenuItem>
-              </SelectFormsy>
-              <TextFieldFormsy
-                className="mb-24"
-                type="text"
-                name="name"
-                label="Name"
-              />
-              <Autosuggest
-                suggestions={suggestions}
-                onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
-                onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-                getSuggestionValue={getSuggestionValue}
-                renderSuggestion={renderSuggestion}
-                renderInputComponent={renderInputComponent}
-                inputProps={inputProps}
-                renderSuggestionsContainer={this.renderSuggestionsContainer}
-              />
-            </Formsy>
+            Pick a genre using the form below, adjust the sliders to tune your
+            results.
           </CardContent>
           <Select
             options={options}
@@ -398,6 +363,7 @@ class Discover extends Component {
             isMulti
             className="basic-multi-select"
             classNamePrefix="select"
+            onChange={this.getNewRecommendation}
           />
         </Card>
 
