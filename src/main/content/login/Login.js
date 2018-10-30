@@ -62,8 +62,10 @@ class Login extends Component {
     const { classes } = this.props;
     const loginTo =
       process.env.NODE_ENV !== 'production'
-        ? 'https://spotilogin.herokuapp.com/?env=development'
-        : 'https://spotilogin.herokuapp.com/?env=production';
+        ? 'https://spotilogin.herokuapp.com?env=development'
+        : 'https://spotilogin.herokuapp.com?env=production';
+
+    console.log(loginTo);
 
     return (
       <div
