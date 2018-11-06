@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
 import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
+import PauseIcon from '@material-ui/icons/Pause';
 
 const styles = theme => ({
   root: {
@@ -43,7 +44,7 @@ class SpotifyPlayback extends Component {
       error: '',
       trackName: 'Track Name',
       artistName: 'Artist Name',
-      playing: false,
+      playing: true,
       position: 0,
       duration: 1
     };
@@ -79,6 +80,18 @@ class SpotifyPlayback extends Component {
         .join(', ');
       const playing = !state.paused;
       const trackImg = currentTrack.album.images[0].url || null;
+
+      console.log('onStateChanged' + playing);
+
+      console.log('local storage');
+      for (var i = 0; i < localStorage.length; i++) {
+        console.log(
+          localStorage.key(i) +
+            '=[' +
+            localStorage.getItem(localStorage.key(i)) +
+            ']'
+        );
+      }
 
       this.setState({
         position,
@@ -181,11 +194,13 @@ class SpotifyPlayback extends Component {
 
   render() {
     const { classes, theme } = this.props;
-    const { trackName, artistName, trackImg } = this.state;
+    const { trackName, artistName, trackImg, playing } = this.state;
+
+    console.log(this.state.playing);
 
     return (
       <CardContent className="flex flex-col items-center justify-center text-center p-48">
-        <img src={trackImg} alt="logo" />
+        <img src={trackImg} alt="Loading..." />
         <CardContent className={classes.content}>
           <Typography variant="headline">{trackName}</Typography>
           <Typography variant="subheading" color="textSecondary">
@@ -194,24 +209,21 @@ class SpotifyPlayback extends Component {
         </CardContent>
         <div className={classes.controls}>
           <IconButton aria-label="Previous" onClick={() => this.onPrevClick()}>
-            {theme.direction === 'rtl' ? (
-              <SkipNextIcon />
-            ) : (
-              <SkipPreviousIcon />
-            )}
+            <SkipPreviousIcon />
           </IconButton>
+
           <IconButton
             aria-label="Play/pause"
             onClick={() => this.onPlayClick()}
           >
-            <PlayArrowIcon className={classes.playIcon} />
+            {playing !== true ? (
+              <PlayArrowIcon className={classes.playIcon} />
+            ) : (
+              <PauseIcon className={classes.playIcon} />
+            )}
           </IconButton>
           <IconButton aria-label="Next" onClick={() => this.onNextClick()}>
-            {theme.direction === 'rtl' ? (
-              <SkipPreviousIcon />
-            ) : (
-              <SkipNextIcon />
-            )}
+            <SkipNextIcon />
           </IconButton>
         </div>
       </CardContent>
