@@ -14,7 +14,7 @@ const fuseSettingsConfig = {
         position: 'below'
       },
       footer: {
-        display: false,
+        display: true,
         style: 'fixed',
         position: 'below'
       },
