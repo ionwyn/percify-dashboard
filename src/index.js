@@ -17,6 +17,7 @@ import { FuseLayout, FuseTheme, FuseAuthorization } from '@fuse';
 import MainToolbar from './main/MainToolbar';
 import MainNavbarContent from './main/MainNavbarContent';
 import MainNavbarHeader from './main/MainNavbarHeader';
+import MainFooter from './main/MainFooter';
 import jssExtend from 'jss-extend';
 import QuickPanel from 'main/quickPanel/QuickPanel';
 import FirebaseAuth from 'firebase-db/FirebaseAuth';
@@ -50,6 +51,7 @@ ReactDOM.render(
                 toolbar={<MainToolbar />}
                 navbarHeader={<MainNavbarHeader />}
                 navbarContent={<MainNavbarContent />}
+                footer={<MainFooter />}
               />
               <SettingsPanel />
               <QuickPanel />
