@@ -13,13 +13,13 @@ export const fuseNavigationConfig = [
     type: 'item',
     url: '/apps/dashboards/analytics'
   },
-  {
-    id: 'playbackPage',
-    title: 'Playback',
-    type: 'item',
-    icon: 'graphic_eq',
-    url: '/pages/playback'
-  },
+  // {
+  //   id: 'playbackPage',
+  //   title: 'Playback',
+  //   type: 'item',
+  //   icon: 'graphic_eq',
+  //   url: '/pages/playback'
+  // },
   {
     id: 'Discover',
     title: 'Discover',

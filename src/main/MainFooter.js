@@ -9,6 +9,12 @@ import SkipNextIcon from '@material-ui/icons/SkipNext';
 import PauseIcon from '@material-ui/icons/Pause';
 import classNames from 'classnames';
 import Icon from '@material-ui/core/Icon';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = theme => ({
   root: {},
@@ -38,7 +44,7 @@ class MainFooter extends Component {
     const aToken =
       JSON.parse(sessionStorage.getItem('userToken')) !== null
         ? JSON.parse(sessionStorage.getItem('userToken')).access_token
-        : '';
+        : 'aToken is null';
     console.log(aToken);
 
     // set the initial state
@@ -207,6 +213,7 @@ class MainFooter extends Component {
       <div
         className={classNames(classes.root, 'flex flex-1 items-center px-24')}
       >
+        <img width={75} height={75} src={trackImg} alt="Loading..." />
         <IconButton aria-label="Previous" onClick={() => this.onPrevClick()}>
           <SkipPreviousIcon />
         </IconButton>
@@ -221,7 +228,12 @@ class MainFooter extends Component {
         <IconButton aria-label="Next" onClick={() => this.onNextClick()}>
           <SkipNextIcon />
         </IconButton>
-        <Typography variant="headline">Now playing: {trackName}</Typography>
+        <CardContent className={classes.content}>
+          <Typography variant="h5">{trackName}</Typography>
+          <Typography variant="subheading" color="textSecondary">
+            {artistName}
+          </Typography>
+        </CardContent>
       </div>
     );
   }
