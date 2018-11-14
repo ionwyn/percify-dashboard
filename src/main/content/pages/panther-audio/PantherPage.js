@@ -17,7 +17,7 @@ class PantherPage extends Component {
   iframe = () => {
     return {
       __html:
-        '<iframe src="http://panther.audio/" width="100%" height=1000 style="position:relative; top:-49px;"></iframe>'
+        '<iframe src="https://panther-discover.herokuapp.com/"></iframe>'
     };
   };
 
