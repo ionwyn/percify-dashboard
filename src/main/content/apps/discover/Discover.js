@@ -235,7 +235,7 @@ class Discover extends Component {
       spacing: '0',
       seed_type: '',
       blah: '',
-      selectedGenre: null
+      selectedGenre: 'pop'
     };
   }
 
@@ -248,17 +248,35 @@ class Discover extends Component {
   };
 
   getNewRecommendation = (event, value, metrics) => {
-    console.log(this.state.energy);
-    this.props.getRecommendation({
-      seed_genres: 'jazz',
-      acousticness: this.state.acousticness,
-      danceability: this.state.danceability,
-      energy: this.state.energy,
-      instrumentalness: this.state.instrumentalness,
-      liveness: this.state.liveness,
-      speechiness: this.state.speechiness,
-      valence: this.state.valence
-    });
+    if (this.state.selectedGenre.constructor === Array) {
+      let allGenre = [];
+      this.state.selectedGenre.forEach(function(element) {
+        allGenre.push(element.value);
+      });
+      this.props.getRecommendation({
+        seed_genres: allGenre.join(),
+        acousticness: this.state.acousticness,
+        danceability: this.state.danceability,
+        energy: this.state.energy,
+        instrumentalness: this.state.instrumentalness,
+        liveness: this.state.liveness,
+        speechiness: this.state.speechiness,
+        valence: this.state.valence
+      });
+      console.log(allGenre.join());
+    } else {
+      this.props.getRecommendation({
+        seed_genres: this.state.selectedGenre,
+        acousticness: this.state.acousticness,
+        danceability: this.state.danceability,
+        energy: this.state.energy,
+        instrumentalness: this.state.instrumentalness,
+        liveness: this.state.liveness,
+        speechiness: this.state.speechiness,
+        valence: this.state.valence
+      });
+      console.log(this.state.selectedGenre);
+    }
   };
 
   componentDidMount() {
@@ -274,6 +292,14 @@ class Discover extends Component {
   onSuggestionsFetchRequested = ({ value }) =>
     this.setState({ suggestions: this.props.recommendations.bitch });
 
+  // When new genre changed
+  onGenreChange = selectedGenre => {
+    console.log('Current state is ', this.state.selectedGenre);
+    this.setState({ selectedGenre: selectedGenre }, () =>
+      this.getNewRecommendation()
+    );
+  };
+
   // Clear all suggestions
   onSuggestionsClearRequested = () => this.setState({ suggestions: [] });
 
@@ -284,7 +310,7 @@ class Discover extends Component {
   render() {
     const { classes, recommendations } = this.props;
 
-    const { value, suggestions } = this.state;
+    const { value, suggestions, selectedGenre } = this.state;
     const inputProps = {
       placeholder: 'Input artist',
       onChange: this.onChange,
@@ -332,7 +358,6 @@ class Discover extends Component {
                   this.handleChange(event, value, metrics)
                 }
                 onDragEnd={(event, value) => {
-                  console.log(this.value);
                   this.getNewRecommendation(event, value, metrics);
                 }}
               />
@@ -363,7 +388,8 @@ class Discover extends Component {
             isMulti
             className="basic-multi-select"
             classNamePrefix="select"
-            onChange={this.getNewRecommendation}
+            onChange={this.onGenreChange}
+            value={selectedGenre}
           />
         </Card>
 
