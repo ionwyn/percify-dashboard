@@ -23,7 +23,6 @@ import QuickPanel from 'main/quickPanel/QuickPanel';
 import FirebaseAuth from 'firebase-db/FirebaseAuth';
 import store from 'store';
 import SettingsPanel from 'main/SettingsPanel';
-import { setSpotifyUserData } from 'auth/store/actions/user.actions';
 
 const jss = create({
   ...jssPreset(),

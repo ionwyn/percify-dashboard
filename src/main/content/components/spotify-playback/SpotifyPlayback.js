@@ -193,7 +193,7 @@ class SpotifyPlayback extends Component {
   }
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const { trackName, artistName, trackImg, playing } = this.state;
 
     console.log(this.state.playing);

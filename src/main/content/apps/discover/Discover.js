@@ -4,15 +4,12 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import * as Actions from './store/actions';
 import { bindActionCreators } from 'redux';
-import { Card, CardContent, MenuItem } from '@material-ui/core';
+import { Card, CardContent } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
-import { TextFieldFormsy, SelectFormsy } from '@fuse';
-import Formsy from 'formsy-react';
-import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
 import Select from 'react-select';
 
@@ -205,20 +202,6 @@ const customStyles = {
   }
 };
 
-// How each suggested item will be rendered
-function renderSuggestion(suggestion) {
-  return <span>{suggestion.name}</span>;
-}
-
-// What should be the input value (for the textbox), when a suggested item is selected
-function getSuggestionValue(suggestion) {
-  return suggestion.name;
-}
-
-function renderInputComponent(inputProps) {
-  return <TextField {...inputProps} />;
-}
-
 class Discover extends Component {
   constructor() {
     super();
@@ -310,12 +293,7 @@ class Discover extends Component {
   render() {
     const { classes, recommendations } = this.props;
 
-    const { value, suggestions, selectedGenre } = this.state;
-    const inputProps = {
-      placeholder: 'Input artist',
-      onChange: this.onChange,
-      value
-    };
+    const { selectedGenre } = this.state;
 
     const metrics = [
       'acousticness',

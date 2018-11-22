@@ -8,13 +8,6 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import PauseIcon from '@material-ui/icons/Pause';
 import classNames from 'classnames';
-import Icon from '@material-ui/core/Icon';
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
 
 const styles = theme => ({
   root: {},
@@ -204,7 +197,7 @@ class MainFooter extends Component {
   */
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const { trackName, artistName, trackImg, playing } = this.state;
 
     console.log(this.state.playing);
