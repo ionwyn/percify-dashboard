@@ -33,12 +33,6 @@ const jss = create({
 jss.options.insertionPoint = document.getElementById('jss-insertion-point');
 const generateClassName = createGenerateClassName();
 
-const spotiUser = JSON.parse(sessionStorage.getItem('userData'));
-
-if (spotiUser) {
-  store.dispatch(setSpotifyUserData(spotiUser));
-}
-
 ReactDOM.render(
   <JssProvider jss={jss} generateClassName={generateClassName}>
     <Provider store={store}>
