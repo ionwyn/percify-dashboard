@@ -23,7 +23,7 @@ const initialState = {
 /**
  * Our reducer
  */
-const spotilogin = function(state = initialState, action) {
+const spotilogin = (state = initialState, action) => {
   switch (action.type) {
     // when we get the tokens... set the tokens!
     case Actions.SPOTIFY_TOKENS: {

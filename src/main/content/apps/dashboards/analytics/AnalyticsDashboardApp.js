@@ -25,7 +25,7 @@ class AnalyticsDashboardApp extends Component {
     super(props);
 
     Chart.pluginService.register({
-      afterDatasetsDraw: function(chart, easing) {
+      afterDatasetsDraw(chart, easing) {
         // Only activate the plugin if it's made available
         // in the options
         if (
@@ -39,11 +39,11 @@ class AnalyticsDashboardApp extends Component {
         // To only draw at the end of animation, check for easing === 1
         const ctx = chart.ctx;
 
-        chart.data.datasets.forEach(function(dataset, i) {
+        chart.data.datasets.forEach((dataset, i) => {
           const meta = chart.getDatasetMeta(i);
 
           if (!meta.hidden) {
-            meta.data.forEach(function(element, index) {
+            meta.data.forEach((element, index) => {
               // Draw the text in black, with the specified font
               ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
               const fontSize = 13;

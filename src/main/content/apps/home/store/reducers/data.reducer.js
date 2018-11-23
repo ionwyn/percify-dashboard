@@ -19,7 +19,7 @@ const initialState = {
   }
 };
 
-const userTopMetrics = function(state = initialState, action) {
+const userTopMetrics = (state = initialState, action) => {
   switch (action.type) {
     case Actions.SGET_TOKENS: {
       const { accessToken } = action;

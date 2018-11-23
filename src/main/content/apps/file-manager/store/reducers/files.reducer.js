@@ -1,7 +1,7 @@
 import * as Actions from '../actions';
 import _ from 'lodash';
 
-const filesReducer = function(state = {}, action) {
+const filesReducer = (state = {}, action) => {
   switch (action.type) {
     case Actions.GET_TRACKS:
       return _.keyBy(action.payload, 'id');

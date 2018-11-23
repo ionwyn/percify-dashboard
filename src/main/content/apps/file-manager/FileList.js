@@ -60,46 +60,42 @@ class FileList extends Component {
             </TableRow>
           </TableHead>
           <TableBody>
-            {Object.entries(files).map(([key, n]) => {
-              return (
-                <TableRow
-                  key={n.id}
-                  hover
-                  onClick={event => setSelectedItem(n.id)}
-                  selected={n.id === selectedItem}
-                  className="cursor-pointer"
-                >
-                  <TableCell className="max-w-64 w-64 p-0 text-center">
-                    <Icon className={classNames(classes.typeIcon, n.artist)}>
-                      play_circle_outline
-                    </Icon>
+            {Object.entries(files).map(([key, n]) => (
+              <TableRow
+                key={n.id}
+                hover
+                onClick={event => setSelectedItem(n.id)}
+                selected={n.id === selectedItem}
+                className="cursor-pointer"
+              >
+                <TableCell className="max-w-64 w-64 p-0 text-center">
+                  <Icon className={classNames(classes.typeIcon, n.artist)}>
+                    play_circle_outline
+                  </Icon>
+                </TableCell>
+                <TableCell>{n.track}</TableCell>
+                <TableCell className="hidden sm:table-cell">
+                  {n.artist}
+                </TableCell>
+                <TableCell className="hidden sm:table-cell">
+                  {n.genre}
+                </TableCell>
+                <TableCell className="text-center hidden sm:table-cell">
+                  {n.bpm === '' ? '-' : n.bpm}
+                </TableCell>
+                <TableCell className="hidden sm:table-cell">{n.key}</TableCell>
+                <Hidden lgUp>
+                  <TableCell>
+                    <IconButton
+                      onClick={ev => pageLayout().toggleRightSidebar()}
+                      aria-label="open right sidebar"
+                    >
+                      <Icon>info</Icon>
+                    </IconButton>
                   </TableCell>
-                  <TableCell>{n.track}</TableCell>
-                  <TableCell className="hidden sm:table-cell">
-                    {n.artist}
-                  </TableCell>
-                  <TableCell className="hidden sm:table-cell">
-                    {n.genre}
-                  </TableCell>
-                  <TableCell className="text-center hidden sm:table-cell">
-                    {n.bpm === '' ? '-' : n.bpm}
-                  </TableCell>
-                  <TableCell className="hidden sm:table-cell">
-                    {n.key}
-                  </TableCell>
-                  <Hidden lgUp>
-                    <TableCell>
-                      <IconButton
-                        onClick={ev => pageLayout().toggleRightSidebar()}
-                        aria-label="open right sidebar"
-                      >
-                        <Icon>info</Icon>
-                      </IconButton>
-                    </TableCell>
-                  </Hidden>
-                </TableRow>
-              );
-            })}
+                </Hidden>
+              </TableRow>
+            ))}
           </TableBody>
         </Table>
       </FuseAnimate>

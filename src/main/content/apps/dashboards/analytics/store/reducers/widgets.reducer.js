@@ -4,7 +4,7 @@ const initialState = {
   data: null
 };
 
-const widgetsReducer = function(state = initialState, action) {
+const widgetsReducer = (state = initialState, action) => {
   switch (action.type) {
     case Actions.GET_WIDGETS:
       return {

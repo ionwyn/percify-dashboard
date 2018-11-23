@@ -45,9 +45,9 @@ export function getSuggestions(value, search_type) {
     spotifyApi
       .search(inputValue + '*', search_type, { limit: 5 })
       .then(data => {
-        let dataItems = _.map(data.artists.items, object => {
-          return _.pick(object, ['name']);
-        });
+        let dataItems = _.map(data.artists.items, object =>
+          _.pick(object, ['name'])
+        );
         dispatch({ type: SGET_SUGGESTIONS_SUCCESS, data: dataItems });
       })
       .catch(e => {

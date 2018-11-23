@@ -20,7 +20,7 @@ const initialState = {
   bitch: []
 };
 
-const userRecommendations = function(state = initialState, action) {
+const userRecommendations = (state = initialState, action) => {
   switch (action.type) {
     case Actions.SGET_TOKENS: {
       const { accessToken } = action;
