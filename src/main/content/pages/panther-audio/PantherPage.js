@@ -6,19 +6,19 @@ const styles = theme => ({
   root: {
     background:
       "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   },
   card: {
     width: '100%',
-    maxWidth: 384
-  }
+    maxWidth: 384,
+  },
 });
 
 class PantherPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loading: true
+      loading: true,
     };
   }
 
@@ -39,11 +39,12 @@ class PantherPage extends Component {
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
-              height: '100vh'
+              height: '100vh',
             }}
           />
         ) : null}
         <iframe
+          title="Panther Discover"
           src="https://panther-discover.herokuapp.com/"
           width="100%"
           height="1000"
