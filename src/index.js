@@ -26,7 +26,7 @@ import SettingsPanel from 'main/SettingsPanel';
 
 const jss = create({
   ...jssPreset(),
-  plugins: [...jssPreset().plugins, jssExtend()]
+  plugins: [...jssPreset().plugins, jssExtend()],
 });
 
 jss.options.insertionPoint = document.getElementById('jss-insertion-point');
@@ -46,8 +46,6 @@ ReactDOM.render(
                 navbarContent={<MainNavbarContent />}
                 footer={<MainFooter />}
               />
-              <SettingsPanel />
-              <QuickPanel />
             </FuseTheme>
           </FuseAuthorization>
         </Router>
