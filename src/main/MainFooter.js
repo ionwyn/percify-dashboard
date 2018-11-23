@@ -34,21 +34,16 @@ const styles = theme => ({
 class MainFooter extends Component {
   constructor(props) {
     super(props);
-    const aToken =
-      JSON.parse(sessionStorage.getItem('userToken')) !== null
-        ? JSON.parse(sessionStorage.getItem('userToken')).access_token
-        : 'aToken is null';
-    console.log(aToken);
 
     // set the initial state
     this.state = {
-      token: aToken,
+      token: '',
       deviceId: '',
       loggedIn: false,
       error: '',
       trackName: 'Track Name',
       artistName: 'Artist Name',
-      playing: true,
+      playing: false,
       position: 0,
       duration: 1
     };
@@ -161,7 +156,16 @@ class MainFooter extends Component {
   }
 
   onPlayClick() {
-    this.player.togglePlay();
+    if (this.state.token === '') {
+      const aToken = JSON.parse(sessionStorage.getItem('userToken'))
+        .access_token;
+      this.setState({ token: aToken }, () => {
+        this.handleLogin();
+        // this.player.togglePlay();
+      });
+    } else {
+      this.player.togglePlay();
+    }
   }
 
   onNextClick() {
