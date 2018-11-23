@@ -41,11 +41,12 @@ class MainFooter extends Component {
       deviceId: '',
       loggedIn: false,
       error: '',
-      trackName: 'Track Name',
-      artistName: 'Artist Name',
+      trackName: '',
+      artistName: '',
       playing: false,
       position: 0,
-      duration: 1
+      duration: 1,
+      trackImg: ''
     };
 
     // this will later be set by setInterval
@@ -79,8 +80,6 @@ class MainFooter extends Component {
         .join(', ');
       const playing = !state.paused;
       const trackImg = currentTrack.album.images[0].url || null;
-
-      console.log('onStateChanged' + playing);
 
       this.setState({
         position,
@@ -161,7 +160,6 @@ class MainFooter extends Component {
         .access_token;
       this.setState({ token: aToken }, () => {
         this.handleLogin();
-        // this.player.togglePlay();
       });
     } else {
       this.player.togglePlay();
@@ -190,27 +188,15 @@ class MainFooter extends Component {
     });
   }
 
-  /*
-        <img src={trackImg} alt="Loading..." />
-        <CardContent className={classes.content}>
-          <Typography variant="headline">{trackName}</Typography>
-          <Typography variant="subheading" color="textSecondary">
-            {artistName}
-          </Typography>
-        </CardContent>
-  */
-
   render() {
     const { classes } = this.props;
     const { trackName, artistName, trackImg, playing } = this.state;
-
-    console.log(this.state.playing);
 
     return (
       <div
         className={classNames(classes.root, 'flex flex-1 items-center px-24')}
       >
-        <img width={75} height={75} src={trackImg} alt="Loading..." />
+        <img width={75} height={75} src={trackImg} alt="" />
         <IconButton aria-label="Previous" onClick={() => this.onPrevClick()}>
           <SkipPreviousIcon />
         </IconButton>
