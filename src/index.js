@@ -22,7 +22,6 @@ import jssExtend from 'jss-extend';
 import QuickPanel from 'main/quickPanel/QuickPanel';
 import FirebaseAuth from 'firebase-db/FirebaseAuth';
 import store from 'store';
-import SettingsPanel from 'main/SettingsPanel';
 
 const jss = create({
   ...jssPreset(),
@@ -46,6 +45,7 @@ ReactDOM.render(
                 navbarContent={<MainNavbarContent />}
                 footer={<MainFooter />}
               />
+              <QuickPanel />
             </FuseTheme>
           </FuseAuthorization>
         </Router>
