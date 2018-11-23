@@ -8,7 +8,7 @@ const prodConfig = {
   databaseURL: 'https://mayappca.firebaseio.com',
   projectId: 'mayappca',
   storageBucket: 'your-app.appspot.com',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID'
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
 };
 
 const devConfig = {
@@ -17,7 +17,7 @@ const devConfig = {
   databaseURL: 'https://mayappca.firebaseio.com',
   projectId: 'mayappca',
   storageBucket: 'your-app.appspot.com',
-  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID'
+  messagingSenderId: 'YOUR_MESSAGING_SENDER_ID',
 };
 
 const config = process.env.NODE_ENV === 'production' ? prodConfig : devConfig;

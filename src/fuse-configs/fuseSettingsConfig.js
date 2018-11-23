@@ -6,28 +6,28 @@ const fuseSettingsConfig = {
       navbar: {
         display: true,
         folded: true,
-        position: 'left'
+        position: 'left',
       },
       toolbar: {
         display: false,
         style: 'fixed',
-        position: 'below'
+        position: 'below',
       },
       footer: {
         display: true,
         style: 'fixed',
-        position: 'below'
+        position: 'below',
       },
-      mode: 'fullwidth'
-    }
+      mode: 'fullwidth',
+    },
   },
   customScrollbars: true,
   theme: {
     main: 'slate',
     navbar: 'mainThemeDark',
     toolbar: 'mainThemeDark',
-    footer: 'mainThemeDark'
-  }
+    footer: 'mainThemeDark',
+  },
 };
 
 export default fuseSettingsConfig;

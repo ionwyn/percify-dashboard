@@ -9,13 +9,13 @@ const invoicesDB = {
         address: '2810 Country Club Road Cranford, NJ 07016',
         phone: '+66 123 455 87',
         email: 'hello@fuseinc.com',
-        website: 'www.fuseinc.com'
+        website: 'www.fuseinc.com',
       },
       client: {
         title: 'John Doe',
         address: '9301 Wood Street Philadelphia, PA 19111',
         phone: '+55 552 455 87',
-        email: 'johndoe@mail.com'
+        email: 'johndoe@mail.com',
       },
       number: 'P9-0004',
       date: 'Jul 19, 2015',
@@ -29,7 +29,7 @@ const invoicesDB = {
           unit: 'Hour',
           unitPrice: '12.00',
           quantity: '240',
-          total: '2880'
+          total: '2880',
         },
         {
           id: '2',
@@ -39,7 +39,7 @@ const invoicesDB = {
           unit: 'Hour',
           unitPrice: '10.50',
           quantity: '350',
-          total: '3675'
+          total: '3675',
         },
         {
           id: '3',
@@ -49,7 +49,7 @@ const invoicesDB = {
           unit: 'Hour',
           unitPrice: '4.00',
           quantity: '50',
-          total: '200'
+          total: '200',
         },
         {
           id: '4',
@@ -59,15 +59,15 @@ const invoicesDB = {
           unit: 'Hour',
           unitPrice: '6.50',
           quantity: '260',
-          total: '1690'
-        }
+          total: '1690',
+        },
       ],
       subtotal: '8445',
       tax: '675.60',
       discount: '120.60',
-      total: '9000'
-    }
-  ]
+      total: '9000',
+    },
+  ],
 };
 
 mock.onGet('/api/invoices/get-invoice').reply(config => {

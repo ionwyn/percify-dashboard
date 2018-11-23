@@ -14,13 +14,13 @@ const routeConfigs = [
   ...authRoleExamplesConfigs,
   LoginConfig,
   RegisterConfig,
-  LogoutConfig
+  LogoutConfig,
 ];
 
 export const routes = [
   ...FuseUtils.generateRoutesFromConfigs(routeConfigs),
   {
     path: '/',
-    component: () => <Redirect to="/login" />
-  }
+    component: () => <Redirect to="/login" />,
+  },
 ];

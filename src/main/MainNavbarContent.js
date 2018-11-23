@@ -15,7 +15,7 @@ import {
   ListItemText,
   Popover,
   MenuItem,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import * as quickPanelActions from 'main/quickPanel/store/actions';
 import * as authActions from 'auth/store/actions';
@@ -26,18 +26,18 @@ const styles = theme => ({
   root: {
     display: 'flex',
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
   },
   seperator: {
     width: 1,
     height: 64,
-    backgroundColor: theme.palette.divider
-  }
+    backgroundColor: theme.palette.divider,
+  },
 });
 
 class MainNavbar extends Component {
   state = {
-    userMenu: null
+    userMenu: null,
   };
 
   userMenuClick = event => {
@@ -102,14 +102,14 @@ class MainNavbar extends Component {
             onClose={this.userMenuClose}
             anchorOrigin={{
               vertical: 'bottom',
-              horizontal: 'center'
+              horizontal: 'center',
             }}
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'center'
+              horizontal: 'center',
             }}
             classes={{
-              paper: 'py-8'
+              paper: 'py-8',
             }}
           >
             {user.role !== 'guest' ? (
@@ -171,7 +171,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       toggleQuickPanel: quickPanelActions.toggleQuickPanel,
-      logout: authActions.logoutUser
+      logout: authActions.logoutUser,
     },
     dispatch
   );
@@ -181,7 +181,7 @@ function mapStateToProps({ auth, fuse }) {
   return {
     user: auth.user,
     navigation: fuse.navigation,
-    layoutStyle: fuse.settings.current.layout.style
+    layoutStyle: fuse.settings.current.layout.style,
   };
 }
 

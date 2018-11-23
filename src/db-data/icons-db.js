@@ -8,7 +8,7 @@ const iconsDB = [
     keywords: ['action', '3d', 'rotation'],
     ligature: '3d_rotation',
     codepoint: 'E84D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_accessibility',
@@ -17,7 +17,7 @@ const iconsDB = [
     keywords: ['action', 'accessibility'],
     ligature: 'accessibility',
     codepoint: 'E84E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_accessible',
@@ -26,7 +26,7 @@ const iconsDB = [
     keywords: ['action', 'accessible'],
     ligature: 'accessible',
     codepoint: 'E914',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_account_balance',
@@ -35,7 +35,7 @@ const iconsDB = [
     keywords: ['action', 'account', 'balance'],
     ligature: 'account_balance',
     codepoint: 'E84F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_account_balance_wallet',
@@ -44,7 +44,7 @@ const iconsDB = [
     keywords: ['action', 'account', 'balance', 'wallet'],
     ligature: 'account_balance_wallet',
     codepoint: 'E850',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_account_box',
@@ -53,7 +53,7 @@ const iconsDB = [
     keywords: ['action', 'account', 'box'],
     ligature: 'account_box',
     codepoint: 'E851',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_account_circle',
@@ -62,7 +62,7 @@ const iconsDB = [
     keywords: ['action', 'account', 'circle'],
     ligature: 'account_circle',
     codepoint: 'E853',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_shopping_cart',
@@ -71,7 +71,7 @@ const iconsDB = [
     keywords: ['action', 'add', 'shopping', 'cart'],
     ligature: 'add_shopping_cart',
     codepoint: 'E854',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_alarm',
@@ -80,7 +80,7 @@ const iconsDB = [
     keywords: ['action', 'alarm'],
     ligature: 'alarm',
     codepoint: 'E855',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_alarm_add',
@@ -89,7 +89,7 @@ const iconsDB = [
     keywords: ['action', 'alarm', 'add'],
     ligature: 'alarm_add',
     codepoint: 'E856',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_alarm_off',
@@ -98,7 +98,7 @@ const iconsDB = [
     keywords: ['action', 'alarm', 'off'],
     ligature: 'alarm_off',
     codepoint: 'E857',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_alarm_on',
@@ -107,7 +107,7 @@ const iconsDB = [
     keywords: ['action', 'alarm', 'on'],
     ligature: 'alarm_on',
     codepoint: 'E858',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_all_out',
@@ -116,7 +116,7 @@ const iconsDB = [
     keywords: ['action', 'all', 'out'],
     ligature: 'all_out',
     codepoint: 'E90B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_android',
@@ -125,7 +125,7 @@ const iconsDB = [
     keywords: ['action', 'android'],
     ligature: 'android',
     codepoint: 'E859',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_announcement',
@@ -134,7 +134,7 @@ const iconsDB = [
     keywords: ['action', 'announcement'],
     ligature: 'announcement',
     codepoint: 'E85A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_aspect_ratio',
@@ -143,7 +143,7 @@ const iconsDB = [
     keywords: ['action', 'aspect', 'ratio'],
     ligature: 'aspect_ratio',
     codepoint: 'E85B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assessment',
@@ -152,7 +152,7 @@ const iconsDB = [
     keywords: ['action', 'assessment'],
     ligature: 'assessment',
     codepoint: 'E85C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment',
@@ -161,7 +161,7 @@ const iconsDB = [
     keywords: ['action', 'assignment'],
     ligature: 'assignment',
     codepoint: 'E85D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment_ind',
@@ -170,7 +170,7 @@ const iconsDB = [
     keywords: ['action', 'assignment', 'ind'],
     ligature: 'assignment_ind',
     codepoint: 'E85E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment_late',
@@ -179,7 +179,7 @@ const iconsDB = [
     keywords: ['action', 'assignment', 'late'],
     ligature: 'assignment_late',
     codepoint: 'E85F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment_return',
@@ -188,7 +188,7 @@ const iconsDB = [
     keywords: ['action', 'assignment', 'return'],
     ligature: 'assignment_return',
     codepoint: 'E860',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment_returned',
@@ -197,7 +197,7 @@ const iconsDB = [
     keywords: ['action', 'assignment', 'returned'],
     ligature: 'assignment_returned',
     codepoint: 'E861',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assignment_turned_in',
@@ -206,7 +206,7 @@ const iconsDB = [
     keywords: ['action', 'assignment', 'turned', 'in'],
     ligature: 'assignment_turned_in',
     codepoint: 'E862',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_autorenew',
@@ -215,7 +215,7 @@ const iconsDB = [
     keywords: ['action', 'autorenew'],
     ligature: 'autorenew',
     codepoint: 'E863',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_backup',
@@ -224,7 +224,7 @@ const iconsDB = [
     keywords: ['action', 'backup'],
     ligature: 'backup',
     codepoint: 'E864',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_book',
@@ -233,7 +233,7 @@ const iconsDB = [
     keywords: ['action', 'book'],
     ligature: 'book',
     codepoint: 'E865',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bookmark',
@@ -242,7 +242,7 @@ const iconsDB = [
     keywords: ['action', 'bookmark'],
     ligature: 'bookmark',
     codepoint: 'E866',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bookmark_border',
@@ -251,7 +251,7 @@ const iconsDB = [
     keywords: ['action', 'bookmark', 'border'],
     ligature: 'bookmark_border',
     codepoint: 'E867',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bug_report',
@@ -260,7 +260,7 @@ const iconsDB = [
     keywords: ['action', 'bug', 'report'],
     ligature: 'bug_report',
     codepoint: 'E868',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_build',
@@ -269,7 +269,7 @@ const iconsDB = [
     keywords: ['action', 'build'],
     ligature: 'build',
     codepoint: 'E869',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cached',
@@ -278,7 +278,7 @@ const iconsDB = [
     keywords: ['action', 'cached'],
     ligature: 'cached',
     codepoint: 'E86A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera_enhance',
@@ -287,7 +287,7 @@ const iconsDB = [
     keywords: ['action', 'camera', 'enhance'],
     ligature: 'camera_enhance',
     codepoint: 'E8FC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_card_giftcard',
@@ -296,7 +296,7 @@ const iconsDB = [
     keywords: ['action', 'card', 'giftcard'],
     ligature: 'card_giftcard',
     codepoint: 'E8F6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_card_membership',
@@ -305,7 +305,7 @@ const iconsDB = [
     keywords: ['action', 'card', 'membership'],
     ligature: 'card_membership',
     codepoint: 'E8F7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_card_travel',
@@ -314,7 +314,7 @@ const iconsDB = [
     keywords: ['action', 'card', 'travel'],
     ligature: 'card_travel',
     codepoint: 'E8F8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_change_history',
@@ -323,7 +323,7 @@ const iconsDB = [
     keywords: ['action', 'change', 'history'],
     ligature: 'change_history',
     codepoint: 'E86B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_check_circle',
@@ -332,7 +332,7 @@ const iconsDB = [
     keywords: ['action', 'check', 'circle'],
     ligature: 'check_circle',
     codepoint: 'E86C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chrome_reader_mode',
@@ -341,7 +341,7 @@ const iconsDB = [
     keywords: ['action', 'chrome', 'reader', 'mode'],
     ligature: 'chrome_reader_mode',
     codepoint: 'E86D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_class',
@@ -350,7 +350,7 @@ const iconsDB = [
     keywords: ['action', 'class'],
     ligature: 'class',
     codepoint: 'E86E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_code',
@@ -359,7 +359,7 @@ const iconsDB = [
     keywords: ['action', 'code'],
     ligature: 'code',
     codepoint: 'E86F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_compare_arrows',
@@ -368,7 +368,7 @@ const iconsDB = [
     keywords: ['action', 'compare', 'arrows'],
     ligature: 'compare_arrows',
     codepoint: 'E915',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_copyright',
@@ -377,7 +377,7 @@ const iconsDB = [
     keywords: ['action', 'copyright'],
     ligature: 'copyright',
     codepoint: 'E90C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_credit_card',
@@ -386,7 +386,7 @@ const iconsDB = [
     keywords: ['action', 'credit', 'card'],
     ligature: 'credit_card',
     codepoint: 'E870',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dashboard',
@@ -395,7 +395,7 @@ const iconsDB = [
     keywords: ['action', 'dashboard'],
     ligature: 'dashboard',
     codepoint: 'E871',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_date_range',
@@ -404,7 +404,7 @@ const iconsDB = [
     keywords: ['action', 'date', 'range'],
     ligature: 'date_range',
     codepoint: 'E916',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_delete',
@@ -413,7 +413,7 @@ const iconsDB = [
     keywords: ['action', 'delete'],
     ligature: 'delete',
     codepoint: 'E872',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_delete_forever',
@@ -422,7 +422,7 @@ const iconsDB = [
     keywords: ['action', 'delete', 'forever'],
     ligature: 'delete_forever',
     codepoint: 'E92B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_description',
@@ -431,7 +431,7 @@ const iconsDB = [
     keywords: ['action', 'description'],
     ligature: 'description',
     codepoint: 'E873',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dns',
@@ -440,7 +440,7 @@ const iconsDB = [
     keywords: ['action', 'dns'],
     ligature: 'dns',
     codepoint: 'E875',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_done',
@@ -449,7 +449,7 @@ const iconsDB = [
     keywords: ['action', 'done'],
     ligature: 'done',
     codepoint: 'E876',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_done_all',
@@ -458,7 +458,7 @@ const iconsDB = [
     keywords: ['action', 'done', 'all'],
     ligature: 'done_all',
     codepoint: 'E877',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_donut_large',
@@ -467,7 +467,7 @@ const iconsDB = [
     keywords: ['action', 'donut', 'large'],
     ligature: 'donut_large',
     codepoint: 'E917',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_donut_small',
@@ -476,7 +476,7 @@ const iconsDB = [
     keywords: ['action', 'donut', 'small'],
     ligature: 'donut_small',
     codepoint: 'E918',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_eject',
@@ -485,7 +485,7 @@ const iconsDB = [
     keywords: ['action', 'eject'],
     ligature: 'eject',
     codepoint: 'E8FB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_euro_symbol',
@@ -494,7 +494,7 @@ const iconsDB = [
     keywords: ['action', 'euro', 'symbol'],
     ligature: 'euro_symbol',
     codepoint: 'E926',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_event',
@@ -503,7 +503,7 @@ const iconsDB = [
     keywords: ['action', 'event'],
     ligature: 'event',
     codepoint: 'E878',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_event_seat',
@@ -512,7 +512,7 @@ const iconsDB = [
     keywords: ['action', 'event', 'seat'],
     ligature: 'event_seat',
     codepoint: 'E903',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exit_to_app',
@@ -521,7 +521,7 @@ const iconsDB = [
     keywords: ['action', 'exit', 'to', 'app'],
     ligature: 'exit_to_app',
     codepoint: 'E879',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_explore',
@@ -530,7 +530,7 @@ const iconsDB = [
     keywords: ['action', 'explore'],
     ligature: 'explore',
     codepoint: 'E87A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_extension',
@@ -539,7 +539,7 @@ const iconsDB = [
     keywords: ['action', 'extension'],
     ligature: 'extension',
     codepoint: 'E87B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_face',
@@ -548,7 +548,7 @@ const iconsDB = [
     keywords: ['action', 'face'],
     ligature: 'face',
     codepoint: 'E87C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_favorite',
@@ -557,7 +557,7 @@ const iconsDB = [
     keywords: ['action', 'favorite'],
     ligature: 'favorite',
     codepoint: 'E87D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_favorite_border',
@@ -566,7 +566,7 @@ const iconsDB = [
     keywords: ['action', 'favorite', 'border'],
     ligature: 'favorite_border',
     codepoint: 'E87E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_feedback',
@@ -575,7 +575,7 @@ const iconsDB = [
     keywords: ['action', 'feedback'],
     ligature: 'feedback',
     codepoint: 'E87F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_find_in_page',
@@ -584,7 +584,7 @@ const iconsDB = [
     keywords: ['action', 'find', 'in', 'page'],
     ligature: 'find_in_page',
     codepoint: 'E880',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_find_replace',
@@ -593,7 +593,7 @@ const iconsDB = [
     keywords: ['action', 'find', 'replace'],
     ligature: 'find_replace',
     codepoint: 'E881',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fingerprint',
@@ -602,7 +602,7 @@ const iconsDB = [
     keywords: ['action', 'fingerprint'],
     ligature: 'fingerprint',
     codepoint: 'E90D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flight_land',
@@ -611,7 +611,7 @@ const iconsDB = [
     keywords: ['action', 'flight', 'land'],
     ligature: 'flight_land',
     codepoint: 'E904',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flight_takeoff',
@@ -620,7 +620,7 @@ const iconsDB = [
     keywords: ['action', 'flight', 'takeoff'],
     ligature: 'flight_takeoff',
     codepoint: 'E905',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flip_to_back',
@@ -629,7 +629,7 @@ const iconsDB = [
     keywords: ['action', 'flip', 'to', 'back'],
     ligature: 'flip_to_back',
     codepoint: 'E882',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flip_to_front',
@@ -638,7 +638,7 @@ const iconsDB = [
     keywords: ['action', 'flip', 'to', 'front'],
     ligature: 'flip_to_front',
     codepoint: 'E883',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_g_translate',
@@ -647,7 +647,7 @@ const iconsDB = [
     keywords: ['action', 'translate'],
     ligature: 'g_translate',
     codepoint: 'E927',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gavel',
@@ -656,7 +656,7 @@ const iconsDB = [
     keywords: ['action', 'gavel'],
     ligature: 'gavel',
     codepoint: 'E90E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_get_app',
@@ -665,7 +665,7 @@ const iconsDB = [
     keywords: ['action', 'get', 'app'],
     ligature: 'get_app',
     codepoint: 'E884',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gif',
@@ -674,7 +674,7 @@ const iconsDB = [
     keywords: ['action', 'gif'],
     ligature: 'gif',
     codepoint: 'E908',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_grade',
@@ -683,7 +683,7 @@ const iconsDB = [
     keywords: ['action', 'grade'],
     ligature: 'grade',
     codepoint: 'E885',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_group_work',
@@ -692,7 +692,7 @@ const iconsDB = [
     keywords: ['action', 'group', 'work'],
     ligature: 'group_work',
     codepoint: 'E886',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_help',
@@ -701,7 +701,7 @@ const iconsDB = [
     keywords: ['action', 'help'],
     ligature: 'help',
     codepoint: 'E887',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_help_outline',
@@ -710,7 +710,7 @@ const iconsDB = [
     keywords: ['action', 'help', 'outline'],
     ligature: 'help_outline',
     codepoint: 'E8FD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_highlight_off',
@@ -719,7 +719,7 @@ const iconsDB = [
     keywords: ['action', 'highlight', 'off'],
     ligature: 'highlight_off',
     codepoint: 'E888',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_history',
@@ -728,7 +728,7 @@ const iconsDB = [
     keywords: ['action', 'history'],
     ligature: 'history',
     codepoint: 'E889',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_home',
@@ -737,7 +737,7 @@ const iconsDB = [
     keywords: ['action', 'home'],
     ligature: 'home',
     codepoint: 'E88A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hourglass_empty',
@@ -746,7 +746,7 @@ const iconsDB = [
     keywords: ['action', 'hourglass', 'empty'],
     ligature: 'hourglass_empty',
     codepoint: 'E88B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hourglass_full',
@@ -755,7 +755,7 @@ const iconsDB = [
     keywords: ['action', 'hourglass', 'full'],
     ligature: 'hourglass_full',
     codepoint: 'E88C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_http',
@@ -764,7 +764,7 @@ const iconsDB = [
     keywords: ['action', 'http'],
     ligature: 'http',
     codepoint: 'E902',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_https',
@@ -773,7 +773,7 @@ const iconsDB = [
     keywords: ['action', 'https'],
     ligature: 'https',
     codepoint: 'E88D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_important_devices',
@@ -782,7 +782,7 @@ const iconsDB = [
     keywords: ['action', 'important', 'devices'],
     ligature: 'important_devices',
     codepoint: 'E912',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_info',
@@ -791,7 +791,7 @@ const iconsDB = [
     keywords: ['action', 'info'],
     ligature: 'info',
     codepoint: 'E88E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_info_outline',
@@ -800,7 +800,7 @@ const iconsDB = [
     keywords: ['action', 'info', 'outline'],
     ligature: 'info_outline',
     codepoint: 'E88F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_input',
@@ -809,7 +809,7 @@ const iconsDB = [
     keywords: ['action', 'input'],
     ligature: 'input',
     codepoint: 'E890',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_invert_colors',
@@ -818,7 +818,7 @@ const iconsDB = [
     keywords: ['action', 'invert', 'colors'],
     ligature: 'invert_colors',
     codepoint: 'E891',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_label',
@@ -827,7 +827,7 @@ const iconsDB = [
     keywords: ['action', 'label'],
     ligature: 'label',
     codepoint: 'E892',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_label_outline',
@@ -836,7 +836,7 @@ const iconsDB = [
     keywords: ['action', 'label', 'outline'],
     ligature: 'label_outline',
     codepoint: 'E893',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_language',
@@ -845,7 +845,7 @@ const iconsDB = [
     keywords: ['action', 'language'],
     ligature: 'language',
     codepoint: 'E894',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_launch',
@@ -854,7 +854,7 @@ const iconsDB = [
     keywords: ['action', 'launch'],
     ligature: 'launch',
     codepoint: 'E895',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_lightbulb_outline',
@@ -863,7 +863,7 @@ const iconsDB = [
     keywords: ['action', 'lightbulb', 'outline'],
     ligature: 'lightbulb_outline',
     codepoint: 'E90F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_line_style',
@@ -872,7 +872,7 @@ const iconsDB = [
     keywords: ['action', 'line', 'style'],
     ligature: 'line_style',
     codepoint: 'E919',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_line_weight',
@@ -881,7 +881,7 @@ const iconsDB = [
     keywords: ['action', 'line', 'weight'],
     ligature: 'line_weight',
     codepoint: 'E91A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_list',
@@ -890,7 +890,7 @@ const iconsDB = [
     keywords: ['action', 'list'],
     ligature: 'list',
     codepoint: 'E896',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_lock',
@@ -899,7 +899,7 @@ const iconsDB = [
     keywords: ['action', 'lock'],
     ligature: 'lock',
     codepoint: 'E897',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_lock_open',
@@ -908,7 +908,7 @@ const iconsDB = [
     keywords: ['action', 'lock', 'open'],
     ligature: 'lock_open',
     codepoint: 'E898',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_lock_outline',
@@ -917,7 +917,7 @@ const iconsDB = [
     keywords: ['action', 'lock', 'outline'],
     ligature: 'lock_outline',
     codepoint: 'E899',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_loyalty',
@@ -926,7 +926,7 @@ const iconsDB = [
     keywords: ['action', 'loyalty'],
     ligature: 'loyalty',
     codepoint: 'E89A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_markunread_mailbox',
@@ -935,7 +935,7 @@ const iconsDB = [
     keywords: ['action', 'markunread', 'mailbox'],
     ligature: 'markunread_mailbox',
     codepoint: 'E89B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_motorcycle',
@@ -944,7 +944,7 @@ const iconsDB = [
     keywords: ['action', 'motorcycle'],
     ligature: 'motorcycle',
     codepoint: 'E91B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_note_add',
@@ -953,7 +953,7 @@ const iconsDB = [
     keywords: ['action', 'note', 'add'],
     ligature: 'note_add',
     codepoint: 'E89C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_offline_pin',
@@ -962,7 +962,7 @@ const iconsDB = [
     keywords: ['action', 'offline', 'pin'],
     ligature: 'offline_pin',
     codepoint: 'E90A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_opacity',
@@ -971,7 +971,7 @@ const iconsDB = [
     keywords: ['action', 'opacity'],
     ligature: 'opacity',
     codepoint: 'E91C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_open_in_browser',
@@ -980,7 +980,7 @@ const iconsDB = [
     keywords: ['action', 'open', 'in', 'browser'],
     ligature: 'open_in_browser',
     codepoint: 'E89D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_open_in_new',
@@ -989,7 +989,7 @@ const iconsDB = [
     keywords: ['action', 'open', 'in', 'new'],
     ligature: 'open_in_new',
     codepoint: 'E89E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_open_with',
@@ -998,7 +998,7 @@ const iconsDB = [
     keywords: ['action', 'open', 'with'],
     ligature: 'open_with',
     codepoint: 'E89F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pageview',
@@ -1007,7 +1007,7 @@ const iconsDB = [
     keywords: ['action', 'pageview'],
     ligature: 'pageview',
     codepoint: 'E8A0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pan_tool',
@@ -1016,7 +1016,7 @@ const iconsDB = [
     keywords: ['action', 'pan', 'tool'],
     ligature: 'pan_tool',
     codepoint: 'E925',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_payment',
@@ -1025,7 +1025,7 @@ const iconsDB = [
     keywords: ['action', 'payment'],
     ligature: 'payment',
     codepoint: 'E8A1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_camera_mic',
@@ -1034,7 +1034,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'camera', 'mic'],
     ligature: 'perm_camera_mic',
     codepoint: 'E8A2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_contact_calendar',
@@ -1043,7 +1043,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'contact', 'calendar'],
     ligature: 'perm_contact_calendar',
     codepoint: 'E8A3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_data_setting',
@@ -1052,7 +1052,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'data', 'setting'],
     ligature: 'perm_data_setting',
     codepoint: 'E8A4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_device_information',
@@ -1061,7 +1061,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'device', 'information'],
     ligature: 'perm_device_information',
     codepoint: 'E8A5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_identity',
@@ -1070,7 +1070,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'identity'],
     ligature: 'perm_identity',
     codepoint: 'E8A6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_media',
@@ -1079,7 +1079,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'media'],
     ligature: 'perm_media',
     codepoint: 'E8A7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_phone_msg',
@@ -1088,7 +1088,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'phone', 'msg'],
     ligature: 'perm_phone_msg',
     codepoint: 'E8A8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_perm_scan_wifi',
@@ -1097,7 +1097,7 @@ const iconsDB = [
     keywords: ['action', 'perm', 'scan', 'wifi'],
     ligature: 'perm_scan_wifi',
     codepoint: 'E8A9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pets',
@@ -1106,7 +1106,7 @@ const iconsDB = [
     keywords: ['action', 'pets'],
     ligature: 'pets',
     codepoint: 'E91D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_picture_in_picture',
@@ -1115,7 +1115,7 @@ const iconsDB = [
     keywords: ['action', 'picture', 'in', 'picture'],
     ligature: 'picture_in_picture',
     codepoint: 'E8AA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_picture_in_picture_alt',
@@ -1124,7 +1124,7 @@ const iconsDB = [
     keywords: ['action', 'picture', 'in', 'picture', 'alt'],
     ligature: 'picture_in_picture_alt',
     codepoint: 'E911',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_play_for_work',
@@ -1133,7 +1133,7 @@ const iconsDB = [
     keywords: ['action', 'play', 'work'],
     ligature: 'play_for_work',
     codepoint: 'E906',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_polymer',
@@ -1142,7 +1142,7 @@ const iconsDB = [
     keywords: ['action', 'polymer'],
     ligature: 'polymer',
     codepoint: 'E8AB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_power_settings_new',
@@ -1151,7 +1151,7 @@ const iconsDB = [
     keywords: ['action', 'power', 'settings', 'new'],
     ligature: 'power_settings_new',
     codepoint: 'E8AC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pregnant_woman',
@@ -1160,7 +1160,7 @@ const iconsDB = [
     keywords: ['action', 'pregnant', 'woman'],
     ligature: 'pregnant_woman',
     codepoint: 'E91E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_print',
@@ -1169,7 +1169,7 @@ const iconsDB = [
     keywords: ['action', 'print'],
     ligature: 'print',
     codepoint: 'E8AD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_query_builder',
@@ -1178,7 +1178,7 @@ const iconsDB = [
     keywords: ['action', 'query', 'builder'],
     ligature: 'query_builder',
     codepoint: 'E8AE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_question_answer',
@@ -1187,7 +1187,7 @@ const iconsDB = [
     keywords: ['action', 'question', 'answer'],
     ligature: 'question_answer',
     codepoint: 'E8AF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_receipt',
@@ -1196,7 +1196,7 @@ const iconsDB = [
     keywords: ['action', 'receipt'],
     ligature: 'receipt',
     codepoint: 'E8B0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_record_voice_over',
@@ -1205,7 +1205,7 @@ const iconsDB = [
     keywords: ['action', 'record', 'voice', 'over'],
     ligature: 'record_voice_over',
     codepoint: 'E91F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_redeem',
@@ -1214,7 +1214,7 @@ const iconsDB = [
     keywords: ['action', 'redeem'],
     ligature: 'redeem',
     codepoint: 'E8B1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove_shopping_cart',
@@ -1223,7 +1223,7 @@ const iconsDB = [
     keywords: ['action', 'remove', 'shopping', 'cart'],
     ligature: 'remove_shopping_cart',
     codepoint: 'E928',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_reorder',
@@ -1232,7 +1232,7 @@ const iconsDB = [
     keywords: ['action', 'reorder'],
     ligature: 'reorder',
     codepoint: 'E8FE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_report_problem',
@@ -1241,7 +1241,7 @@ const iconsDB = [
     keywords: ['action', 'report', 'problem'],
     ligature: 'report_problem',
     codepoint: 'E8B2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_restore',
@@ -1250,7 +1250,7 @@ const iconsDB = [
     keywords: ['action', 'restore'],
     ligature: 'restore',
     codepoint: 'E8B3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_restore_page',
@@ -1259,7 +1259,7 @@ const iconsDB = [
     keywords: ['action', 'restore', 'page'],
     ligature: 'restore_page',
     codepoint: 'E929',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_room',
@@ -1268,7 +1268,7 @@ const iconsDB = [
     keywords: ['action', 'room'],
     ligature: 'room',
     codepoint: 'E8B4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rounded_corner',
@@ -1277,7 +1277,7 @@ const iconsDB = [
     keywords: ['action', 'rounded', 'corner'],
     ligature: 'rounded_corner',
     codepoint: 'E920',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rowing',
@@ -1286,7 +1286,7 @@ const iconsDB = [
     keywords: ['action', 'rowing'],
     ligature: 'rowing',
     codepoint: 'E921',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_schedule',
@@ -1295,7 +1295,7 @@ const iconsDB = [
     keywords: ['action', 'schedule'],
     ligature: 'schedule',
     codepoint: 'E8B5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_search',
@@ -1304,7 +1304,7 @@ const iconsDB = [
     keywords: ['action', 'search'],
     ligature: 'search',
     codepoint: 'E8B6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings',
@@ -1313,7 +1313,7 @@ const iconsDB = [
     keywords: ['action', 'settings'],
     ligature: 'settings',
     codepoint: 'E8B8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_applications',
@@ -1322,7 +1322,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'applications'],
     ligature: 'settings_applications',
     codepoint: 'E8B9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_backup_restore',
@@ -1331,7 +1331,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'backup', 'restore'],
     ligature: 'settings_backup_restore',
     codepoint: 'E8BA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_bluetooth',
@@ -1340,7 +1340,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'bluetooth'],
     ligature: 'settings_bluetooth',
     codepoint: 'E8BB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_brightness',
@@ -1349,7 +1349,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'brightness'],
     ligature: 'settings_brightness',
     codepoint: 'E8BD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_cell',
@@ -1358,7 +1358,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'cell'],
     ligature: 'settings_cell',
     codepoint: 'E8BC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_ethernet',
@@ -1367,7 +1367,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'ethernet'],
     ligature: 'settings_ethernet',
     codepoint: 'E8BE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_input_antenna',
@@ -1376,7 +1376,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'input', 'antenna'],
     ligature: 'settings_input_antenna',
     codepoint: 'E8BF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_input_component',
@@ -1385,7 +1385,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'input', 'component'],
     ligature: 'settings_input_component',
     codepoint: 'E8C0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_input_composite',
@@ -1394,7 +1394,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'input', 'composite'],
     ligature: 'settings_input_composite',
     codepoint: 'E8C1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_input_hdmi',
@@ -1403,7 +1403,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'input', 'hdmi'],
     ligature: 'settings_input_hdmi',
     codepoint: 'E8C2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_input_svideo',
@@ -1412,7 +1412,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'input', 'svideo'],
     ligature: 'settings_input_svideo',
     codepoint: 'E8C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_overscan',
@@ -1421,7 +1421,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'overscan'],
     ligature: 'settings_overscan',
     codepoint: 'E8C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_phone',
@@ -1430,7 +1430,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'phone'],
     ligature: 'settings_phone',
     codepoint: 'E8C5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_power',
@@ -1439,7 +1439,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'power'],
     ligature: 'settings_power',
     codepoint: 'E8C6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_remote',
@@ -1448,7 +1448,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'remote'],
     ligature: 'settings_remote',
     codepoint: 'E8C7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_voice',
@@ -1457,7 +1457,7 @@ const iconsDB = [
     keywords: ['action', 'settings', 'voice'],
     ligature: 'settings_voice',
     codepoint: 'E8C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_shop',
@@ -1466,7 +1466,7 @@ const iconsDB = [
     keywords: ['action', 'shop'],
     ligature: 'shop',
     codepoint: 'E8C9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_shop_two',
@@ -1475,7 +1475,7 @@ const iconsDB = [
     keywords: ['action', 'shop', 'two'],
     ligature: 'shop_two',
     codepoint: 'E8CA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_shopping_basket',
@@ -1484,7 +1484,7 @@ const iconsDB = [
     keywords: ['action', 'shopping', 'basket'],
     ligature: 'shopping_basket',
     codepoint: 'E8CB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_shopping_cart',
@@ -1493,7 +1493,7 @@ const iconsDB = [
     keywords: ['action', 'shopping', 'cart'],
     ligature: 'shopping_cart',
     codepoint: 'E8CC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_speaker_notes',
@@ -1502,7 +1502,7 @@ const iconsDB = [
     keywords: ['action', 'speaker', 'notes'],
     ligature: 'speaker_notes',
     codepoint: 'E8CD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_speaker_notes_off',
@@ -1511,7 +1511,7 @@ const iconsDB = [
     keywords: ['action', 'speaker', 'notes', 'off'],
     ligature: 'speaker_notes_off',
     codepoint: 'E92A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_spellcheck',
@@ -1520,7 +1520,7 @@ const iconsDB = [
     keywords: ['action', 'spellcheck'],
     ligature: 'spellcheck',
     codepoint: 'E8CE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_star_rate',
@@ -1529,7 +1529,7 @@ const iconsDB = [
     keywords: ['action', 'star', 'rate'],
     ligature: 'star_rate',
     codepoint: 'E8CF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stars',
@@ -1538,7 +1538,7 @@ const iconsDB = [
     keywords: ['action', 'stars'],
     ligature: 'stars',
     codepoint: 'E8D0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_store',
@@ -1547,7 +1547,7 @@ const iconsDB = [
     keywords: ['action', 'store'],
     ligature: 'store',
     codepoint: 'E8D1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subject',
@@ -1556,7 +1556,7 @@ const iconsDB = [
     keywords: ['action', 'subject'],
     ligature: 'subject',
     codepoint: 'E8D2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_supervisor_account',
@@ -1565,7 +1565,7 @@ const iconsDB = [
     keywords: ['action', 'supervisor', 'account'],
     ligature: 'supervisor_account',
     codepoint: 'E8D3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_swap_horiz',
@@ -1574,7 +1574,7 @@ const iconsDB = [
     keywords: ['action', 'swap', 'horiz'],
     ligature: 'swap_horiz',
     codepoint: 'E8D4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_swap_vert',
@@ -1583,7 +1583,7 @@ const iconsDB = [
     keywords: ['action', 'swap', 'vert'],
     ligature: 'swap_vert',
     codepoint: 'E8D5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_swap_vertical_circle',
@@ -1592,7 +1592,7 @@ const iconsDB = [
     keywords: ['action', 'swap', 'vertical', 'circle'],
     ligature: 'swap_vertical_circle',
     codepoint: 'E8D6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_system_update_alt',
@@ -1601,7 +1601,7 @@ const iconsDB = [
     keywords: ['action', 'system', 'update', 'alt'],
     ligature: 'system_update_alt',
     codepoint: 'E8D7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tab',
@@ -1610,7 +1610,7 @@ const iconsDB = [
     keywords: ['action', 'tab'],
     ligature: 'tab',
     codepoint: 'E8D8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tab_unselected',
@@ -1619,7 +1619,7 @@ const iconsDB = [
     keywords: ['action', 'tab', 'unselected'],
     ligature: 'tab_unselected',
     codepoint: 'E8D9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_theaters',
@@ -1628,7 +1628,7 @@ const iconsDB = [
     keywords: ['action', 'theaters'],
     ligature: 'theaters',
     codepoint: 'E8DA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_thumb_down',
@@ -1637,7 +1637,7 @@ const iconsDB = [
     keywords: ['action', 'thumb', 'down'],
     ligature: 'thumb_down',
     codepoint: 'E8DB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_thumb_up',
@@ -1646,7 +1646,7 @@ const iconsDB = [
     keywords: ['action', 'thumb', 'up'],
     ligature: 'thumb_up',
     codepoint: 'E8DC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_thumbs_up_down',
@@ -1655,7 +1655,7 @@ const iconsDB = [
     keywords: ['action', 'thumbs', 'up', 'down'],
     ligature: 'thumbs_up_down',
     codepoint: 'E8DD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timeline',
@@ -1664,7 +1664,7 @@ const iconsDB = [
     keywords: ['action', 'timeline'],
     ligature: 'timeline',
     codepoint: 'E922',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_toc',
@@ -1673,7 +1673,7 @@ const iconsDB = [
     keywords: ['action', 'toc'],
     ligature: 'toc',
     codepoint: 'E8DE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_today',
@@ -1682,7 +1682,7 @@ const iconsDB = [
     keywords: ['action', 'today'],
     ligature: 'today',
     codepoint: 'E8DF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_toll',
@@ -1691,7 +1691,7 @@ const iconsDB = [
     keywords: ['action', 'toll'],
     ligature: 'toll',
     codepoint: 'E8E0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_touch_app',
@@ -1700,7 +1700,7 @@ const iconsDB = [
     keywords: ['action', 'touch', 'app'],
     ligature: 'touch_app',
     codepoint: 'E913',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_track_changes',
@@ -1709,7 +1709,7 @@ const iconsDB = [
     keywords: ['action', 'track', 'changes'],
     ligature: 'track_changes',
     codepoint: 'E8E1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_translate',
@@ -1718,7 +1718,7 @@ const iconsDB = [
     keywords: ['action', 'translate'],
     ligature: 'translate',
     codepoint: 'E8E2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_trending_down',
@@ -1727,7 +1727,7 @@ const iconsDB = [
     keywords: ['action', 'trending', 'down'],
     ligature: 'trending_down',
     codepoint: 'E8E3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_trending_flat',
@@ -1736,7 +1736,7 @@ const iconsDB = [
     keywords: ['action', 'trending', 'flat'],
     ligature: 'trending_flat',
     codepoint: 'E8E4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_trending_up',
@@ -1745,7 +1745,7 @@ const iconsDB = [
     keywords: ['action', 'trending', 'up'],
     ligature: 'trending_up',
     codepoint: 'E8E5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_turned_in',
@@ -1754,7 +1754,7 @@ const iconsDB = [
     keywords: ['action', 'turned', 'in'],
     ligature: 'turned_in',
     codepoint: 'E8E6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_turned_in_not',
@@ -1763,7 +1763,7 @@ const iconsDB = [
     keywords: ['action', 'turned', 'in', 'not'],
     ligature: 'turned_in_not',
     codepoint: 'E8E7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_update',
@@ -1772,7 +1772,7 @@ const iconsDB = [
     keywords: ['action', 'update'],
     ligature: 'update',
     codepoint: 'E923',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_verified_user',
@@ -1781,7 +1781,7 @@ const iconsDB = [
     keywords: ['action', 'verified', 'user'],
     ligature: 'verified_user',
     codepoint: 'E8E8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_agenda',
@@ -1790,7 +1790,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'agenda'],
     ligature: 'view_agenda',
     codepoint: 'E8E9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_array',
@@ -1799,7 +1799,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'array'],
     ligature: 'view_array',
     codepoint: 'E8EA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_carousel',
@@ -1808,7 +1808,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'carousel'],
     ligature: 'view_carousel',
     codepoint: 'E8EB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_column',
@@ -1817,7 +1817,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'column'],
     ligature: 'view_column',
     codepoint: 'E8EC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_day',
@@ -1826,7 +1826,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'day'],
     ligature: 'view_day',
     codepoint: 'E8ED',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_headline',
@@ -1835,7 +1835,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'headline'],
     ligature: 'view_headline',
     codepoint: 'E8EE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_list',
@@ -1844,7 +1844,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'list'],
     ligature: 'view_list',
     codepoint: 'E8EF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_module',
@@ -1853,7 +1853,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'module'],
     ligature: 'view_module',
     codepoint: 'E8F0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_quilt',
@@ -1862,7 +1862,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'quilt'],
     ligature: 'view_quilt',
     codepoint: 'E8F1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_stream',
@@ -1871,7 +1871,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'stream'],
     ligature: 'view_stream',
     codepoint: 'E8F2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_week',
@@ -1880,7 +1880,7 @@ const iconsDB = [
     keywords: ['action', 'view', 'week'],
     ligature: 'view_week',
     codepoint: 'E8F3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_visibility',
@@ -1889,7 +1889,7 @@ const iconsDB = [
     keywords: ['action', 'visibility'],
     ligature: 'visibility',
     codepoint: 'E8F4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_visibility_off',
@@ -1898,7 +1898,7 @@ const iconsDB = [
     keywords: ['action', 'visibility', 'off'],
     ligature: 'visibility_off',
     codepoint: 'E8F5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_watch_later',
@@ -1907,7 +1907,7 @@ const iconsDB = [
     keywords: ['action', 'watch', 'later'],
     ligature: 'watch_later',
     codepoint: 'E924',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_work',
@@ -1916,7 +1916,7 @@ const iconsDB = [
     keywords: ['action', 'work'],
     ligature: 'work',
     codepoint: 'E8F9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_youtube_searched_for',
@@ -1925,7 +1925,7 @@ const iconsDB = [
     keywords: ['action', 'youtube', 'searched'],
     ligature: 'youtube_searched_for',
     codepoint: 'E8FA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_zoom_in',
@@ -1934,7 +1934,7 @@ const iconsDB = [
     keywords: ['action', 'zoom', 'in'],
     ligature: 'zoom_in',
     codepoint: 'E8FF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_zoom_out',
@@ -1943,7 +1943,7 @@ const iconsDB = [
     keywords: ['action', 'zoom', 'out'],
     ligature: 'zoom_out',
     codepoint: 'E900',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_alert',
@@ -1952,7 +1952,7 @@ const iconsDB = [
     keywords: ['alert', 'add', 'alert'],
     ligature: 'add_alert',
     codepoint: 'E003',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_error',
@@ -1961,7 +1961,7 @@ const iconsDB = [
     keywords: ['alert', 'error'],
     ligature: 'error',
     codepoint: 'E000',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_error_outline',
@@ -1970,7 +1970,7 @@ const iconsDB = [
     keywords: ['alert', 'error', 'outline'],
     ligature: 'error_outline',
     codepoint: 'E001',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_warning',
@@ -1979,7 +1979,7 @@ const iconsDB = [
     keywords: ['alert', 'warning'],
     ligature: 'warning',
     codepoint: 'E002',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_to_queue',
@@ -1988,7 +1988,7 @@ const iconsDB = [
     keywords: ['av', 'add', 'to', 'queue'],
     ligature: 'add_to_queue',
     codepoint: 'E05C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airplay',
@@ -1997,7 +1997,7 @@ const iconsDB = [
     keywords: ['av', 'airplay'],
     ligature: 'airplay',
     codepoint: 'E055',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_album',
@@ -2006,7 +2006,7 @@ const iconsDB = [
     keywords: ['av', 'album'],
     ligature: 'album',
     codepoint: 'E019',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_art_track',
@@ -2015,7 +2015,7 @@ const iconsDB = [
     keywords: ['av', 'art', 'track'],
     ligature: 'art_track',
     codepoint: 'E060',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_av_timer',
@@ -2024,7 +2024,7 @@ const iconsDB = [
     keywords: ['av', 'av', 'timer'],
     ligature: 'av_timer',
     codepoint: 'E01B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_branding_watermark',
@@ -2033,7 +2033,7 @@ const iconsDB = [
     keywords: ['av', 'branding', 'watermark'],
     ligature: 'branding_watermark',
     codepoint: 'E06B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_to_action',
@@ -2042,7 +2042,7 @@ const iconsDB = [
     keywords: ['av', 'call', 'to', 'action'],
     ligature: 'call_to_action',
     codepoint: 'E06C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_closed_caption',
@@ -2051,7 +2051,7 @@ const iconsDB = [
     keywords: ['av', 'closed', 'caption'],
     ligature: 'closed_caption',
     codepoint: 'E01C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_equalizer',
@@ -2060,7 +2060,7 @@ const iconsDB = [
     keywords: ['av', 'equalizer'],
     ligature: 'equalizer',
     codepoint: 'E01D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_explicit',
@@ -2069,7 +2069,7 @@ const iconsDB = [
     keywords: ['av', 'explicit'],
     ligature: 'explicit',
     codepoint: 'E01E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fast_forward',
@@ -2078,7 +2078,7 @@ const iconsDB = [
     keywords: ['av', 'fast', 'forward'],
     ligature: 'fast_forward',
     codepoint: 'E01F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fast_rewind',
@@ -2087,7 +2087,7 @@ const iconsDB = [
     keywords: ['av', 'fast', 'rewind'],
     ligature: 'fast_rewind',
     codepoint: 'E020',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_featured_play_list',
@@ -2096,7 +2096,7 @@ const iconsDB = [
     keywords: ['av', 'featured', 'play', 'list'],
     ligature: 'featured_play_list',
     codepoint: 'E06D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_featured_video',
@@ -2105,7 +2105,7 @@ const iconsDB = [
     keywords: ['av', 'featured', 'video'],
     ligature: 'featured_video',
     codepoint: 'E06E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fiber_dvr',
@@ -2114,7 +2114,7 @@ const iconsDB = [
     keywords: ['av', 'fiber', 'dvr'],
     ligature: 'fiber_dvr',
     codepoint: 'E05D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fiber_manual_record',
@@ -2123,7 +2123,7 @@ const iconsDB = [
     keywords: ['av', 'fiber', 'manual', 'record'],
     ligature: 'fiber_manual_record',
     codepoint: 'E061',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fiber_new',
@@ -2132,7 +2132,7 @@ const iconsDB = [
     keywords: ['av', 'fiber', 'new'],
     ligature: 'fiber_new',
     codepoint: 'E05E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fiber_pin',
@@ -2141,7 +2141,7 @@ const iconsDB = [
     keywords: ['av', 'fiber', 'pin'],
     ligature: 'fiber_pin',
     codepoint: 'E06A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fiber_smart_record',
@@ -2150,7 +2150,7 @@ const iconsDB = [
     keywords: ['av', 'fiber', 'smart', 'record'],
     ligature: 'fiber_smart_record',
     codepoint: 'E062',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_forward_10',
@@ -2159,7 +2159,7 @@ const iconsDB = [
     keywords: ['av', 'forward', '10'],
     ligature: 'forward_10',
     codepoint: 'E056',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_forward_30',
@@ -2168,7 +2168,7 @@ const iconsDB = [
     keywords: ['av', 'forward', '30'],
     ligature: 'forward_30',
     codepoint: 'E057',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_forward_5',
@@ -2177,7 +2177,7 @@ const iconsDB = [
     keywords: ['av', 'forward'],
     ligature: 'forward_5',
     codepoint: 'E058',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_games',
@@ -2186,7 +2186,7 @@ const iconsDB = [
     keywords: ['av', 'games'],
     ligature: 'games',
     codepoint: 'E021',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hd',
@@ -2195,7 +2195,7 @@ const iconsDB = [
     keywords: ['av', 'hd'],
     ligature: 'hd',
     codepoint: 'E052',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hearing',
@@ -2204,7 +2204,7 @@ const iconsDB = [
     keywords: ['av', 'hearing'],
     ligature: 'hearing',
     codepoint: 'E023',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_high_quality',
@@ -2213,7 +2213,7 @@ const iconsDB = [
     keywords: ['av', 'high', 'quality'],
     ligature: 'high_quality',
     codepoint: 'E024',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_library_add',
@@ -2222,7 +2222,7 @@ const iconsDB = [
     keywords: ['av', 'library', 'add'],
     ligature: 'library_add',
     codepoint: 'E02E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_library_books',
@@ -2231,7 +2231,7 @@ const iconsDB = [
     keywords: ['av', 'library', 'books'],
     ligature: 'library_books',
     codepoint: 'E02F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_library_music',
@@ -2240,7 +2240,7 @@ const iconsDB = [
     keywords: ['av', 'library', 'music'],
     ligature: 'library_music',
     codepoint: 'E030',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_loop',
@@ -2249,7 +2249,7 @@ const iconsDB = [
     keywords: ['av', 'loop'],
     ligature: 'loop',
     codepoint: 'E028',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mic',
@@ -2258,7 +2258,7 @@ const iconsDB = [
     keywords: ['av', 'mic'],
     ligature: 'mic',
     codepoint: 'E029',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mic_none',
@@ -2267,7 +2267,7 @@ const iconsDB = [
     keywords: ['av', 'mic', 'none'],
     ligature: 'mic_none',
     codepoint: 'E02A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mic_off',
@@ -2276,7 +2276,7 @@ const iconsDB = [
     keywords: ['av', 'mic', 'off'],
     ligature: 'mic_off',
     codepoint: 'E02B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_movie',
@@ -2285,7 +2285,7 @@ const iconsDB = [
     keywords: ['av', 'movie'],
     ligature: 'movie',
     codepoint: 'E02C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_music_video',
@@ -2294,7 +2294,7 @@ const iconsDB = [
     keywords: ['av', 'music', 'video'],
     ligature: 'music_video',
     codepoint: 'E063',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_new_releases',
@@ -2303,7 +2303,7 @@ const iconsDB = [
     keywords: ['av', 'new', 'releases'],
     ligature: 'new_releases',
     codepoint: 'E031',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_not_interested',
@@ -2312,7 +2312,7 @@ const iconsDB = [
     keywords: ['av', 'not', 'interested'],
     ligature: 'not_interested',
     codepoint: 'E033',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_note',
@@ -2321,7 +2321,7 @@ const iconsDB = [
     keywords: ['av', 'note'],
     ligature: 'note',
     codepoint: 'E06F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pause',
@@ -2330,7 +2330,7 @@ const iconsDB = [
     keywords: ['av', 'pause'],
     ligature: 'pause',
     codepoint: 'E034',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pause_circle_filled',
@@ -2339,7 +2339,7 @@ const iconsDB = [
     keywords: ['av', 'pause', 'circle', 'filled'],
     ligature: 'pause_circle_filled',
     codepoint: 'E035',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pause_circle_outline',
@@ -2348,7 +2348,7 @@ const iconsDB = [
     keywords: ['av', 'pause', 'circle', 'outline'],
     ligature: 'pause_circle_outline',
     codepoint: 'E036',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_play_arrow',
@@ -2357,7 +2357,7 @@ const iconsDB = [
     keywords: ['av', 'play', 'arrow'],
     ligature: 'play_arrow',
     codepoint: 'E037',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_play_circle_filled',
@@ -2366,7 +2366,7 @@ const iconsDB = [
     keywords: ['av', 'play', 'circle', 'filled'],
     ligature: 'play_circle_filled',
     codepoint: 'E038',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_play_circle_outline',
@@ -2375,7 +2375,7 @@ const iconsDB = [
     keywords: ['av', 'play', 'circle', 'outline'],
     ligature: 'play_circle_outline',
     codepoint: 'E039',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_playlist_add',
@@ -2384,7 +2384,7 @@ const iconsDB = [
     keywords: ['av', 'playlist', 'add'],
     ligature: 'playlist_add',
     codepoint: 'E03B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_playlist_add_check',
@@ -2393,7 +2393,7 @@ const iconsDB = [
     keywords: ['av', 'playlist', 'add', 'check'],
     ligature: 'playlist_add_check',
     codepoint: 'E065',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_playlist_play',
@@ -2402,7 +2402,7 @@ const iconsDB = [
     keywords: ['av', 'playlist', 'play'],
     ligature: 'playlist_play',
     codepoint: 'E05F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_queue',
@@ -2411,7 +2411,7 @@ const iconsDB = [
     keywords: ['av', 'queue'],
     ligature: 'queue',
     codepoint: 'E03C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_queue_music',
@@ -2420,7 +2420,7 @@ const iconsDB = [
     keywords: ['av', 'queue', 'music'],
     ligature: 'queue_music',
     codepoint: 'E03D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_queue_play_next',
@@ -2429,7 +2429,7 @@ const iconsDB = [
     keywords: ['av', 'queue', 'play', 'next'],
     ligature: 'queue_play_next',
     codepoint: 'E066',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_radio',
@@ -2438,7 +2438,7 @@ const iconsDB = [
     keywords: ['av', 'radio'],
     ligature: 'radio',
     codepoint: 'E03E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_recent_actors',
@@ -2447,7 +2447,7 @@ const iconsDB = [
     keywords: ['av', 'recent', 'actors'],
     ligature: 'recent_actors',
     codepoint: 'E03F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove_from_queue',
@@ -2456,7 +2456,7 @@ const iconsDB = [
     keywords: ['av', 'remove', 'from', 'queue'],
     ligature: 'remove_from_queue',
     codepoint: 'E067',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_repeat',
@@ -2465,7 +2465,7 @@ const iconsDB = [
     keywords: ['av', 'repeat'],
     ligature: 'repeat',
     codepoint: 'E040',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_repeat_one',
@@ -2474,7 +2474,7 @@ const iconsDB = [
     keywords: ['av', 'repeat', 'one'],
     ligature: 'repeat_one',
     codepoint: 'E041',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_replay',
@@ -2483,7 +2483,7 @@ const iconsDB = [
     keywords: ['av', 'replay'],
     ligature: 'replay',
     codepoint: 'E042',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_replay_10',
@@ -2492,7 +2492,7 @@ const iconsDB = [
     keywords: ['av', 'replay', '10'],
     ligature: 'replay_10',
     codepoint: 'E059',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_replay_30',
@@ -2501,7 +2501,7 @@ const iconsDB = [
     keywords: ['av', 'replay', '30'],
     ligature: 'replay_30',
     codepoint: 'E05A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_replay_5',
@@ -2510,7 +2510,7 @@ const iconsDB = [
     keywords: ['av', 'replay'],
     ligature: 'replay_5',
     codepoint: 'E05B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_shuffle',
@@ -2519,7 +2519,7 @@ const iconsDB = [
     keywords: ['av', 'shuffle'],
     ligature: 'shuffle',
     codepoint: 'E043',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_skip_next',
@@ -2528,7 +2528,7 @@ const iconsDB = [
     keywords: ['av', 'skip', 'next'],
     ligature: 'skip_next',
     codepoint: 'E044',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_skip_previous',
@@ -2537,7 +2537,7 @@ const iconsDB = [
     keywords: ['av', 'skip', 'previous'],
     ligature: 'skip_previous',
     codepoint: 'E045',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_slow_motion_video',
@@ -2546,7 +2546,7 @@ const iconsDB = [
     keywords: ['av', 'slow', 'motion', 'video'],
     ligature: 'slow_motion_video',
     codepoint: 'E068',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_snooze',
@@ -2555,7 +2555,7 @@ const iconsDB = [
     keywords: ['av', 'snooze'],
     ligature: 'snooze',
     codepoint: 'E046',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sort_by_alpha',
@@ -2564,7 +2564,7 @@ const iconsDB = [
     keywords: ['av', 'sort', 'by', 'alpha'],
     ligature: 'sort_by_alpha',
     codepoint: 'E053',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stop',
@@ -2573,7 +2573,7 @@ const iconsDB = [
     keywords: ['av', 'stop'],
     ligature: 'stop',
     codepoint: 'E047',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subscriptions',
@@ -2582,7 +2582,7 @@ const iconsDB = [
     keywords: ['av', 'subscriptions'],
     ligature: 'subscriptions',
     codepoint: 'E064',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subtitles',
@@ -2591,7 +2591,7 @@ const iconsDB = [
     keywords: ['av', 'subtitles'],
     ligature: 'subtitles',
     codepoint: 'E048',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_surround_sound',
@@ -2600,7 +2600,7 @@ const iconsDB = [
     keywords: ['av', 'surround', 'sound'],
     ligature: 'surround_sound',
     codepoint: 'E049',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_video_call',
@@ -2609,7 +2609,7 @@ const iconsDB = [
     keywords: ['av', 'video', 'call'],
     ligature: 'video_call',
     codepoint: 'E070',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_video_label',
@@ -2618,7 +2618,7 @@ const iconsDB = [
     keywords: ['av', 'video', 'label'],
     ligature: 'video_label',
     codepoint: 'E071',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_video_library',
@@ -2627,7 +2627,7 @@ const iconsDB = [
     keywords: ['av', 'video', 'library'],
     ligature: 'video_library',
     codepoint: 'E04A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_videocam',
@@ -2636,7 +2636,7 @@ const iconsDB = [
     keywords: ['av', 'videocam'],
     ligature: 'videocam',
     codepoint: 'E04B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_videocam_off',
@@ -2645,7 +2645,7 @@ const iconsDB = [
     keywords: ['av', 'videocam', 'off'],
     ligature: 'videocam_off',
     codepoint: 'E04C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_volume_down',
@@ -2654,7 +2654,7 @@ const iconsDB = [
     keywords: ['av', 'volume', 'down'],
     ligature: 'volume_down',
     codepoint: 'E04D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_volume_mute',
@@ -2663,7 +2663,7 @@ const iconsDB = [
     keywords: ['av', 'volume', 'mute'],
     ligature: 'volume_mute',
     codepoint: 'E04E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_volume_off',
@@ -2672,7 +2672,7 @@ const iconsDB = [
     keywords: ['av', 'volume', 'off'],
     ligature: 'volume_off',
     codepoint: 'E04F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_volume_up',
@@ -2681,7 +2681,7 @@ const iconsDB = [
     keywords: ['av', 'volume', 'up'],
     ligature: 'volume_up',
     codepoint: 'E050',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_web',
@@ -2690,7 +2690,7 @@ const iconsDB = [
     keywords: ['av', 'web'],
     ligature: 'web',
     codepoint: 'E051',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_web_asset',
@@ -2699,7 +2699,7 @@ const iconsDB = [
     keywords: ['av', 'web', 'asset'],
     ligature: 'web_asset',
     codepoint: 'E069',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_business',
@@ -2708,7 +2708,7 @@ const iconsDB = [
     keywords: ['communication', 'business'],
     ligature: 'business',
     codepoint: 'E0AF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call',
@@ -2717,7 +2717,7 @@ const iconsDB = [
     keywords: ['communication', 'call'],
     ligature: 'call',
     codepoint: 'E0B0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_end',
@@ -2726,7 +2726,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'end'],
     ligature: 'call_end',
     codepoint: 'E0B1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_made',
@@ -2735,7 +2735,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'made'],
     ligature: 'call_made',
     codepoint: 'E0B2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_merge',
@@ -2744,7 +2744,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'merge'],
     ligature: 'call_merge',
     codepoint: 'E0B3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_missed',
@@ -2753,7 +2753,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'missed'],
     ligature: 'call_missed',
     codepoint: 'E0B4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_missed_outgoing',
@@ -2762,7 +2762,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'missed', 'outgoing'],
     ligature: 'call_missed_outgoing',
     codepoint: 'E0E4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_received',
@@ -2771,7 +2771,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'received'],
     ligature: 'call_received',
     codepoint: 'E0B5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_call_split',
@@ -2780,7 +2780,7 @@ const iconsDB = [
     keywords: ['communication', 'call', 'split'],
     ligature: 'call_split',
     codepoint: 'E0B6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chat',
@@ -2789,7 +2789,7 @@ const iconsDB = [
     keywords: ['communication', 'chat'],
     ligature: 'chat',
     codepoint: 'E0B7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chat_bubble',
@@ -2798,7 +2798,7 @@ const iconsDB = [
     keywords: ['communication', 'chat', 'bubble'],
     ligature: 'chat_bubble',
     codepoint: 'E0CA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chat_bubble_outline',
@@ -2807,7 +2807,7 @@ const iconsDB = [
     keywords: ['communication', 'chat', 'bubble', 'outline'],
     ligature: 'chat_bubble_outline',
     codepoint: 'E0CB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_clear_all',
@@ -2816,7 +2816,7 @@ const iconsDB = [
     keywords: ['communication', 'clear', 'all'],
     ligature: 'clear_all',
     codepoint: 'E0B8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_comment',
@@ -2825,7 +2825,7 @@ const iconsDB = [
     keywords: ['communication', 'comment'],
     ligature: 'comment',
     codepoint: 'E0B9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_contact_mail',
@@ -2834,7 +2834,7 @@ const iconsDB = [
     keywords: ['communication', 'contact', 'mail'],
     ligature: 'contact_mail',
     codepoint: 'E0D0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_contact_phone',
@@ -2843,7 +2843,7 @@ const iconsDB = [
     keywords: ['communication', 'contact', 'phone'],
     ligature: 'contact_phone',
     codepoint: 'E0CF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_contacts',
@@ -2852,7 +2852,7 @@ const iconsDB = [
     keywords: ['communication', 'contacts'],
     ligature: 'contacts',
     codepoint: 'E0BA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dialer_sip',
@@ -2861,7 +2861,7 @@ const iconsDB = [
     keywords: ['communication', 'dialer', 'sip'],
     ligature: 'dialer_sip',
     codepoint: 'E0BB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dialpad',
@@ -2870,7 +2870,7 @@ const iconsDB = [
     keywords: ['communication', 'dialpad'],
     ligature: 'dialpad',
     codepoint: 'E0BC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_email',
@@ -2879,7 +2879,7 @@ const iconsDB = [
     keywords: ['communication', 'email'],
     ligature: 'email',
     codepoint: 'E0BE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_forum',
@@ -2888,7 +2888,7 @@ const iconsDB = [
     keywords: ['communication', 'forum'],
     ligature: 'forum',
     codepoint: 'E0BF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_import_contacts',
@@ -2897,7 +2897,7 @@ const iconsDB = [
     keywords: ['communication', 'import', 'contacts'],
     ligature: 'import_contacts',
     codepoint: 'E0E0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_import_export',
@@ -2906,7 +2906,7 @@ const iconsDB = [
     keywords: ['communication', 'import', 'export'],
     ligature: 'import_export',
     codepoint: 'E0C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_invert_colors_off',
@@ -2915,7 +2915,7 @@ const iconsDB = [
     keywords: ['communication', 'invert', 'colors', 'off'],
     ligature: 'invert_colors_off',
     codepoint: 'E0C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_live_help',
@@ -2924,7 +2924,7 @@ const iconsDB = [
     keywords: ['communication', 'live', 'help'],
     ligature: 'live_help',
     codepoint: 'E0C6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_location_off',
@@ -2933,7 +2933,7 @@ const iconsDB = [
     keywords: ['communication', 'location', 'off'],
     ligature: 'location_off',
     codepoint: 'E0C7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_location_on',
@@ -2942,7 +2942,7 @@ const iconsDB = [
     keywords: ['communication', 'location', 'on'],
     ligature: 'location_on',
     codepoint: 'E0C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mail_outline',
@@ -2951,7 +2951,7 @@ const iconsDB = [
     keywords: ['communication', 'mail', 'outline'],
     ligature: 'mail_outline',
     codepoint: 'E0E1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_message',
@@ -2960,7 +2960,7 @@ const iconsDB = [
     keywords: ['communication', 'message'],
     ligature: 'message',
     codepoint: 'E0C9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_no_sim',
@@ -2969,7 +2969,7 @@ const iconsDB = [
     keywords: ['communication', 'no', 'sim'],
     ligature: 'no_sim',
     codepoint: 'E0CC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone',
@@ -2978,7 +2978,7 @@ const iconsDB = [
     keywords: ['communication', 'phone'],
     ligature: 'phone',
     codepoint: 'E0CD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink_erase',
@@ -2987,7 +2987,7 @@ const iconsDB = [
     keywords: ['communication', 'phonelink', 'erase'],
     ligature: 'phonelink_erase',
     codepoint: 'E0DB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink_lock',
@@ -2996,7 +2996,7 @@ const iconsDB = [
     keywords: ['communication', 'phonelink', 'lock'],
     ligature: 'phonelink_lock',
     codepoint: 'E0DC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink_ring',
@@ -3005,7 +3005,7 @@ const iconsDB = [
     keywords: ['communication', 'phonelink', 'ring'],
     ligature: 'phonelink_ring',
     codepoint: 'E0DD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink_setup',
@@ -3014,7 +3014,7 @@ const iconsDB = [
     keywords: ['communication', 'phonelink', 'setup'],
     ligature: 'phonelink_setup',
     codepoint: 'E0DE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_portable_wifi_off',
@@ -3023,7 +3023,7 @@ const iconsDB = [
     keywords: ['communication', 'portable', 'wifi', 'off'],
     ligature: 'portable_wifi_off',
     codepoint: 'E0CE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_present_to_all',
@@ -3032,7 +3032,7 @@ const iconsDB = [
     keywords: ['communication', 'present', 'to', 'all'],
     ligature: 'present_to_all',
     codepoint: 'E0DF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_ring_volume',
@@ -3041,7 +3041,7 @@ const iconsDB = [
     keywords: ['communication', 'ring', 'volume'],
     ligature: 'ring_volume',
     codepoint: 'E0D1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rss_feed',
@@ -3050,7 +3050,7 @@ const iconsDB = [
     keywords: ['communication', 'rss', 'feed'],
     ligature: 'rss_feed',
     codepoint: 'E0E5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_screen_share',
@@ -3059,7 +3059,7 @@ const iconsDB = [
     keywords: ['communication', 'screen', 'share'],
     ligature: 'screen_share',
     codepoint: 'E0E2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_speaker_phone',
@@ -3068,7 +3068,7 @@ const iconsDB = [
     keywords: ['communication', 'speaker', 'phone'],
     ligature: 'speaker_phone',
     codepoint: 'E0D2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stay_current_landscape',
@@ -3077,7 +3077,7 @@ const iconsDB = [
     keywords: ['communication', 'stay', 'current', 'landscape'],
     ligature: 'stay_current_landscape',
     codepoint: 'E0D3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stay_current_portrait',
@@ -3086,7 +3086,7 @@ const iconsDB = [
     keywords: ['communication', 'stay', 'current', 'portrait'],
     ligature: 'stay_current_portrait',
     codepoint: 'E0D4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stay_primary_landscape',
@@ -3095,7 +3095,7 @@ const iconsDB = [
     keywords: ['communication', 'stay', 'primary', 'landscape'],
     ligature: 'stay_primary_landscape',
     codepoint: 'E0D5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stay_primary_portrait',
@@ -3104,7 +3104,7 @@ const iconsDB = [
     keywords: ['communication', 'stay', 'primary', 'portrait'],
     ligature: 'stay_primary_portrait',
     codepoint: 'E0D6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_stop_screen_share',
@@ -3113,7 +3113,7 @@ const iconsDB = [
     keywords: ['communication', 'stop', 'screen', 'share'],
     ligature: 'stop_screen_share',
     codepoint: 'E0E3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_swap_calls',
@@ -3122,7 +3122,7 @@ const iconsDB = [
     keywords: ['communication', 'swap', 'calls'],
     ligature: 'swap_calls',
     codepoint: 'E0D7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_textsms',
@@ -3131,7 +3131,7 @@ const iconsDB = [
     keywords: ['communication', 'textsms'],
     ligature: 'textsms',
     codepoint: 'E0D8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_voicemail',
@@ -3140,7 +3140,7 @@ const iconsDB = [
     keywords: ['communication', 'voicemail'],
     ligature: 'voicemail',
     codepoint: 'E0D9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vpn_key',
@@ -3149,7 +3149,7 @@ const iconsDB = [
     keywords: ['communication', 'vpn', 'key'],
     ligature: 'vpn_key',
     codepoint: 'E0DA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add',
@@ -3158,7 +3158,7 @@ const iconsDB = [
     keywords: ['content', 'add'],
     ligature: 'add',
     codepoint: 'E145',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_box',
@@ -3167,7 +3167,7 @@ const iconsDB = [
     keywords: ['content', 'add', 'box'],
     ligature: 'add_box',
     codepoint: 'E146',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_circle',
@@ -3176,7 +3176,7 @@ const iconsDB = [
     keywords: ['content', 'add', 'circle'],
     ligature: 'add_circle',
     codepoint: 'E147',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_circle_outline',
@@ -3185,7 +3185,7 @@ const iconsDB = [
     keywords: ['content', 'add', 'circle', 'outline'],
     ligature: 'add_circle_outline',
     codepoint: 'E148',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_archive',
@@ -3194,7 +3194,7 @@ const iconsDB = [
     keywords: ['content', 'archive'],
     ligature: 'archive',
     codepoint: 'E149',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_backspace',
@@ -3203,7 +3203,7 @@ const iconsDB = [
     keywords: ['content', 'backspace'],
     ligature: 'backspace',
     codepoint: 'E14A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_block',
@@ -3212,7 +3212,7 @@ const iconsDB = [
     keywords: ['content', 'block'],
     ligature: 'block',
     codepoint: 'E14B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_clear',
@@ -3221,7 +3221,7 @@ const iconsDB = [
     keywords: ['content', 'clear'],
     ligature: 'clear',
     codepoint: 'E14C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_content_copy',
@@ -3230,7 +3230,7 @@ const iconsDB = [
     keywords: ['content', 'content', 'copy'],
     ligature: 'content_copy',
     codepoint: 'E14D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_content_cut',
@@ -3239,7 +3239,7 @@ const iconsDB = [
     keywords: ['content', 'content', 'cut'],
     ligature: 'content_cut',
     codepoint: 'E14E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_content_paste',
@@ -3248,7 +3248,7 @@ const iconsDB = [
     keywords: ['content', 'content', 'paste'],
     ligature: 'content_paste',
     codepoint: 'E14F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_create',
@@ -3257,7 +3257,7 @@ const iconsDB = [
     keywords: ['content', 'create'],
     ligature: 'create',
     codepoint: 'E150',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_delete_sweep',
@@ -3266,7 +3266,7 @@ const iconsDB = [
     keywords: ['content', 'delete', 'sweep'],
     ligature: 'delete_sweep',
     codepoint: 'E16C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_drafts',
@@ -3275,7 +3275,7 @@ const iconsDB = [
     keywords: ['content', 'drafts'],
     ligature: 'drafts',
     codepoint: 'E151',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_list',
@@ -3284,7 +3284,7 @@ const iconsDB = [
     keywords: ['content', 'filter', 'list'],
     ligature: 'filter_list',
     codepoint: 'E152',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flag',
@@ -3293,7 +3293,7 @@ const iconsDB = [
     keywords: ['content', 'flag'],
     ligature: 'flag',
     codepoint: 'E153',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_font_download',
@@ -3302,7 +3302,7 @@ const iconsDB = [
     keywords: ['content', 'font', 'download'],
     ligature: 'font_download',
     codepoint: 'E167',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_forward',
@@ -3311,7 +3311,7 @@ const iconsDB = [
     keywords: ['content', 'forward'],
     ligature: 'forward',
     codepoint: 'E154',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gesture',
@@ -3320,7 +3320,7 @@ const iconsDB = [
     keywords: ['content', 'gesture'],
     ligature: 'gesture',
     codepoint: 'E155',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_inbox',
@@ -3329,7 +3329,7 @@ const iconsDB = [
     keywords: ['content', 'inbox'],
     ligature: 'inbox',
     codepoint: 'E156',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_link',
@@ -3338,7 +3338,7 @@ const iconsDB = [
     keywords: ['content', 'link'],
     ligature: 'link',
     codepoint: 'E157',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_low_priority',
@@ -3347,7 +3347,7 @@ const iconsDB = [
     keywords: ['content', 'low', 'priority'],
     ligature: 'low_priority',
     codepoint: 'E16D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mail',
@@ -3356,7 +3356,7 @@ const iconsDB = [
     keywords: ['content', 'mail'],
     ligature: 'mail',
     codepoint: 'E158',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_markunread',
@@ -3365,7 +3365,7 @@ const iconsDB = [
     keywords: ['content', 'markunread'],
     ligature: 'markunread',
     codepoint: 'E159',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_move_to_inbox',
@@ -3374,7 +3374,7 @@ const iconsDB = [
     keywords: ['content', 'move', 'to', 'inbox'],
     ligature: 'move_to_inbox',
     codepoint: 'E168',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_next_week',
@@ -3383,7 +3383,7 @@ const iconsDB = [
     keywords: ['content', 'next', 'week'],
     ligature: 'next_week',
     codepoint: 'E16A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_redo',
@@ -3392,7 +3392,7 @@ const iconsDB = [
     keywords: ['content', 'redo'],
     ligature: 'redo',
     codepoint: 'E15A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove',
@@ -3401,7 +3401,7 @@ const iconsDB = [
     keywords: ['content', 'remove'],
     ligature: 'remove',
     codepoint: 'E15B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove_circle',
@@ -3410,7 +3410,7 @@ const iconsDB = [
     keywords: ['content', 'remove', 'circle'],
     ligature: 'remove_circle',
     codepoint: 'E15C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove_circle_outline',
@@ -3419,7 +3419,7 @@ const iconsDB = [
     keywords: ['content', 'remove', 'circle', 'outline'],
     ligature: 'remove_circle_outline',
     codepoint: 'E15D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_reply',
@@ -3428,7 +3428,7 @@ const iconsDB = [
     keywords: ['content', 'reply'],
     ligature: 'reply',
     codepoint: 'E15E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_reply_all',
@@ -3437,7 +3437,7 @@ const iconsDB = [
     keywords: ['content', 'reply', 'all'],
     ligature: 'reply_all',
     codepoint: 'E15F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_report',
@@ -3446,7 +3446,7 @@ const iconsDB = [
     keywords: ['content', 'report'],
     ligature: 'report',
     codepoint: 'E160',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_save',
@@ -3455,7 +3455,7 @@ const iconsDB = [
     keywords: ['content', 'save'],
     ligature: 'save',
     codepoint: 'E161',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_select_all',
@@ -3464,7 +3464,7 @@ const iconsDB = [
     keywords: ['content', 'select', 'all'],
     ligature: 'select_all',
     codepoint: 'E162',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_send',
@@ -3473,7 +3473,7 @@ const iconsDB = [
     keywords: ['content', 'send'],
     ligature: 'send',
     codepoint: 'E163',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sort',
@@ -3482,7 +3482,7 @@ const iconsDB = [
     keywords: ['content', 'sort'],
     ligature: 'sort',
     codepoint: 'E164',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_text_format',
@@ -3491,7 +3491,7 @@ const iconsDB = [
     keywords: ['content', 'text', 'format'],
     ligature: 'text_format',
     codepoint: 'E165',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_unarchive',
@@ -3500,7 +3500,7 @@ const iconsDB = [
     keywords: ['content', 'unarchive'],
     ligature: 'unarchive',
     codepoint: 'E169',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_undo',
@@ -3509,7 +3509,7 @@ const iconsDB = [
     keywords: ['content', 'undo'],
     ligature: 'undo',
     codepoint: 'E166',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_weekend',
@@ -3518,7 +3518,7 @@ const iconsDB = [
     keywords: ['content', 'weekend'],
     ligature: 'weekend',
     codepoint: 'E16B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_access_alarm',
@@ -3527,7 +3527,7 @@ const iconsDB = [
     keywords: ['device', 'access', 'alarm'],
     ligature: 'access_alarm',
     codepoint: 'E190',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_access_alarms',
@@ -3536,7 +3536,7 @@ const iconsDB = [
     keywords: ['device', 'access', 'alarms'],
     ligature: 'access_alarms',
     codepoint: 'E191',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_access_time',
@@ -3545,7 +3545,7 @@ const iconsDB = [
     keywords: ['device', 'access', 'time'],
     ligature: 'access_time',
     codepoint: 'E192',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_alarm',
@@ -3554,7 +3554,7 @@ const iconsDB = [
     keywords: ['device', 'add', 'alarm'],
     ligature: 'add_alarm',
     codepoint: 'E193',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airplanemode_active',
@@ -3563,7 +3563,7 @@ const iconsDB = [
     keywords: ['device', 'airplanemode', 'active'],
     ligature: 'airplanemode_active',
     codepoint: 'E195',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airplanemode_inactive',
@@ -3572,7 +3572,7 @@ const iconsDB = [
     keywords: ['device', 'airplanemode', 'inactive'],
     ligature: 'airplanemode_inactive',
     codepoint: 'E194',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_battery_alert',
@@ -3581,7 +3581,7 @@ const iconsDB = [
     keywords: ['device', 'battery', 'alert'],
     ligature: 'battery_alert',
     codepoint: 'E19C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_battery_charging_full',
@@ -3590,7 +3590,7 @@ const iconsDB = [
     keywords: ['device', 'battery', 'charging', 'full'],
     ligature: 'battery_charging_full',
     codepoint: 'E1A3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_battery_full',
@@ -3599,7 +3599,7 @@ const iconsDB = [
     keywords: ['device', 'battery', 'full'],
     ligature: 'battery_full',
     codepoint: 'E1A4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_battery_std',
@@ -3608,7 +3608,7 @@ const iconsDB = [
     keywords: ['device', 'battery', 'std'],
     ligature: 'battery_std',
     codepoint: 'E1A5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_battery_unknown',
@@ -3617,7 +3617,7 @@ const iconsDB = [
     keywords: ['device', 'battery', 'unknown'],
     ligature: 'battery_unknown',
     codepoint: 'E1A6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bluetooth',
@@ -3626,7 +3626,7 @@ const iconsDB = [
     keywords: ['device', 'bluetooth'],
     ligature: 'bluetooth',
     codepoint: 'E1A7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bluetooth_connected',
@@ -3635,7 +3635,7 @@ const iconsDB = [
     keywords: ['device', 'bluetooth', 'connected'],
     ligature: 'bluetooth_connected',
     codepoint: 'E1A8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bluetooth_disabled',
@@ -3644,7 +3644,7 @@ const iconsDB = [
     keywords: ['device', 'bluetooth', 'disabled'],
     ligature: 'bluetooth_disabled',
     codepoint: 'E1A9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bluetooth_searching',
@@ -3653,7 +3653,7 @@ const iconsDB = [
     keywords: ['device', 'bluetooth', 'searching'],
     ligature: 'bluetooth_searching',
     codepoint: 'E1AA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_auto',
@@ -3662,7 +3662,7 @@ const iconsDB = [
     keywords: ['device', 'brightness', 'auto'],
     ligature: 'brightness_auto',
     codepoint: 'E1AB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_high',
@@ -3671,7 +3671,7 @@ const iconsDB = [
     keywords: ['device', 'brightness', 'high'],
     ligature: 'brightness_high',
     codepoint: 'E1AC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_low',
@@ -3680,7 +3680,7 @@ const iconsDB = [
     keywords: ['device', 'brightness', 'low'],
     ligature: 'brightness_low',
     codepoint: 'E1AD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_medium',
@@ -3689,7 +3689,7 @@ const iconsDB = [
     keywords: ['device', 'brightness', 'medium'],
     ligature: 'brightness_medium',
     codepoint: 'E1AE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_data_usage',
@@ -3698,7 +3698,7 @@ const iconsDB = [
     keywords: ['device', 'data', 'usage'],
     ligature: 'data_usage',
     codepoint: 'E1AF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_developer_mode',
@@ -3707,7 +3707,7 @@ const iconsDB = [
     keywords: ['device', 'developer', 'mode'],
     ligature: 'developer_mode',
     codepoint: 'E1B0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_devices',
@@ -3716,7 +3716,7 @@ const iconsDB = [
     keywords: ['device', 'devices'],
     ligature: 'devices',
     codepoint: 'E1B1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dvr',
@@ -3725,7 +3725,7 @@ const iconsDB = [
     keywords: ['device', 'dvr'],
     ligature: 'dvr',
     codepoint: 'E1B2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gps_fixed',
@@ -3734,7 +3734,7 @@ const iconsDB = [
     keywords: ['device', 'gps', 'fixed'],
     ligature: 'gps_fixed',
     codepoint: 'E1B3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gps_not_fixed',
@@ -3743,7 +3743,7 @@ const iconsDB = [
     keywords: ['device', 'gps', 'not', 'fixed'],
     ligature: 'gps_not_fixed',
     codepoint: 'E1B4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gps_off',
@@ -3752,7 +3752,7 @@ const iconsDB = [
     keywords: ['device', 'gps', 'off'],
     ligature: 'gps_off',
     codepoint: 'E1B5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_graphic_eq',
@@ -3761,7 +3761,7 @@ const iconsDB = [
     keywords: ['device', 'graphic', 'eq'],
     ligature: 'graphic_eq',
     codepoint: 'E1B8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_location_disabled',
@@ -3770,7 +3770,7 @@ const iconsDB = [
     keywords: ['device', 'location', 'disabled'],
     ligature: 'location_disabled',
     codepoint: 'E1B6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_location_searching',
@@ -3779,7 +3779,7 @@ const iconsDB = [
     keywords: ['device', 'location', 'searching'],
     ligature: 'location_searching',
     codepoint: 'E1B7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_network_cell',
@@ -3788,7 +3788,7 @@ const iconsDB = [
     keywords: ['device', 'network', 'cell'],
     ligature: 'network_cell',
     codepoint: 'E1B9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_network_wifi',
@@ -3797,7 +3797,7 @@ const iconsDB = [
     keywords: ['device', 'network', 'wifi'],
     ligature: 'network_wifi',
     codepoint: 'E1BA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_nfc',
@@ -3806,7 +3806,7 @@ const iconsDB = [
     keywords: ['device', 'nfc'],
     ligature: 'nfc',
     codepoint: 'E1BB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_screen_lock_landscape',
@@ -3815,7 +3815,7 @@ const iconsDB = [
     keywords: ['device', 'screen', 'lock', 'landscape'],
     ligature: 'screen_lock_landscape',
     codepoint: 'E1BE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_screen_lock_portrait',
@@ -3824,7 +3824,7 @@ const iconsDB = [
     keywords: ['device', 'screen', 'lock', 'portrait'],
     ligature: 'screen_lock_portrait',
     codepoint: 'E1BF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_screen_lock_rotation',
@@ -3833,7 +3833,7 @@ const iconsDB = [
     keywords: ['device', 'screen', 'lock', 'rotation'],
     ligature: 'screen_lock_rotation',
     codepoint: 'E1C0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_screen_rotation',
@@ -3842,7 +3842,7 @@ const iconsDB = [
     keywords: ['device', 'screen', 'rotation'],
     ligature: 'screen_rotation',
     codepoint: 'E1C1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sd_storage',
@@ -3851,7 +3851,7 @@ const iconsDB = [
     keywords: ['device', 'sd', 'storage'],
     ligature: 'sd_storage',
     codepoint: 'E1C2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_settings_system_daydream',
@@ -3860,7 +3860,7 @@ const iconsDB = [
     keywords: ['device', 'settings', 'system', 'daydream'],
     ligature: 'settings_system_daydream',
     codepoint: 'E1C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_cellular_4_bar',
@@ -3869,7 +3869,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'cellular', 'bar'],
     ligature: 'signal_cellular_4_bar',
     codepoint: 'E1C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_cellular_connected_no_internet_4_bar',
@@ -3882,11 +3882,11 @@ const iconsDB = [
       'connected',
       'no',
       'internet',
-      'bar'
+      'bar',
     ],
     ligature: 'signal_cellular_connected_no_internet_4_bar',
     codepoint: 'E1CD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_cellular_no_sim',
@@ -3895,7 +3895,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'cellular', 'no', 'sim'],
     ligature: 'signal_cellular_no_sim',
     codepoint: 'E1CE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_cellular_null',
@@ -3904,7 +3904,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'cellular', 'null'],
     ligature: 'signal_cellular_null',
     codepoint: 'E1CF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_cellular_off',
@@ -3913,7 +3913,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'cellular', 'off'],
     ligature: 'signal_cellular_off',
     codepoint: 'E1D0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_wifi_4_bar',
@@ -3922,7 +3922,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'wifi', 'bar'],
     ligature: 'signal_wifi_4_bar',
     codepoint: 'E1D8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_wifi_4_bar_lock',
@@ -3931,7 +3931,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'wifi', 'bar', 'lock'],
     ligature: 'signal_wifi_4_bar_lock',
     codepoint: 'E1D9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_signal_wifi_off',
@@ -3940,7 +3940,7 @@ const iconsDB = [
     keywords: ['device', 'signal', 'wifi', 'off'],
     ligature: 'signal_wifi_off',
     codepoint: 'E1DA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_storage',
@@ -3949,7 +3949,7 @@ const iconsDB = [
     keywords: ['device', 'storage'],
     ligature: 'storage',
     codepoint: 'E1DB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_usb',
@@ -3958,7 +3958,7 @@ const iconsDB = [
     keywords: ['device', 'usb'],
     ligature: 'usb',
     codepoint: 'E1E0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wallpaper',
@@ -3967,7 +3967,7 @@ const iconsDB = [
     keywords: ['device', 'wallpaper'],
     ligature: 'wallpaper',
     codepoint: 'E1BC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_widgets',
@@ -3976,7 +3976,7 @@ const iconsDB = [
     keywords: ['device', 'widgets'],
     ligature: 'widgets',
     codepoint: 'E1BD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wifi_lock',
@@ -3985,7 +3985,7 @@ const iconsDB = [
     keywords: ['device', 'wifi', 'lock'],
     ligature: 'wifi_lock',
     codepoint: 'E1E1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wifi_tethering',
@@ -3994,7 +3994,7 @@ const iconsDB = [
     keywords: ['device', 'wifi', 'tethering'],
     ligature: 'wifi_tethering',
     codepoint: 'E1E2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_attach_file',
@@ -4003,7 +4003,7 @@ const iconsDB = [
     keywords: ['editor', 'attach', 'file'],
     ligature: 'attach_file',
     codepoint: 'E226',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_attach_money',
@@ -4012,7 +4012,7 @@ const iconsDB = [
     keywords: ['editor', 'attach', 'money'],
     ligature: 'attach_money',
     codepoint: 'E227',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_all',
@@ -4021,7 +4021,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'all'],
     ligature: 'border_all',
     codepoint: 'E228',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_bottom',
@@ -4030,7 +4030,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'bottom'],
     ligature: 'border_bottom',
     codepoint: 'E229',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_clear',
@@ -4039,7 +4039,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'clear'],
     ligature: 'border_clear',
     codepoint: 'E22A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_color',
@@ -4048,7 +4048,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'color'],
     ligature: 'border_color',
     codepoint: 'E22B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_horizontal',
@@ -4057,7 +4057,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'horizontal'],
     ligature: 'border_horizontal',
     codepoint: 'E22C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_inner',
@@ -4066,7 +4066,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'inner'],
     ligature: 'border_inner',
     codepoint: 'E22D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_left',
@@ -4075,7 +4075,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'left'],
     ligature: 'border_left',
     codepoint: 'E22E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_outer',
@@ -4084,7 +4084,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'outer'],
     ligature: 'border_outer',
     codepoint: 'E22F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_right',
@@ -4093,7 +4093,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'right'],
     ligature: 'border_right',
     codepoint: 'E230',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_style',
@@ -4102,7 +4102,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'style'],
     ligature: 'border_style',
     codepoint: 'E231',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_top',
@@ -4111,7 +4111,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'top'],
     ligature: 'border_top',
     codepoint: 'E232',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_border_vertical',
@@ -4120,7 +4120,7 @@ const iconsDB = [
     keywords: ['editor', 'border', 'vertical'],
     ligature: 'border_vertical',
     codepoint: 'E233',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bubble_chart',
@@ -4129,7 +4129,7 @@ const iconsDB = [
     keywords: ['editor', 'bubble', 'chart'],
     ligature: 'bubble_chart',
     codepoint: 'E6DD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_drag_handle',
@@ -4138,7 +4138,7 @@ const iconsDB = [
     keywords: ['editor', 'drag', 'handle'],
     ligature: 'drag_handle',
     codepoint: 'E25D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_align_center',
@@ -4147,7 +4147,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'align', 'center'],
     ligature: 'format_align_center',
     codepoint: 'E234',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_align_justify',
@@ -4156,7 +4156,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'align', 'justify'],
     ligature: 'format_align_justify',
     codepoint: 'E235',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_align_left',
@@ -4165,7 +4165,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'align', 'left'],
     ligature: 'format_align_left',
     codepoint: 'E236',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_align_right',
@@ -4174,7 +4174,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'align', 'right'],
     ligature: 'format_align_right',
     codepoint: 'E237',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_bold',
@@ -4183,7 +4183,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'bold'],
     ligature: 'format_bold',
     codepoint: 'E238',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_clear',
@@ -4192,7 +4192,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'clear'],
     ligature: 'format_clear',
     codepoint: 'E239',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_color_fill',
@@ -4201,7 +4201,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'color', 'fill'],
     ligature: 'format_color_fill',
     codepoint: 'E23A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_color_reset',
@@ -4210,7 +4210,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'color', 'reset'],
     ligature: 'format_color_reset',
     codepoint: 'E23B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_color_text',
@@ -4219,7 +4219,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'color', 'text'],
     ligature: 'format_color_text',
     codepoint: 'E23C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_indent_decrease',
@@ -4228,7 +4228,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'indent', 'decrease'],
     ligature: 'format_indent_decrease',
     codepoint: 'E23D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_indent_increase',
@@ -4237,7 +4237,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'indent', 'increase'],
     ligature: 'format_indent_increase',
     codepoint: 'E23E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_italic',
@@ -4246,7 +4246,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'italic'],
     ligature: 'format_italic',
     codepoint: 'E23F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_line_spacing',
@@ -4255,7 +4255,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'line', 'spacing'],
     ligature: 'format_line_spacing',
     codepoint: 'E240',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_list_bulleted',
@@ -4264,7 +4264,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'list', 'bulleted'],
     ligature: 'format_list_bulleted',
     codepoint: 'E241',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_list_numbered',
@@ -4273,7 +4273,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'list', 'numbered'],
     ligature: 'format_list_numbered',
     codepoint: 'E242',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_paint',
@@ -4282,7 +4282,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'paint'],
     ligature: 'format_paint',
     codepoint: 'E243',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_quote',
@@ -4291,7 +4291,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'quote'],
     ligature: 'format_quote',
     codepoint: 'E244',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_shapes',
@@ -4300,7 +4300,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'shapes'],
     ligature: 'format_shapes',
     codepoint: 'E25E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_size',
@@ -4309,7 +4309,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'size'],
     ligature: 'format_size',
     codepoint: 'E245',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_strikethrough',
@@ -4318,7 +4318,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'strikethrough'],
     ligature: 'format_strikethrough',
     codepoint: 'E246',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_textdirection_l_to_r',
@@ -4327,7 +4327,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'textdirection', 'to'],
     ligature: 'format_textdirection_l_to_r',
     codepoint: 'E247',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_textdirection_r_to_l',
@@ -4336,7 +4336,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'textdirection', 'to'],
     ligature: 'format_textdirection_r_to_l',
     codepoint: 'E248',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_format_underlined',
@@ -4345,7 +4345,7 @@ const iconsDB = [
     keywords: ['editor', 'format', 'underlined'],
     ligature: 'format_underlined',
     codepoint: 'E249',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_functions',
@@ -4354,7 +4354,7 @@ const iconsDB = [
     keywords: ['editor', 'functions'],
     ligature: 'functions',
     codepoint: 'E24A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_highlight',
@@ -4363,7 +4363,7 @@ const iconsDB = [
     keywords: ['editor', 'highlight'],
     ligature: 'highlight',
     codepoint: 'E25F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_chart',
@@ -4372,7 +4372,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'chart'],
     ligature: 'insert_chart',
     codepoint: 'E24B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_comment',
@@ -4381,7 +4381,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'comment'],
     ligature: 'insert_comment',
     codepoint: 'E24C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_drive_file',
@@ -4390,7 +4390,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'drive', 'file'],
     ligature: 'insert_drive_file',
     codepoint: 'E24D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_emoticon',
@@ -4399,7 +4399,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'emoticon'],
     ligature: 'insert_emoticon',
     codepoint: 'E24E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_invitation',
@@ -4408,7 +4408,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'invitation'],
     ligature: 'insert_invitation',
     codepoint: 'E24F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_link',
@@ -4417,7 +4417,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'link'],
     ligature: 'insert_link',
     codepoint: 'E250',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_insert_photo',
@@ -4426,7 +4426,7 @@ const iconsDB = [
     keywords: ['editor', 'insert', 'photo'],
     ligature: 'insert_photo',
     codepoint: 'E251',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_linear_scale',
@@ -4435,7 +4435,7 @@ const iconsDB = [
     keywords: ['editor', 'linear', 'scale'],
     ligature: 'linear_scale',
     codepoint: 'E260',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_merge_type',
@@ -4444,7 +4444,7 @@ const iconsDB = [
     keywords: ['editor', 'merge', 'type'],
     ligature: 'merge_type',
     codepoint: 'E252',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mode_comment',
@@ -4453,7 +4453,7 @@ const iconsDB = [
     keywords: ['editor', 'mode', 'comment'],
     ligature: 'mode_comment',
     codepoint: 'E253',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mode_edit',
@@ -4462,7 +4462,7 @@ const iconsDB = [
     keywords: ['editor', 'mode', 'edit'],
     ligature: 'mode_edit',
     codepoint: 'E254',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_monetization_on',
@@ -4471,7 +4471,7 @@ const iconsDB = [
     keywords: ['editor', 'monetization', 'on'],
     ligature: 'monetization_on',
     codepoint: 'E263',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_money_off',
@@ -4480,7 +4480,7 @@ const iconsDB = [
     keywords: ['editor', 'money', 'off'],
     ligature: 'money_off',
     codepoint: 'E25C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_multiline_chart',
@@ -4489,7 +4489,7 @@ const iconsDB = [
     keywords: ['editor', 'multiline', 'chart'],
     ligature: 'multiline_chart',
     codepoint: 'E6DF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pie_chart',
@@ -4498,7 +4498,7 @@ const iconsDB = [
     keywords: ['editor', 'pie', 'chart'],
     ligature: 'pie_chart',
     codepoint: 'E6C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pie_chart_outlined',
@@ -4507,7 +4507,7 @@ const iconsDB = [
     keywords: ['editor', 'pie', 'chart', 'outlined'],
     ligature: 'pie_chart_outlined',
     codepoint: 'E6C5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_publish',
@@ -4516,7 +4516,7 @@ const iconsDB = [
     keywords: ['editor', 'publish'],
     ligature: 'publish',
     codepoint: 'E255',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_short_text',
@@ -4525,7 +4525,7 @@ const iconsDB = [
     keywords: ['editor', 'short', 'text'],
     ligature: 'short_text',
     codepoint: 'E261',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_show_chart',
@@ -4534,7 +4534,7 @@ const iconsDB = [
     keywords: ['editor', 'show', 'chart'],
     ligature: 'show_chart',
     codepoint: 'E6E1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_space_bar',
@@ -4543,7 +4543,7 @@ const iconsDB = [
     keywords: ['editor', 'space', 'bar'],
     ligature: 'space_bar',
     codepoint: 'E256',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_strikethrough_s',
@@ -4552,7 +4552,7 @@ const iconsDB = [
     keywords: ['editor', 'strikethrough'],
     ligature: 'strikethrough_s',
     codepoint: 'E257',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_text_fields',
@@ -4561,7 +4561,7 @@ const iconsDB = [
     keywords: ['editor', 'text', 'fields'],
     ligature: 'text_fields',
     codepoint: 'E262',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_title',
@@ -4570,7 +4570,7 @@ const iconsDB = [
     keywords: ['editor', 'title'],
     ligature: 'title',
     codepoint: 'E264',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vertical_align_bottom',
@@ -4579,7 +4579,7 @@ const iconsDB = [
     keywords: ['editor', 'vertical', 'align', 'bottom'],
     ligature: 'vertical_align_bottom',
     codepoint: 'E258',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vertical_align_center',
@@ -4588,7 +4588,7 @@ const iconsDB = [
     keywords: ['editor', 'vertical', 'align', 'center'],
     ligature: 'vertical_align_center',
     codepoint: 'E259',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vertical_align_top',
@@ -4597,7 +4597,7 @@ const iconsDB = [
     keywords: ['editor', 'vertical', 'align', 'top'],
     ligature: 'vertical_align_top',
     codepoint: 'E25A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wrap_text',
@@ -4606,7 +4606,7 @@ const iconsDB = [
     keywords: ['editor', 'wrap', 'text'],
     ligature: 'wrap_text',
     codepoint: 'E25B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_attachment',
@@ -4615,7 +4615,7 @@ const iconsDB = [
     keywords: ['file', 'attachment'],
     ligature: 'attachment',
     codepoint: 'E2BC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud',
@@ -4624,7 +4624,7 @@ const iconsDB = [
     keywords: ['file', 'cloud'],
     ligature: 'cloud',
     codepoint: 'E2BD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_circle',
@@ -4633,7 +4633,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'circle'],
     ligature: 'cloud_circle',
     codepoint: 'E2BE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_done',
@@ -4642,7 +4642,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'done'],
     ligature: 'cloud_done',
     codepoint: 'E2BF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_download',
@@ -4651,7 +4651,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'download'],
     ligature: 'cloud_download',
     codepoint: 'E2C0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_off',
@@ -4660,7 +4660,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'off'],
     ligature: 'cloud_off',
     codepoint: 'E2C1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_queue',
@@ -4669,7 +4669,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'queue'],
     ligature: 'cloud_queue',
     codepoint: 'E2C2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cloud_upload',
@@ -4678,7 +4678,7 @@ const iconsDB = [
     keywords: ['file', 'cloud', 'upload'],
     ligature: 'cloud_upload',
     codepoint: 'E2C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_create_new_folder',
@@ -4687,7 +4687,7 @@ const iconsDB = [
     keywords: ['file', 'create', 'new', 'folder'],
     ligature: 'create_new_folder',
     codepoint: 'E2CC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_file_download',
@@ -4696,7 +4696,7 @@ const iconsDB = [
     keywords: ['file', 'file', 'download'],
     ligature: 'file_download',
     codepoint: 'E2C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_file_upload',
@@ -4705,7 +4705,7 @@ const iconsDB = [
     keywords: ['file', 'file', 'upload'],
     ligature: 'file_upload',
     codepoint: 'E2C6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_folder',
@@ -4714,7 +4714,7 @@ const iconsDB = [
     keywords: ['file', 'folder'],
     ligature: 'folder',
     codepoint: 'E2C7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_folder_open',
@@ -4723,7 +4723,7 @@ const iconsDB = [
     keywords: ['file', 'folder', 'open'],
     ligature: 'folder_open',
     codepoint: 'E2C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_folder_shared',
@@ -4732,7 +4732,7 @@ const iconsDB = [
     keywords: ['file', 'folder', 'shared'],
     ligature: 'folder_shared',
     codepoint: 'E2C9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cast',
@@ -4741,7 +4741,7 @@ const iconsDB = [
     keywords: ['hardware', 'cast'],
     ligature: 'cast',
     codepoint: 'E307',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cast_connected',
@@ -4750,7 +4750,7 @@ const iconsDB = [
     keywords: ['hardware', 'cast', 'connected'],
     ligature: 'cast_connected',
     codepoint: 'E308',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_computer',
@@ -4759,7 +4759,7 @@ const iconsDB = [
     keywords: ['hardware', 'computer'],
     ligature: 'computer',
     codepoint: 'E30A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_desktop_mac',
@@ -4768,7 +4768,7 @@ const iconsDB = [
     keywords: ['hardware', 'desktop', 'mac'],
     ligature: 'desktop_mac',
     codepoint: 'E30B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_desktop_windows',
@@ -4777,7 +4777,7 @@ const iconsDB = [
     keywords: ['hardware', 'desktop', 'windows'],
     ligature: 'desktop_windows',
     codepoint: 'E30C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_developer_board',
@@ -4786,7 +4786,7 @@ const iconsDB = [
     keywords: ['hardware', 'developer', 'board'],
     ligature: 'developer_board',
     codepoint: 'E30D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_device_hub',
@@ -4795,7 +4795,7 @@ const iconsDB = [
     keywords: ['hardware', 'device', 'hub'],
     ligature: 'device_hub',
     codepoint: 'E335',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_devices_other',
@@ -4804,7 +4804,7 @@ const iconsDB = [
     keywords: ['hardware', 'devices', 'other'],
     ligature: 'devices_other',
     codepoint: 'E337',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dock',
@@ -4813,7 +4813,7 @@ const iconsDB = [
     keywords: ['hardware', 'dock'],
     ligature: 'dock',
     codepoint: 'E30E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gamepad',
@@ -4822,7 +4822,7 @@ const iconsDB = [
     keywords: ['hardware', 'gamepad'],
     ligature: 'gamepad',
     codepoint: 'E30F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_headset',
@@ -4831,7 +4831,7 @@ const iconsDB = [
     keywords: ['hardware', 'headset'],
     ligature: 'headset',
     codepoint: 'E310',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_headset_mic',
@@ -4840,7 +4840,7 @@ const iconsDB = [
     keywords: ['hardware', 'headset', 'mic'],
     ligature: 'headset_mic',
     codepoint: 'E311',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard',
@@ -4849,7 +4849,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard'],
     ligature: 'keyboard',
     codepoint: 'E312',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_arrow_down',
@@ -4858,7 +4858,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'arrow', 'down'],
     ligature: 'keyboard_arrow_down',
     codepoint: 'E313',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_arrow_left',
@@ -4867,7 +4867,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'arrow', 'left'],
     ligature: 'keyboard_arrow_left',
     codepoint: 'E314',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_arrow_right',
@@ -4876,7 +4876,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'arrow', 'right'],
     ligature: 'keyboard_arrow_right',
     codepoint: 'E315',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_arrow_up',
@@ -4885,7 +4885,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'arrow', 'up'],
     ligature: 'keyboard_arrow_up',
     codepoint: 'E316',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_backspace',
@@ -4894,7 +4894,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'backspace'],
     ligature: 'keyboard_backspace',
     codepoint: 'E317',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_capslock',
@@ -4903,7 +4903,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'capslock'],
     ligature: 'keyboard_capslock',
     codepoint: 'E318',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_hide',
@@ -4912,7 +4912,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'hide'],
     ligature: 'keyboard_hide',
     codepoint: 'E31A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_return',
@@ -4921,7 +4921,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'return'],
     ligature: 'keyboard_return',
     codepoint: 'E31B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_tab',
@@ -4930,7 +4930,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'tab'],
     ligature: 'keyboard_tab',
     codepoint: 'E31C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_keyboard_voice',
@@ -4939,7 +4939,7 @@ const iconsDB = [
     keywords: ['hardware', 'keyboard', 'voice'],
     ligature: 'keyboard_voice',
     codepoint: 'E31D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_laptop',
@@ -4948,7 +4948,7 @@ const iconsDB = [
     keywords: ['hardware', 'laptop'],
     ligature: 'laptop',
     codepoint: 'E31E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_laptop_chromebook',
@@ -4957,7 +4957,7 @@ const iconsDB = [
     keywords: ['hardware', 'laptop', 'chromebook'],
     ligature: 'laptop_chromebook',
     codepoint: 'E31F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_laptop_mac',
@@ -4966,7 +4966,7 @@ const iconsDB = [
     keywords: ['hardware', 'laptop', 'mac'],
     ligature: 'laptop_mac',
     codepoint: 'E320',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_laptop_windows',
@@ -4975,7 +4975,7 @@ const iconsDB = [
     keywords: ['hardware', 'laptop', 'windows'],
     ligature: 'laptop_windows',
     codepoint: 'E321',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_memory',
@@ -4984,7 +4984,7 @@ const iconsDB = [
     keywords: ['hardware', 'memory'],
     ligature: 'memory',
     codepoint: 'E322',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mouse',
@@ -4993,7 +4993,7 @@ const iconsDB = [
     keywords: ['hardware', 'mouse'],
     ligature: 'mouse',
     codepoint: 'E323',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_android',
@@ -5002,7 +5002,7 @@ const iconsDB = [
     keywords: ['hardware', 'phone', 'android'],
     ligature: 'phone_android',
     codepoint: 'E324',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_iphone',
@@ -5011,7 +5011,7 @@ const iconsDB = [
     keywords: ['hardware', 'phone', 'iphone'],
     ligature: 'phone_iphone',
     codepoint: 'E325',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink',
@@ -5020,7 +5020,7 @@ const iconsDB = [
     keywords: ['hardware', 'phonelink'],
     ligature: 'phonelink',
     codepoint: 'E326',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phonelink_off',
@@ -5029,7 +5029,7 @@ const iconsDB = [
     keywords: ['hardware', 'phonelink', 'off'],
     ligature: 'phonelink_off',
     codepoint: 'E327',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_power_input',
@@ -5038,7 +5038,7 @@ const iconsDB = [
     keywords: ['hardware', 'power', 'input'],
     ligature: 'power_input',
     codepoint: 'E336',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_router',
@@ -5047,7 +5047,7 @@ const iconsDB = [
     keywords: ['hardware', 'router'],
     ligature: 'router',
     codepoint: 'E328',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_scanner',
@@ -5056,7 +5056,7 @@ const iconsDB = [
     keywords: ['hardware', 'scanner'],
     ligature: 'scanner',
     codepoint: 'E329',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_security',
@@ -5065,7 +5065,7 @@ const iconsDB = [
     keywords: ['hardware', 'security'],
     ligature: 'security',
     codepoint: 'E32A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sim_card',
@@ -5074,7 +5074,7 @@ const iconsDB = [
     keywords: ['hardware', 'sim', 'card'],
     ligature: 'sim_card',
     codepoint: 'E32B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_smartphone',
@@ -5083,7 +5083,7 @@ const iconsDB = [
     keywords: ['hardware', 'smartphone'],
     ligature: 'smartphone',
     codepoint: 'E32C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_speaker',
@@ -5092,7 +5092,7 @@ const iconsDB = [
     keywords: ['hardware', 'speaker'],
     ligature: 'speaker',
     codepoint: 'E32D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_speaker_group',
@@ -5101,7 +5101,7 @@ const iconsDB = [
     keywords: ['hardware', 'speaker', 'group'],
     ligature: 'speaker_group',
     codepoint: 'E32E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tablet',
@@ -5110,7 +5110,7 @@ const iconsDB = [
     keywords: ['hardware', 'tablet'],
     ligature: 'tablet',
     codepoint: 'E32F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tablet_android',
@@ -5119,7 +5119,7 @@ const iconsDB = [
     keywords: ['hardware', 'tablet', 'android'],
     ligature: 'tablet_android',
     codepoint: 'E330',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tablet_mac',
@@ -5128,7 +5128,7 @@ const iconsDB = [
     keywords: ['hardware', 'tablet', 'mac'],
     ligature: 'tablet_mac',
     codepoint: 'E331',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_toys',
@@ -5137,7 +5137,7 @@ const iconsDB = [
     keywords: ['hardware', 'toys'],
     ligature: 'toys',
     codepoint: 'E332',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tv',
@@ -5146,7 +5146,7 @@ const iconsDB = [
     keywords: ['hardware', 'tv'],
     ligature: 'tv',
     codepoint: 'E333',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_videogame_asset',
@@ -5155,7 +5155,7 @@ const iconsDB = [
     keywords: ['hardware', 'videogame', 'asset'],
     ligature: 'videogame_asset',
     codepoint: 'E338',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_watch',
@@ -5164,7 +5164,7 @@ const iconsDB = [
     keywords: ['hardware', 'watch'],
     ligature: 'watch',
     codepoint: 'E334',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_a_photo',
@@ -5173,7 +5173,7 @@ const iconsDB = [
     keywords: ['image', 'add', 'photo'],
     ligature: 'add_a_photo',
     codepoint: 'E439',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_to_photos',
@@ -5182,7 +5182,7 @@ const iconsDB = [
     keywords: ['image', 'add', 'to', 'photos'],
     ligature: 'add_to_photos',
     codepoint: 'E39D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_adjust',
@@ -5191,7 +5191,7 @@ const iconsDB = [
     keywords: ['image', 'adjust'],
     ligature: 'adjust',
     codepoint: 'E39E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assistant',
@@ -5200,7 +5200,7 @@ const iconsDB = [
     keywords: ['image', 'assistant'],
     ligature: 'assistant',
     codepoint: 'E39F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_assistant_photo',
@@ -5209,7 +5209,7 @@ const iconsDB = [
     keywords: ['image', 'assistant', 'photo'],
     ligature: 'assistant_photo',
     codepoint: 'E3A0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_audiotrack',
@@ -5218,7 +5218,7 @@ const iconsDB = [
     keywords: ['image', 'audiotrack'],
     ligature: 'audiotrack',
     codepoint: 'E3A1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_blur_circular',
@@ -5227,7 +5227,7 @@ const iconsDB = [
     keywords: ['image', 'blur', 'circular'],
     ligature: 'blur_circular',
     codepoint: 'E3A2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_blur_linear',
@@ -5236,7 +5236,7 @@ const iconsDB = [
     keywords: ['image', 'blur', 'linear'],
     ligature: 'blur_linear',
     codepoint: 'E3A3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_blur_off',
@@ -5245,7 +5245,7 @@ const iconsDB = [
     keywords: ['image', 'blur', 'off'],
     ligature: 'blur_off',
     codepoint: 'E3A4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_blur_on',
@@ -5254,7 +5254,7 @@ const iconsDB = [
     keywords: ['image', 'blur', 'on'],
     ligature: 'blur_on',
     codepoint: 'E3A5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_1',
@@ -5263,7 +5263,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_1',
     codepoint: 'E3A6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_2',
@@ -5272,7 +5272,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_2',
     codepoint: 'E3A7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_3',
@@ -5281,7 +5281,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_3',
     codepoint: 'E3A8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_4',
@@ -5290,7 +5290,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_4',
     codepoint: 'E3A9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_5',
@@ -5299,7 +5299,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_5',
     codepoint: 'E3AA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_6',
@@ -5308,7 +5308,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_6',
     codepoint: 'E3AB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brightness_7',
@@ -5317,7 +5317,7 @@ const iconsDB = [
     keywords: ['image', 'brightness'],
     ligature: 'brightness_7',
     codepoint: 'E3AC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_broken_image',
@@ -5326,7 +5326,7 @@ const iconsDB = [
     keywords: ['image', 'broken', 'image'],
     ligature: 'broken_image',
     codepoint: 'E3AD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_brush',
@@ -5335,7 +5335,7 @@ const iconsDB = [
     keywords: ['image', 'brush'],
     ligature: 'brush',
     codepoint: 'E3AE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_burst_mode',
@@ -5344,7 +5344,7 @@ const iconsDB = [
     keywords: ['image', 'burst', 'mode'],
     ligature: 'burst_mode',
     codepoint: 'E43C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera',
@@ -5353,7 +5353,7 @@ const iconsDB = [
     keywords: ['image', 'camera'],
     ligature: 'camera',
     codepoint: 'E3AF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera_alt',
@@ -5362,7 +5362,7 @@ const iconsDB = [
     keywords: ['image', 'camera', 'alt'],
     ligature: 'camera_alt',
     codepoint: 'E3B0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera_front',
@@ -5371,7 +5371,7 @@ const iconsDB = [
     keywords: ['image', 'camera', 'front'],
     ligature: 'camera_front',
     codepoint: 'E3B1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera_rear',
@@ -5380,7 +5380,7 @@ const iconsDB = [
     keywords: ['image', 'camera', 'rear'],
     ligature: 'camera_rear',
     codepoint: 'E3B2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_camera_roll',
@@ -5389,7 +5389,7 @@ const iconsDB = [
     keywords: ['image', 'camera', 'roll'],
     ligature: 'camera_roll',
     codepoint: 'E3B3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_center_focus_strong',
@@ -5398,7 +5398,7 @@ const iconsDB = [
     keywords: ['image', 'center', 'focus', 'strong'],
     ligature: 'center_focus_strong',
     codepoint: 'E3B4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_center_focus_weak',
@@ -5407,7 +5407,7 @@ const iconsDB = [
     keywords: ['image', 'center', 'focus', 'weak'],
     ligature: 'center_focus_weak',
     codepoint: 'E3B5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_collections',
@@ -5416,7 +5416,7 @@ const iconsDB = [
     keywords: ['image', 'collections'],
     ligature: 'collections',
     codepoint: 'E3B6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_collections_bookmark',
@@ -5425,7 +5425,7 @@ const iconsDB = [
     keywords: ['image', 'collections', 'bookmark'],
     ligature: 'collections_bookmark',
     codepoint: 'E431',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_color_lens',
@@ -5434,7 +5434,7 @@ const iconsDB = [
     keywords: ['image', 'color', 'lens'],
     ligature: 'color_lens',
     codepoint: 'E3B7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_colorize',
@@ -5443,7 +5443,7 @@ const iconsDB = [
     keywords: ['image', 'colorize'],
     ligature: 'colorize',
     codepoint: 'E3B8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_compare',
@@ -5452,7 +5452,7 @@ const iconsDB = [
     keywords: ['image', 'compare'],
     ligature: 'compare',
     codepoint: 'E3B9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_control_point',
@@ -5461,7 +5461,7 @@ const iconsDB = [
     keywords: ['image', 'control', 'point'],
     ligature: 'control_point',
     codepoint: 'E3BA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_control_point_duplicate',
@@ -5470,7 +5470,7 @@ const iconsDB = [
     keywords: ['image', 'control', 'point', 'duplicate'],
     ligature: 'control_point_duplicate',
     codepoint: 'E3BB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop',
@@ -5479,7 +5479,7 @@ const iconsDB = [
     keywords: ['image', 'crop'],
     ligature: 'crop',
     codepoint: 'E3BE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_16_9',
@@ -5488,7 +5488,7 @@ const iconsDB = [
     keywords: ['image', 'crop', '16'],
     ligature: 'crop_16_9',
     codepoint: 'E3BC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_3_2',
@@ -5497,7 +5497,7 @@ const iconsDB = [
     keywords: ['image', 'crop'],
     ligature: 'crop_3_2',
     codepoint: 'E3BD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_5_4',
@@ -5506,7 +5506,7 @@ const iconsDB = [
     keywords: ['image', 'crop'],
     ligature: 'crop_5_4',
     codepoint: 'E3BF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_7_5',
@@ -5515,7 +5515,7 @@ const iconsDB = [
     keywords: ['image', 'crop'],
     ligature: 'crop_7_5',
     codepoint: 'E3C0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_din',
@@ -5524,7 +5524,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'din'],
     ligature: 'crop_din',
     codepoint: 'E3C1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_free',
@@ -5533,7 +5533,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'free'],
     ligature: 'crop_free',
     codepoint: 'E3C2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_landscape',
@@ -5542,7 +5542,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'landscape'],
     ligature: 'crop_landscape',
     codepoint: 'E3C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_original',
@@ -5551,7 +5551,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'original'],
     ligature: 'crop_original',
     codepoint: 'E3C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_portrait',
@@ -5560,7 +5560,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'portrait'],
     ligature: 'crop_portrait',
     codepoint: 'E3C5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_rotate',
@@ -5569,7 +5569,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'rotate'],
     ligature: 'crop_rotate',
     codepoint: 'E437',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_crop_square',
@@ -5578,7 +5578,7 @@ const iconsDB = [
     keywords: ['image', 'crop', 'square'],
     ligature: 'crop_square',
     codepoint: 'E3C6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_dehaze',
@@ -5587,7 +5587,7 @@ const iconsDB = [
     keywords: ['image', 'dehaze'],
     ligature: 'dehaze',
     codepoint: 'E3C7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_details',
@@ -5596,7 +5596,7 @@ const iconsDB = [
     keywords: ['image', 'details'],
     ligature: 'details',
     codepoint: 'E3C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_edit',
@@ -5605,7 +5605,7 @@ const iconsDB = [
     keywords: ['image', 'edit'],
     ligature: 'edit',
     codepoint: 'E3C9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure',
@@ -5614,7 +5614,7 @@ const iconsDB = [
     keywords: ['image', 'exposure'],
     ligature: 'exposure',
     codepoint: 'E3CA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure_neg_1',
@@ -5623,7 +5623,7 @@ const iconsDB = [
     keywords: ['image', 'exposure', 'neg'],
     ligature: 'exposure_neg_1',
     codepoint: 'E3CB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure_neg_2',
@@ -5632,7 +5632,7 @@ const iconsDB = [
     keywords: ['image', 'exposure', 'neg'],
     ligature: 'exposure_neg_2',
     codepoint: 'E3CC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure_plus_1',
@@ -5641,7 +5641,7 @@ const iconsDB = [
     keywords: ['image', 'exposure', 'plus'],
     ligature: 'exposure_plus_1',
     codepoint: 'E3CD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure_plus_2',
@@ -5650,7 +5650,7 @@ const iconsDB = [
     keywords: ['image', 'exposure', 'plus'],
     ligature: 'exposure_plus_2',
     codepoint: 'E3CE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_exposure_zero',
@@ -5659,7 +5659,7 @@ const iconsDB = [
     keywords: ['image', 'exposure', 'zero'],
     ligature: 'exposure_zero',
     codepoint: 'E3CF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter',
@@ -5668,7 +5668,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter',
     codepoint: 'E3D3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_1',
@@ -5677,7 +5677,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_1',
     codepoint: 'E3D0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_2',
@@ -5686,7 +5686,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_2',
     codepoint: 'E3D1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_3',
@@ -5695,7 +5695,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_3',
     codepoint: 'E3D2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_4',
@@ -5704,7 +5704,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_4',
     codepoint: 'E3D4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_5',
@@ -5713,7 +5713,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_5',
     codepoint: 'E3D5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_6',
@@ -5722,7 +5722,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_6',
     codepoint: 'E3D6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_7',
@@ -5731,7 +5731,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_7',
     codepoint: 'E3D7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_8',
@@ -5740,7 +5740,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_8',
     codepoint: 'E3D8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_9',
@@ -5749,7 +5749,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_9',
     codepoint: 'E3D9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_9_plus',
@@ -5758,7 +5758,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'plus'],
     ligature: 'filter_9_plus',
     codepoint: 'E3DA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_b_and_w',
@@ -5767,7 +5767,7 @@ const iconsDB = [
     keywords: ['image', 'filter'],
     ligature: 'filter_b_and_w',
     codepoint: 'E3DB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_center_focus',
@@ -5776,7 +5776,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'center', 'focus'],
     ligature: 'filter_center_focus',
     codepoint: 'E3DC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_drama',
@@ -5785,7 +5785,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'drama'],
     ligature: 'filter_drama',
     codepoint: 'E3DD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_frames',
@@ -5794,7 +5794,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'frames'],
     ligature: 'filter_frames',
     codepoint: 'E3DE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_hdr',
@@ -5803,7 +5803,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'hdr'],
     ligature: 'filter_hdr',
     codepoint: 'E3DF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_none',
@@ -5812,7 +5812,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'none'],
     ligature: 'filter_none',
     codepoint: 'E3E0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_tilt_shift',
@@ -5821,7 +5821,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'tilt', 'shift'],
     ligature: 'filter_tilt_shift',
     codepoint: 'E3E2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_filter_vintage',
@@ -5830,7 +5830,7 @@ const iconsDB = [
     keywords: ['image', 'filter', 'vintage'],
     ligature: 'filter_vintage',
     codepoint: 'E3E3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flare',
@@ -5839,7 +5839,7 @@ const iconsDB = [
     keywords: ['image', 'flare'],
     ligature: 'flare',
     codepoint: 'E3E4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flash_auto',
@@ -5848,7 +5848,7 @@ const iconsDB = [
     keywords: ['image', 'flash', 'auto'],
     ligature: 'flash_auto',
     codepoint: 'E3E5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flash_off',
@@ -5857,7 +5857,7 @@ const iconsDB = [
     keywords: ['image', 'flash', 'off'],
     ligature: 'flash_off',
     codepoint: 'E3E6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flash_on',
@@ -5866,7 +5866,7 @@ const iconsDB = [
     keywords: ['image', 'flash', 'on'],
     ligature: 'flash_on',
     codepoint: 'E3E7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flip',
@@ -5875,7 +5875,7 @@ const iconsDB = [
     keywords: ['image', 'flip'],
     ligature: 'flip',
     codepoint: 'E3E8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_gradient',
@@ -5884,7 +5884,7 @@ const iconsDB = [
     keywords: ['image', 'gradient'],
     ligature: 'gradient',
     codepoint: 'E3E9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_grain',
@@ -5893,7 +5893,7 @@ const iconsDB = [
     keywords: ['image', 'grain'],
     ligature: 'grain',
     codepoint: 'E3EA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_grid_off',
@@ -5902,7 +5902,7 @@ const iconsDB = [
     keywords: ['image', 'grid', 'off'],
     ligature: 'grid_off',
     codepoint: 'E3EB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_grid_on',
@@ -5911,7 +5911,7 @@ const iconsDB = [
     keywords: ['image', 'grid', 'on'],
     ligature: 'grid_on',
     codepoint: 'E3EC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hdr_off',
@@ -5920,7 +5920,7 @@ const iconsDB = [
     keywords: ['image', 'hdr', 'off'],
     ligature: 'hdr_off',
     codepoint: 'E3ED',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hdr_on',
@@ -5929,7 +5929,7 @@ const iconsDB = [
     keywords: ['image', 'hdr', 'on'],
     ligature: 'hdr_on',
     codepoint: 'E3EE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hdr_strong',
@@ -5938,7 +5938,7 @@ const iconsDB = [
     keywords: ['image', 'hdr', 'strong'],
     ligature: 'hdr_strong',
     codepoint: 'E3F1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hdr_weak',
@@ -5947,7 +5947,7 @@ const iconsDB = [
     keywords: ['image', 'hdr', 'weak'],
     ligature: 'hdr_weak',
     codepoint: 'E3F2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_healing',
@@ -5956,7 +5956,7 @@ const iconsDB = [
     keywords: ['image', 'healing'],
     ligature: 'healing',
     codepoint: 'E3F3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_image',
@@ -5965,7 +5965,7 @@ const iconsDB = [
     keywords: ['image', 'image'],
     ligature: 'image',
     codepoint: 'E3F4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_image_aspect_ratio',
@@ -5974,7 +5974,7 @@ const iconsDB = [
     keywords: ['image', 'image', 'aspect', 'ratio'],
     ligature: 'image_aspect_ratio',
     codepoint: 'E3F5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_iso',
@@ -5983,7 +5983,7 @@ const iconsDB = [
     keywords: ['image', 'iso'],
     ligature: 'iso',
     codepoint: 'E3F6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_landscape',
@@ -5992,7 +5992,7 @@ const iconsDB = [
     keywords: ['image', 'landscape'],
     ligature: 'landscape',
     codepoint: 'E3F7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_leak_add',
@@ -6001,7 +6001,7 @@ const iconsDB = [
     keywords: ['image', 'leak', 'add'],
     ligature: 'leak_add',
     codepoint: 'E3F8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_leak_remove',
@@ -6010,7 +6010,7 @@ const iconsDB = [
     keywords: ['image', 'leak', 'remove'],
     ligature: 'leak_remove',
     codepoint: 'E3F9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_lens',
@@ -6019,7 +6019,7 @@ const iconsDB = [
     keywords: ['image', 'lens'],
     ligature: 'lens',
     codepoint: 'E3FA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_linked_camera',
@@ -6028,7 +6028,7 @@ const iconsDB = [
     keywords: ['image', 'linked', 'camera'],
     ligature: 'linked_camera',
     codepoint: 'E438',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks',
@@ -6037,7 +6037,7 @@ const iconsDB = [
     keywords: ['image', 'looks'],
     ligature: 'looks',
     codepoint: 'E3FC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_3',
@@ -6046,7 +6046,7 @@ const iconsDB = [
     keywords: ['image', 'looks'],
     ligature: 'looks_3',
     codepoint: 'E3FB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_4',
@@ -6055,7 +6055,7 @@ const iconsDB = [
     keywords: ['image', 'looks'],
     ligature: 'looks_4',
     codepoint: 'E3FD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_5',
@@ -6064,7 +6064,7 @@ const iconsDB = [
     keywords: ['image', 'looks'],
     ligature: 'looks_5',
     codepoint: 'E3FE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_6',
@@ -6073,7 +6073,7 @@ const iconsDB = [
     keywords: ['image', 'looks'],
     ligature: 'looks_6',
     codepoint: 'E3FF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_one',
@@ -6082,7 +6082,7 @@ const iconsDB = [
     keywords: ['image', 'looks', 'one'],
     ligature: 'looks_one',
     codepoint: 'E400',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_looks_two',
@@ -6091,7 +6091,7 @@ const iconsDB = [
     keywords: ['image', 'looks', 'two'],
     ligature: 'looks_two',
     codepoint: 'E401',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_loupe',
@@ -6100,7 +6100,7 @@ const iconsDB = [
     keywords: ['image', 'loupe'],
     ligature: 'loupe',
     codepoint: 'E402',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_monochrome_photos',
@@ -6109,7 +6109,7 @@ const iconsDB = [
     keywords: ['image', 'monochrome', 'photos'],
     ligature: 'monochrome_photos',
     codepoint: 'E403',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_movie_creation',
@@ -6118,7 +6118,7 @@ const iconsDB = [
     keywords: ['image', 'movie', 'creation'],
     ligature: 'movie_creation',
     codepoint: 'E404',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_movie_filter',
@@ -6127,7 +6127,7 @@ const iconsDB = [
     keywords: ['image', 'movie', 'filter'],
     ligature: 'movie_filter',
     codepoint: 'E43A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_music_note',
@@ -6136,7 +6136,7 @@ const iconsDB = [
     keywords: ['image', 'music', 'note'],
     ligature: 'music_note',
     codepoint: 'E405',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_nature',
@@ -6145,7 +6145,7 @@ const iconsDB = [
     keywords: ['image', 'nature'],
     ligature: 'nature',
     codepoint: 'E406',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_nature_people',
@@ -6154,7 +6154,7 @@ const iconsDB = [
     keywords: ['image', 'nature', 'people'],
     ligature: 'nature_people',
     codepoint: 'E407',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_navigate_before',
@@ -6163,7 +6163,7 @@ const iconsDB = [
     keywords: ['image', 'navigate', 'before'],
     ligature: 'navigate_before',
     codepoint: 'E408',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_navigate_next',
@@ -6172,7 +6172,7 @@ const iconsDB = [
     keywords: ['image', 'navigate', 'next'],
     ligature: 'navigate_next',
     codepoint: 'E409',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_palette',
@@ -6181,7 +6181,7 @@ const iconsDB = [
     keywords: ['image', 'palette'],
     ligature: 'palette',
     codepoint: 'E40A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_panorama',
@@ -6190,7 +6190,7 @@ const iconsDB = [
     keywords: ['image', 'panorama'],
     ligature: 'panorama',
     codepoint: 'E40B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_panorama_fish_eye',
@@ -6199,7 +6199,7 @@ const iconsDB = [
     keywords: ['image', 'panorama', 'fish', 'eye'],
     ligature: 'panorama_fish_eye',
     codepoint: 'E40C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_panorama_horizontal',
@@ -6208,7 +6208,7 @@ const iconsDB = [
     keywords: ['image', 'panorama', 'horizontal'],
     ligature: 'panorama_horizontal',
     codepoint: 'E40D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_panorama_vertical',
@@ -6217,7 +6217,7 @@ const iconsDB = [
     keywords: ['image', 'panorama', 'vertical'],
     ligature: 'panorama_vertical',
     codepoint: 'E40E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_panorama_wide_angle',
@@ -6226,7 +6226,7 @@ const iconsDB = [
     keywords: ['image', 'panorama', 'wide', 'angle'],
     ligature: 'panorama_wide_angle',
     codepoint: 'E40F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo',
@@ -6235,7 +6235,7 @@ const iconsDB = [
     keywords: ['image', 'photo'],
     ligature: 'photo',
     codepoint: 'E410',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_album',
@@ -6244,7 +6244,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'album'],
     ligature: 'photo_album',
     codepoint: 'E411',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_camera',
@@ -6253,7 +6253,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'camera'],
     ligature: 'photo_camera',
     codepoint: 'E412',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_filter',
@@ -6262,7 +6262,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'filter'],
     ligature: 'photo_filter',
     codepoint: 'E43B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_library',
@@ -6271,7 +6271,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'library'],
     ligature: 'photo_library',
     codepoint: 'E413',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_size_select_actual',
@@ -6280,7 +6280,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'size', 'select', 'actual'],
     ligature: 'photo_size_select_actual',
     codepoint: 'E432',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_size_select_large',
@@ -6289,7 +6289,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'size', 'select', 'large'],
     ligature: 'photo_size_select_large',
     codepoint: 'E433',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_photo_size_select_small',
@@ -6298,7 +6298,7 @@ const iconsDB = [
     keywords: ['image', 'photo', 'size', 'select', 'small'],
     ligature: 'photo_size_select_small',
     codepoint: 'E434',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_picture_as_pdf',
@@ -6307,7 +6307,7 @@ const iconsDB = [
     keywords: ['image', 'picture', 'as', 'pdf'],
     ligature: 'picture_as_pdf',
     codepoint: 'E415',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_portrait',
@@ -6316,7 +6316,7 @@ const iconsDB = [
     keywords: ['image', 'portrait'],
     ligature: 'portrait',
     codepoint: 'E416',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_remove_red_eye',
@@ -6325,7 +6325,7 @@ const iconsDB = [
     keywords: ['image', 'remove', 'red', 'eye'],
     ligature: 'remove_red_eye',
     codepoint: 'E417',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rotate_90_degrees_ccw',
@@ -6334,7 +6334,7 @@ const iconsDB = [
     keywords: ['image', 'rotate', '90', 'degrees', 'ccw'],
     ligature: 'rotate_90_degrees_ccw',
     codepoint: 'E418',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rotate_left',
@@ -6343,7 +6343,7 @@ const iconsDB = [
     keywords: ['image', 'rotate', 'left'],
     ligature: 'rotate_left',
     codepoint: 'E419',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rotate_right',
@@ -6352,7 +6352,7 @@ const iconsDB = [
     keywords: ['image', 'rotate', 'right'],
     ligature: 'rotate_right',
     codepoint: 'E41A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_slideshow',
@@ -6361,7 +6361,7 @@ const iconsDB = [
     keywords: ['image', 'slideshow'],
     ligature: 'slideshow',
     codepoint: 'E41B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_straighten',
@@ -6370,7 +6370,7 @@ const iconsDB = [
     keywords: ['image', 'straighten'],
     ligature: 'straighten',
     codepoint: 'E41C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_style',
@@ -6379,7 +6379,7 @@ const iconsDB = [
     keywords: ['image', 'style'],
     ligature: 'style',
     codepoint: 'E41D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_switch_camera',
@@ -6388,7 +6388,7 @@ const iconsDB = [
     keywords: ['image', 'switch', 'camera'],
     ligature: 'switch_camera',
     codepoint: 'E41E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_switch_video',
@@ -6397,7 +6397,7 @@ const iconsDB = [
     keywords: ['image', 'switch', 'video'],
     ligature: 'switch_video',
     codepoint: 'E41F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tag_faces',
@@ -6406,7 +6406,7 @@ const iconsDB = [
     keywords: ['image', 'tag', 'faces'],
     ligature: 'tag_faces',
     codepoint: 'E420',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_texture',
@@ -6415,7 +6415,7 @@ const iconsDB = [
     keywords: ['image', 'texture'],
     ligature: 'texture',
     codepoint: 'E421',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timelapse',
@@ -6424,7 +6424,7 @@ const iconsDB = [
     keywords: ['image', 'timelapse'],
     ligature: 'timelapse',
     codepoint: 'E422',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timer',
@@ -6433,7 +6433,7 @@ const iconsDB = [
     keywords: ['image', 'timer'],
     ligature: 'timer',
     codepoint: 'E425',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timer_10',
@@ -6442,7 +6442,7 @@ const iconsDB = [
     keywords: ['image', 'timer', '10'],
     ligature: 'timer_10',
     codepoint: 'E423',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timer_3',
@@ -6451,7 +6451,7 @@ const iconsDB = [
     keywords: ['image', 'timer'],
     ligature: 'timer_3',
     codepoint: 'E424',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_timer_off',
@@ -6460,7 +6460,7 @@ const iconsDB = [
     keywords: ['image', 'timer', 'off'],
     ligature: 'timer_off',
     codepoint: 'E426',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tonality',
@@ -6469,7 +6469,7 @@ const iconsDB = [
     keywords: ['image', 'tonality'],
     ligature: 'tonality',
     codepoint: 'E427',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_transform',
@@ -6478,7 +6478,7 @@ const iconsDB = [
     keywords: ['image', 'transform'],
     ligature: 'transform',
     codepoint: 'E428',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tune',
@@ -6487,7 +6487,7 @@ const iconsDB = [
     keywords: ['image', 'tune'],
     ligature: 'tune',
     codepoint: 'E429',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_comfy',
@@ -6496,7 +6496,7 @@ const iconsDB = [
     keywords: ['image', 'view', 'comfy'],
     ligature: 'view_comfy',
     codepoint: 'E42A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_view_compact',
@@ -6505,7 +6505,7 @@ const iconsDB = [
     keywords: ['image', 'view', 'compact'],
     ligature: 'view_compact',
     codepoint: 'E42B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vignette',
@@ -6514,7 +6514,7 @@ const iconsDB = [
     keywords: ['image', 'vignette'],
     ligature: 'vignette',
     codepoint: 'E435',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wb_auto',
@@ -6523,7 +6523,7 @@ const iconsDB = [
     keywords: ['image', 'wb', 'auto'],
     ligature: 'wb_auto',
     codepoint: 'E42C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wb_cloudy',
@@ -6532,7 +6532,7 @@ const iconsDB = [
     keywords: ['image', 'wb', 'cloudy'],
     ligature: 'wb_cloudy',
     codepoint: 'E42D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wb_incandescent',
@@ -6541,7 +6541,7 @@ const iconsDB = [
     keywords: ['image', 'wb', 'incandescent'],
     ligature: 'wb_incandescent',
     codepoint: 'E42E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wb_iridescent',
@@ -6550,7 +6550,7 @@ const iconsDB = [
     keywords: ['image', 'wb', 'iridescent'],
     ligature: 'wb_iridescent',
     codepoint: 'E436',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wb_sunny',
@@ -6559,7 +6559,7 @@ const iconsDB = [
     keywords: ['image', 'wb', 'sunny'],
     ligature: 'wb_sunny',
     codepoint: 'E430',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_add_location',
@@ -6568,7 +6568,7 @@ const iconsDB = [
     keywords: ['maps', 'add', 'location'],
     ligature: 'add_location',
     codepoint: 'E567',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_beenhere',
@@ -6577,7 +6577,7 @@ const iconsDB = [
     keywords: ['maps', 'beenhere'],
     ligature: 'beenhere',
     codepoint: 'E52D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions',
@@ -6586,7 +6586,7 @@ const iconsDB = [
     keywords: ['maps', 'directions'],
     ligature: 'directions',
     codepoint: 'E52E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_bike',
@@ -6595,7 +6595,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'bike'],
     ligature: 'directions_bike',
     codepoint: 'E52F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_boat',
@@ -6604,7 +6604,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'boat'],
     ligature: 'directions_boat',
     codepoint: 'E532',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_bus',
@@ -6613,7 +6613,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'bus'],
     ligature: 'directions_bus',
     codepoint: 'E530',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_car',
@@ -6622,7 +6622,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'car'],
     ligature: 'directions_car',
     codepoint: 'E531',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_railway',
@@ -6631,7 +6631,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'railway'],
     ligature: 'directions_railway',
     codepoint: 'E534',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_run',
@@ -6640,7 +6640,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'run'],
     ligature: 'directions_run',
     codepoint: 'E566',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_subway',
@@ -6649,7 +6649,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'subway'],
     ligature: 'directions_subway',
     codepoint: 'E533',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_transit',
@@ -6658,7 +6658,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'transit'],
     ligature: 'directions_transit',
     codepoint: 'E535',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_directions_walk',
@@ -6667,7 +6667,7 @@ const iconsDB = [
     keywords: ['maps', 'directions', 'walk'],
     ligature: 'directions_walk',
     codepoint: 'E536',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_edit_location',
@@ -6676,7 +6676,7 @@ const iconsDB = [
     keywords: ['maps', 'edit', 'location'],
     ligature: 'edit_location',
     codepoint: 'E568',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_ev_station',
@@ -6685,7 +6685,7 @@ const iconsDB = [
     keywords: ['maps', 'ev', 'station'],
     ligature: 'ev_station',
     codepoint: 'E56D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_flight',
@@ -6694,7 +6694,7 @@ const iconsDB = [
     keywords: ['maps', 'flight'],
     ligature: 'flight',
     codepoint: 'E539',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hotel',
@@ -6703,7 +6703,7 @@ const iconsDB = [
     keywords: ['maps', 'hotel'],
     ligature: 'hotel',
     codepoint: 'E53A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_layers',
@@ -6712,7 +6712,7 @@ const iconsDB = [
     keywords: ['maps', 'layers'],
     ligature: 'layers',
     codepoint: 'E53B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_layers_clear',
@@ -6721,7 +6721,7 @@ const iconsDB = [
     keywords: ['maps', 'layers', 'clear'],
     ligature: 'layers_clear',
     codepoint: 'E53C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_activity',
@@ -6730,7 +6730,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'activity'],
     ligature: 'local_activity',
     codepoint: 'E53F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_airport',
@@ -6739,7 +6739,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'airport'],
     ligature: 'local_airport',
     codepoint: 'E53D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_atm',
@@ -6748,7 +6748,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'atm'],
     ligature: 'local_atm',
     codepoint: 'E53E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_bar',
@@ -6757,7 +6757,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'bar'],
     ligature: 'local_bar',
     codepoint: 'E540',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_cafe',
@@ -6766,7 +6766,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'cafe'],
     ligature: 'local_cafe',
     codepoint: 'E541',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_car_wash',
@@ -6775,7 +6775,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'car', 'wash'],
     ligature: 'local_car_wash',
     codepoint: 'E542',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_convenience_store',
@@ -6784,7 +6784,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'convenience', 'store'],
     ligature: 'local_convenience_store',
     codepoint: 'E543',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_dining',
@@ -6793,7 +6793,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'dining'],
     ligature: 'local_dining',
     codepoint: 'E556',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_drink',
@@ -6802,7 +6802,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'drink'],
     ligature: 'local_drink',
     codepoint: 'E544',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_florist',
@@ -6811,7 +6811,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'florist'],
     ligature: 'local_florist',
     codepoint: 'E545',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_gas_station',
@@ -6820,7 +6820,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'gas', 'station'],
     ligature: 'local_gas_station',
     codepoint: 'E546',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_grocery_store',
@@ -6829,7 +6829,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'grocery', 'store'],
     ligature: 'local_grocery_store',
     codepoint: 'E547',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_hospital',
@@ -6838,7 +6838,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'hospital'],
     ligature: 'local_hospital',
     codepoint: 'E548',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_hotel',
@@ -6847,7 +6847,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'hotel'],
     ligature: 'local_hotel',
     codepoint: 'E549',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_laundry_service',
@@ -6856,7 +6856,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'laundry', 'service'],
     ligature: 'local_laundry_service',
     codepoint: 'E54A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_library',
@@ -6865,7 +6865,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'library'],
     ligature: 'local_library',
     codepoint: 'E54B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_mall',
@@ -6874,7 +6874,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'mall'],
     ligature: 'local_mall',
     codepoint: 'E54C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_movies',
@@ -6883,7 +6883,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'movies'],
     ligature: 'local_movies',
     codepoint: 'E54D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_offer',
@@ -6892,7 +6892,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'offer'],
     ligature: 'local_offer',
     codepoint: 'E54E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_parking',
@@ -6901,7 +6901,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'parking'],
     ligature: 'local_parking',
     codepoint: 'E54F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_pharmacy',
@@ -6910,7 +6910,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'pharmacy'],
     ligature: 'local_pharmacy',
     codepoint: 'E550',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_phone',
@@ -6919,7 +6919,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'phone'],
     ligature: 'local_phone',
     codepoint: 'E551',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_pizza',
@@ -6928,7 +6928,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'pizza'],
     ligature: 'local_pizza',
     codepoint: 'E552',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_play',
@@ -6937,7 +6937,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'play'],
     ligature: 'local_play',
     codepoint: 'E553',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_post_office',
@@ -6946,7 +6946,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'post', 'office'],
     ligature: 'local_post_office',
     codepoint: 'E554',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_printshop',
@@ -6955,7 +6955,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'printshop'],
     ligature: 'local_printshop',
     codepoint: 'E555',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_see',
@@ -6964,7 +6964,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'see'],
     ligature: 'local_see',
     codepoint: 'E557',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_shipping',
@@ -6973,7 +6973,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'shipping'],
     ligature: 'local_shipping',
     codepoint: 'E558',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_local_taxi',
@@ -6982,7 +6982,7 @@ const iconsDB = [
     keywords: ['maps', 'local', 'taxi'],
     ligature: 'local_taxi',
     codepoint: 'E559',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_map',
@@ -6991,7 +6991,7 @@ const iconsDB = [
     keywords: ['maps', 'map'],
     ligature: 'map',
     codepoint: 'E55B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_my_location',
@@ -7000,7 +7000,7 @@ const iconsDB = [
     keywords: ['maps', 'my', 'location'],
     ligature: 'my_location',
     codepoint: 'E55C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_navigation',
@@ -7009,7 +7009,7 @@ const iconsDB = [
     keywords: ['maps', 'navigation'],
     ligature: 'navigation',
     codepoint: 'E55D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_near_me',
@@ -7018,7 +7018,7 @@ const iconsDB = [
     keywords: ['maps', 'near', 'me'],
     ligature: 'near_me',
     codepoint: 'E569',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_person_pin',
@@ -7027,7 +7027,7 @@ const iconsDB = [
     keywords: ['maps', 'person', 'pin'],
     ligature: 'person_pin',
     codepoint: 'E55A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_person_pin_circle',
@@ -7036,7 +7036,7 @@ const iconsDB = [
     keywords: ['maps', 'person', 'pin', 'circle'],
     ligature: 'person_pin_circle',
     codepoint: 'E56A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pin_drop',
@@ -7045,7 +7045,7 @@ const iconsDB = [
     keywords: ['maps', 'pin', 'drop'],
     ligature: 'pin_drop',
     codepoint: 'E55E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_place',
@@ -7054,7 +7054,7 @@ const iconsDB = [
     keywords: ['maps', 'place'],
     ligature: 'place',
     codepoint: 'E55F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rate_review',
@@ -7063,7 +7063,7 @@ const iconsDB = [
     keywords: ['maps', 'rate', 'review'],
     ligature: 'rate_review',
     codepoint: 'E560',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_restaurant',
@@ -7072,7 +7072,7 @@ const iconsDB = [
     keywords: ['maps', 'restaurant'],
     ligature: 'restaurant',
     codepoint: 'E56C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_restaurant_menu',
@@ -7081,7 +7081,7 @@ const iconsDB = [
     keywords: ['maps', 'restaurant', 'menu'],
     ligature: 'restaurant_menu',
     codepoint: 'E561',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_satellite',
@@ -7090,7 +7090,7 @@ const iconsDB = [
     keywords: ['maps', 'satellite'],
     ligature: 'satellite',
     codepoint: 'E562',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_store_mall_directory',
@@ -7099,7 +7099,7 @@ const iconsDB = [
     keywords: ['maps', 'store', 'mall', 'directory'],
     ligature: 'store_mall_directory',
     codepoint: 'E563',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_streetview',
@@ -7108,7 +7108,7 @@ const iconsDB = [
     keywords: ['maps', 'streetview'],
     ligature: 'streetview',
     codepoint: 'E56E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subway',
@@ -7117,7 +7117,7 @@ const iconsDB = [
     keywords: ['maps', 'subway'],
     ligature: 'subway',
     codepoint: 'E56F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_terrain',
@@ -7126,7 +7126,7 @@ const iconsDB = [
     keywords: ['maps', 'terrain'],
     ligature: 'terrain',
     codepoint: 'E564',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_traffic',
@@ -7135,7 +7135,7 @@ const iconsDB = [
     keywords: ['maps', 'traffic'],
     ligature: 'traffic',
     codepoint: 'E565',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_train',
@@ -7144,7 +7144,7 @@ const iconsDB = [
     keywords: ['maps', 'train'],
     ligature: 'train',
     codepoint: 'E570',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tram',
@@ -7153,7 +7153,7 @@ const iconsDB = [
     keywords: ['maps', 'tram'],
     ligature: 'tram',
     codepoint: 'E571',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_transfer_within_a_station',
@@ -7162,7 +7162,7 @@ const iconsDB = [
     keywords: ['maps', 'transfer', 'within', 'station'],
     ligature: 'transfer_within_a_station',
     codepoint: 'E572',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_zoom_out_map',
@@ -7171,7 +7171,7 @@ const iconsDB = [
     keywords: ['maps', 'zoom', 'out', 'map'],
     ligature: 'zoom_out_map',
     codepoint: 'E56B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_apps',
@@ -7180,7 +7180,7 @@ const iconsDB = [
     keywords: ['navigation', 'apps'],
     ligature: 'apps',
     codepoint: 'E5C3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_back',
@@ -7189,7 +7189,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'back'],
     ligature: 'arrow_back',
     codepoint: 'E5C4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_downward',
@@ -7198,7 +7198,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'downward'],
     ligature: 'arrow_downward',
     codepoint: 'E5DB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_drop_down',
@@ -7207,7 +7207,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'drop', 'down'],
     ligature: 'arrow_drop_down',
     codepoint: 'E5C5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_drop_down_circle',
@@ -7216,7 +7216,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'drop', 'down', 'circle'],
     ligature: 'arrow_drop_down_circle',
     codepoint: 'E5C6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_drop_up',
@@ -7225,7 +7225,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'drop', 'up'],
     ligature: 'arrow_drop_up',
     codepoint: 'E5C7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_forward',
@@ -7234,7 +7234,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'forward'],
     ligature: 'arrow_forward',
     codepoint: 'E5C8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_arrow_upward',
@@ -7243,7 +7243,7 @@ const iconsDB = [
     keywords: ['navigation', 'arrow', 'upward'],
     ligature: 'arrow_upward',
     codepoint: 'E5D8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cancel',
@@ -7252,7 +7252,7 @@ const iconsDB = [
     keywords: ['navigation', 'cancel'],
     ligature: 'cancel',
     codepoint: 'E5C9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_check',
@@ -7261,7 +7261,7 @@ const iconsDB = [
     keywords: ['navigation', 'check'],
     ligature: 'check',
     codepoint: 'E5CA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chevron_left',
@@ -7270,7 +7270,7 @@ const iconsDB = [
     keywords: ['navigation', 'chevron', 'left'],
     ligature: 'chevron_left',
     codepoint: 'E5CB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_chevron_right',
@@ -7279,7 +7279,7 @@ const iconsDB = [
     keywords: ['navigation', 'chevron', 'right'],
     ligature: 'chevron_right',
     codepoint: 'E5CC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_close',
@@ -7288,7 +7288,7 @@ const iconsDB = [
     keywords: ['navigation', 'close'],
     ligature: 'close',
     codepoint: 'E5CD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_expand_less',
@@ -7297,7 +7297,7 @@ const iconsDB = [
     keywords: ['navigation', 'expand', 'less'],
     ligature: 'expand_less',
     codepoint: 'E5CE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_expand_more',
@@ -7306,7 +7306,7 @@ const iconsDB = [
     keywords: ['navigation', 'expand', 'more'],
     ligature: 'expand_more',
     codepoint: 'E5CF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_first_page',
@@ -7315,7 +7315,7 @@ const iconsDB = [
     keywords: ['navigation', 'first', 'page'],
     ligature: 'first_page',
     codepoint: 'E5DC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fullscreen',
@@ -7324,7 +7324,7 @@ const iconsDB = [
     keywords: ['navigation', 'fullscreen'],
     ligature: 'fullscreen',
     codepoint: 'E5D0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fullscreen_exit',
@@ -7333,7 +7333,7 @@ const iconsDB = [
     keywords: ['navigation', 'fullscreen', 'exit'],
     ligature: 'fullscreen_exit',
     codepoint: 'E5D1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_last_page',
@@ -7342,7 +7342,7 @@ const iconsDB = [
     keywords: ['navigation', 'last', 'page'],
     ligature: 'last_page',
     codepoint: 'E5DD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_menu',
@@ -7351,7 +7351,7 @@ const iconsDB = [
     keywords: ['navigation', 'menu'],
     ligature: 'menu',
     codepoint: 'E5D2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_more_horiz',
@@ -7360,7 +7360,7 @@ const iconsDB = [
     keywords: ['navigation', 'more', 'horiz'],
     ligature: 'more_horiz',
     codepoint: 'E5D3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_more_vert',
@@ -7369,7 +7369,7 @@ const iconsDB = [
     keywords: ['navigation', 'more', 'vert'],
     ligature: 'more_vert',
     codepoint: 'E5D4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_refresh',
@@ -7378,7 +7378,7 @@ const iconsDB = [
     keywords: ['navigation', 'refresh'],
     ligature: 'refresh',
     codepoint: 'E5D5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subdirectory_arrow_left',
@@ -7387,7 +7387,7 @@ const iconsDB = [
     keywords: ['navigation', 'subdirectory', 'arrow', 'left'],
     ligature: 'subdirectory_arrow_left',
     codepoint: 'E5D9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_subdirectory_arrow_right',
@@ -7396,7 +7396,7 @@ const iconsDB = [
     keywords: ['navigation', 'subdirectory', 'arrow', 'right'],
     ligature: 'subdirectory_arrow_right',
     codepoint: 'E5DA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_adb',
@@ -7405,7 +7405,7 @@ const iconsDB = [
     keywords: ['notification', 'adb'],
     ligature: 'adb',
     codepoint: 'E60E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_flat',
@@ -7414,7 +7414,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'flat'],
     ligature: 'airline_seat_flat',
     codepoint: 'E630',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_flat_angled',
@@ -7423,7 +7423,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'flat', 'angled'],
     ligature: 'airline_seat_flat_angled',
     codepoint: 'E631',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_individual_suite',
@@ -7432,7 +7432,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'individual', 'suite'],
     ligature: 'airline_seat_individual_suite',
     codepoint: 'E632',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_legroom_extra',
@@ -7441,7 +7441,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'legroom', 'extra'],
     ligature: 'airline_seat_legroom_extra',
     codepoint: 'E633',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_legroom_normal',
@@ -7450,7 +7450,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'legroom', 'normal'],
     ligature: 'airline_seat_legroom_normal',
     codepoint: 'E634',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_legroom_reduced',
@@ -7459,7 +7459,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'legroom', 'reduced'],
     ligature: 'airline_seat_legroom_reduced',
     codepoint: 'E635',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_recline_extra',
@@ -7468,7 +7468,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'recline', 'extra'],
     ligature: 'airline_seat_recline_extra',
     codepoint: 'E636',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airline_seat_recline_normal',
@@ -7477,7 +7477,7 @@ const iconsDB = [
     keywords: ['notification', 'airline', 'seat', 'recline', 'normal'],
     ligature: 'airline_seat_recline_normal',
     codepoint: 'E637',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_bluetooth_audio',
@@ -7486,7 +7486,7 @@ const iconsDB = [
     keywords: ['notification', 'bluetooth', 'audio'],
     ligature: 'bluetooth_audio',
     codepoint: 'E60F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_confirmation_number',
@@ -7495,7 +7495,7 @@ const iconsDB = [
     keywords: ['notification', 'confirmation', 'number'],
     ligature: 'confirmation_number',
     codepoint: 'E638',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_disc_full',
@@ -7504,7 +7504,7 @@ const iconsDB = [
     keywords: ['notification', 'disc', 'full'],
     ligature: 'disc_full',
     codepoint: 'E610',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_do_not_disturb',
@@ -7513,7 +7513,7 @@ const iconsDB = [
     keywords: ['notification', 'do', 'not', 'disturb'],
     ligature: 'do_not_disturb',
     codepoint: 'E612',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_do_not_disturb_alt',
@@ -7522,7 +7522,7 @@ const iconsDB = [
     keywords: ['notification', 'do', 'not', 'disturb', 'alt'],
     ligature: 'do_not_disturb_alt',
     codepoint: 'E611',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_do_not_disturb_off',
@@ -7531,7 +7531,7 @@ const iconsDB = [
     keywords: ['notification', 'do', 'not', 'disturb', 'off'],
     ligature: 'do_not_disturb_off',
     codepoint: 'E643',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_do_not_disturb_on',
@@ -7540,7 +7540,7 @@ const iconsDB = [
     keywords: ['notification', 'do', 'not', 'disturb', 'on'],
     ligature: 'do_not_disturb_on',
     codepoint: 'E644',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_drive_eta',
@@ -7549,7 +7549,7 @@ const iconsDB = [
     keywords: ['notification', 'drive', 'eta'],
     ligature: 'drive_eta',
     codepoint: 'E613',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_enhanced_encryption',
@@ -7558,7 +7558,7 @@ const iconsDB = [
     keywords: ['notification', 'enhanced', 'encryption'],
     ligature: 'enhanced_encryption',
     codepoint: 'E63F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_event_available',
@@ -7567,7 +7567,7 @@ const iconsDB = [
     keywords: ['notification', 'event', 'available'],
     ligature: 'event_available',
     codepoint: 'E614',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_event_busy',
@@ -7576,7 +7576,7 @@ const iconsDB = [
     keywords: ['notification', 'event', 'busy'],
     ligature: 'event_busy',
     codepoint: 'E615',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_event_note',
@@ -7585,7 +7585,7 @@ const iconsDB = [
     keywords: ['notification', 'event', 'note'],
     ligature: 'event_note',
     codepoint: 'E616',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_folder_special',
@@ -7594,7 +7594,7 @@ const iconsDB = [
     keywords: ['notification', 'folder', 'special'],
     ligature: 'folder_special',
     codepoint: 'E617',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_live_tv',
@@ -7603,7 +7603,7 @@ const iconsDB = [
     keywords: ['notification', 'live', 'tv'],
     ligature: 'live_tv',
     codepoint: 'E639',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mms',
@@ -7612,7 +7612,7 @@ const iconsDB = [
     keywords: ['notification', 'mms'],
     ligature: 'mms',
     codepoint: 'E618',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_more',
@@ -7621,7 +7621,7 @@ const iconsDB = [
     keywords: ['notification', 'more'],
     ligature: 'more',
     codepoint: 'E619',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_network_check',
@@ -7630,7 +7630,7 @@ const iconsDB = [
     keywords: ['notification', 'network', 'check'],
     ligature: 'network_check',
     codepoint: 'E640',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_network_locked',
@@ -7639,7 +7639,7 @@ const iconsDB = [
     keywords: ['notification', 'network', 'locked'],
     ligature: 'network_locked',
     codepoint: 'E61A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_no_encryption',
@@ -7648,7 +7648,7 @@ const iconsDB = [
     keywords: ['notification', 'no', 'encryption'],
     ligature: 'no_encryption',
     codepoint: 'E641',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_ondemand_video',
@@ -7657,7 +7657,7 @@ const iconsDB = [
     keywords: ['notification', 'ondemand', 'video'],
     ligature: 'ondemand_video',
     codepoint: 'E63A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_personal_video',
@@ -7666,7 +7666,7 @@ const iconsDB = [
     keywords: ['notification', 'personal', 'video'],
     ligature: 'personal_video',
     codepoint: 'E63B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_bluetooth_speaker',
@@ -7675,7 +7675,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'bluetooth', 'speaker'],
     ligature: 'phone_bluetooth_speaker',
     codepoint: 'E61B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_forwarded',
@@ -7684,7 +7684,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'forwarded'],
     ligature: 'phone_forwarded',
     codepoint: 'E61C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_in_talk',
@@ -7693,7 +7693,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'in', 'talk'],
     ligature: 'phone_in_talk',
     codepoint: 'E61D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_locked',
@@ -7702,7 +7702,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'locked'],
     ligature: 'phone_locked',
     codepoint: 'E61E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_missed',
@@ -7711,7 +7711,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'missed'],
     ligature: 'phone_missed',
     codepoint: 'E61F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_phone_paused',
@@ -7720,7 +7720,7 @@ const iconsDB = [
     keywords: ['notification', 'phone', 'paused'],
     ligature: 'phone_paused',
     codepoint: 'E620',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_power',
@@ -7729,7 +7729,7 @@ const iconsDB = [
     keywords: ['notification', 'power'],
     ligature: 'power',
     codepoint: 'E63C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_priority_high',
@@ -7738,7 +7738,7 @@ const iconsDB = [
     keywords: ['notification', 'priority', 'high'],
     ligature: 'priority_high',
     codepoint: 'E645',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sd_card',
@@ -7747,7 +7747,7 @@ const iconsDB = [
     keywords: ['notification', 'sd', 'card'],
     ligature: 'sd_card',
     codepoint: 'E623',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sim_card_alert',
@@ -7756,7 +7756,7 @@ const iconsDB = [
     keywords: ['notification', 'sim', 'card', 'alert'],
     ligature: 'sim_card_alert',
     codepoint: 'E624',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sms',
@@ -7765,7 +7765,7 @@ const iconsDB = [
     keywords: ['notification', 'sms'],
     ligature: 'sms',
     codepoint: 'E625',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sms_failed',
@@ -7774,7 +7774,7 @@ const iconsDB = [
     keywords: ['notification', 'sms', 'failed'],
     ligature: 'sms_failed',
     codepoint: 'E626',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sync',
@@ -7783,7 +7783,7 @@ const iconsDB = [
     keywords: ['notification', 'sync'],
     ligature: 'sync',
     codepoint: 'E627',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sync_disabled',
@@ -7792,7 +7792,7 @@ const iconsDB = [
     keywords: ['notification', 'sync', 'disabled'],
     ligature: 'sync_disabled',
     codepoint: 'E628',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sync_problem',
@@ -7801,7 +7801,7 @@ const iconsDB = [
     keywords: ['notification', 'sync', 'problem'],
     ligature: 'sync_problem',
     codepoint: 'E629',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_system_update',
@@ -7810,7 +7810,7 @@ const iconsDB = [
     keywords: ['notification', 'system', 'update'],
     ligature: 'system_update',
     codepoint: 'E62A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_tap_and_play',
@@ -7819,7 +7819,7 @@ const iconsDB = [
     keywords: ['notification', 'tap', 'play'],
     ligature: 'tap_and_play',
     codepoint: 'E62B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_time_to_leave',
@@ -7828,7 +7828,7 @@ const iconsDB = [
     keywords: ['notification', 'time', 'to', 'leave'],
     ligature: 'time_to_leave',
     codepoint: 'E62C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vibration',
@@ -7837,7 +7837,7 @@ const iconsDB = [
     keywords: ['notification', 'vibration'],
     ligature: 'vibration',
     codepoint: 'E62D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_voice_chat',
@@ -7846,7 +7846,7 @@ const iconsDB = [
     keywords: ['notification', 'voice', 'chat'],
     ligature: 'voice_chat',
     codepoint: 'E62E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_vpn_lock',
@@ -7855,7 +7855,7 @@ const iconsDB = [
     keywords: ['notification', 'vpn', 'lock'],
     ligature: 'vpn_lock',
     codepoint: 'E62F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wc',
@@ -7864,7 +7864,7 @@ const iconsDB = [
     keywords: ['notification', 'wc'],
     ligature: 'wc',
     codepoint: 'E63D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_wifi',
@@ -7873,7 +7873,7 @@ const iconsDB = [
     keywords: ['notification', 'wifi'],
     ligature: 'wifi',
     codepoint: 'E63E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_ac_unit',
@@ -7882,7 +7882,7 @@ const iconsDB = [
     keywords: ['places', 'ac', 'unit'],
     ligature: 'ac_unit',
     codepoint: 'EB3B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_airport_shuttle',
@@ -7891,7 +7891,7 @@ const iconsDB = [
     keywords: ['places', 'airport', 'shuttle'],
     ligature: 'airport_shuttle',
     codepoint: 'EB3C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_all_inclusive',
@@ -7900,7 +7900,7 @@ const iconsDB = [
     keywords: ['places', 'all', 'inclusive'],
     ligature: 'all_inclusive',
     codepoint: 'EB3D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_beach_access',
@@ -7909,7 +7909,7 @@ const iconsDB = [
     keywords: ['places', 'beach', 'access'],
     ligature: 'beach_access',
     codepoint: 'EB3E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_business_center',
@@ -7918,7 +7918,7 @@ const iconsDB = [
     keywords: ['places', 'business', 'center'],
     ligature: 'business_center',
     codepoint: 'EB3F',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_casino',
@@ -7927,7 +7927,7 @@ const iconsDB = [
     keywords: ['places', 'casino'],
     ligature: 'casino',
     codepoint: 'EB40',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_child_care',
@@ -7936,7 +7936,7 @@ const iconsDB = [
     keywords: ['places', 'child', 'care'],
     ligature: 'child_care',
     codepoint: 'EB41',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_child_friendly',
@@ -7945,7 +7945,7 @@ const iconsDB = [
     keywords: ['places', 'child', 'friendly'],
     ligature: 'child_friendly',
     codepoint: 'EB42',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_fitness_center',
@@ -7954,7 +7954,7 @@ const iconsDB = [
     keywords: ['places', 'fitness', 'center'],
     ligature: 'fitness_center',
     codepoint: 'EB43',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_free_breakfast',
@@ -7963,7 +7963,7 @@ const iconsDB = [
     keywords: ['places', 'free', 'breakfast'],
     ligature: 'free_breakfast',
     codepoint: 'EB44',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_golf_course',
@@ -7972,7 +7972,7 @@ const iconsDB = [
     keywords: ['places', 'golf', 'course'],
     ligature: 'golf_course',
     codepoint: 'EB45',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_hot_tub',
@@ -7981,7 +7981,7 @@ const iconsDB = [
     keywords: ['places', 'hot', 'tub'],
     ligature: 'hot_tub',
     codepoint: 'EB46',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_kitchen',
@@ -7990,7 +7990,7 @@ const iconsDB = [
     keywords: ['places', 'kitchen'],
     ligature: 'kitchen',
     codepoint: 'EB47',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pool',
@@ -7999,7 +7999,7 @@ const iconsDB = [
     keywords: ['places', 'pool'],
     ligature: 'pool',
     codepoint: 'EB48',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_room_service',
@@ -8008,7 +8008,7 @@ const iconsDB = [
     keywords: ['places', 'room', 'service'],
     ligature: 'room_service',
     codepoint: 'EB49',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_rv_hookup',
@@ -8017,7 +8017,7 @@ const iconsDB = [
     keywords: ['places', 'rv', 'hookup'],
     ligature: 'rv_hookup',
     codepoint: 'E642',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_smoke_free',
@@ -8026,7 +8026,7 @@ const iconsDB = [
     keywords: ['places', 'smoke', 'free'],
     ligature: 'smoke_free',
     codepoint: 'EB4A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_smoking_rooms',
@@ -8035,7 +8035,7 @@ const iconsDB = [
     keywords: ['places', 'smoking', 'rooms'],
     ligature: 'smoking_rooms',
     codepoint: 'EB4B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_spa',
@@ -8044,7 +8044,7 @@ const iconsDB = [
     keywords: ['places', 'spa'],
     ligature: 'spa',
     codepoint: 'EB4C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_cake',
@@ -8053,7 +8053,7 @@ const iconsDB = [
     keywords: ['social', 'cake'],
     ligature: 'cake',
     codepoint: 'E7E9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_domain',
@@ -8062,7 +8062,7 @@ const iconsDB = [
     keywords: ['social', 'domain'],
     ligature: 'domain',
     codepoint: 'E7EE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_group',
@@ -8071,7 +8071,7 @@ const iconsDB = [
     keywords: ['social', 'group'],
     ligature: 'group',
     codepoint: 'E7EF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_group_add',
@@ -8080,7 +8080,7 @@ const iconsDB = [
     keywords: ['social', 'group', 'add'],
     ligature: 'group_add',
     codepoint: 'E7F0',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_location_city',
@@ -8089,7 +8089,7 @@ const iconsDB = [
     keywords: ['social', 'location', 'city'],
     ligature: 'location_city',
     codepoint: 'E7F1',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mood',
@@ -8098,7 +8098,7 @@ const iconsDB = [
     keywords: ['social', 'mood'],
     ligature: 'mood',
     codepoint: 'E7F2',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_mood_bad',
@@ -8107,7 +8107,7 @@ const iconsDB = [
     keywords: ['social', 'mood', 'bad'],
     ligature: 'mood_bad',
     codepoint: 'E7F3',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_notifications',
@@ -8116,7 +8116,7 @@ const iconsDB = [
     keywords: ['social', 'notifications'],
     ligature: 'notifications',
     codepoint: 'E7F4',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_notifications_active',
@@ -8125,7 +8125,7 @@ const iconsDB = [
     keywords: ['social', 'notifications', 'active'],
     ligature: 'notifications_active',
     codepoint: 'E7F7',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_notifications_none',
@@ -8134,7 +8134,7 @@ const iconsDB = [
     keywords: ['social', 'notifications', 'none'],
     ligature: 'notifications_none',
     codepoint: 'E7F5',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_notifications_off',
@@ -8143,7 +8143,7 @@ const iconsDB = [
     keywords: ['social', 'notifications', 'off'],
     ligature: 'notifications_off',
     codepoint: 'E7F6',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_notifications_paused',
@@ -8152,7 +8152,7 @@ const iconsDB = [
     keywords: ['social', 'notifications', 'paused'],
     ligature: 'notifications_paused',
     codepoint: 'E7F8',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_pages',
@@ -8161,7 +8161,7 @@ const iconsDB = [
     keywords: ['social', 'pages'],
     ligature: 'pages',
     codepoint: 'E7F9',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_party_mode',
@@ -8170,7 +8170,7 @@ const iconsDB = [
     keywords: ['social', 'party', 'mode'],
     ligature: 'party_mode',
     codepoint: 'E7FA',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_people',
@@ -8179,7 +8179,7 @@ const iconsDB = [
     keywords: ['social', 'people'],
     ligature: 'people',
     codepoint: 'E7FB',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_people_outline',
@@ -8188,7 +8188,7 @@ const iconsDB = [
     keywords: ['social', 'people', 'outline'],
     ligature: 'people_outline',
     codepoint: 'E7FC',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_person',
@@ -8197,7 +8197,7 @@ const iconsDB = [
     keywords: ['social', 'person'],
     ligature: 'person',
     codepoint: 'E7FD',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_person_add',
@@ -8206,7 +8206,7 @@ const iconsDB = [
     keywords: ['social', 'person', 'add'],
     ligature: 'person_add',
     codepoint: 'E7FE',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_person_outline',
@@ -8215,7 +8215,7 @@ const iconsDB = [
     keywords: ['social', 'person', 'outline'],
     ligature: 'person_outline',
     codepoint: 'E7FF',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_plus_one',
@@ -8224,7 +8224,7 @@ const iconsDB = [
     keywords: ['social', 'plus', 'one'],
     ligature: 'plus_one',
     codepoint: 'E800',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_poll',
@@ -8233,7 +8233,7 @@ const iconsDB = [
     keywords: ['social', 'poll'],
     ligature: 'poll',
     codepoint: 'E801',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_public',
@@ -8242,7 +8242,7 @@ const iconsDB = [
     keywords: ['social', 'public'],
     ligature: 'public',
     codepoint: 'E80B',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_school',
@@ -8251,7 +8251,7 @@ const iconsDB = [
     keywords: ['social', 'school'],
     ligature: 'school',
     codepoint: 'E80C',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sentiment_dissatisfied',
@@ -8260,7 +8260,7 @@ const iconsDB = [
     keywords: ['social', 'sentiment', 'dissatisfied'],
     ligature: 'sentiment_dissatisfied',
     codepoint: 'E811',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sentiment_neutral',
@@ -8269,7 +8269,7 @@ const iconsDB = [
     keywords: ['social', 'sentiment', 'neutral'],
     ligature: 'sentiment_neutral',
     codepoint: 'E812',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sentiment_satisfied',
@@ -8278,7 +8278,7 @@ const iconsDB = [
     keywords: ['social', 'sentiment', 'satisfied'],
     ligature: 'sentiment_satisfied',
     codepoint: 'E813',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sentiment_very_dissatisfied',
@@ -8287,7 +8287,7 @@ const iconsDB = [
     keywords: ['social', 'sentiment', 'very', 'dissatisfied'],
     ligature: 'sentiment_very_dissatisfied',
     codepoint: 'E814',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_sentiment_very_satisfied',
@@ -8296,7 +8296,7 @@ const iconsDB = [
     keywords: ['social', 'sentiment', 'very', 'satisfied'],
     ligature: 'sentiment_very_satisfied',
     codepoint: 'E815',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_share',
@@ -8305,7 +8305,7 @@ const iconsDB = [
     keywords: ['social', 'share'],
     ligature: 'share',
     codepoint: 'E80D',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_whatshot',
@@ -8314,7 +8314,7 @@ const iconsDB = [
     keywords: ['social', 'whatshot'],
     ligature: 'whatshot',
     codepoint: 'E80E',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_check_box',
@@ -8323,7 +8323,7 @@ const iconsDB = [
     keywords: ['toggle', 'check', 'box'],
     ligature: 'check_box',
     codepoint: 'E834',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_check_box_outline_blank',
@@ -8332,7 +8332,7 @@ const iconsDB = [
     keywords: ['toggle', 'check', 'box', 'outline', 'blank'],
     ligature: 'check_box_outline_blank',
     codepoint: 'E835',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_indeterminate_check_box',
@@ -8341,7 +8341,7 @@ const iconsDB = [
     keywords: ['toggle', 'indeterminate', 'check', 'box'],
     ligature: 'indeterminate_check_box',
     codepoint: 'E909',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_radio_button_checked',
@@ -8350,7 +8350,7 @@ const iconsDB = [
     keywords: ['toggle', 'radio', 'button', 'checked'],
     ligature: 'radio_button_checked',
     codepoint: 'E837',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_radio_button_unchecked',
@@ -8359,7 +8359,7 @@ const iconsDB = [
     keywords: ['toggle', 'radio', 'button', 'unchecked'],
     ligature: 'radio_button_unchecked',
     codepoint: 'E836',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_star',
@@ -8368,7 +8368,7 @@ const iconsDB = [
     keywords: ['toggle', 'star'],
     ligature: 'star',
     codepoint: 'E838',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_star_border',
@@ -8377,7 +8377,7 @@ const iconsDB = [
     keywords: ['toggle', 'star', 'border'],
     ligature: 'star_border',
     codepoint: 'E83A',
-    is_new: false
+    is_new: false,
   },
   {
     id: 'ic_star_half',
@@ -8386,8 +8386,8 @@ const iconsDB = [
     keywords: ['toggle', 'star', 'half'],
     ligature: 'star_half',
     codepoint: 'E839',
-    is_new: false
-  }
+    is_new: false,
+  },
 ];
 
 mock.onGet('/api/icons').reply(config => {

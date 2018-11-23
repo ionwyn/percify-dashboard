@@ -7,13 +7,13 @@ import { Typography } from '@material-ui/core';
 const styles = theme => ({
   root: {
     display: 'flex',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   logo: {},
   logoIcon: {
     width: 38,
-    height: 38
-  }
+    height: 38,
+  },
 });
 
 function MainNavbarHeader({ classes }) {

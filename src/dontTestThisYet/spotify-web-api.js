@@ -705,7 +705,7 @@ describe('Basic tests', function() {
       );
       expect(that.requests[0].requestBody).toBe(
         JSON.stringify({
-          uris: ['spotify:track:2Oehrcv4Kov0SuIgWyQY9e']
+          uris: ['spotify:track:2Oehrcv4Kov0SuIgWyQY9e'],
         })
       );
     });
@@ -732,7 +732,7 @@ describe('Basic tests', function() {
       expect(that.requests[0].requestBody).toBe(
         JSON.stringify({
           range_start: 1,
-          insert_before: 3
+          insert_before: 3,
         })
       );
     });
@@ -766,7 +766,7 @@ describe('Basic tests', function() {
         JSON.stringify({
           range_start: 1,
           insert_before: 3,
-          range_length: 2
+          range_length: 2,
         })
       );
     });
@@ -778,7 +778,7 @@ describe('Basic tests', function() {
         {
           locale: 'sv_SE',
           country: 'SE',
-          timestamp: '2014-10-23T09:00:00'
+          timestamp: '2014-10-23T09:00:00',
         },
         callback
       );
@@ -818,7 +818,7 @@ describe('Basic tests', function() {
       api.getCategories(
         {
           locale: 'sv_SE',
-          country: 'SE'
+          country: 'SE',
         },
         callback
       );
@@ -843,7 +843,7 @@ describe('Basic tests', function() {
         'dinner',
         {
           locale: 'sv_SE',
-          country: 'SE'
+          country: 'SE',
         },
         callback
       );
@@ -865,7 +865,7 @@ describe('Basic tests', function() {
       api.getCategoryPlaylists(
         'dinner',
         {
-          country: 'SE'
+          country: 'SE',
         },
         callback
       );
@@ -1063,7 +1063,7 @@ describe('Basic tests', function() {
           market: 'ES',
           seed_artists: ['6mfK6Q2tzLMEchAr0e9Uzu', '4DYFVNKZ1uixa6SQTvzQwJ'],
           limit: 5,
-          min_popularity: 50
+          min_popularity: 50,
         },
         callback
       );
@@ -1181,7 +1181,7 @@ describe('Basic tests', function() {
         {
           device_id: 'my_device_id',
           context_uri: 'spotify:album:xxx',
-          position_ms: 2000
+          position_ms: 2000,
         },
         callback
       );
@@ -1195,7 +1195,7 @@ describe('Basic tests', function() {
       expect(that.requests[0].requestBody).toBe(
         JSON.stringify({
           context_uri: 'spotify:album:xxx',
-          position_ms: 2000
+          position_ms: 2000,
         })
       );
     });

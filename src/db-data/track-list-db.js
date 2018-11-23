@@ -13,7 +13,7 @@ const fileManagerDB = {
       created: 'July 8, 2017',
       extention: '',
       location: 'My Music',
-      offline: true
+      offline: true,
     },
     {
       id: '2',
@@ -26,7 +26,7 @@ const fileManagerDB = {
       created: 'July 8, 2017',
       extention: '',
       location: 'My Music',
-      offline: true
+      offline: true,
     },
     {
       id: '3',
@@ -39,7 +39,7 @@ const fileManagerDB = {
       created: 'July 8, 2017',
       extention: '',
       location: 'My Music',
-      offline: true
+      offline: true,
     },
     {
       id: '4',
@@ -53,7 +53,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '5',
@@ -67,7 +67,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '6',
@@ -81,7 +81,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '7',
@@ -95,7 +95,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '8',
@@ -109,7 +109,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '9',
@@ -123,7 +123,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '10',
@@ -137,7 +137,7 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
+      preview: 'assets/images/etc/sample-file-preview.jpg',
     },
     {
       id: '11',
@@ -151,9 +151,9 @@ const fileManagerDB = {
       extention: '',
       location: 'My Music',
       offline: true,
-      preview: 'assets/images/etc/sample-file-preview.jpg'
-    }
-  ]
+      preview: 'assets/images/etc/sample-file-preview.jpg',
+    },
+  ],
 };
 
 mock.onGet('/api/file-manager-app/files').reply(config => {

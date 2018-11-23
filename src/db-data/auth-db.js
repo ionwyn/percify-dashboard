@@ -20,31 +20,31 @@ let authDB = {
               navbar: {
                 display: true,
                 folded: true,
-                position: 'left'
+                position: 'left',
               },
               toolbar: {
                 display: true,
                 style: 'fixed',
-                position: 'below'
+                position: 'below',
               },
               footer: {
                 display: true,
                 style: 'fixed',
-                position: 'below'
+                position: 'below',
               },
-              mode: 'fullwidth'
-            }
+              mode: 'fullwidth',
+            },
           },
           customScrollbars: true,
           theme: {
             main: 'defaultDark',
             navbar: 'defaultDark',
             toolbar: 'defaultDark',
-            footer: 'defaultDark'
-          }
+            footer: 'defaultDark',
+          },
         },
-        shortcuts: ['calendar', 'mail', 'contacts']
-      }
+        shortcuts: ['calendar', 'mail', 'contacts'],
+      },
     },
     staff: {
       uuid: 'XgbuVEXBU6gtSKdbTYR1Zbbby1i3',
@@ -62,30 +62,30 @@ let authDB = {
               mode: 'boxed',
               scroll: 'content',
               navbar: {
-                display: true
+                display: true,
               },
               toolbar: {
                 display: true,
-                position: 'below'
+                position: 'below',
               },
               footer: {
                 display: true,
-                style: 'fixed'
-              }
-            }
+                style: 'fixed',
+              },
+            },
           },
           customScrollbars: true,
           theme: {
             main: 'greeny',
             navbar: 'mainThemeDark',
             toolbar: 'mainThemeDark',
-            footer: 'mainThemeDark'
-          }
+            footer: 'mainThemeDark',
+          },
         },
-        shortcuts: ['calendar', 'mail', 'contacts', 'analytics-dashboard']
-      }
-    }
-  }
+        shortcuts: ['calendar', 'mail', 'contacts', 'analytics-dashboard'],
+      },
+    },
+  },
 };
 
 mock.onGet('/api/auth').reply(config => {
@@ -96,7 +96,7 @@ mock.onGet('/api/auth').reply(config => {
     password:
       authDB.users[username] && authDB.users[username].password === password
         ? null
-        : 'Check your password'
+        : 'Check your password',
   };
 
   if (!error.username && !error.password) {

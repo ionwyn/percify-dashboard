@@ -4,14 +4,14 @@ export const fuseNavigationConfig = [
     title: 'Home',
     type: 'item',
     icon: 'home',
-    url: '/home'
+    url: '/home',
   },
   {
     id: 'analytics-dashboard',
     title: 'Analytics',
     icon: 'assessment',
     type: 'item',
-    url: '/apps/dashboards/analytics'
+    url: '/apps/dashboards/analytics',
   },
   // {
   //   id: 'playbackPage',
@@ -31,21 +31,21 @@ export const fuseNavigationConfig = [
         id: 'pantherDiscover',
         title: 'Panther Discover',
         type: 'item',
-        url: '/pages/panther-audio'
+        url: '/pages/panther-audio',
       },
       {
         id: 'wolfDiscover',
         title: 'Wolf Discover',
         type: 'item',
-        url: '/apps/discover'
-      }
-    ]
+        url: '/apps/discover',
+      },
+    ],
   },
   {
     id: 'file-manager',
     title: 'My Music',
     type: 'item',
     icon: 'folder',
-    url: '/apps/file-manager'
-  }
+    url: '/apps/file-manager',
+  },
 ];

@@ -15,20 +15,20 @@ const styles = theme => ({
     display: 'block',
     width: '30vw',
     transitionDuration: '0.3s',
-    height: '45vw'
+    height: '45vw',
   },
   icon: {
-    margin: theme.spacing.unit * 2
+    margin: theme.spacing.unit * 2,
   },
   controls: {
     display: 'flex',
     alignItems: 'center',
     paddingLeft: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit
+    paddingBottom: theme.spacing.unit,
   },
   content: {
-    flex: '1 0 auto'
-  }
+    flex: '1 0 auto',
+  },
 });
 
 class MainFooter extends Component {
@@ -46,7 +46,7 @@ class MainFooter extends Component {
       playing: false,
       position: 0,
       duration: 1,
-      trackImg: ''
+      trackImg: '',
     };
 
     // this will later be set by setInterval
@@ -71,7 +71,7 @@ class MainFooter extends Component {
       const {
         current_track: currentTrack,
         position,
-        duration
+        duration,
       } = state.track_window;
 
       const trackName = currentTrack.name;
@@ -87,13 +87,13 @@ class MainFooter extends Component {
         trackName,
         artistName,
         playing,
-        trackImg
+        trackImg,
       });
     } else {
       // state was null, user might have swapped to another device
       this.setState({
         error:
-          'Playback has stopped because you have switched to another device'
+          'Playback has stopped because you have switched to another device',
       });
     }
   }
@@ -139,7 +139,7 @@ class MainFooter extends Component {
         name: 'Intersect Spotify Player',
         getOAuthToken: cb => {
           cb(token);
-        }
+        },
       });
 
       // set up the player's event handlers
@@ -177,14 +177,14 @@ class MainFooter extends Component {
       method: 'PUT',
       headers: {
         authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         device_ids: [deviceId],
         // true: start playing music if it was paused on the other device
         // false: paused if paused on other device, start playing music otherwise
-        play: true
-      })
+        play: true,
+      }),
     });
   }
 

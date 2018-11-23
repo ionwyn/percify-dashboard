@@ -52,5 +52,5 @@ module.exports = {
   recently_played_tracks: loadFixture('recently_played_tracks'),
   available_devices: loadFixture('available_devices'),
   current_playback: loadFixture('current_playback'),
-  current_playing_track: loadFixture('current_playing_track')
+  current_playing_track: loadFixture('current_playing_track'),
 };

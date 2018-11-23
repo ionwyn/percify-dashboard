@@ -16,7 +16,7 @@ const contactsDB = {
       phone: '+1-202-555-0175',
       address: '933 8th Street Stamford, CT 06902',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680606588342058356d',
@@ -30,7 +30,7 @@ const contactsDB = {
       phone: '+1-202-555-0141',
       address: '906 Valley Road Michigan City, IN 46360',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a68009e20d0a9e9acf2a',
@@ -44,7 +44,7 @@ const contactsDB = {
       phone: '+1-202-555-0196',
       address: '183 River Street Passaic, NJ 07055',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6809fdd915739187ed5',
@@ -58,7 +58,7 @@ const contactsDB = {
       phone: '+1-202-555-0118',
       address: '143 Jones Street Eau Claire, WI 54701',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a68007920cf75051da64',
@@ -72,7 +72,7 @@ const contactsDB = {
       phone: '+1-202-555-0177',
       address: '218 Pearl Street Brandon, FL 33510',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a68031fdbb1db2c1af47',
@@ -86,7 +86,7 @@ const contactsDB = {
       phone: '+1-202-555-0136',
       address: '329 Bridge Street Desoto, TX 75115',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680bc670af746c435e2',
@@ -100,7 +100,7 @@ const contactsDB = {
       phone: '+1-202-555-0107',
       address: '956 6th Avenue North Bergen, NJ 0704',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680e7eb988a58ddf303',
@@ -114,7 +114,7 @@ const contactsDB = {
       phone: '+1-202-555-0113',
       address: '664 York Street Cambridge, MA 02138',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680dcb077889f758961',
@@ -128,7 +128,7 @@ const contactsDB = {
       phone: '+1-202-555-0173',
       address: '738 Route 11 Cornelius, NC 28031',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6806acf030f9341e925',
@@ -142,7 +142,7 @@ const contactsDB = {
       phone: '+1-202-555-0163',
       address: '194 Washington Avenue Saint Petersburg, FL 33702',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680ae1ae9a3c960d487',
@@ -156,7 +156,7 @@ const contactsDB = {
       phone: '+1-202-555-0151',
       address: '686 Roosevelt Avenue Oviedo, FL 32765',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680b8d240c011dd224b',
@@ -170,7 +170,7 @@ const contactsDB = {
       phone: '+1-202-555-0160',
       address: '202 Hartford Road Lynchburg, VA 24502',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a68034cb3968e1f79eac',
@@ -184,7 +184,7 @@ const contactsDB = {
       phone: '+1-202-555-0186',
       address: '219 Woodland Road Valrico, FL 33594',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6801146cce777df2a08',
@@ -198,7 +198,7 @@ const contactsDB = {
       phone: '+1-202-555-0115',
       address: '305 Willow Drive Superior, WI 54880',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6808a178bfd034d6ecf',
@@ -212,7 +212,7 @@ const contactsDB = {
       phone: '+1-202-555-0199',
       address: '148 Heather Lane Mcminnville, TN 37110',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680653c265f5c79b5a9',
@@ -226,7 +226,7 @@ const contactsDB = {
       phone: '+1-202-555-0120',
       address: '345 Laurel Lane Union City, NJ 07087',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680bbcec3cc32a8488a',
@@ -240,7 +240,7 @@ const contactsDB = {
       phone: '+1-202-555-0172',
       address: '572 Rose Street Summerfield, FL 34491',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6803d87f1b77e17b62b',
@@ -254,7 +254,7 @@ const contactsDB = {
       phone: '+1-202-555-0190',
       address: '527 Jefferson Court Conyers, GA 30012',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680e87cb319bd9bd673',
@@ -268,7 +268,7 @@ const contactsDB = {
       phone: '+1-202-555-0116',
       address: '297 Strawberry Lane Faribault, MN 55021',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6802d10e277a0f35775',
@@ -282,7 +282,7 @@ const contactsDB = {
       phone: '+1-202-555-0159',
       address: '928 Canterbury Court Pittsburgh, PA 15206',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680aef1e5cf26dd3d1f',
@@ -296,7 +296,7 @@ const contactsDB = {
       phone: '+1-202-555-0173',
       address: '904 Ridge Road Pickerington, OH 43147',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680cd7efa56a45aea5d',
@@ -310,7 +310,7 @@ const contactsDB = {
       phone: '+1-202-555-0183',
       address: '447 Charles Street Dorchester, MA 02125',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a680fb65c91a82cb35e2',
@@ -324,7 +324,7 @@ const contactsDB = {
       phone: '+1-202-555-0138',
       address: '84 Valley View Road Norman, OK 73072',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a68018c663044be49cbf',
@@ -338,7 +338,7 @@ const contactsDB = {
       phone: '+1-202-555-0146',
       address: '204 Clark Street Monsey, NY 10952',
       birthday: undefined,
-      notes: ''
+      notes: '',
     },
     {
       id: '5725a6809413bf8a0a5272b1',
@@ -352,8 +352,8 @@ const contactsDB = {
       phone: '+1-202-555-0146',
       address: '261 Cleveland Street Riverside, NJ 08075',
       birthday: undefined,
-      notes: ''
-    }
+      notes: '',
+    },
   ],
   user: [
     {
@@ -365,7 +365,7 @@ const contactsDB = {
         '5725a6801146cce777df2a08',
         '5725a680bbcec3cc32a8488a',
         '5725a680bc670af746c435e2',
-        '5725a68009e20d0a9e9acf2a'
+        '5725a68009e20d0a9e9acf2a',
       ],
       frequentContacts: [
         '5725a6809fdd915739187ed5',
@@ -375,7 +375,7 @@ const contactsDB = {
         '5725a6806acf030f9341e925',
         '5725a68034cb3968e1f79eac',
         '5725a6801146cce777df2a08',
-        '5725a680653c265f5c79b5a9'
+        '5725a680653c265f5c79b5a9',
       ],
       groups: [
         {
@@ -384,8 +384,8 @@ const contactsDB = {
           contactIds: [
             '5725a680bbcec3cc32a8488a',
             '5725a680e87cb319bd9bd673',
-            '5725a6802d10e277a0f35775'
-          ]
+            '5725a6802d10e277a0f35775',
+          ],
         },
         {
           id: '5725a6802d10e277a0f35749',
@@ -394,8 +394,8 @@ const contactsDB = {
             '5725a680cd7efa56a45aea5d',
             '5725a68018c663044be49cbf',
             '5725a6809413bf8a0a5272b1',
-            '5725a6803d87f1b77e17b62b'
-          ]
+            '5725a6803d87f1b77e17b62b',
+          ],
         },
         {
           id: '5725a6802d10e277a0f35329',
@@ -404,12 +404,12 @@ const contactsDB = {
             '5725a680bbcec3cc32a8488a',
             '5725a680653c265f5c79b5a9',
             '5725a6808a178bfd034d6ecf',
-            '5725a6801146cce777df2a08'
-          ]
-        }
-      ]
-    }
-  ]
+            '5725a6801146cce777df2a08',
+          ],
+        },
+      ],
+    },
+  ],
 };
 
 mock.onGet('/api/contacts-app/contacts').reply(config => {
@@ -445,8 +445,8 @@ mock.onPost('/api/contacts-app/add-contact').reply(request => {
     ...contactsDB.contacts,
     {
       ...data.newContact,
-      id: FuseUtils.generateGUID()
-    }
+      id: FuseUtils.generateGUID(),
+    },
   ];
   return [200, contactsDB.contacts];
 });
@@ -485,7 +485,7 @@ mock.onPost('/api/contacts-app/remove-contacts').reply(request => {
 mock.onPost('/api/contacts-app/toggle-starred-contact').reply(request => {
   const data = JSON.parse(request.data);
   contactsDB.user[0].starred = _.xor(contactsDB.user[0].starred, [
-    data.contactId
+    data.contactId,
   ]);
   return [200, contactsDB.user[0]];
 });
@@ -504,7 +504,7 @@ mock.onPost('/api/contacts-app/set-contacts-starred').reply(request => {
 
   contactsDB.user[0].starred = [
     ...contactsDB.user[0].starred,
-    ...data.contactIds
+    ...data.contactIds,
   ];
 
   return [200, contactsDB.user[0]];

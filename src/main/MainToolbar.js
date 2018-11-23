@@ -10,7 +10,7 @@ import {
   ListItemText,
   Popover,
   MenuItem,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import { connect } from 'react-redux';
 import * as quickPanelActions from 'main/quickPanel/store/actions';
@@ -23,18 +23,18 @@ const styles = theme => ({
   root: {
     display: 'flex',
     alignItems: 'center',
-    width: '100%'
+    width: '100%',
   },
   seperator: {
     width: 1,
     height: 64,
-    backgroundColor: theme.palette.divider
-  }
+    backgroundColor: theme.palette.divider,
+  },
 });
 
 class MainToolbar extends Component {
   state = {
-    userMenu: null
+    userMenu: null,
   };
 
   userMenuClick = event => {
@@ -95,14 +95,14 @@ class MainToolbar extends Component {
             onClose={this.userMenuClose}
             anchorOrigin={{
               vertical: 'bottom',
-              horizontal: 'center'
+              horizontal: 'center',
             }}
             transformOrigin={{
               vertical: 'top',
-              horizontal: 'center'
+              horizontal: 'center',
             }}
             classes={{
-              paper: 'py-8'
+              paper: 'py-8',
             }}
           >
             {user.role !== 'guest' ? (
@@ -164,7 +164,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       toggleQuickPanel: quickPanelActions.toggleQuickPanel,
-      logout: authActions.logoutUser
+      logout: authActions.logoutUser,
     },
     dispatch
   );
@@ -172,7 +172,7 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({ auth }) {
   return {
-    user: auth.user
+    user: auth.user,
   };
 }
 

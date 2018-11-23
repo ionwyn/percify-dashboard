@@ -7,13 +7,13 @@ const mailDB = {
       from: {
         name: 'Alice Freeman',
         avatar: 'assets/images/avatars/alice.jpg',
-        email: 'alicefreeman@creapond.com'
+        email: 'alicefreeman@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -30,38 +30,38 @@ const mailDB = {
           fileName: 'flowers',
           preview: 'assets/images/etc/flowers-thumb.jpg',
           url: '',
-          size: '1.1Mb'
+          size: '1.1Mb',
         },
         {
           type: 'image',
           fileName: 'snow',
           preview: 'assets/images/etc/snow-thumb.jpg',
           url: '',
-          size: '380kb'
+          size: '380kb',
         },
         {
           type: 'image',
           fileName: 'sunrise',
           preview: 'assets/images/etc/sunrise-thumb.jpg',
           url: 'assets/images/etc/early-sunrise.jpg',
-          size: '17Mb'
-        }
+          size: '17Mb',
+        },
       ],
       labels: [1],
-      folder: 0
+      folder: 0,
     },
     {
       id: '154588a0864d2881124',
       from: {
         name: 'Lawrence Collins',
         avatar: 'assets/images/avatars/vincent.jpg',
-        email: 'lawrencecollins@creapond.com'
+        email: 'lawrencecollins@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -73,20 +73,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '15453ba60d3baa5daaf',
       from: {
         name: 'Judith Burton',
         avatar: 'assets/images/avatars/joyce.jpg',
-        email: 'judithburton@creapond.com'
+        email: 'judithburton@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -98,20 +98,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [3, 2],
-      folder: 0
+      folder: 0,
     },
     {
       id: '15453a06c08fb021776',
       from: {
         name: 'Danielle Obrien',
         avatar: 'assets/images/avatars/danielle.jpg',
-        email: 'danielleobrien@creapond.com'
+        email: 'danielleobrien@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -123,20 +123,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [1, 3],
-      folder: 0
+      folder: 0,
     },
     {
       id: '154537435d5b32bf11a',
       from: {
         name: 'Brian Flores',
         avatar: '',
-        email: 'brianflores@creapond.com'
+        email: 'brianflores@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -148,20 +148,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '1544e43dcdae6ebf876',
       from: {
         name: 'Charles Kim',
         avatar: 'assets/images/avatars/garry.jpg',
-        email: 'charleskim@creapond.com'
+        email: 'charleskim@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -173,20 +173,20 @@ const mailDB = {
       important: true,
       hasAttachments: false,
       labels: [2],
-      folder: 0
+      folder: 0,
     },
     {
       id: '1543ee3a5b43e0f9f45',
       from: {
         name: 'Patricia White',
         avatar: '',
-        email: 'patriciawhite@creapond.com'
+        email: 'patriciawhite@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -198,20 +198,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '1543cc4515df3146112',
       from: {
         name: 'Juan Carpenter',
         avatar: 'assets/images/avatars/james.jpg',
-        email: 'juancarpenter@creapond.com'
+        email: 'juancarpenter@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -223,20 +223,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '154398a4770d7aaf9a2',
       from: {
         name: 'Maria Gilbert',
         avatar: 'assets/images/avatars/danielle.jpg',
-        email: 'mariagilbert@creapond.com'
+        email: 'mariagilbert@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -248,20 +248,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '15438351f87dcd68567',
       from: {
         name: 'Tammy Brooks',
         avatar: '',
-        email: 'tammybrooks@creapond.com'
+        email: 'tammybrooks@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -273,20 +273,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '1542d75d929a603125',
       from: {
         name: 'Kathy Price',
         avatar: '',
-        email: 'kathyprice@creapond.com'
+        email: 'kathyprice@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -298,20 +298,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '1541ca7af66da284177',
       from: {
         name: 'Alan Coleman',
         avatar: '',
-        email: 'alancoleman@creapond.com'
+        email: 'alancoleman@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -323,20 +323,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '154297167e781781745',
       from: {
         name: 'Thomas Silva',
         avatar: '',
-        email: 'thomassilva@creapond.com'
+        email: 'thomassilva@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -348,20 +348,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 0
+      folder: 0,
     },
     {
       id: '15427f4c1b7f3953234',
       from: {
         name: 'Jessica Robertson',
         avatar: '',
-        email: 'jessicarobertson@creapond.com'
+        email: 'jessicarobertson@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -373,20 +373,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 3
+      folder: 3,
     },
     {
       id: '154204e45a59b168453',
       from: {
         name: 'John Palmer',
         avatar: '',
-        email: 'johnpalmer@creapond.com'
+        email: 'johnpalmer@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -398,20 +398,20 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 3
+      folder: 3,
     },
     {
       id: '1541dd1e05dfc439216',
       from: {
         name: 'David Butler',
         avatar: '',
-        email: 'davidbutler@creapond.com'
+        email: 'davidbutler@creapond.com',
       },
       to: [
         {
           name: 'me',
-          email: 'johndoe@creapond.com'
-        }
+          email: 'johndoe@creapond.com',
+        },
       ],
       subject:
         'Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -423,81 +423,81 @@ const mailDB = {
       important: false,
       hasAttachments: false,
       labels: [],
-      folder: 3
-    }
+      folder: 3,
+    },
   ],
   folders: [
     {
       id: 0,
       handle: 'inbox',
       title: 'Inbox',
-      icon: 'inbox'
+      icon: 'inbox',
     },
     {
       id: 1,
       handle: 'sent',
       title: 'Sent',
-      icon: 'send'
+      icon: 'send',
     },
     {
       id: 2,
       handle: 'drafts',
       title: 'Drafts',
-      icon: 'email_open'
+      icon: 'email_open',
     },
     {
       id: 3,
       handle: 'spam',
       title: 'Spam',
-      icon: 'error'
+      icon: 'error',
     },
     {
       id: 4,
       handle: 'trash',
       title: 'Trash',
-      icon: 'delete'
-    }
+      icon: 'delete',
+    },
   ],
   filters: [
     {
       id: 0,
       handle: 'starred',
       title: 'Starred',
-      icon: 'star'
+      icon: 'star',
     },
     {
       id: 1,
       handle: 'important',
       title: 'Important',
-      icon: 'label'
-    }
+      icon: 'label',
+    },
   ],
   labels: [
     {
       id: 0,
       handle: 'note',
       title: 'Note',
-      color: '#7cb342'
+      color: '#7cb342',
     },
     {
       id: 1,
       handle: 'paypal',
       title: 'Paypal',
-      color: '#d84315'
+      color: '#d84315',
     },
     {
       id: 2,
       handle: 'invoice',
       title: 'Invoice',
-      color: '#607d8b'
+      color: '#607d8b',
     },
     {
       id: 3,
       handle: 'amazon',
       title: 'Amazon',
-      color: '#03a9f4'
-    }
-  ]
+      color: '#03a9f4',
+    },
+  ],
 };
 
 mock.onGet('/api/mail-app/mails').reply(config => {
@@ -549,7 +549,7 @@ mock.onPost('/api/mail-app/set-folder').reply(request => {
     if (selectedMailIds.includes(_mail.id)) {
       return {
         ..._mail,
-        folder: folderId
+        folder: folderId,
       };
     }
     return _mail;
@@ -567,7 +567,7 @@ mock.onPost('/api/mail-app/toggle-label').reply(request => {
         ..._mail,
         labels: _mail.labels.includes(labelId)
           ? _mail.labels.filter(_id => _id !== labelId)
-          : [..._mail.labels, labelId]
+          : [..._mail.labels, labelId],
       };
     }
     return _mail;
