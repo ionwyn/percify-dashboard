@@ -72,11 +72,9 @@
         "test-ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor ./node_modules/jest-teamcity-reporter",
         "eject": "cross-env NODE_PATH=src react-scripts eject",
         "build-docs": "babel-node src/main/content/components/material-ui/build.js",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
+        "am-apt": "apt moo"
     },
     "devDependencies": {
-        "@storybook/react": "^4.0.8",
         "autoprefixer": "8.6.2",
         "babel-preset-env": "1.7.0",
         "cross-env": "5.2.0",
