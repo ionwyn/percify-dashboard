@@ -8,6 +8,7 @@ import PlayArrowIcon from '@material-ui/icons/PlayArrow';
 import SkipNextIcon from '@material-ui/icons/SkipNext';
 import PauseIcon from '@material-ui/icons/Pause';
 import classNames from 'classnames';
+import Spinner from 'react-spinkit';
 
 const styles = theme => ({
   root: {},
@@ -40,6 +41,7 @@ class MainFooter extends Component {
       token: '',
       deviceId: '',
       loggedIn: false,
+      loggingIn: false,
       error: '',
       trackName: '',
       artistName: '',
@@ -62,6 +64,10 @@ class MainFooter extends Component {
       this.setState({ loggedIn: true });
       this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
     }
+  }
+
+  showSpinner() {
+    this.setState({ loggingIn: true });
   }
 
   // when we receive a new update from the player
@@ -133,7 +139,7 @@ class MainFooter extends Component {
     if (window.Spotify !== null) {
       // cancel the interval
       clearInterval(this.playerCheckInterval);
-
+      this.setState({ loggingIn: false });
       // create a new player
       this.player = new window.Spotify.Player({
         name: 'Intersect Spotify Player',
@@ -160,7 +166,10 @@ class MainFooter extends Component {
         .access_token;
       this.setState({ token: aToken }, () => {
         this.handleLogin();
+        console.log('logged in');
       });
+      console.log('logging in');
+      this.showSpinner();
     } else {
       this.player.togglePlay();
     }
@@ -190,13 +199,29 @@ class MainFooter extends Component {
 
   render() {
     const { classes } = this.props;
-    const { trackName, artistName, trackImg, playing } = this.state;
+    const { trackName, artistName, trackImg, playing, loggingIn } = this.state;
 
     return (
       <div
         className={classNames(classes.root, 'flex flex-1 items-center px-24')}
       >
-        <img width={75} height={75} src={trackImg} alt="" />
+        {!loggingIn ? (
+          <img width={75} height={75} src={trackImg} alt="" />
+        ) : (
+          <Spinner
+            className="loading text-center"
+            name="line-scale-pulse-out"
+            color="white"
+            fadeIn="none"
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              width: 75,
+              height: 75,
+            }}
+          />
+        )}
         <IconButton aria-label="Previous" onClick={() => this.onPrevClick()}>
           <SkipPreviousIcon />
         </IconButton>
