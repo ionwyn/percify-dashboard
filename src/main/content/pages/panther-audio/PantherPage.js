@@ -44,14 +44,16 @@ class PantherPage extends Component {
           />
         ) : null}
         <iframe
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh',
+            width: '100%',
+          }}
           title="Panther Discover"
           src="https://panther-discover.herokuapp.com/"
-          width="100%"
-          height="1000"
           onLoad={this.hideSpinner}
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
         />
       </div>
     );
