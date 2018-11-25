@@ -12,12 +12,11 @@ import Widget3 from './widgets/Widget3';
 import Widget4 from './widgets/Widget4';
 import Widget5 from './widgets/Widget5';
 import Widget7 from './widgets/Widget7';
-import Widget10 from './widgets/Widget10';
 import { FuseAnimate } from '@fuse';
 import qs from 'qs';
 
 const styles = theme => ({
-  root: {}
+  root: {},
 });
 
 class AnalyticsDashboardApp extends Component {
@@ -79,7 +78,7 @@ class AnalyticsDashboardApp extends Component {
             });
           }
         });
-      }
+      },
     });
   }
 
@@ -136,10 +135,6 @@ class AnalyticsDashboardApp extends Component {
               <div className="widget w-full p-16 pb-32">
                 <Widget5 data={widgets.widget5} />
               </div>
-
-              <div className="widget w-full p-16 pb-32">
-                <Widget10 data={widgets.widget10} />
-              </div>
             </div>
 
             <div className="flex flex-wrap w-full md:w-320 pt-16">
@@ -167,7 +162,7 @@ function mapDispatchToProps(dispatch) {
     {
       getWidgets: Actions.getWidgets,
       getMyInfo: Actions.getMyInfo,
-      setTokens: Actions.setTokens
+      setTokens: Actions.setTokens,
     },
     dispatch
   );
@@ -176,7 +171,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps({ analyticsDashboardApp }) {
   return {
     widgets: analyticsDashboardApp.widgets.data,
-    user: analyticsDashboardApp.spotilogin
+    user: analyticsDashboardApp.spotilogin,
   };
 }
 
