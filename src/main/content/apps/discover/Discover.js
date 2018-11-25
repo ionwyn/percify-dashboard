@@ -12,177 +12,58 @@ import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 import Paper from '@material-ui/core/Paper';
 import Select from 'react-select';
+import SuperSelectField from 'material-ui-superselectfield';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { genreOptions } from './assets/genres';
+import continents from './assets/continents';
+import countries from './assets/countries';
+import flagIconCSSCountryCodes from './assets/flagIconCSSCountryCodes';
+import FontIcon from 'material-ui/FontIcon/FontIcon';
+import Avatar from 'material-ui/Avatar/Avatar';
+import Chip from 'material-ui/Chip/Chip';
+import './assets/flag-icon.css';
 
 const styles = theme => ({
   root: {
     backgroundColor: '#000000',
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   },
   card: {
     width: '100%',
     maxWidth: 400,
-    backgroundColor: '#000000'
+    backgroundColor: '#000000',
   },
   controls: {
     display: 'flex',
     alignItems: 'center',
     paddingLeft: theme.spacing.unit,
-    paddingBottom: theme.spacing.unit
+    paddingBottom: theme.spacing.unit,
   },
   content: {
-    flex: '1 0 auto'
+    flex: '1 0 auto',
   },
   gridList: {
     width: 500,
-    height: 450
+    height: 450,
   },
   subheader: {
-    width: '100%'
+    width: '100%',
   },
   paper: {
     height: 140,
-    width: 100
+    width: 100,
   },
   control: {
-    padding: theme.spacing.unit * 2
-  }
+    padding: theme.spacing.unit * 2,
+  },
 });
-
-const options = [
-  { value: 'acoustic', label: 'acoustic' },
-  { value: 'afrobeat', label: 'afrobeat' },
-  { value: 'alt-rock', label: 'alt-rock' },
-  { value: 'alternative', label: 'alternative' },
-  { value: 'ambient', label: 'ambient' },
-  { value: 'anime', label: 'anime' },
-  { value: 'black-metal', label: 'black-metal' },
-  { value: 'bluegrass', label: 'bluegrass' },
-  { value: 'blues', label: 'blues' },
-  { value: 'bossanova', label: 'bossanova' },
-  { value: 'brazil', label: 'brazil' },
-  { value: 'breakbeat', label: 'breakbeat' },
-  { value: 'british', label: 'british' },
-  { value: 'cantopop', label: 'cantopop' },
-  { value: 'chicago-house', label: 'chicago-house' },
-  { value: 'children', label: 'children' },
-  { value: 'chill', label: 'chill' },
-  { value: 'classical', label: 'classical' },
-  { value: 'club', label: 'club' },
-  { value: 'comedy', label: 'comedy' },
-  { value: 'country', label: 'country' },
-  { value: 'dance', label: 'dance' },
-  { value: 'dancehall', label: 'dancehall' },
-  { value: 'death-metal', label: 'death-metal' },
-  { value: 'deep-house', label: 'deep-house' },
-  { value: 'detroit-techno', label: 'detroit-techno' },
-  { value: 'disco', label: 'disco' },
-  { value: 'disney', label: 'disney' },
-  { value: 'drum-and-bass', label: 'drum-and-bass' },
-  { value: 'dub', label: 'dub' },
-  { value: 'dubstep', label: 'dubstep' },
-  { value: 'edm', label: 'edm' },
-  { value: 'electro', label: 'electro' },
-  { value: 'electronic', label: 'electronic' },
-  { value: 'emo', label: 'emo' },
-  { value: 'folk', label: 'folk' },
-  { value: 'forro', label: 'forro' },
-  { value: 'french', label: 'french' },
-  { value: 'funk', label: 'funk' },
-  { value: 'garage', label: 'garage' },
-  { value: 'german', label: 'german' },
-  { value: 'gospel', label: 'gospel' },
-  { value: 'goth', label: 'goth' },
-  { value: 'grindcore', label: 'grindcore' },
-  { value: 'groove', label: 'groove' },
-  { value: 'grunge', label: 'grunge' },
-  { value: 'guitar', label: 'guitar' },
-  { value: 'happy', label: 'happy' },
-  { value: 'hard-rock', label: 'hard-rock' },
-  { value: 'hardcore', label: 'hardcore' },
-  { value: 'hardstyle', label: 'hardstyle' },
-  { value: 'heavy-metal', label: 'heavy-metal' },
-  { value: 'hip-hop', label: 'hip-hop' },
-  { value: 'holidays', label: 'holidays' },
-  { value: 'honky-tonk', label: 'honky-tonk' },
-  { value: 'house', label: 'house' },
-  { value: 'idm', label: 'idm' },
-  { value: 'indian', label: 'indian' },
-  { value: 'indie', label: 'indie' },
-  { value: 'indie-pop', label: 'indie-pop' },
-  { value: 'industrial', label: 'industrial' },
-  { value: 'iranian', label: 'iranian' },
-  { value: 'j-dance', label: 'j-dance' },
-  { value: 'j-idol', label: 'j-idol' },
-  { value: 'j-pop', label: 'j-pop' },
-  { value: 'j-rock', label: 'j-rock' },
-  { value: 'jazz', label: 'jazz' },
-  { value: 'k-pop', label: 'k-pop' },
-  { value: 'kids', label: 'kids' },
-  { value: 'latin', label: 'latin' },
-  { value: 'latino', label: 'latino' },
-  { value: 'malay', label: 'malay' },
-  { value: 'mandopop', label: 'mandopop' },
-  { value: 'metal', label: 'metal' },
-  { value: 'metal-misc', label: 'metal-misc' },
-  { value: 'metalcore', label: 'metalcore' },
-  { value: 'minimal-techno', label: 'minimal-techno' },
-  { value: 'movies', label: 'movies' },
-  { value: 'mpb', label: 'mpb' },
-  { value: 'new-age', label: 'new-age' },
-  { value: 'new-release', label: 'new-release' },
-  { value: 'opera', label: 'opera' },
-  { value: 'pagode', label: 'pagode' },
-  { value: 'party', label: 'party' },
-  { value: 'philippines-opm', label: 'philippines-opm' },
-  { value: 'piano', label: 'piano' },
-  { value: 'pop', label: 'pop' },
-  { value: 'pop-film', label: 'pop-film' },
-  { value: 'post-dubstep', label: 'post-dubstep' },
-  { value: 'power-pop', label: 'power-pop' },
-  { value: 'progressive-house', label: 'progressive-house' },
-  { value: 'psych-rock', label: 'psych-rock' },
-  { value: 'punk', label: 'punk' },
-  { value: 'punk-rock', label: 'punk-rock' },
-  { value: 'r-n-b', label: 'r-n-b' },
-  { value: 'rainy-day', label: 'rainy-day' },
-  { value: 'reggae', label: 'reggae' },
-  { value: 'reggaeton', label: 'reggaeton' },
-  { value: 'road-trip', label: 'road-trip' },
-  { value: 'rock', label: 'rock' },
-  { value: 'rock-n-roll', label: 'rock-n-roll' },
-  { value: 'rockabilly', label: 'rockabilly' },
-  { value: 'romance', label: 'romance' },
-  { value: 'sad', label: 'sad' },
-  { value: 'salsa', label: 'salsa' },
-  { value: 'samba', label: 'samba' },
-  { value: 'sertanejo', label: 'sertanejo' },
-  { value: 'show-tunes', label: 'show-tunes' },
-  { value: 'singer-songwriter', label: 'singer-songwriter' },
-  { value: 'ska', label: 'ska' },
-  { value: 'sleep', label: 'sleep' },
-  { value: 'songwriter', label: 'songwriter' },
-  { value: 'soul', label: 'soul' },
-  { value: 'soundtracks', label: 'soundtracks' },
-  { value: 'spanish', label: 'spanish' },
-  { value: 'study', label: 'study' },
-  { value: 'summer', label: 'summer' },
-  { value: 'swedish', label: 'swedish' },
-  { value: 'synth-pop', label: 'synth-pop' },
-  { value: 'tango', label: 'tango' },
-  { value: 'techno', label: 'techno' },
-  { value: 'trance', label: 'trance' },
-  { value: 'trip-hop', label: 'trip-hop' },
-  { value: 'turkish', label: 'turkish' },
-  { value: 'work-out', label: 'work-out' },
-  { value: 'world-music', label: 'world-music' }
-];
 
 const customStyles = {
   option: (base, state) => ({
     ...base,
     borderBottom: '1px dotted pink',
     color: state.isFullscreen ? 'red' : 'blue',
-    padding: 20
+    padding: 20,
   }),
   control: (base, state) => {
     return {
@@ -191,7 +72,7 @@ const customStyles = {
       background: state.isDisabled ? '#f0f0f0' : 'white',
       minHeight: 40,
       borderColor: state.isFocused ? '#aaaaaa' : '#e1e1e1',
-      boxShadow: 'none'
+      boxShadow: 'none',
     };
   },
   singleValue: (base, state) => {
@@ -199,8 +80,35 @@ const customStyles = {
     const transition = 'opacity 300ms';
 
     return { ...base, opacity, transition };
-  }
+  },
 };
+
+const containerStyle = {
+  padding: 40,
+  paddingBottom: 0,
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  flex: 1,
+};
+const menuItemStyle = {
+  whiteSpace: 'normal',
+  display: 'flex',
+  justifyContent: 'space-between',
+  lineHeight: 'normal',
+};
+const chipAvatarStyle = {
+  width: '100%',
+  height: '100%',
+  margin: 0,
+  borderRadius: '50%',
+  backgroundSize: 'cover',
+};
+
+const displayState = state =>
+  state && state.length
+    ? [...state].map(({ value, label }) => label || value).join(', ')
+    : 'empty state';
 
 class Discover extends Component {
   constructor() {
@@ -218,7 +126,21 @@ class Discover extends Component {
       spacing: '0',
       seed_type: '',
       blah: '',
-      selectedGenre: 'pop'
+      selectedGenre: 'pop',
+      state4: [
+        {
+          label: 'France',
+          value: {
+            'English short name': 'France',
+            'French short name': 'France (la)',
+            'Alpha-2 code': 'FR',
+            'Alpha-3 code': 'FRA',
+            Numeric: 250,
+            Capital: 'Paris',
+            Continent: 4,
+          },
+        },
+      ],
     };
   }
 
@@ -244,7 +166,7 @@ class Discover extends Component {
         instrumentalness: this.state.instrumentalness,
         liveness: this.state.liveness,
         speechiness: this.state.speechiness,
-        valence: this.state.valence
+        valence: this.state.valence,
       });
       console.log(allGenre.join());
     } else {
@@ -256,7 +178,7 @@ class Discover extends Component {
         instrumentalness: this.state.instrumentalness,
         liveness: this.state.liveness,
         speechiness: this.state.speechiness,
-        valence: this.state.valence
+        valence: this.state.valence,
       });
       console.log(this.state.selectedGenre);
     }
@@ -290,10 +212,45 @@ class Discover extends Component {
     return <Paper {...containerProps}>{children}</Paper>;
   };
 
+  handleSelection = (values, name) => this.setState({ [name]: values });
+
+  handleCustomDisplaySelections = name => values =>
+    values.length ? (
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {values.map(({ label, value: country }, index) => (
+          <Chip
+            key={index}
+            style={{ margin: 5 }}
+            onRequestDelete={this.onRequestDelete(index, name)}
+          >
+            <Avatar
+              icon={
+                <FontIcon
+                  className={`flag-icon 
+                    flag-icon-${country['Alpha-2 code'].toLowerCase()}`}
+                  style={chipAvatarStyle}
+                />
+              }
+            />
+            {label}
+          </Chip>
+        ))}
+      </div>
+    ) : (
+      <div style={{ minHeight: 42, lineHeight: '42px' }}>
+        Select some values
+      </div>
+    ); // advice: use one of <option>s' default height as min-height
+
+  onRequestDelete = (key, name) => event => {
+    this.setState({ [name]: this.state[name].filter((v, i) => i !== key) });
+  };
+
   render() {
     const { classes, recommendations } = this.props;
 
-    const { selectedGenre } = this.state;
+    const { selectedGenre, state4 } = this.state;
+    console.debug('state4', state4); // eslint-disable-line no-console
 
     const metrics = [
       'acousticness',
@@ -302,8 +259,37 @@ class Discover extends Component {
       'instrumentalness',
       'liveness',
       'speechiness',
-      'valence'
+      'valence',
     ];
+
+    const countriesNodeList = continents.map((continent, continentIndex) => (
+      <optgroup key={continentIndex} label={continent}>
+        {countries
+          .sort((a, b) => b.Continent - a.Continent)
+          .filter(c => continents[c.Continent] === continent)
+          .map((country, index) => {
+            const countryCode = country['Alpha-2 code'].toLowerCase();
+            const countryLabel = country['English short name'];
+            if (!flagIconCSSCountryCodes.includes(countryCode)) return null;
+
+            return (
+              <div
+                key={index}
+                value={country}
+                label={countryLabel}
+                style={menuItemStyle}
+              >
+                <div style={{ marginRight: 10 }}>
+                  <span style={{ fontWeight: 'bold' }}>{countryLabel}</span>
+                  <br />
+                  <span style={{ fontSize: 12 }}>{country.Capital}</span>
+                </div>
+                <FontIcon className={`flag-icon flag-icon-${countryCode}`} />
+              </div>
+            );
+          })}
+      </optgroup>
+    ));
 
     // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
     // Either write a constructor that binds your function to 'this', or use arrow function () =>
@@ -352,7 +338,7 @@ class Discover extends Component {
               style={{
                 fontSize: '80px',
                 fontFamily: 'brandon-grotesque, sans-serif',
-                fontWeight: '700'
+                fontWeight: '700',
               }}
             >
               Wolf
@@ -361,7 +347,7 @@ class Discover extends Component {
             results.
           </CardContent>
           <Select
-            options={options}
+            options={genreOptions}
             styles={customStyles}
             isMulti
             className="basic-multi-select"
@@ -369,6 +355,32 @@ class Discover extends Component {
             onChange={this.onGenreChange}
             value={selectedGenre}
           />
+          <MuiThemeProvider>
+            <section style={containerStyle}>
+              <fieldset style={{ marginBottom: 40 }}>
+                <legend>Selected values</legend>
+                <div>State 4: {displayState(state4)}</div>
+              </fieldset>
+
+              <SuperSelectField
+                name="state4"
+                multiple
+                keepSearchOnSelect
+                withResetSelectAllButtons
+                checkPosition="left"
+                hintText="Complex example"
+                onChange={this.handleSelection}
+                value={state4}
+                elementHeight={58}
+                selectionsRenderer={this.handleCustomDisplaySelections(
+                  'state4'
+                )}
+                style={{ width: 300, marginTop: 20 }}
+              >
+                {countriesNodeList}
+              </SuperSelectField>
+            </section>
+          </MuiThemeProvider>
         </Card>
 
         <Card
@@ -394,7 +406,7 @@ function mapDispatchToProps(dispatch) {
     {
       getRecommendation: Actions.getRecommendation,
       getToken: Actions.getToken,
-      getSuggestion: Actions.getSuggestions
+      getSuggestion: Actions.getSuggestions,
     },
     dispatch
   );
@@ -404,7 +416,7 @@ function mapStateToProps({ userRecommend }) {
   return {
     classes: PropTypes.object.isRequired,
     theme: PropTypes.object.isRequired,
-    recommendations: userRecommend.userRecommendations
+    recommendations: userRecommend.userRecommendations,
   };
 }
 
