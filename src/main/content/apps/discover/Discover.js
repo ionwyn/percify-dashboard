@@ -15,6 +15,7 @@ import Select from 'react-select';
 import SuperSelectField from 'material-ui-superselectfield';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { genreOptions } from './assets/genres';
+import genresList from './assets/genresList';
 import continents from './assets/continents';
 import countries from './assets/countries';
 import flagIconCSSCountryCodes from './assets/flagIconCSSCountryCodes';
@@ -127,6 +128,7 @@ class Discover extends Component {
       seed_type: '',
       blah: '',
       selectedGenre: 'pop',
+      state5: [{ value: 'acoustic', label: 'acoustic' }],
       state4: [
         {
           label: 'France',
@@ -158,6 +160,7 @@ class Discover extends Component {
       this.state.selectedGenre.forEach(function(element) {
         allGenre.push(element.value);
       });
+      console.log(allGenre.join());
       this.props.getRecommendation({
         seed_genres: allGenre.join(),
         acousticness: this.state.acousticness,
@@ -169,9 +172,16 @@ class Discover extends Component {
         valence: this.state.valence,
       });
       console.log(allGenre.join());
+      console.log('done via array method');
     } else {
+      console.log('logging state5');
+      console.log(this.state.state5);
+      let allGenre = [];
+      this.state.state5.forEach(function(element) {
+        allGenre.push(element.value);
+      });
       this.props.getRecommendation({
-        seed_genres: this.state.selectedGenre,
+        seed_genres: allGenre.join(),
         acousticness: this.state.acousticness,
         danceability: this.state.danceability,
         energy: this.state.energy,
@@ -180,8 +190,22 @@ class Discover extends Component {
         speechiness: this.state.speechiness,
         valence: this.state.valence,
       });
-      console.log(this.state.selectedGenre);
+      console.log('done via nonarray method');
+      console.log(this.state.state5);
     }
+  };
+
+  newGetNewRecommendation = (event, value, metrics) => {
+    this.props.getRecommendation({
+      seed_genres: this.state.state5,
+      acousticness: this.state.acousticness,
+      danceability: this.state.danceability,
+      energy: this.state.energy,
+      instrumentalness: this.state.instrumentalness,
+      liveness: this.state.liveness,
+      speechiness: this.state.speechiness,
+      valence: this.state.valence,
+    });
   };
 
   componentDidMount() {
@@ -214,6 +238,13 @@ class Discover extends Component {
 
   handleSelection = (values, name) => this.setState({ [name]: values });
 
+  handleGenreSelection = (values, name) => {
+    console.log(values);
+    this.setState({ state5: values }, () => {
+      this.getNewRecommendation();
+    });
+  };
+
   handleCustomDisplaySelections = name => values =>
     values.length ? (
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
@@ -237,9 +268,24 @@ class Discover extends Component {
         ))}
       </div>
     ) : (
-      <div style={{ minHeight: 42, lineHeight: '42px' }}>
-        Select some values
+      <div style={{ minHeight: 42, lineHeight: '42px' }}>Select market</div>
+    ); // advice: use one of <option>s' default height as min-height
+
+  handleCustomGenreDisplaySelections = name => values =>
+    values.length ? (
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {values.map(({ label, value: value }, index) => (
+          <Chip
+            key={index}
+            style={{ margin: 5 }}
+            onRequestDelete={this.onRequestDelete(index, name)}
+          >
+            {label}
+          </Chip>
+        ))}
       </div>
+    ) : (
+      <div style={{ minHeight: 42, lineHeight: '42px' }}>Select genre</div>
     ); // advice: use one of <option>s' default height as min-height
 
   onRequestDelete = (key, name) => event => {
@@ -249,7 +295,7 @@ class Discover extends Component {
   render() {
     const { classes, recommendations } = this.props;
 
-    const { selectedGenre, state4 } = this.state;
+    const { selectedGenre, state4, state5 } = this.state;
     console.debug('state4', state4); // eslint-disable-line no-console
 
     const metrics = [
@@ -289,6 +335,19 @@ class Discover extends Component {
             );
           })}
       </optgroup>
+    ));
+
+    const genreLodeList = genresList.map((genresList, genresListIndex) => (
+      <div
+        key={genresListIndex}
+        value={genresList.value}
+        label={genresList.label}
+        style={menuItemStyle}
+      >
+        <div style={{ marginRight: 10 }}>
+          <span style={{ fontWeight: 'bold' }}>{genresList.label}</span>
+        </div>
+      </div>
     ));
 
     // ES6 React.Component doesn't auto bind methods to itself. You need to bind them yourself in constructor.
@@ -346,38 +405,22 @@ class Discover extends Component {
             Pick a genre using the form below, adjust the sliders to tune your
             results.
           </CardContent>
-          <Select
-            options={genreOptions}
-            styles={customStyles}
-            isMulti
-            className="basic-multi-select"
-            classNamePrefix="select"
-            onChange={this.onGenreChange}
-            value={selectedGenre}
-          />
           <MuiThemeProvider>
             <section style={containerStyle}>
-              <fieldset style={{ marginBottom: 40 }}>
-                <legend>Selected values</legend>
-                <div>State 4: {displayState(state4)}</div>
-              </fieldset>
-
               <SuperSelectField
-                name="state4"
+                name="asd"
                 multiple
                 keepSearchOnSelect
                 withResetSelectAllButtons
                 checkPosition="left"
+                value={state5}
+                selectionsRenderer={this.handleCustomGenreDisplaySelections()}
                 hintText="Complex example"
-                onChange={this.handleSelection}
-                value={state4}
-                elementHeight={58}
-                selectionsRenderer={this.handleCustomDisplaySelections(
-                  'state4'
-                )}
                 style={{ width: 300, marginTop: 20 }}
+                hintTextAutocomplete="Find a genre"
+                onChange={this.handleGenreSelection}
               >
-                {countriesNodeList}
+                {genreLodeList}
               </SuperSelectField>
             </section>
           </MuiThemeProvider>
@@ -428,3 +471,32 @@ export default withStyles(styles, { withTheme: true })(
     )(Discover)
   )
 );
+
+// The code below would be the component that will be used for the "Select Market" feature
+
+{
+  /*<section style={containerStyle}>
+              <fieldset style={{ marginBottom: 40 }}>
+                <legend>Selected values</legend>
+                <div>State 4: {displayState(state4)}</div>
+              </fieldset>
+
+              <SuperSelectField
+                name="state4"
+                multiple
+                keepSearchOnSelect
+                withResetSelectAllButtons
+                checkPosition="left"
+                hintText="Complex example"
+                onChange={this.handleSelection}
+                value={state4}
+                elementHeight={58}
+                selectionsRenderer={this.handleCustomDisplaySelections(
+                  'state4'
+                )}
+                style={{ width: 300, marginTop: 20 }}
+              >
+                {countriesNodeList}
+              </SuperSelectField>
+            </section>*/
+}
