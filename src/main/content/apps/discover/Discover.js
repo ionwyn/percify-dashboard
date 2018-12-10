@@ -11,10 +11,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 import Paper from '@material-ui/core/Paper';
-import Select from 'react-select';
 import SuperSelectField from 'material-ui-superselectfield';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { genreOptions } from './assets/genres';
 import genresList from './assets/genresList';
 import continents from './assets/continents';
 import countries from './assets/countries';
@@ -59,31 +57,6 @@ const styles = theme => ({
   },
 });
 
-const customStyles = {
-  option: (base, state) => ({
-    ...base,
-    borderBottom: '1px dotted pink',
-    color: state.isFullscreen ? 'red' : 'blue',
-    padding: 20,
-  }),
-  control: (base, state) => {
-    return {
-      ...base,
-      borderRadius: 2,
-      background: state.isDisabled ? '#f0f0f0' : 'white',
-      minHeight: 40,
-      borderColor: state.isFocused ? '#aaaaaa' : '#e1e1e1',
-      boxShadow: 'none',
-    };
-  },
-  singleValue: (base, state) => {
-    const opacity = state.isDisabled ? 0.5 : 1;
-    const transition = 'opacity 300ms';
-
-    return { ...base, opacity, transition };
-  },
-};
-
 const containerStyle = {
   padding: 40,
   paddingBottom: 0,
@@ -105,11 +78,6 @@ const chipAvatarStyle = {
   borderRadius: '50%',
   backgroundSize: 'cover',
 };
-
-const displayState = state =>
-  state && state.length
-    ? [...state].map(({ value, label }) => label || value).join(', ')
-    : 'empty state';
 
 class Discover extends Component {
   constructor() {
@@ -274,7 +242,7 @@ class Discover extends Component {
   handleCustomGenreDisplaySelections = name => values =>
     values.length ? (
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {values.map(({ label, value: value }, index) => (
+        {values.map(({ label, value }, index) => (
           <Chip
             key={index}
             style={{ margin: 5 }}
@@ -295,7 +263,7 @@ class Discover extends Component {
   render() {
     const { classes, recommendations } = this.props;
 
-    const { selectedGenre, state4, state5 } = this.state;
+    const { state4, state5 } = this.state;
     console.debug('state4', state4); // eslint-disable-line no-console
 
     const metrics = [
@@ -307,35 +275,6 @@ class Discover extends Component {
       'speechiness',
       'valence',
     ];
-
-    const countriesNodeList = continents.map((continent, continentIndex) => (
-      <optgroup key={continentIndex} label={continent}>
-        {countries
-          .sort((a, b) => b.Continent - a.Continent)
-          .filter(c => continents[c.Continent] === continent)
-          .map((country, index) => {
-            const countryCode = country['Alpha-2 code'].toLowerCase();
-            const countryLabel = country['English short name'];
-            if (!flagIconCSSCountryCodes.includes(countryCode)) return null;
-
-            return (
-              <div
-                key={index}
-                value={country}
-                label={countryLabel}
-                style={menuItemStyle}
-              >
-                <div style={{ marginRight: 10 }}>
-                  <span style={{ fontWeight: 'bold' }}>{countryLabel}</span>
-                  <br />
-                  <span style={{ fontSize: 12 }}>{country.Capital}</span>
-                </div>
-                <FontIcon className={`flag-icon flag-icon-${countryCode}`} />
-              </div>
-            );
-          })}
-      </optgroup>
-    ));
 
     const genreLodeList = genresList.map((genresList, genresListIndex) => (
       <div
@@ -471,32 +410,3 @@ export default withStyles(styles, { withTheme: true })(
     )(Discover)
   )
 );
-
-// The code below would be the component that will be used for the "Select Market" feature
-
-{
-  /*<section style={containerStyle}>
-              <fieldset style={{ marginBottom: 40 }}>
-                <legend>Selected values</legend>
-                <div>State 4: {displayState(state4)}</div>
-              </fieldset>
-
-              <SuperSelectField
-                name="state4"
-                multiple
-                keepSearchOnSelect
-                withResetSelectAllButtons
-                checkPosition="left"
-                hintText="Complex example"
-                onChange={this.handleSelection}
-                value={state4}
-                elementHeight={58}
-                selectionsRenderer={this.handleCustomDisplaySelections(
-                  'state4'
-                )}
-                style={{ width: 300, marginTop: 20 }}
-              >
-                {countriesNodeList}
-              </SuperSelectField>
-            </section>*/
-}
