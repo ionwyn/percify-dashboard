@@ -9,7 +9,6 @@ import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
 import TitleBarGridList from 'main/content/components/grid-list/TitleBarGridList';
 import Paper from '@material-ui/core/Paper';
 import SuperSelectField from 'material-ui-superselectfield';
