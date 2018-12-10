@@ -10,13 +10,11 @@ import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import SingleLineItemList from 'main/content/components/item-list/SingleLineItemList';
+import TitleBarGridList from 'main/content/components/grid-list/TitleBarGridList';
 import Paper from '@material-ui/core/Paper';
 import SuperSelectField from 'material-ui-superselectfield';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import genresList from './assets/genresList';
-import continents from './assets/continents';
-import countries from './assets/countries';
-import flagIconCSSCountryCodes from './assets/flagIconCSSCountryCodes';
 import FontIcon from 'material-ui/FontIcon/FontIcon';
 import Avatar from 'material-ui/Avatar/Avatar';
 import Chip from 'material-ui/Chip/Chip';
@@ -26,6 +24,7 @@ const styles = theme => ({
   root: {
     backgroundColor: '#000000',
     backgroundSize: 'cover',
+    display: 'flex',
   },
   card: {
     width: '100%',
@@ -96,21 +95,7 @@ class Discover extends Component {
       seed_type: '',
       blah: '',
       selectedGenre: 'pop',
-      state5: [{ value: 'acoustic', label: 'acoustic' }],
-      state4: [
-        {
-          label: 'France',
-          value: {
-            'English short name': 'France',
-            'French short name': 'France (la)',
-            'Alpha-2 code': 'FR',
-            'Alpha-3 code': 'FRA',
-            Numeric: 250,
-            Capital: 'Paris',
-            Continent: 4,
-          },
-        },
-      ],
+      state5: [],
     };
   }
 
@@ -123,12 +108,12 @@ class Discover extends Component {
   };
 
   getNewRecommendation = (event, value, metrics) => {
+    console.log(this.state);
     if (this.state.selectedGenre.constructor === Array) {
       let allGenre = [];
       this.state.selectedGenre.forEach(function(element) {
         allGenre.push(element.value);
       });
-      console.log(allGenre.join());
       this.props.getRecommendation({
         seed_genres: allGenre.join(),
         acousticness: this.state.acousticness,
@@ -138,12 +123,9 @@ class Discover extends Component {
         liveness: this.state.liveness,
         speechiness: this.state.speechiness,
         valence: this.state.valence,
+        limit: 8,
       });
-      console.log(allGenre.join());
-      console.log('done via array method');
     } else {
-      console.log('logging state5');
-      console.log(this.state.state5);
       let allGenre = [];
       this.state.state5.forEach(function(element) {
         allGenre.push(element.value);
@@ -157,23 +139,9 @@ class Discover extends Component {
         liveness: this.state.liveness,
         speechiness: this.state.speechiness,
         valence: this.state.valence,
+        limit: 8,
       });
-      console.log('done via nonarray method');
-      console.log(this.state.state5);
     }
-  };
-
-  newGetNewRecommendation = (event, value, metrics) => {
-    this.props.getRecommendation({
-      seed_genres: this.state.state5,
-      acousticness: this.state.acousticness,
-      danceability: this.state.danceability,
-      energy: this.state.energy,
-      instrumentalness: this.state.instrumentalness,
-      liveness: this.state.liveness,
-      speechiness: this.state.speechiness,
-      valence: this.state.valence,
-    });
   };
 
   componentDidMount() {
@@ -191,7 +159,6 @@ class Discover extends Component {
 
   // When new genre changed
   onGenreChange = selectedGenre => {
-    console.log('Current state is ', this.state.selectedGenre);
     this.setState({ selectedGenre: selectedGenre }, () =>
       this.getNewRecommendation()
     );
@@ -207,14 +174,13 @@ class Discover extends Component {
   handleSelection = (values, name) => this.setState({ [name]: values });
 
   handleGenreSelection = (values, name) => {
-    console.log(values);
     this.setState({ state5: values }, () => {
       this.getNewRecommendation();
     });
   };
 
   handleCustomDisplaySelections = name => values =>
-    values.length ? (
+    values.length !== '' ? (
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {values.map(({ label, value: country }, index) => (
           <Chip
@@ -246,7 +212,7 @@ class Discover extends Component {
           <Chip
             key={index}
             style={{ margin: 5 }}
-            onRequestDelete={this.onRequestDelete(index, name)}
+            onRequestDelete={this.onRequestDelete(index, label)}
           >
             {label}
           </Chip>
@@ -257,14 +223,17 @@ class Discover extends Component {
     ); // advice: use one of <option>s' default height as min-height
 
   onRequestDelete = (key, name) => event => {
-    this.setState({ [name]: this.state[name].filter((v, i) => i !== key) });
+    this.setState(
+      { state5: this.state.state5.filter((v, i) => i !== key) },
+      () => this.getNewRecommendation()
+    );
+    console.log('new state is ', this.state.state5);
   };
 
   render() {
     const { classes, recommendations } = this.props;
 
-    const { state4, state5 } = this.state;
-    console.debug('state4', state4); // eslint-disable-line no-console
+    const { state5 } = this.state;
 
     const metrics = [
       'acousticness',
@@ -275,6 +244,9 @@ class Discover extends Component {
       'speechiness',
       'valence',
     ];
+
+    console.log('recommendations');
+    console.log(recommendations);
 
     const genreLodeList = genresList.map((genresList, genresListIndex) => (
       <div
@@ -297,24 +269,29 @@ class Discover extends Component {
           classes.root,
           'flex flex-col flex-1 flex-no-shrink p-24 md:flex-row md:p-0 mb-4'
         )}
-        /*style={{height: '100', overflow: 'hidden'}}*/
+        style={{ height: 850, overflow: 'hidden' }}
       >
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
-          style={{ backgroundColor: '#272c30' }}
+          style={{
+            backgroundColor: '#272c30',
+            maxHeight: '100%',
+            overflow: 'hidden',
+          }}
         >
           {metrics.map(metrics => (
             <div
               key={metrics}
               className={classNames(classes.root, 'm-16 p-16')}
             >
-              <Typography id="label" className="p-16 pb-8 text-18 font-300">
+              <Typography id="label" className="pb-8 text-18 font-300">
                 {metrics}
               </Typography>
               <Slider
                 id="puta"
                 value={this.state[metrics]}
                 aria-labelledby="label"
+                style={{ width: 500 }}
                 max={1}
                 onChange={(event, value) =>
                   this.handleChange(event, value, metrics)
@@ -329,7 +306,7 @@ class Discover extends Component {
 
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
-          style={{ backgroundColor: '#22272a' }}
+          style={{ backgroundColor: '#22272a', overflow: 'hidden' }}
         >
           <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
             <Typography
@@ -367,16 +344,18 @@ class Discover extends Component {
 
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
-          style={{ backgroundColor: '#272c30' }}
+          style={{
+            backgroundColor: '#1d2224',
+            maxHeight: '100%',
+            overflow: 'hidden',
+          }}
         >
-          <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
-            {recommendations.state !== undefined ? (
-              <SingleLineItemList
-                userTop={recommendations.state}
-                className="p-16 mb-16"
-              />
-            ) : null}
-          </CardContent>
+          {recommendations.state !== undefined ? (
+            <TitleBarGridList
+              className="p-16 mb-16"
+              userRec={recommendations.state}
+            />
+          ) : null}
         </Card>
       </div>
     );
