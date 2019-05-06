@@ -3,7 +3,14 @@
   "version": "1.1.2",
   "private": true,
   "description": "A music discovery and analytics platform for Spotify",
-  "keywords": ["musc", "analytics", "spotify", "data-science", "discovery", "machine-learning"],
+  "keywords": [
+    "musc",
+    "analytics",
+    "spotify",
+    "data-science",
+    "discovery",
+    "machine-learning"
+  ],
   "repository": "https://server.dividesoftware.com:51079/projects/WEBDEV/repos/intersec-dashboard/browse",
   "homepage": "https://intersec.herokuapp.com",
   "author": "Ionwyn Sean <sean.ionwyn@gmail.com>",
@@ -65,7 +72,8 @@
     "spotify-web-api-js": "^0.24.0",
     "typeface-roboto": "0.0.54",
     "typescript": "^2.9.2",
-    "velocity-react": "1.4.1"
+    "velocity-react": "1.4.1",
+    "snyk": "^1.161.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -84,7 +92,9 @@
     "build-docs": "babel-node src/main/content/components/material-ui/build.js",
     "am-apt": "apt moo",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^4.0.8",
@@ -103,5 +113,6 @@
     "marked": "0.4.0",
     "postcss-cli": "5.0.0",
     "tailwindcss": "0.5.3"
-  }
+  },
+  "snyk": true
 }
