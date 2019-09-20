@@ -7,21 +7,51 @@ import { withStyles } from '@material-ui/core/styles/index';
 import { Button, Card, CardContent, Typography } from '@material-ui/core';
 import classNames from 'classnames';
 import { FuseAnimate } from '@fuse';
+const queryString = require('query-string');
 
 const styles = theme => ({
   root: {
     background:
       "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
   },
   intro: {
-    color: '#ffffff'
+    color: '#ffffff',
   },
   card: {
     width: '100%',
-    maxWidth: 400
-  }
+    maxWidth: 400,
+  },
 });
+
+const authEndpoint = 'https://accounts.spotify.com/authorize/';
+const client_id = process.env.client_id || 'd104e370c7a1420aba8892389177ccb0';
+const client_secret =
+  process.env.client_secret || '4d4d0ef8459a46f3995f96b490895de4';
+const redirect_uri =
+  process.env.redirect_uri || 'http://localhost:3000/apps/dashboards/analytics';
+const scopes =
+  'streaming user-library-read user-top-read user-modify-playback-state user-read-currently-playing user-read-playback-state app-remote-control user-read-recently-played ';
+const scope = [
+  'streaming',
+  'user-library-read',
+  'user-top-read',
+  'user-modify-playback-state',
+  'user-read-currently-playing',
+  'user-read-playback-state',
+  'app-remote-control',
+  'user-read-recently-played',
+];
+const stateKey = 'spotify_auth_state';
+
+const auth_url =
+  'https://accounts.spotify.com/authorize?' +
+  queryString.stringify({
+    response_type: 'code',
+    client_id: client_id,
+    scope: scopes,
+    redirect_uri: redirect_uri,
+  });
 
 class Login extends Component {
   onSubmit = model => {
@@ -39,7 +69,7 @@ class Login extends Component {
       (this.props.login.error.username || this.props.login.error.password)
     ) {
       this.form.updateInputsWithError({
-        ...this.props.login.error
+        ...this.props.login.error,
       });
 
       this.props.login.error = null;
@@ -52,7 +82,7 @@ class Login extends Component {
           ? this.props.location.state.redirectUrl
           : '/';
       this.props.history.push({
-        pathname
+        pathname,
       });
     }
     return null;
@@ -124,7 +154,7 @@ class Login extends Component {
               <Button
                 className="px-4"
                 component="a"
-                href={loginTo}
+                href={auth_url}
                 target="_self"
                 rel="noreferrer noopener"
                 fullWidth={true}
@@ -147,7 +177,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(
     {
       submitLogin: Actions.submitLogin,
-      loginWithFireBase: Actions.loginWithFireBase
+      loginWithFireBase: Actions.loginWithFireBase,
     },
     dispatch
   );
@@ -156,7 +186,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps({ auth }) {
   return {
     login: auth.login,
-    user: auth.user
+    user: auth.user,
   };
 }
 
