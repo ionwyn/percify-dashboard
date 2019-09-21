@@ -3,7 +3,14 @@
   "version": "1.1.2",
   "private": true,
   "description": "A music discovery and analytics platform for Spotify",
-  "keywords": ["musc", "analytics", "spotify", "data-science", "discovery", "machine-learning"],
+  "keywords": [
+    "musc",
+    "analytics",
+    "spotify",
+    "data-science",
+    "discovery",
+    "machine-learning"
+  ],
   "repository": "https://server.dividesoftware.com:51079/projects/WEBDEV/repos/intersec-dashboard/browse",
   "homepage": "https://intersec.herokuapp.com",
   "author": "Ionwyn Sean <sean.ionwyn@gmail.com>",
@@ -61,6 +68,7 @@
     "react-text-mask": "5.4.2",
     "redux": "4.0.0",
     "redux-thunk": "2.3.0",
+    "request": "^2.88.0",
     "sinon": "^7.0.0",
     "spotify-web-api-js": "^0.24.0",
     "typeface-roboto": "0.0.54",

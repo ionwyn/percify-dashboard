@@ -98,7 +98,7 @@ class AnalyticsDashboardApp extends Component {
       process.env.client_secret || '4d4d0ef8459a46f3995f96b490895de4';
     const redirect_uri =
       process.env.redirect_uri ||
-      'http://localhost:3000/apps/dashboards/analytics';
+      'http://localhost:5000/apps/dashboards/analytics';
     const authOptions = {
       url: 'https://accounts.spotify.com/api/token',
       form: {
