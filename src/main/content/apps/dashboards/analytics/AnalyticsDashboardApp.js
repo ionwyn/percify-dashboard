@@ -88,57 +88,11 @@ class AnalyticsDashboardApp extends Component {
     this.props.getWidgets();
 
     // Get JSON Object from URL Querystring
-    const tokens = qs.parse(this.props.location.search);
-    console.log(tokens);
-    console.log(tokens['?code']);
-
-    const client_id =
-      process.env.client_id || 'd104e370c7a1420aba8892389177ccb0';
-    const client_secret =
-      process.env.client_secret || '4d4d0ef8459a46f3995f96b490895de4';
-    const redirect_uri =
-      process.env.redirect_uri ||
-      'https://intersec.herokuapp.com/apps/dashboards/analytics';
-    const authOptions = {
-      url: 'https://accounts.spotify.com/api/token',
-      form: {
-        code: tokens['?code'],
-        redirect_uri: redirect_uri,
-        grant_type: 'authorization_code',
-      },
-      headers: {
-        Authorization:
-          'Basic ' +
-          new Buffer(client_id + ':' + client_secret).toString('base64'),
-      },
-      json: true,
-    };
-
-    console.log(authOptions);
-
-    request.post(authOptions, (error, response, body) => {
-      if (!error && response.statusCode === 200) {
-        const access_token = body.access_token,
-          refresh_token = body.refresh_token;
-
-        const options = {
-          url: 'https://api.spotify.com/v1/me',
-          headers: { Authorization: 'Bearer ' + access_token },
-          json: true,
-        };
-
-        // use the access token to access the Spotify Web API
-        request.get(options, (error, response, body) => {
-          console.log(body);
-        });
-      } else {
-        console.log('ERROR');
-      }
-    });
-
+    const tokens = qs.parse(this.props.location.pathname.split('/').pop());
+    const { access_token: accessToken, refresh_token: refreshToken } = tokens;
     // Set tokens and get user info by calling dispatching corresponding Actions
-    // this.props.setTokens({ accessToken, refreshToken });
-    // this.props.getMyInfo();
+    this.props.setTokens({ accessToken, refreshToken });
+    this.props.getMyInfo();
   }
 
   render() {
