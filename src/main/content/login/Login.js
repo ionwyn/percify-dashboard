@@ -24,7 +24,7 @@ const styles = theme => ({
   },
 });
 
-const authEndpoint = 'http://localhost:8888/login?';
+const authEndpoint = 'https://spotilogin.herokuapp.com/login?';
 const client_id = process.env.client_id || 'd104e370c7a1420aba8892389177ccb0';
 const client_secret =
   process.env.client_secret || '4d4d0ef8459a46f3995f96b490895de4';
