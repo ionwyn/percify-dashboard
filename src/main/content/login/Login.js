@@ -31,7 +31,7 @@ const client_secret =
 const redirect_uri =
   process.env.redirect_uri || 'http://localhost:3000/apps/dashboards/analytics';
 const scopes =
-  'streaming user-library-read user-top-read user-modify-playback-state user-read-currently-playing user-read-playback-state app-remote-control user-read-recently-played ';
+  'streaming user-library-read user-top-read user-modify-playback-state user-read-currently-playing user-read-playback-state app-remote-control user-read-recently-played user-read-birthdate user-read-email user-read-private';
 const scope = [
   'streaming',
   'user-library-read',
