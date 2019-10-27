@@ -47,7 +47,7 @@ class MainFooter extends Component {
       artistName: '',
       playing: false,
       position: 0,
-      duration: 0,
+      duration: 1,
       trackImg: '',
     };
 
@@ -62,7 +62,6 @@ class MainFooter extends Component {
     if (this.state.token !== '') {
       // change the loggedIn variable, then start checking for the window.Spotify variable
       this.setState({ loggedIn: true });
-      // check every second for player
       this.playerCheckInterval = setInterval(() => this.checkForPlayer(), 1000);
     }
   }
@@ -111,11 +110,6 @@ class MainFooter extends Component {
       console.error(e);
     });
 
-    this.player.on('authentication_error', e => {
-      console.error(e);
-      this.setState({ loggedIn: false });
-    });
-
     // currently only premium accounts can use the API
     this.player.on('account_error', e => {
       console.error(e);
@@ -133,8 +127,7 @@ class MainFooter extends Component {
       let { device_id } = data;
       // set the deviceId variable, then let's try
       // to swap music playback to *our* player!
-      console.log('Player is ready');
-      this.setState({ deviceId: device_id });
+      await this.setState({ deviceId: device_id });
       this.transferPlaybackHere();
     });
   }
@@ -146,7 +139,7 @@ class MainFooter extends Component {
     if (window.Spotify !== null) {
       // cancel the interval
       clearInterval(this.playerCheckInterval);
-      // this.setState({ loggingIn: false });
+      this.setState({ loggingIn: false });
       // create a new player
       this.player = new window.Spotify.Player({
         name: 'Intersect Spotify Player',
@@ -171,11 +164,11 @@ class MainFooter extends Component {
     if (this.state.token === '') {
       const aToken = JSON.parse(sessionStorage.getItem('userToken'))
         .access_token;
-      console.log('The token is: ' + aToken);
       this.setState({ token: aToken }, () => {
         this.handleLogin();
         console.log('logged in');
       });
+      console.log('logging in');
       this.showSpinner();
     } else {
       this.player.togglePlay();
