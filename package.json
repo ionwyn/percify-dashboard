@@ -2,7 +2,7 @@
   "name": "fuse-react-app",
   "version": "1.1.2",
   "engines": {
-     "node": "10.6.3",
+     "node": "10.16.3",
      "npm": "6.9.0"
    },
   "private": true,
