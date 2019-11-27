@@ -44,7 +44,6 @@ const styles = theme => ({
  */
 function TitlebarGridList(props) {
   const { classes, userRec } = props;
-  console.log(userRec);
 
   return (
     <div className={classes.root}>
