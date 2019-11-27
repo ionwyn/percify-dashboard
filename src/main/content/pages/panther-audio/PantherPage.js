@@ -48,7 +48,7 @@ class PantherPage extends Component {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            height: '100vh',
+            height: '90vh',
             width: '100%',
           }}
           title="Panther Discover"

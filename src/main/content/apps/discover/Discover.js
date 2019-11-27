@@ -10,6 +10,7 @@ import Slider from '@material-ui/lab/Slider';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import TitleBarGridList from 'main/content/components/grid-list/TitleBarGridList';
+import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import SuperSelectField from 'material-ui-superselectfield';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -272,34 +273,32 @@ class Discover extends Component {
       >
         <Card
           className={classNames(classes.card, 'flex-1 mx-auto m-16 md:m-0')}
-          style={{
-            backgroundColor: '#272c30',
-            maxHeight: '100%',
-            overflow: 'hidden',
-          }}
+          style={{ backgroundColor: '#272c30', overflow: 'hidden' }}
         >
           {metrics.map(metrics => (
-            <div
-              key={metrics}
-              className={classNames(classes.root, 'm-16 p-16')}
-            >
+            <CardContent key={metrics} style={{ width: 400 }}>
               <Typography id="label" className="pb-8 text-18 font-300">
-                {metrics}
+                {metrics.charAt(0).toUpperCase() + metrics.slice(1)}
               </Typography>
-              <Slider
-                id="puta"
-                value={this.state[metrics]}
-                aria-labelledby="label"
-                style={{ width: 500 }}
-                max={1}
-                onChange={(event, value) =>
-                  this.handleChange(event, value, metrics)
-                }
-                onDragEnd={(event, value) => {
-                  this.getNewRecommendation(event, value, metrics);
-                }}
-              />
-            </div>
+              <Grid container spacing={2} className="mx-auto">
+                <Grid item>0</Grid>
+                <Grid item xs>
+                  <Slider
+                    id="puta"
+                    value={this.state[metrics]}
+                    aria-labelledby="label"
+                    max={1}
+                    onChange={(event, value) =>
+                      this.handleChange(event, value, metrics)
+                    }
+                    onDragEnd={(event, value) => {
+                      this.getNewRecommendation(event, value, metrics);
+                    }}
+                  />
+                </Grid>
+                <Grid item>100</Grid>
+              </Grid>
+            </CardContent>
           ))}
         </Card>
 
