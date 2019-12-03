@@ -14,43 +14,43 @@ import SingleLineGridList from 'main/content/components/grid-list/SingleLineGrid
 const styles = theme => ({
   layoutRoot: {},
   layoutToolbar: {
-    padding: 0
+    padding: 0,
   },
   tabsRoot: {
-    height: 64
+    height: 64,
   },
   tabRoot: {
-    height: 64
+    height: 64,
   },
   menuItem: {
     textDecoration: 'none!important',
     '&:focus': {
       backgroundColor: theme.palette.primary.main,
       '& $primary, & $icon': {
-        color: theme.palette.common.white
-      }
+        color: theme.palette.common.white,
+      },
     },
     '&.active': {
       backgroundColor: theme.palette.secondary.main,
       color: theme.palette.secondary.contrastText + '!important',
       pointerEvents: 'none',
       '& .list-item-icon': {
-        color: 'inherit'
-      }
+        color: 'inherit',
+      },
     },
     '& .list-item-icon': {
       fontSize: 16,
       width: 16,
-      height: 16
-    }
+      height: 16,
+    },
   },
   primary: {},
-  icon: {}
+  icon: {},
 });
 
 class Home extends Component {
   state = {
-    value: 0
+    value: 0,
   };
 
   handleChange = (event, value) => {
@@ -71,7 +71,7 @@ class Home extends Component {
       <FusePageCarded
         classes={{
           root: classes.layoutRoot,
-          toolbar: classes.layoutToolbar
+          toolbar: classes.layoutToolbar,
         }}
         header={
           <div className="flex flex-col flex-1">
@@ -94,33 +94,35 @@ class Home extends Component {
             indicatorColor="primary"
             textColor="primary"
             classes={{
-              root: classes.tabsRoot
+              root: classes.tabsRoot,
             }}
           >
             <Tab
               classes={{
-                root: classes.tabRoot
+                root: classes.tabRoot,
               }}
               label="Tracks"
             />
             <Tab
               classes={{
-                root: classes.tabRoot
+                root: classes.tabRoot,
               }}
               label="Artists"
             />
-            <Tab
-              classes={{
-                root: classes.tabRoot
-              }}
-              label="Genres"
-            />
-            <Tab
-              classes={{
-                root: classes.tabRoot
-              }}
-              label="Vibe"
-            />
+            {
+              // <Tab
+              //   classes={{
+              //     root: classes.tabRoot
+              //   }}
+              //   label="Genres"
+              // />
+              // <Tab
+              //   classes={{
+              //     root: classes.tabRoot
+              //   }}
+              //   label="Vibe"
+              // />
+            }
           </Tabs>
         }
         content={
@@ -213,7 +215,7 @@ function mapDispatchToProps(dispatch) {
     {
       getTopTracks: Actions.getTopTracks,
       getTopArtists: Actions.getTopArtist,
-      getToken: Actions.getToken
+      getToken: Actions.getToken,
     },
     dispatch
   );
@@ -221,7 +223,7 @@ function mapDispatchToProps(dispatch) {
 
 function mapStateToProps({ userTop }) {
   return {
-    topTracks: userTop.userTopMetrics
+    topTracks: userTop.userTopMetrics,
   };
 }
 

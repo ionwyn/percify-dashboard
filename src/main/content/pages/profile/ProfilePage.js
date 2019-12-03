@@ -11,7 +11,7 @@ import AboutTab from 'main/content/pages/profile/tabs/AboutTab';
 const styles = theme => ({
   layoutRoot: {},
   layoutToolbar: {
-    padding: 0
+    padding: 0,
   },
   layoutHeader: {
     height: 320,
@@ -22,21 +22,21 @@ const styles = theme => ({
     color: '#fff',
     [theme.breakpoints.down('md')]: {
       height: 240,
-      minHeight: 240
-    }
+      minHeight: 240,
+    },
   },
   tabsRoot: {
     height: 64,
-    width: '100%'
+    width: '100%',
   },
   tabRoot: {
-    height: 64
-  }
+    height: 64,
+  },
 });
 
 class ProfilePage extends Component {
   state = {
-    value: 0
+    value: 0,
   };
 
   handleChange = (event, value) => {
@@ -53,7 +53,7 @@ class ProfilePage extends Component {
         classes={{
           root: classes.layoutRoot,
           header: classes.layoutHeader,
-          toolbar: classes.layoutToolbar
+          toolbar: classes.layoutToolbar,
         }}
         header={
           <div className="p-24 flex flex-1 flex-col items-center justify-center md:flex-row md:items-end">
@@ -85,33 +85,35 @@ class ProfilePage extends Component {
             scrollable
             scrollButtons="auto"
             classes={{
-              root: classes.tabsRoot
+              root: classes.tabsRoot,
             }}
           >
             <Tab
               classes={{
-                root: classes.tabRoot
+                root: classes.tabRoot,
               }}
               label="Timeline"
             />
             <Tab
               classes={{
-                root: classes.tabRoot
+                root: classes.tabRoot,
               }}
               label="About"
             />
             <Tab
               classes={{
-                root: classes.tabRoot
+                root: classes.tabRoot,
               }}
               label="My Photos & Videos"
             />
-            <Tab
-              classes={{
-                root: classes.tabRoot
-              }}
-              label="My Playlist"
-            />
+            {
+              // <Tab
+              //   classes={{
+              //     root: classes.tabRoot
+              //   }}
+              //   label="My Playlist"
+              // />
+            }
           </Tabs>
         }
         content={
@@ -128,7 +130,7 @@ class ProfilePage extends Component {
 
 function mapStateToProps(state) {
   return {
-    user: state.auth.user
+    user: state.auth.user,
   };
 }
 

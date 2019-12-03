@@ -20,7 +20,7 @@ export const fuseThemesConfig = {
   },
   sunset: {
     palette: {
-      type: 'light',
+      type: 'dark',
       primary: {
         light: '#ff908b',
         main: '#d0605e',

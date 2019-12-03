@@ -50,8 +50,8 @@ function SingleLineGridList(props) {
   return (
     <div className={classes.root}>
       <GridList
-        cellHeight="100"
-        cellWidth="100"
+        cellHeight="375"
+        cellWidth="375"
         className={classes.gridList}
         cols={2.5}
       >

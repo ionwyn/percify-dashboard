@@ -20,11 +20,13 @@ function MainNavbarHeader({ classes }) {
   return (
     <div className={classes.root}>
       <div className={classNames(classes.logo, 'flex items-center')}>
-        <img
-          className={classes.logoIcon}
-          src="assets/images/logos/fuse.svg"
-          alt="logo"
-        />
+        {
+          // <img
+          //   className={classes.logoIcon}
+          //   src="assets/images/logos/fuse.svg"
+          //   alt="logo"
+          // />
+        }
         <Typography className="text-20 ml-8 font-light logo-text">
           INTERSECT
         </Typography>

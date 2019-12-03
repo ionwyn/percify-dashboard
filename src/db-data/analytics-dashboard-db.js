@@ -5,24 +5,24 @@ const analyticsDashboardAppDB = {
     widget1: {
       chartType: 'line',
       datasets: {
-        '2015': [
-          {
-            label: 'Tracks',
-            data: [0.2, 1, 1.4, 0.2, 0.9, 1.9, 0.5, 1.8, 2.1, 1.8, 1.2, 0.9],
-            fill: 'start',
-          },
-        ],
-        '2016': [
-          {
-            label: 'Tracks',
-            data: [0.2, 0.9, 1.9, 0.5, 1.8, 1.2, 0.9, 0.2, 1, 1.4, 2.1, 1.8],
-            fill: 'start',
-          },
-        ],
         '2017': [
           {
             label: 'Tracks',
-            data: [1.9, 0.5, 1.8, 2.1, 0.1, 1, 1.8, 1.2, 0.9, 1.4, 0.2, 0.9],
+            data: [0.2, 0.1, 0.4, 0.2, 0.9, 0.9, 0.5, 0.8, 0.1, 0.8, 0.2, 0.9],
+            fill: 'start',
+          },
+        ],
+        '2018': [
+          {
+            label: 'Tracks',
+            data: [0.2, 0.9, 0.9, 0.5, 0.8, 0.2, 0.9, 0.2, 0.1, 0.4, 0.1, 0.8],
+            fill: 'start',
+          },
+        ],
+        '2019': [
+          {
+            label: 'Tracks',
+            data: [0.9, 0.5, 0.8, 0.1, 0.1, 1, 0.8, 0.2, 0.9, 0.4, 0.2, 0],
             fill: 'start',
           },
         ],
@@ -83,8 +83,8 @@ const analyticsDashboardAppDB = {
               display: false,
               ticks: {
                 min: 0,
-                max: 3,
-                stepSize: 0.5,
+                max: 2,
+                stepSize: 1.5,
               },
             },
           ],
@@ -284,14 +284,14 @@ const analyticsDashboardAppDB = {
         yesterday: [
           {
             label: 'Tracks',
-            data: [19, 3, 34, 22, 29, 39, 25, 38, 41, 38, 32, 29],
+            data: [19, 0, 0, 0, 0, 39, 25, 38, 41, 38, 32, 29],
             fill: 'start',
           },
         ],
         today: [
           {
             label: 'Tracks',
-            data: [41, 38, 32, 29, 19, 39, 25, 38, 3, 34, 22, 29],
+            data: [41, 0, 0, 0, 19, 39, 25, 38, 3, 34, 22, 29],
             fill: 'start',
           },
         ],

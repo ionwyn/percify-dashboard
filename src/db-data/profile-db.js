@@ -256,32 +256,31 @@ const profileDB = {
   ],
   about: {
     general: {
-      gender: 'Female',
-      birthday: 'May 8th, 1988',
-      locations: ['Istanbul, Turkey', 'New York, USA'],
+      gender: 'Male',
+      birthday: 'November 17th, 1995',
+      locations: [
+        'Vancouver, Canada',
+        'Auckland, New Zealand',
+        'Jakarta, Indonesia',
+      ],
       about:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget pharetra felis, sed ullamcorper dui. Sed et elementum neque. Vestibulum pellente viverra ultrices. Etiam justo augue, vehicula ac gravida a, interdum sit amet nisl. Integer vitae nisi id nibh dictum mollis in vitae tortor.',
+        'I am passionate about music, computer science, software development, and chess.',
     },
     work: {
       occupation: 'Developer',
-      skills: 'C#, PHP, Javascript, Angular, JS, HTML, CSS',
+      skills: 'JavaScript, Python, React, HTML, CSS, C++',
       jobs: [
         {
-          company: 'Self-Employed',
-          date: '2010 - Now',
-        },
-        {
-          company: 'Google',
-          date: '2008 - 2010',
+          company: 'Teradici',
+          date: 'May 2018 - December 2018',
         },
       ],
     },
     contact: {
-      address:
-        'Ut pharetra luctus est quis sodales. Duis nisi tortor, bibendum eget tincidunt, aliquam ac elit. Mauris nec euismod odio.',
-      tel: ['+6 555 6600', '+9 555 5255'],
-      websites: ['withinpixels.com'],
-      emails: ['mail@withinpixels.com', 'mail@creapond.com'],
+      address: '101 - 9222 University Crescent',
+      tel: ['+1 604-693-5685'],
+      websites: ['home.ionwyn.com'],
+      emails: ['sean.ionwyn@gmail.com'],
     },
     groups: [
       {
