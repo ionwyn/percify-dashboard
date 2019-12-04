@@ -11,8 +11,7 @@ const queryString = require('query-string');
 
 const styles = theme => ({
   root: {
-    background:
-      "url('/assets/images/backgrounds/dark-material-bg.jpg') no-repeat",
+    background: "url('/assets/images/backgrounds/youare.jpg') no-repeat",
     backgroundSize: 'cover',
   },
   intro: {
@@ -21,6 +20,9 @@ const styles = theme => ({
   card: {
     width: '100%',
     maxWidth: 400,
+  },
+  button: {
+    flex: '1 0 auto',
   },
 });
 
@@ -110,62 +112,65 @@ class Login extends Component {
             'flex flex-col flex-no-grow items-center p-16 text-center md:p-128 md:items-start md:flex-no-shrink md:flex-1 md:text-left'
           )}
         >
-          <FuseAnimate animation="transition.expandIn">
-            <img
-              className="w-128 mb-32"
-              src="assets/images/logos/fuse.svg"
-              alt="logo"
-            />
-          </FuseAnimate>
-
-          <FuseAnimate animation="transition.slideUpIn" delay={300}>
-            <Typography
-              variant="display2"
-              color="inherit"
-              className="font-light"
-            >
-              Intersect
-            </Typography>
-          </FuseAnimate>
-
-          <FuseAnimate delay={400}>
-            <Typography
-              variant="subheading"
-              color="inherit"
-              className="max-w-512 mt-16"
-            >
-              An independent project to facilitate analysis and discovery for
-              popular music platforms. The project is built with React with
-              Redux and Apollo for state management. Current progress is
-              integration with AWS Lambda, API Gateway, and Firebase. For the
-              best experience please use a Firefox browser, while I continue to
-              build a better experience for other browsers.
-            </Typography>
-          </FuseAnimate>
+          {
+            // <FuseAnimate animation="transition.slideUpIn" delay={300}>
+            //   <Typography
+            //     variant="display2"
+            //     color="inherit"
+            //     className="font-light"
+            //   >
+            //     Intersect
+            //   </Typography>
+            // </FuseAnimate>
+            // <FuseAnimate delay={400}>
+            //   <Typography
+            //     variant="subheading"
+            //     color="inherit"
+            //     className="max-w-512 mt-16"
+            //   >
+            //     An independent project to facilitate analysis and discovery for
+            //     popular music platforms. The project is built with React with
+            //     Redux and Apollo for state management. Current progress is
+            //     integration with AWS Lambda, API Gateway, and Firebase. For the
+            //     best experience please use a Firefox browser, while I continue to
+            //     build a better experience for other browsers.
+            //   </Typography>
+            // </FuseAnimate>
+          }
         </div>
 
         <FuseAnimate animation={{ translateX: [0, '100%'] }}>
           <Card className={classNames(classes.card, 'mx-auto m-16 md:m-0')}>
             <CardContent className="flex flex-col items-center justify-center p-32 md:p-48 md:pt-128 ">
-              <img
-                src="assets/images/logos/spotify_logo_with_text.svg"
-                alt="Spotify Logo"
-              />
-              <Button
-                className="px-4"
-                component="a"
-                href={auth_url}
-                target="_self"
-                rel="noreferrer noopener"
-                fullWidth={true}
-                variant="flat"
-              >
+              <FuseAnimate animation="transition.expandIn">
                 <img
-                  src="assets/images/logos/spotifylogin.svg"
-                  alt="Login with Spotify Button"
+                  className="w-128 mb-32"
+                  src="assets/images/logos/intersec.png"
+                  alt="logo"
                 />
-              </Button>
+              </FuseAnimate>
+              <Typography
+                variant="display2"
+                color="inherit"
+                className="font-light h1"
+              >
+                INTERSECT
+              </Typography>
             </CardContent>
+            <Button
+              className="px-4"
+              component="a"
+              href={auth_url}
+              target="_self"
+              rel="noreferrer noopener"
+              fullWidth={true}
+              variant="flat"
+            >
+              <img
+                src="assets/images/logos/spotifylogin.svg"
+                alt="Login with Spotify Button"
+              />
+            </Button>
           </Card>
         </FuseAnimate>
       </div>
