@@ -47,7 +47,7 @@
     "path-to-regexp": "2.2.1",
     "perfect-scrollbar": "1.4.0",
     "prettier": "^1.13.5",
-    "prismjs": "1.15.0",
+    "prismjs": "1.21.0",
     "q": "^1.5.1",
     "qs": "6.5.2",
     "raw-loader": "0.5.1",
