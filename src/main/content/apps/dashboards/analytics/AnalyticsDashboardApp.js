@@ -178,9 +178,6 @@ function mapStateToProps({ analyticsDashboardApp }) {
 
 export default withStyles(styles, { withTheme: true })(
   withRouter(
-    connect(
-      mapStateToProps,
-      mapDispatchToProps
-    )(AnalyticsDashboardApp)
+    connect(mapStateToProps, mapDispatchToProps)(AnalyticsDashboardApp)
   )
 );
