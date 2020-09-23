@@ -2,7 +2,7 @@
   "name": "fuse-react-app",
   "version": "1.1.2",
   "engines": {
-    "node": "10.16.3",
+    "node": ">= 10.16.3",
     "npm": "6.9.0"
   },
   "private": true,
@@ -33,6 +33,8 @@
     "dataframe-js": "^1.3.2",
     "downshift": "2.0.0",
     "eslint": "^5.3.0",
+    "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "firebase": "5.0.4",
     "formsy-react": "1.1.4",
     "google-map-react": "1.0.4",
@@ -44,6 +46,7 @@
     "material-ui-superselectfield": "^1.9.8",
     "mobile-detect": "1.4.2",
     "moment": "2.22.2",
+    "path": "^0.12.7",
     "path-to-regexp": "2.2.1",
     "perfect-scrollbar": "1.4.0",
     "prettier": "^1.13.5",
@@ -90,6 +93,7 @@
     "precommit": "lint-staged",
     "start": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts start",
     "build": "yarn run build-css-helpers && cross-env NODE_PATH=src react-scripts build",
+    "build-x": "node server.js",
     "build-css-helpers": "./node_modules/.bin/tailwind build ./src/styles/fuse-helpers.tailwind.css -c ./tailwind.js -o ./src/styles/fuse-helpers.css && postcss --use autoprefixer -o ./src/styles/fuse-helpers.css ./src/styles/fuse-helpers.css",
     "test": "cross-env NODE_PATH=src react-scripts jest --env=jsdom",
     "test-ci": "react-scripts test --env=jsdom --coverage --testResultsProcessor ./node_modules/jest-teamcity-reporter",
