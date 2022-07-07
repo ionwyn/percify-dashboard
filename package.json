@@ -45,7 +45,7 @@
     "material-ui": "^0.20.2",
     "material-ui-superselectfield": "^1.9.8",
     "mobile-detect": "1.4.2",
-    "moment": "2.22.2",
+    "moment": "2.29.4",
     "path": "^0.12.7",
     "path-to-regexp": "2.2.1",
     "perfect-scrollbar": "1.4.0",
