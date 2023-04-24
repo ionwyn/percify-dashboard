@@ -17,6 +17,7 @@ import qs from 'qs';
 
 const request = require('request'); // "Request" library
 
+// Root style
 const styles = theme => ({
   root: {},
 });
