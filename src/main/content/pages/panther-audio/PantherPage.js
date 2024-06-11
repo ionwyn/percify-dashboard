@@ -52,7 +52,9 @@ class PantherPage extends Component {
             width: '100%',
           }}
           title="Panther Discover"
-          src="https://panther-discover.herokuapp.com/"
+          src={
+            process.env.panther_uri || 'https://panther-discover.herokuapp.com/'
+          }
           onLoad={this.hideSpinner}
         />
       </div>

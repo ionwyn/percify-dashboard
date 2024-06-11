@@ -33,7 +33,8 @@ const styles = theme => ({
   },
 });
 
-const authEndpoint = 'https://spotilogin.herokuapp.com/login?';
+const authEndpoint =
+  process.env.redirect_uri || 'https://spotify-deploy.onrender.com/login?';
 const client_id = process.env.client_id || 'd104e370c7a1420aba8892389177ccb0';
 const client_secret =
   process.env.client_secret || '4d4d0ef8459a46f3995f96b490895de4';
@@ -99,12 +100,6 @@ class Login extends Component {
 
   render() {
     const { classes } = this.props;
-    const loginTo =
-      process.env.NODE_ENV !== 'production'
-        ? 'https://spotilogin.herokuapp.com?env=development'
-        : 'https://spotilogin.herokuapp.com?env=production';
-
-    console.log(loginTo);
 
     return (
       <div
@@ -202,10 +197,5 @@ function mapStateToProps({ auth }) {
 }
 
 export default withStyles(styles, { withTheme: true })(
-  withRouter(
-    connect(
-      mapStateToProps,
-      mapDispatchToProps
-    )(Login)
-  )
+  withRouter(connect(mapStateToProps, mapDispatchToProps)(Login))
 );
